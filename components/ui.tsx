@@ -2,6 +2,7 @@
 
 /** Small shared UI pieces: product image, store logo, badges, time-ago. */
 import { BadgeCheck } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { useCatalog } from "./CatalogProvider";
 import { DynamicIcon } from "./DynamicIcon";
 import { timeAgo } from "@/lib/format";
@@ -39,11 +40,26 @@ export function ProductImage({
 }) {
   const { categoryById } = useCatalog();
   const src = product.images[index];
-  if (src) {
+  const [failed, setFailed] = useState<string | null>(null);
+  const imgRef = useRef<HTMLImageElement>(null);
+  // The image may fail before React hydrates (onError missed) → check once mounted.
+  useEffect(() => {
+    const img = imgRef.current;
+    if (img && img.complete && img.naturalWidth === 0) setFailed(img.getAttribute("src"));
+  }, [src]);
+  if (src && failed !== src) {
     return (
       <div className={`relative overflow-hidden bg-white ${className}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={src} alt={product.name} loading="lazy" className="absolute inset-0 size-full object-contain p-3" />
+        <img
+          ref={imgRef}
+          src={src}
+          alt={product.name}
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          onError={() => setFailed(src)}
+          className="absolute inset-0 size-full object-contain p-3"
+        />
       </div>
     );
   }

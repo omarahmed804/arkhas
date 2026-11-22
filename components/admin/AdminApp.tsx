@@ -5,7 +5,7 @@
  * MVP persistence: LocalStorage via lib/repository.ts (per-browser!).
  */
 import {
-  AlertTriangle, Bell, Boxes, CloudDownload, Check, Database, Download, ExternalLink, Layers, LogOut, Package, Pencil, Plus,
+  AlertTriangle, Bell, Boxes, CloudDownload, RefreshCw, Check, Database, Download, ExternalLink, Layers, LogOut, Package, Pencil, Plus,
   RotateCcw, Save, Search, Store as StoreIcon, Trash2, Upload,
 } from "lucide-react";
 import Link from "next/link";
@@ -48,6 +48,7 @@ export function AdminApp() {
         </div>
         <div className="flex gap-2">
           <Link href="/" className="btn-ghost">عرض الموقع <ExternalLink className="size-4" /></Link>
+          <RefreshNowButton notify={notify} />
           <form action={logout}>
             <button type="submit" className="btn-ghost text-red-600"><LogOut className="size-4" /> خروج</button>
           </form>
@@ -114,6 +115,32 @@ function LiveDataBanner({ notify }: Notify) {
   );
 }
 
+function RefreshNowButton({ notify }: Notify) {
+  const [busy, setBusy] = useState(false);
+  return (
+    <button
+      type="button"
+      disabled={busy}
+      className="btn-primary"
+      onClick={async () => {
+        setBusy(true);
+        try {
+          const r = await fetch("/api/admin/refresh-prices", { method: "POST" });
+          const d = (await r.json()) as { ok: boolean; message: string };
+          if (d.ok) notify(d.message);
+          else alert(d.message);
+        } catch {
+          alert("حصل خطأ في الاتصال.");
+        } finally {
+          setBusy(false);
+        }
+      }}
+    >
+      <RefreshCw className={`size-4 ${busy ? "animate-spin" : ""}`} /> حدّث الأسعار الآن
+    </button>
+  );
+}
+
 /** Offers whose price is old or whose automatic check failed. */
 function PriceHealth() {
   const { catalog } = useCatalog();
@@ -122,7 +149,7 @@ function PriceHealth() {
   let tracked = 0;
   for (const p of catalog.products)
     for (const o of p.offers) {
-      if (isStale(o.updatedAt)) stale++;
+      if (isStale(o.updatedAt) || o.needsCheck) stale++;
       if (o.lastCheckError) failed++;
       if (o.lastCheckedAt && !o.lastCheckError) tracked++;
     }
@@ -130,7 +157,7 @@ function PriceHealth() {
     <div className="mb-4 grid grid-cols-3 gap-2 text-center text-xs">
       <div className="card p-3"><p className="text-lg font-black text-brand-600">{tracked}</p>متابَع تلقائيًا</div>
       <div className="card p-3"><p className={`text-lg font-black ${failed ? "text-red-600" : ""}`}>{failed}</p>فشلت متابعته</div>
-      <div className="card p-3"><p className={`text-lg font-black ${stale ? "text-amber-600" : ""}`}>{stale}</p>أقدم من 3 أيام</div>
+      <div className="card p-3"><p className={`text-lg font-black ${stale ? "text-amber-600" : ""}`}>{stale}</p>محتاج تأكيد</div>
     </div>
   );
 }
@@ -211,7 +238,11 @@ function QuickPrices({ product, storeById, onSaved }: { product: Product; storeB
 
   async function save() {
     const now = new Date().toISOString();
-    const offers = rows.map((r, i) => (JSON.stringify(r) === JSON.stringify(product.offers[i]) ? r : { ...r, updatedAt: now }));
+    const offers = rows.map((r, i) => {
+      if (JSON.stringify(r) === JSON.stringify(product.offers[i])) return r;
+      const { needsCheck: _n, ...rest } = r; // a price you entered yourself counts as confirmed
+      return { ...rest, updatedAt: now };
+    });
     if (offers.some((o) => !(o.price > 0))) return alert("كل الأسعار لازم تكون أكبر من صفر.");
     const next = withTodayHistory({ ...product, offers });
     await update((c) => ({ ...c, products: c.products.map((p) => (p.id === next.id ? next : p)) }));
@@ -233,6 +264,7 @@ function QuickPrices({ product, storeById, onSaved }: { product: Product; storeB
                 <p className={`text-[11px] ${isStale(r.updatedAt) ? "text-amber-600" : "text-slate-500"}`}>
                   {cta.label} · آخر تحديث <TimeAgo iso={r.updatedAt} />
                   {r.autoTrack === false && " · يدوي"}
+                  {r.needsCheck && " · لسه متأكدش"}
                 </p>
                 {r.lastCheckError && <p className="text-[11px] font-bold text-red-600">المتابعة الآلية: {r.lastCheckError}</p>}
               </div>
@@ -302,6 +334,8 @@ function StoresTab({ notify }: Notify) {
           <Field label="الاسم بالإنجليزي"><input className="input ltr text-start" value={form.nameEn} onChange={(e) => setForm({ ...form, nameEn: e.target.value })} /></Field>
           <Field label="رابط المتجر / الصفحة (اختياري للمتاجر اللي على واتساب بس)"><input className="input ltr text-start" placeholder="https://" value={form.url} onChange={(e) => setForm({ ...form, url: e.target.value })} /></Field>
           <Field label="رابط صورة اللوجو (اختياري)"><input className="input ltr text-start" value={form.logoUrl ?? ""} onChange={(e) => setForm({ ...form, logoUrl: e.target.value || undefined })} /></Field>
+          <Field label="كود الأفلييت (يتضاف لكل رابط) — مثال أمازون: tag=arkhas-21"><input className="input ltr text-start" placeholder="tag=yourid-21" value={form.affiliateParams ?? ""} onChange={(e) => setForm({ ...form, affiliateParams: e.target.value || undefined })} /></Field>
+          <Field label="أو رابط شبكة أفلييت (حط {url} مكان رابط المنتج)"><input className="input ltr text-start" placeholder="https://network.com/click?id=123&url={url}" value={form.affiliateTemplate ?? ""} onChange={(e) => setForm({ ...form, affiliateTemplate: e.target.value || undefined })} /></Field>
           <Field label="اختصار اللوجو (1–3 حروف)"><input className="input" maxLength={3} value={form.logoText} onChange={(e) => setForm({ ...form, logoText: e.target.value })} /></Field>
           <Field label="لون البراند">
             <div className="flex gap-2">
@@ -327,6 +361,7 @@ function StoresTab({ notify }: Notify) {
             <div className="min-w-0 flex-1">
               <p className="truncate font-bold">{s.name}</p>
               <p className="ltr truncate text-start text-xs text-slate-500">{s.url || "بدون موقع"}</p>
+              {(s.affiliateParams || s.affiliateTemplate) && <p className="text-[11px] font-bold text-deal-600">أفلييت مفعّل ✓</p>}
             </div>
             <button type="button" aria-label="تعديل" className="rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-slate-800" onClick={() => setForm({ ...s })}><Pencil className="size-4" /></button>
             <button type="button" aria-label="حذف" className="rounded-lg p-2 text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10" onClick={() => remove(s)}><Trash2 className="size-4" /></button>

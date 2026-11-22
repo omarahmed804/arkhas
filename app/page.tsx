@@ -25,9 +25,15 @@ export default function HomePage() {
     [catalog.products],
   );
 
+  // Newest / most popular PS5 games
+  const games = useMemo(
+    () => catalog.products.filter((p) => p.categoryId === "cat-ps5-games").sort((a, b) => b.popularity - a.popularity).slice(0, 8),
+    [catalog.products],
+  );
+
   const categories = useMemo(() => [...catalog.categories].sort((a, b) => a.sortOrder - b.sortOrder), [catalog.categories]);
   const featuredStores = catalog.stores.filter((s) => s.featured);
-  const quickSearches = ["PS5", "Switch 2", "RTX 5060", "DualSense", "FC 26"];
+  const quickSearches = ["GTA VI", "FC 26", "PS5", "Switch 2", "DualSense"];
 
   return (
     <>
@@ -82,6 +88,23 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        {/* Latest games */}
+        {games.length > 0 && (
+          <section>
+            <div className="mb-5 flex items-end justify-between gap-4">
+              <h2 className="text-2xl font-black">أحدث ألعاب PS5</h2>
+              <Link href="/category/ps5-games" className="flex shrink-0 items-center gap-1 text-sm font-bold text-brand-600">
+                كل الألعاب <ArrowLeft className="size-4" />
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
+              {games.map((p) => (
+                <ProductCard key={p.id} product={p} />
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Categories */}
         <section>

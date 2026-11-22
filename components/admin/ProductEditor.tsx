@@ -83,7 +83,9 @@ export function ProductEditor({ product, onClose }: { product?: Product; onClose
       // Bump "last updated" only for offers whose data changed
       offers: draft.offers.map((o) => {
         const before = original.get(o.storeId);
-        return before && JSON.stringify({ ...before, updatedAt: "" }) === JSON.stringify({ ...o, updatedAt: "" }) ? o : { ...o, updatedAt: now };
+        if (before && JSON.stringify({ ...before, updatedAt: "" }) === JSON.stringify({ ...o, updatedAt: "" })) return o;
+        const { needsCheck: _n, ...rest } = o; // edited by you = confirmed
+        return { ...rest, updatedAt: now };
       }),
     };
     const errs = validate(next);

@@ -74,6 +74,25 @@ function offerFromLd(offers) {
   return candidates[0];
 }
 
+/** Product image published by the store (JSON-LD image or og:image). */
+export function extractImage(html, baseUrl) {
+  const re = /<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+  let m;
+  while ((m = re.exec(html))) {
+    try {
+      for (const node of walkJsonLd(JSON.parse(m[1].trim()))) {
+        if (!/Product/i.test([].concat(node["@type"] ?? []).join(","))) continue;
+        let img = node.image;
+        if (Array.isArray(img)) img = img[0];
+        if (img && typeof img === "object") img = img.url ?? img.contentUrl;
+        if (typeof img === "string" && img) return new URL(img, baseUrl).toString();
+      }
+    } catch {}
+  }
+  const og = html.match(/<meta[^>]+property=["']og:image(?::secure_url)?["'][^>]*content=["']([^"']+)["']/i) ?? html.match(/<meta[^>]+content=["']([^"']+)["'][^>]*property=["']og:image["']/i);
+  return og ? new URL(og[1].replace(/&amp;/g, "&"), baseUrl).toString() : null;
+}
+
 /** Returns { price, inStock? } or null. */
 export function extractPrice(html) {
   // 1) JSON-LD structured data
@@ -186,11 +205,13 @@ async function checkOffer(offer) {
   if (res.status === 404) return { error: "الصفحة مش موجودة (404) — الرابط محتاج تحديث" };
   if (res.status === 403 || res.status === 429 || res.status === 503) return { error: `المتجر بيمنع المتابعة الآلية (${res.status})` };
   if (!res.ok) return { error: `خطأ من المتجر (${res.status})` };
-  const found = extractPrice(await res.text());
-  if (!found) return { error: "مش لاقي السعر في الصفحة (ممكن تكون صفحة قسم مش منتج)" };
+  const html = await res.text();
+  const image = extractImage(html, offer.url);
+  const found = extractPrice(html);
+  if (!found) return { error: "مش لاقي السعر في الصفحة (ممكن تكون صفحة قسم مش منتج)", image };
   const ratio = found.price / offer.price;
   if (ratio < MIN_RATIO || ratio > MAX_RATIO) return { error: `سعر غريب (${Math.round(found.price)}) — اتأكد إن الرابط لنفس المنتج` };
-  return { price: Math.round(found.price), inStock: found.inStock };
+  return { price: Math.round(found.price), inStock: found.inStock, image };
 }
 
 async function main() {
@@ -221,12 +242,18 @@ async function main() {
         const result = await checkOffer(offer);
         summary.checked++;
         offer.lastCheckedAt = now;
+        // Fill missing product photos from the store's own product page
+        if (result.image && !(product.images ?? []).length) {
+          product.images = [result.image];
+          console.log(`🖼  ${product.slug}: image from ${offer.storeId}`);
+        }
         if (result.error) {
           summary.failed++;
           offer.lastCheckError = result.error;
           console.log(`✗ ${offer.storeId} · ${product.slug}: ${result.error}`);
         } else {
           delete offer.lastCheckError;
+          delete offer.needsCheck;
           const changed = result.price !== offer.price || (result.inStock !== undefined && result.inStock !== offer.inStock);
           if (changed) {
             summary.changed++;
@@ -259,7 +286,7 @@ async function main() {
   console.log("Wrote data/catalog.json");
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((e) => {
     console.error(e);
     process.exit(1);

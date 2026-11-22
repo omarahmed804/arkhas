@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T19:00:00.000Z",
+  "updatedAt": "2026-11-22T20:30:00.000Z",
   "industries": [
     {
       "id": "ind-gaming",
@@ -58,13 +58,22 @@
       "sortOrder": 5
     },
     {
-      "id": "cat-games",
+      "id": "cat-ps5-games",
       "industryId": "ind-gaming",
-      "name": "الألعاب",
-      "nameEn": "Games",
-      "slug": "games",
+      "name": "ألعاب PS5",
+      "nameEn": "PS5 Games",
+      "slug": "ps5-games",
       "icon": "Disc",
       "sortOrder": 6
+    },
+    {
+      "id": "cat-ps4-games",
+      "industryId": "ind-gaming",
+      "name": "ألعاب PS4",
+      "nameEn": "PS4 Games",
+      "slug": "ps4-games",
+      "icon": "Disc",
+      "sortOrder": 7
     }
   ],
   "stores": [
@@ -237,7 +246,9 @@
       "nameAr": "بلايستيشن 5 سليم – نسخة القرص",
       "brand": "Sony",
       "categoryId": "cat-consoles",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/ps5slimdisc.webp?v=1778591028"
+      ],
       "specs": [
         {
           "label": "التخزين",
@@ -267,41 +278,18 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "noon",
-          "price": 44500,
-          "oldPrice": 49000,
-          "linkType": "website",
-          "url": "https://www.noon.com/egypt-en/sony-playstation-5/",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
-          "autoTrack": false
+          "needsCheck": true
         },
         {
           "storeId": "shamy",
-          "price": 46490,
-          "oldPrice": 49490,
+          "price": 50490,
           "linkType": "website",
-          "url": "https://shamystores.com/products/playstation-5-slim",
+          "url": "https://shamystores.com/products/ps5-slim-disc-matte-1y-warranty",
           "inStock": true,
           "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "games2egypt",
-          "price": 46999,
-          "linkType": "website",
-          "url": "https://www.games2egypt.com/Category/3289/ps5-consoles",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "autoTrack": false
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
         }
       ],
       "priceHistory": [
@@ -319,7 +307,9 @@
       "nameAr": "بلايستيشن 5 سليم – النسخة الديجيتال",
       "brand": "Sony",
       "categoryId": "cat-consoles",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/playstation-5-slim-digital-edition-1m-warranty-243.jpg?v=1751284592"
+      ],
       "specs": [
         {
           "label": "التخزين",
@@ -348,7 +338,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "noon",
@@ -358,18 +349,18 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
-          "storeId": "games2egypt",
-          "price": 43999,
+          "storeId": "shamy",
+          "price": 46990,
           "linkType": "website",
-          "url": "https://www.games2egypt.com/Category/3289/ps5-consoles",
+          "url": "https://shamystores.com/products/ps5-slim-digital-825gb",
           "inStock": true,
           "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "autoTrack": false
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
         }
       ],
       "priceHistory": [
@@ -387,7 +378,9 @@
       "nameAr": "بلايستيشن 5 برو",
       "brand": "Sony",
       "categoryId": "cat-consoles",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/ps5proconsole.webp?v=1778597040"
+      ],
       "specs": [
         {
           "label": "التخزين",
@@ -416,7 +409,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "amazon-eg",
@@ -426,17 +420,18 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "shamy",
-          "price": 98990,
+          "price": 99990,
           "linkType": "website",
           "url": "https://shamystores.com/products/ps5-pro-digital-1y-warranty",
           "inStock": true,
           "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
         }
       ],
       "priceHistory": [
@@ -454,7 +449,9 @@
       "nameAr": "نينتندو سويتش 2",
       "brand": "Nintendo",
       "categoryId": "cat-consoles",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/NintendoSwitch2Box.webp?v=1778593761"
+      ],
       "specs": [
         {
           "label": "الشاشة",
@@ -483,7 +480,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "noon",
@@ -493,7 +491,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "games2egypt",
@@ -503,7 +502,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "gamesworld",
@@ -513,7 +513,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "vodafone",
@@ -524,7 +525,18 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
+        },
+        {
+          "storeId": "shamy",
+          "price": 33990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-switch-2-console",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
         }
       ],
       "priceHistory": [
@@ -542,7 +554,9 @@
       "nameAr": "نينتندو سويتش OLED – أبيض",
       "brand": "Nintendo",
       "categoryId": "cat-consoles",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/nintendo-switch-oled-766.jpg?v=1751284584"
+      ],
       "specs": [
         {
           "label": "الشاشة",
@@ -572,18 +586,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "shamy",
-          "price": 16490,
-          "oldPrice": 17490,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/nintendo-switch-oled-30021001058229",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "games2egypt",
@@ -593,7 +597,18 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
+        },
+        {
+          "storeId": "shamy",
+          "price": 23990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-switch-oled",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
         }
       ],
       "priceHistory": [
@@ -640,18 +655,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "استلام من الفرع",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "gamesworld",
-          "price": 23499,
-          "linkType": "website",
-          "url": "https://www.gamesworldegypt.com/xbox-series",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
-          "autoTrack": false
+          "needsCheck": true
         },
         {
           "storeId": "shamy",
@@ -662,7 +667,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -680,7 +686,9 @@
       "nameAr": "بلايستيشن بورتال",
       "brand": "Sony",
       "categoryId": "cat-consoles",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/playstation-portal-remote-player-ps5-handheld-streaming-console-900.jpg?v=1750159450"
+      ],
       "specs": [
         {
           "label": "الشاشة",
@@ -710,7 +718,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "amazon-eg",
@@ -720,7 +729,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "gamesworld",
@@ -730,7 +740,18 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
+        },
+        {
+          "storeId": "shamy",
+          "price": 18990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/playstation-portal",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
         }
       ],
       "priceHistory": [
@@ -778,18 +799,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "kimo",
-          "price": 4198,
-          "linkType": "website",
-          "url": "https://kimostore.net/collections/controller",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
-          "autoTrack": false
+          "needsCheck": true
         },
         {
           "storeId": "elghazawy",
@@ -799,7 +810,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -847,7 +859,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "gamesworld",
@@ -857,7 +870,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "shamy",
@@ -867,7 +881,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "noon",
@@ -877,7 +892,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -924,7 +940,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "noon",
@@ -935,7 +952,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "gamesworld",
@@ -945,7 +963,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "sigma",
@@ -956,7 +975,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -1003,18 +1023,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "ahw",
-          "price": 29999,
-          "linkType": "website",
-          "url": "https://ahw.store/collections/rtx-5060",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
-          "autoTrack": false
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -1061,18 +1071,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "ahw",
-          "price": 29999,
-          "linkType": "website",
-          "url": "https://ahw.store/collections/rtx-5060",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
-          "autoTrack": false
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -1120,7 +1120,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "kimo",
@@ -1130,7 +1131,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "vodafone",
@@ -1141,7 +1143,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "raya",
@@ -1152,7 +1155,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "3–5 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "noon",
@@ -1162,19 +1166,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "jumia",
-          "price": 9750,
-          "oldPrice": 11500,
-          "linkType": "website",
-          "url": "https://www.jumia.com.eg/slp/samsung-odyssey-g5-27-inch",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
-          "autoTrack": false
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -1222,7 +1215,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "games2egypt",
@@ -1232,18 +1226,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "kimo",
-          "price": 5099,
-          "linkType": "website",
-          "url": "https://kimostore.net",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-03-26T12:00:00.000Z",
-          "autoTrack": false
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -1291,7 +1275,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "amazon-eg",
@@ -1301,7 +1286,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "egyptlaptop",
@@ -1311,7 +1297,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -1359,7 +1346,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "games2egypt",
@@ -1369,7 +1357,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "noon",
@@ -1379,7 +1368,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "shamy",
@@ -1389,7 +1379,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -1406,8 +1397,10 @@
       "name": "EA SPORTS FC 26 – Standard Edition (PS5)",
       "nameAr": "لعبة FC 26 لبلايستيشن 5",
       "brand": "EA Sports",
-      "categoryId": "cat-games",
-      "images": [],
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://f.nooncdn.com/p/pzsku/Z44BEA24A439B91A554ECZ/45/_/1776073370/100a275c-503c-4374-af0e-a37216c52047.jpg?width=1200"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -1429,28 +1422,6 @@
       "popularity": 95,
       "offers": [
         {
-          "storeId": "amazon-eg",
-          "price": 1677,
-          "oldPrice": 3485,
-          "linkType": "website",
-          "url": "https://www.amazon.eg/-/en/SPORTS-Standard-PS5-VideoGame-English/dp/B0FGKC8PKQ",
-          "inStock": true,
-          "freeShipping": true,
-          "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
-          "storeId": "noon",
-          "price": 2345,
-          "oldPrice": 2503,
-          "linkType": "website",
-          "url": "https://www.noon.com/egypt-en/fc-26-standard-edition-ps5-int-version-playstation-5-ps5/N70197726V/p/",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
-        },
-        {
           "storeId": "games2egypt",
           "price": 2499,
           "linkType": "website",
@@ -1458,7 +1429,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "shamy",
@@ -1469,7 +1441,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "vodafone",
@@ -1480,7 +1453,18 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
+        },
+        {
+          "storeId": "noon",
+          "price": 1999,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/fc-26-standard-edition-ps5-int-version-playstation-5-ps5/N70197726V/p/",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
         }
       ],
       "priceHistory": [
@@ -1497,7 +1481,7 @@
       "name": "Ghost of Yōtei (PS5)",
       "nameAr": "لعبة جوست أوف يوتاي",
       "brand": "Sony",
-      "categoryId": "cat-games",
+      "categoryId": "cat-ps5-games",
       "images": [],
       "specs": [
         {
@@ -1527,7 +1511,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "noon",
@@ -1538,7 +1523,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "shamy",
@@ -1549,7 +1535,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         },
         {
           "storeId": "games2egypt",
@@ -1559,7 +1546,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z"
+          "updatedAt": "2026-11-22T19:00:00.000Z",
+          "needsCheck": true
         }
       ],
       "priceHistory": [
@@ -1569,6 +1557,2049 @@
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
+    },
+    {
+      "id": "p-019",
+      "slug": "grand-theft-auto-vi-gta-vi-ps5",
+      "name": "Grand Theft Auto VI (GTA VI) – PS5",
+      "brand": "Rockstar Games",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/GTA-VI-cover.jpg?v=1794662256"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Rockstar Games"
+        },
+        {
+          "label": "النسخة",
+          "value": "كود في علبة (حساب إماراتي/سعودي)"
+        }
+      ],
+      "popularity": 100,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 4990,
+          "oldPrice": 5240,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/grand-theft-auto-vi-gta-vi-code-in-box-ps5-uae-ksa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 4990
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-020",
+      "slug": "final-fantasy-resonance-ps5",
+      "name": "Final Fantasy Resonance – PS5",
+      "brand": "Square Enix",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/final-fantasy-resonance.jpg?v=1793455563"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Square Enix"
+        }
+      ],
+      "popularity": 89,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3890,
+          "oldPrice": 4140,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/final-fantasy-resonance-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3890
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-021",
+      "slug": "nba-2k27-ps5",
+      "name": "NBA 2K27 – PS5",
+      "brand": "2K",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/nba-2k27-cover.jpg?v=1788786034"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "2K"
+        }
+      ],
+      "popularity": 88,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3390,
+          "oldPrice": 3640,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nba-2k27-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3390
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-022",
+      "slug": "captain-tsubasa-2-world-fighters-ps5",
+      "name": "Captain Tsubasa 2: World Fighters – PS5",
+      "brand": "Bandai Namco",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/captain-tsubasa.jpg?v=1788785429"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Bandai Namco"
+        }
+      ],
+      "popularity": 87,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2790,
+          "oldPrice": 3440,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/captain-tsubasa-2-world-fighters-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2790
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-023",
+      "slug": "resonance-a-plague-tale-legacy-ps5",
+      "name": "Resonance: A Plague Tale Legacy – PS5",
+      "brand": "Focus Entertainment",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/71a3FoK64rL._AC_UF1000_1000_QL80.jpg?v=1788098110"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Focus Entertainment"
+        }
+      ],
+      "popularity": 86,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3290,
+          "oldPrice": 3540,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/resonance-a-plague-tale-legacy-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3290
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-024",
+      "slug": "ea-sports-ufc-6-ps5",
+      "name": "EA Sports UFC 6 – PS5",
+      "brand": "EA Sports",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/ufc6.jpg?v=1783859332"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "EA Sports"
+        }
+      ],
+      "popularity": 85,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3890,
+          "oldPrice": 4140,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ea-sports-ufc-6-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3890
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-025",
+      "slug": "ace-combat-8-wings-of-theve-ps5",
+      "name": "Ace Combat 8: Wings of Theve – PS5",
+      "brand": "Bandai Namco",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/ace-combat-8.jpg?v=1783859222"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Bandai Namco"
+        }
+      ],
+      "popularity": 84,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3290,
+          "oldPrice": 3540,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ace-combat-8-wings-of-theve-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3290
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-026",
+      "slug": "onimusha-way-of-the-sword-ps5",
+      "name": "Onimusha: Way of the Sword – PS5",
+      "brand": "Capcom",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/onimusha.jpg?v=1783859133"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Capcom"
+        }
+      ],
+      "popularity": 83,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3490,
+          "oldPrice": 3740,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/onimusha-way-of-the-sword-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3490
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-027",
+      "slug": "silent-hill-townfall-ps5",
+      "name": "Silent Hill: Townfall – PS5",
+      "brand": "Konami",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/silent-hill-town-fall.webp?v=1783859049"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Konami"
+        }
+      ],
+      "popularity": 82,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3090,
+          "oldPrice": 3340,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/silent-hill-townfall-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3090
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-028",
+      "slug": "control-resonant-ps5",
+      "name": "Control Resonant – PS5",
+      "brand": "Remedy",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/control-resonant.jpg?v=1792328236"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Remedy"
+        }
+      ],
+      "popularity": 81,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3290,
+          "oldPrice": 3540,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/control-resonant-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3290
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-029",
+      "slug": "marvels-wolverine-ps5",
+      "name": "Marvel's Wolverine – PS5",
+      "brand": "Sony",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/marvels-wolverine.jpg?v=1783858699"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 80,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3590,
+          "oldPrice": 3840,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/marvels-wolverine-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3590
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-030",
+      "slug": "blood-of-the-dawnwalker-ps5",
+      "name": "Blood of the Dawnwalker – PS5",
+      "brand": "Bandai Namco",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Blood-of-the-Dawnwalker.jpg?v=1783858369"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Bandai Namco"
+        }
+      ],
+      "popularity": 79,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3690,
+          "oldPrice": 3940,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/blood-of-the-dawnwalker-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3690
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-031",
+      "slug": "metal-gear-solid-master-collection-vol-2-ps5",
+      "name": "Metal Gear Solid: Master Collection Vol. 2 – PS5",
+      "brand": "Konami",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/metal-gear-solid-master-collection-vol-2-cover.jpg?v=1780998714"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Konami"
+        }
+      ],
+      "popularity": 78,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3290,
+          "oldPrice": 3540,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/metal-gear-solid-collection-vol-2-ps5-pre-order",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3290
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-032",
+      "slug": "assassins-creed-black-flag-resynced-ps5",
+      "name": "Assassin's Creed Black Flag Resynced – PS5",
+      "brand": "Ubisoft",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/171329_8ed41c8b-6ed9-480e-aab6-052a8dedd0dc.png?v=1783707068"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Ubisoft"
+        }
+      ],
+      "popularity": 77,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2990,
+          "oldPrice": 3140,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/assassins-creed-black-flag-resynced-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2990
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-033",
+      "slug": "call-of-duty-modern-warfare-4-ps5",
+      "name": "Call of Duty: Modern Warfare 4 – PS5",
+      "brand": "Activision",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Activision"
+        }
+      ],
+      "popularity": 76,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3990,
+          "oldPrice": 4240,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/call-of-duty-modern-warfare-4",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3990
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-034",
+      "slug": "invincible-vs-ps5",
+      "name": "Invincible VS – PS5",
+      "brand": "Skybound Games",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Skybound Games"
+        }
+      ],
+      "popularity": 75,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2790,
+          "oldPrice": 2940,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/invincible-vs-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2790
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-035",
+      "slug": "lego-batman-legacy-of-the-dark-knight-ps5",
+      "name": "LEGO Batman: Legacy of the Dark Knight – PS5",
+      "brand": "WB Games",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/batmanlego1.jpg?v=1776598849"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "WB Games"
+        }
+      ],
+      "popularity": 74,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3490,
+          "oldPrice": 3740,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/lego-batman-legacy-dark-knight-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3490
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-036",
+      "slug": "saros-ps5",
+      "name": "Saros – PS5",
+      "brand": "Sony",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 73,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3190,
+          "oldPrice": 4240,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/saros-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3190
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-037",
+      "slug": "pragmata-ps5",
+      "name": "Pragmata – PS5",
+      "brand": "Capcom",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Capcom"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2990,
+          "oldPrice": 3740,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/pragmata-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2990
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-038",
+      "slug": "nioh-3-ps5",
+      "name": "Nioh 3 – PS5",
+      "brand": "Koei Tecmo",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Koei Tecmo"
+        }
+      ],
+      "popularity": 71,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3090,
+          "oldPrice": 3340,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nioh-3-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3090
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-039",
+      "slug": "crimson-desert-ps5",
+      "name": "Crimson Desert – PS5",
+      "brand": "Pearl Abyss",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Pearl Abyss"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3090,
+          "oldPrice": 3340,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/crimson-desert-day-one-edition-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3090
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-040",
+      "slug": "wwe-2k26-ps5",
+      "name": "WWE 2K26 – PS5",
+      "brand": "2K",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "2K"
+        }
+      ],
+      "popularity": 69,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2690,
+          "oldPrice": 2840,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/wwe-2k26-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2690
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-041",
+      "slug": "007-first-light-ps5",
+      "name": "007 First Light – PS5",
+      "brand": "IO Interactive",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "IO Interactive"
+        }
+      ],
+      "popularity": 68,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3290,
+          "oldPrice": 3540,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/007-first-light-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3290
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-042",
+      "slug": "hitman-world-of-assassination-25th-anniversary-ps5",
+      "name": "HITMAN: World of Assassination (25th Anniversary) – PS5",
+      "brand": "IO Interactive",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "IO Interactive"
+        }
+      ],
+      "popularity": 67,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2390,
+          "oldPrice": 2540,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/hitman-25th-world-of-assassination-new-ps5",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-043",
+      "slug": "call-of-duty-black-ops-7-ps5",
+      "name": "Call of Duty: Black Ops 7 – PS5",
+      "brand": "Activision",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Activision"
+        },
+        {
+          "label": "النسخة",
+          "value": "نسخة عربي"
+        }
+      ],
+      "popularity": 66,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/call-of-duty-black-ops-7-ps5-new",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1990
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-044",
+      "slug": "battlefield-6-ps5",
+      "name": "Battlefield 6 – PS5",
+      "brand": "EA",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "EA"
+        },
+        {
+          "label": "النسخة",
+          "value": "نسخة إنجليزي"
+        }
+      ],
+      "popularity": 65,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2290,
+          "oldPrice": 2740,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/battlefield-6-ps5-eng",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2290
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-045",
+      "slug": "the-last-of-us-part-i-ps5",
+      "name": "The Last of Us Part I – PS5",
+      "brand": "Sony",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 64,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2190,
+          "oldPrice": 2340,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/the-last-of-us-part-1-remake-ps5-new",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2190
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-046",
+      "slug": "ninja-gaiden-4-ps5",
+      "name": "Ninja Gaiden 4 – PS5",
+      "brand": "Xbox Game Studios",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Xbox Game Studios"
+        }
+      ],
+      "popularity": 63,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3290,
+          "oldPrice": 3540,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ninja-gaiden-4-ps5-new",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3290
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-047",
+      "slug": "little-nightmares-iii-ps5",
+      "name": "Little Nightmares III – PS5",
+      "brand": "Bandai Namco",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Bandai Namco"
+        }
+      ],
+      "popularity": 62,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2190,
+          "oldPrice": 2340,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/little-nightmares-3-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2190
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-048",
+      "slug": "borderlands-4-ps5",
+      "name": "Borderlands 4 – PS5",
+      "brand": "2K",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "2K"
+        }
+      ],
+      "popularity": 61,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2790,
+          "oldPrice": 2940,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/borderlands-4-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2790
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-049",
+      "slug": "silent-hill-f-ps5",
+      "name": "Silent Hill f – PS5",
+      "brand": "Konami",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Konami"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3490,
+          "oldPrice": 3740,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/silent-hill-f-ps5",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-050",
+      "slug": "nba-2k26-ps5",
+      "name": "NBA 2K26 – PS5",
+      "brand": "2K",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "2K"
+        }
+      ],
+      "popularity": 59,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1490,
+          "oldPrice": 3040,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nba-2k26-ps5-new",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1490
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-051",
+      "slug": "cronos-the-new-dawn-ps5",
+      "name": "Cronos: The New Dawn – PS5",
+      "brand": "Bloober Team",
+      "categoryId": "cat-ps5-games",
+      "images": [],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الناشر",
+          "value": "Bloober Team"
+        }
+      ],
+      "popularity": 58,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2790,
+          "oldPrice": 2940,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/cronos-the-new-dawn-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2790
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-052",
+      "slug": "the-crew-motorfest-ps4",
+      "name": "The Crew Motorfest – PS4",
+      "brand": "Ubisoft",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/the-crew-motorfest-used-ps4-880.jpg?v=1757427371"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Ubisoft"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1590,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/the-crew-motorfest-new-ps4",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1590
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-053",
+      "slug": "assassins-creed-mirage-ps4",
+      "name": "Assassin's Creed Mirage – PS4",
+      "brand": "Ubisoft",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/assassins-creed-mirage-182_02fe577f-d319-46d9-9ae3-2330381f76b1.jpg?v=1709991934"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Ubisoft"
+        },
+        {
+          "label": "النسخة",
+          "value": "نسخة إنجليزي"
+        }
+      ],
+      "popularity": 59,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 990,
+          "oldPrice": 1490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/assassins-creed-mirage-english-1",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 990
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-054",
+      "slug": "god-of-war-ragnar-k-ps4",
+      "name": "God of War Ragnarök – PS4",
+      "brand": "Sony",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/god-of-war-ragnarok-103.jpg?v=1667997616"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 58,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/god-of-war-ragnarok-ps4",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1490
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-055",
+      "slug": "gran-turismo-7-ps4",
+      "name": "Gran Turismo 7 – PS4",
+      "brand": "Sony",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/gran-turismo-7-524.jpg?v=1665093927"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 57,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1590,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/gran-turismo-7-40014001058580",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1590
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-056",
+      "slug": "ghost-of-tsushima-directors-cut-ps4",
+      "name": "Ghost of Tsushima Director's Cut – PS4",
+      "brand": "Sony",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/ghost-of-tsushima-directors-cut-273.jpg?v=1665090954"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 56,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ghost-of-tsushima-directors-cut-40014001058014",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1990
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-057",
+      "slug": "the-last-of-us-part-ii-ps4",
+      "name": "The Last of Us Part II – PS4",
+      "brand": "Sony",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/the-last-of-us-part-2-942.jpg?v=1665089642"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 55,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1690,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/the-last-of-us-part-2-40014001056809",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1690
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-058",
+      "slug": "crash-team-racing-nitro-fueled-ps4",
+      "name": "Crash Team Racing Nitro-Fueled – PS4",
+      "brand": "Activision",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/crash-team-racing-143.jpg?v=1665089626"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Activision"
+        }
+      ],
+      "popularity": 54,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1890,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/crash-team-racing-40014001056401",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1890
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-059",
+      "slug": "mortal-kombat-11-ultimate-ps4",
+      "name": "Mortal Kombat 11 Ultimate – PS4",
+      "brand": "WB Games",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/mortal-kombat-11-ultimate-244.jpg?v=1665088073"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "WB Games"
+        }
+      ],
+      "popularity": 53,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1390,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/mortal-kombat-11-ultimate-40014001057361",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1390
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-060",
+      "slug": "it-takes-two-ps4",
+      "name": "It Takes Two – PS4",
+      "brand": "EA",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/it-takes-two-378.jpg?v=1665083550"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "EA"
+        }
+      ],
+      "popularity": 52,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/it-takes-two-40014001057536",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1490
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-061",
+      "slug": "marvels-spider-man-miles-morales-ps4",
+      "name": "Marvel's Spider-Man: Miles Morales – PS4",
+      "brand": "Sony",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/marvels-spider-man-miles-morales-544.jpg?v=1665082728"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 51,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/marvels-spider-man-miles-morales-40014001057360",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1490
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-062",
+      "slug": "crash-bandicoot-4-its-about-time-ps4",
+      "name": "Crash Bandicoot 4: It's About Time – PS4",
+      "brand": "Activision",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/crash-bandicoot-4-its-about-time-193.jpg?v=1665081751"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Activision"
+        }
+      ],
+      "popularity": 50,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1690,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/crash-bandicoot-4-its-about-time-40014001057212",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1690
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-063",
+      "slug": "team-sonic-racing-ps4",
+      "name": "Team Sonic Racing – PS4",
+      "brand": "Sega",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/team-sonic-racing-472.jpg?v=1665075661"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sega"
+        }
+      ],
+      "popularity": 49,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1390,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/team-sonic-racing-40014001056389",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1390
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-064",
+      "slug": "lego-marvel-collection-ps4",
+      "name": "LEGO Marvel Collection – PS4",
+      "brand": "WB Games",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/lego-marvel-collection-948.jpg?v=1665075655"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "WB Games"
+        }
+      ],
+      "popularity": 48,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/lego-marvel-collection-40014001056506",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1490
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-065",
+      "slug": "crash-bandicoot-n-sane-trilogy-ps4",
+      "name": "Crash Bandicoot N. Sane Trilogy – PS4",
+      "brand": "Activision",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/crash-bandicoot-n-sane-trilogy-204.jpg?v=1665075544"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Activision"
+        }
+      ],
+      "popularity": 47,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1690,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/crash-bandicoot-n-sane-trilogy-4014343",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1690
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-066",
+      "slug": "marvels-spider-man-goty-edition-ps4",
+      "name": "Marvel's Spider-Man GOTY Edition – PS4",
+      "brand": "Sony",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/marvels-spider-man-game-of-the-year-edition-392.jpg?v=1665075514"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 46,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1890,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/marvels-spider-man-game-of-the-year-edition-40014001056606",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1890
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-067",
+      "slug": "the-last-of-us-remastered-ps4",
+      "name": "The Last of Us Remastered – PS4",
+      "brand": "Sony",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/the-last-of-us-remastered-956.jpg?v=1665075475"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Sony"
+        }
+      ],
+      "popularity": 45,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1090,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/the-last-of-us-remastered-4014036",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1090
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-068",
+      "slug": "need-for-speed-heat-ps4",
+      "name": "Need for Speed Heat – PS4",
+      "brand": "EA",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/nfs-heat-689.jpg?v=1665075243"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "EA"
+        }
+      ],
+      "popularity": 44,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1390,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nfs-heat-40014001056681",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1390
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-069",
+      "slug": "red-dead-redemption-2-ps4",
+      "name": "Red Dead Redemption 2 – PS4",
+      "brand": "Rockstar Games",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/red-dead-redemption-2-190.jpg?v=1664984405"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "الناشر",
+          "value": "Rockstar Games"
+        }
+      ],
+      "popularity": 43,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/red-dead-redemption-2-40014001056114",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1490
+        }
+      ],
+      "createdAt": "2026-11-22T20:30:00.000Z"
     }
   ]
 }

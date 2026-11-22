@@ -38,6 +38,13 @@ export interface Store {
   color: string; // brand color for the badge (hex)
   trusted: boolean; // shows the "موثوق" badge
   featured: boolean; // shown in the homepage stores strip
+  /**
+   * Affiliate tracking (so you earn commission on sales you send).
+   * affiliateParams: query string added to every link, e.g. "tag=arkhas-21" (Amazon).
+   * affiliateTemplate: for networks that wrap links, e.g. "https://network.com/click?id=123&url={url}".
+   */
+  affiliateParams?: string;
+  affiliateTemplate?: string;
 }
 
 /**
@@ -64,6 +71,7 @@ export interface Offer {
   lastCheckedAt?: string;
   lastCheckError?: string; // why the last automatic check failed (blocked, not found…)
   autoTrack?: boolean; // false = never auto-update this offer (manual prices only)
+  needsCheck?: boolean; // price not confirmed from the store page yet (tracker clears it)
 }
 
 /** One point per day: the lowest in-stock price across all stores. */

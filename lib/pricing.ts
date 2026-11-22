@@ -28,7 +28,9 @@ export function availableOffers(product: Product, filter: OfferFilter = {}): Off
 /** Cheapest in-stock offer (optionally restricted to some stores). */
 export function bestOffer(product: Product, filter: OfferFilter = {}): Offer | undefined {
   const inStock = availableOffers(product, { ...filter, inStockOnly: true });
-  return sortOffers(inStock)[0];
+  // Never crown an unconfirmed price as "best" when a confirmed one exists.
+  const confirmed = inStock.filter((o) => !o.needsCheck);
+  return sortOffers(confirmed.length ? confirmed : inStock)[0];
 }
 
 /** Lowest price to display on cards. Falls back to the cheapest out-of-stock price. */

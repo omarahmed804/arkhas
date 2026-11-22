@@ -9,7 +9,8 @@ import { useCatalog } from "../CatalogProvider";
 import { StoreLogo, TimeAgo, TrustBadge } from "../ui";
 import { formatEGP } from "@/lib/format";
 import { offerCta } from "@/lib/offer-link";
-import { isStale, sortOffers } from "@/lib/pricing";
+import { goHref } from "@/lib/affiliate";
+import { bestOffer, isStale, sortOffers } from "@/lib/pricing";
 import type { Offer, Product } from "@/lib/types";
 
 export function OfferCtaButton({ offer, product, className = "" }: { offer: Offer; product: Product; className?: string }) {
@@ -28,9 +29,11 @@ export function OfferCtaButton({ offer, product, className = "" }: { offer: Offe
       </span>
     );
   }
+  // Website / social links go through /go so the affiliate tag is added and the click is counted.
+  const href = cta.type === "whatsapp" ? cta.href : goHref(product.slug, offer.storeId, cta.href);
   return (
     <a
-      href={cta.href}
+      href={href}
       target="_blank"
       rel="nofollow sponsored noopener noreferrer"
       className={`btn ${style || "btn-primary"} ${!offer.inStock ? "opacity-60" : ""} ${className}`}
@@ -42,6 +45,13 @@ export function OfferCtaButton({ offer, product, className = "" }: { offer: Offe
 
 /** Price credibility: when it was last confirmed + whether the tracker watches it. */
 function Freshness({ offer }: { offer: Offer }) {
+  if (offer.needsCheck) {
+    return (
+      <span className="flex items-center gap-1 font-bold text-amber-600 dark:text-amber-400" title="السعر ده لسه متأكدناش منه من صفحة المتجر — المتابعة الآلية هتأكده">
+        <AlertTriangle className="size-3.5" /> السعر بيتأكد — راجعه في صفحة المتجر
+      </span>
+    );
+  }
   const stale = isStale(offer.updatedAt);
   const tracked = offer.lastCheckedAt && !offer.lastCheckError && !isStale(offer.lastCheckedAt);
   return (
@@ -65,7 +75,7 @@ function Freshness({ offer }: { offer: Offer }) {
 export function OfferList({ product }: { product: Product }) {
   const { storeById } = useCatalog();
   const offers = sortOffers(product.offers);
-  const cheapest = offers.find((o) => o.inStock);
+  const cheapest = bestOffer(product);
 
   return (
     <div className="card overflow-hidden">

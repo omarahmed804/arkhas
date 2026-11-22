@@ -49,9 +49,16 @@ Run locally: `node scripts/update-prices.mjs --dry-run`. Amazon/Noon usually blo
 
 ## Data
 
-`data/catalog.json` — 18 gaming products, 16 Egyptian stores, 64 offers. Prices were collected from the stores' own
-product pages (as indexed by web search) on **22 Nov 2026**; spot-check before launch. Price history starts on that
-date — the "real deal / fake discount" verdict appears after 7 days of tracking (no invented history).
+`data/catalog.json` — 69 products (incl. 33 PS5 + 18 PS4 games), 16 Egyptian stores, 108 offers, all linking to the exact
+product page (no search/category links). 58 prices were read live from store pages on 22 Nov 2026; the rest are flagged
+`needsCheck` ("السعر بيتأكد") until the tracker or the admin confirms them, and are never shown as the best price while a
+confirmed one exists. Price history starts on that date (verdict after 7 days, no invented history).
+
+## Affiliate links & click tracking
+
+All store buttons go through `/go?p=&s=&u=` (`app/go/route.ts`): adds the store's `affiliateParams` (e.g. `tag=you-21`)
+or wraps the URL in `affiliateTemplate` (`{url}`), logs `arkhas-click` to Vercel logs, 302-redirects. Unknown URLs are only
+followed if they're on the store's own domain (no open redirect).
 
 ## PWA
 
