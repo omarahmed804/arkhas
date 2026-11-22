@@ -89,7 +89,7 @@ export function SearchBox({ size = "md", autoFocus = false }: { size?: "md" | "l
           onFocus={() => setOpen(true)}
           onBlur={() => setTimeout(() => setOpen(false), 150)}
           onKeyDown={onKeyDown}
-          placeholder="ابحث عن منتج… مثلاً RTX 4060 أو دراع PS5"
+          placeholder="ابحث عن منتج… مثلاً RTX 5060 أو دراع PS5"
           aria-label="بحث عن منتج"
           role="combobox"
           aria-expanded={showList}

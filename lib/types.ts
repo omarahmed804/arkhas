@@ -59,7 +59,11 @@ export interface Offer {
   inStock: boolean;
   freeShipping: boolean;
   deliveryEta: string; // e.g. "خلال 24 ساعة"
-  updatedAt: string; // ISO timestamp of the last price check
+  updatedAt: string; // ISO timestamp of the last time this price was confirmed
+  /** Set by the automatic tracker (scripts/update-prices.mjs). */
+  lastCheckedAt?: string;
+  lastCheckError?: string; // why the last automatic check failed (blocked, not found…)
+  autoTrack?: boolean; // false = never auto-update this offer (manual prices only)
 }
 
 /** One point per day: the lowest in-stock price across all stores. */
@@ -102,6 +106,7 @@ export interface PriceAlert {
 /** The whole dataset. In the MVP this is one JSON blob in LocalStorage. */
 export interface Catalog {
   version: number;
+  updatedAt?: string; // when data/catalog.json was last written (admin export or tracker)
   industries: Industry[];
   categories: Category[];
   stores: Store[];

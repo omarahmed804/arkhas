@@ -27,7 +27,7 @@ export default function HomePage() {
 
   const categories = useMemo(() => [...catalog.categories].sort((a, b) => a.sortOrder - b.sortOrder), [catalog.categories]);
   const featuredStores = catalog.stores.filter((s) => s.featured);
-  const quickSearches = ["PS5", "RTX 4060", "DualSense", "HyperX", "شاشة 165Hz"];
+  const quickSearches = ["PS5", "Switch 2", "RTX 5060", "DualSense", "FC 26"];
 
   return (
     <>

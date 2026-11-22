@@ -163,6 +163,13 @@ export function ProductEditor({ product, onClose }: { product?: Product; onClose
             <div className="sm:col-span-2">
               <label className="label">روابط الصور (رابط في كل سطر)</label>
               <textarea className="input ltr min-h-20 text-start" value={imagesText} onChange={(e) => setImagesText(e.target.value)} placeholder="https://..." />
+              {/* Live preview so broken links are obvious before saving */}
+              <div className="mt-2 flex flex-wrap gap-2">
+                {imagesText.split("\n").map((u) => u.trim()).filter(Boolean).map((u) => (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img key={u} src={u} alt="" className="size-16 rounded-lg bg-white object-contain p-1 ring-1 ring-slate-200 dark:ring-slate-700" onError={(e) => (e.currentTarget.style.outline = "2px solid #dc2626")} />
+                ))}
+              </div>
             </div>
             <div className="sm:col-span-2">
               <label className="label">الوصف (اختياري)</label>
@@ -250,6 +257,11 @@ export function ProductEditor({ product, onClose }: { product?: Product; onClose
                     <label className="flex items-center gap-2 text-sm font-bold">
                       <input type="checkbox" className="size-4 accent-deal-500" checked={o.inStock} onChange={(e) => setOffer(i, { inStock: e.target.checked })} /> متوفر
                     </label>
+                    {(o.linkType ?? "website") === "website" && (
+                      <label className="flex items-center gap-2 text-sm font-bold" title="السكربت الآلي هيراجع السعر من الرابط ده كل 6 ساعات">
+                        <input type="checkbox" className="size-4 accent-brand-600" checked={o.autoTrack !== false} onChange={(e) => setOffer(i, { autoTrack: e.target.checked ? undefined : false })} /> متابعة آلية
+                      </label>
+                    )}
                     <label className="flex items-center gap-2 text-sm font-bold">
                       <input type="checkbox" className="size-4 accent-brand-600" checked={o.freeShipping} onChange={(e) => setOffer(i, { freeShipping: e.target.checked })} /> شحن مجاني
                     </label>

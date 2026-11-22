@@ -45,7 +45,7 @@ export function CatalogProvider({ children }: { children: React.ReactNode }) {
   ref.current = catalog;
 
   const update = useCallback(async (updater: (c: Catalog) => Catalog) => {
-    const next = updater(ref.current);
+    const next = { ...updater(ref.current), updatedAt: new Date().toISOString() };
     ref.current = next;
     setCatalog(next);
     await getRepository().save(next);

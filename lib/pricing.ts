@@ -65,9 +65,19 @@ export interface HistoryStats {
 }
 
 /** Fake-discount detector: compares today's price with the 30-day history. */
+/** Minimum days of real history before we judge a deal as real or fake. */
+export const MIN_HISTORY_POINTS = 7;
+
+/** Price older than this many days gets a "needs confirmation" hint. */
+export const STALE_AFTER_DAYS = 3;
+
+export function isStale(iso: string, now = Date.now()): boolean {
+  return now - new Date(iso).getTime() > STALE_AFTER_DAYS * 86400e3;
+}
+
 export function historyStats(product: Product): HistoryStats | undefined {
   const h = product.priceHistory;
-  if (!h.length) return undefined;
+  if (h.length < MIN_HISTORY_POINTS) return undefined;
   const prices = h.map((p) => p.price);
   const min = Math.min(...prices);
   const max = Math.max(...prices);

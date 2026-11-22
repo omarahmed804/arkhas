@@ -11,15 +11,15 @@ export function formatNumber(value: number): string {
   return numberFmt.format(Math.round(value));
 }
 
-const rtf = new Intl.RelativeTimeFormat("ar-EG", { numeric: "auto", style: "long" });
+const rtf = new Intl.RelativeTimeFormat("ar-EG-u-nu-latn", { numeric: "auto", style: "long" });
 
 /** ISO timestamp → "منذ ساعتين" / "منذ ٣ أيام". */
 export function timeAgo(iso: string, now: number = Date.now()): string {
   const diffSec = Math.round((new Date(iso).getTime() - now) / 1000);
   const abs = Math.abs(diffSec);
   if (abs < 60) return "الآن";
-  if (abs < 3600) return rtf.format(Math.round(diffSec / 60), "minute");
-  if (abs < 86400) return rtf.format(Math.round(diffSec / 3600), "hour");
+  if (abs < 3570) return rtf.format(Math.round(diffSec / 60), "minute");
+  if (abs < 86400 - 1800) return rtf.format(Math.round(diffSec / 3600), "hour");
   if (abs < 86400 * 30) return rtf.format(Math.round(diffSec / 86400), "day");
   return rtf.format(Math.round(diffSec / (86400 * 30)), "month");
 }

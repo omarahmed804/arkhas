@@ -5,7 +5,7 @@
  * MVP persistence: LocalStorage via lib/repository.ts (per-browser!).
  */
 import {
-  AlertTriangle, Bell, Boxes, Check, Database, Download, ExternalLink, Layers, LogOut, Package, Pencil, Plus,
+  AlertTriangle, Bell, Boxes, CloudDownload, Check, Database, Download, ExternalLink, Layers, LogOut, Package, Pencil, Plus,
   RotateCcw, Save, Search, Store as StoreIcon, Trash2, Upload,
 } from "lucide-react";
 import Link from "next/link";
@@ -18,8 +18,8 @@ import { ProductEditor } from "./ProductEditor";
 import { logout } from "@/app/admin/actions";
 import { formatEGP, slugify, uid } from "@/lib/format";
 import { offerCta } from "@/lib/offer-link";
-import { bestOffer, withTodayHistory } from "@/lib/pricing";
-import { getRepository } from "@/lib/repository";
+import { bestOffer, isStale, withTodayHistory } from "@/lib/pricing";
+import { getRepository, SEED_CATALOG } from "@/lib/repository";
 import type { Catalog, Category, Industry, PriceAlert, Product, Store } from "@/lib/types";
 
 type Tab = "products" | "stores" | "categories" | "alerts" | "data";
@@ -67,6 +67,7 @@ export function AdminApp() {
         ))}
       </div>
 
+      <LiveDataBanner notify={notify} />
       {tab === "products" && <ProductsTab notify={notify} />}
       {tab === "stores" && <StoresTab notify={notify} />}
       {tab === "categories" && <CategoriesTab notify={notify} />}
@@ -83,6 +84,56 @@ export function AdminApp() {
 }
 
 type Notify = { notify: (msg: string) => void };
+
+/**
+ * The tracker updates data/catalog.json on GitHub. If that live file is newer than the copy
+ * saved in this browser, offer to load it so admin edits don't overwrite fresh prices.
+ */
+function LiveDataBanner({ notify }: Notify) {
+  const { catalog, hydrated, reset } = useCatalog();
+  const live = SEED_CATALOG.updatedAt ?? "";
+  if (!hydrated || catalog === SEED_CATALOG || !live || live <= (catalog.updatedAt ?? "")) return null;
+  return (
+    <div className="mb-4 flex flex-wrap items-center gap-3 rounded-2xl bg-amber-50 p-4 text-sm text-amber-900 dark:bg-amber-500/10 dark:text-amber-300">
+      <CloudDownload className="size-5 shrink-0" />
+      <p className="flex-1">
+        فيه أسعار أحدث على الموقع (اتحدثت <TimeAgo iso={live} />) من النسخة المحفوظة في المتصفح ده. حمّلها قبل ما تعدّل عشان متكتبش فوق الأسعار الجديدة.
+      </p>
+      <button
+        type="button"
+        className="btn bg-amber-600 text-white hover:bg-amber-700"
+        onClick={async () => {
+          if (!confirm("هيتم استبدال تعديلاتك المحلية بأحدث نسخة من الموقع. تكمل؟")) return;
+          await reset();
+          notify("تم تحميل أحدث الأسعار");
+        }}
+      >
+        حمّل أحدث نسخة
+      </button>
+    </div>
+  );
+}
+
+/** Offers whose price is old or whose automatic check failed. */
+function PriceHealth() {
+  const { catalog } = useCatalog();
+  let stale = 0;
+  let failed = 0;
+  let tracked = 0;
+  for (const p of catalog.products)
+    for (const o of p.offers) {
+      if (isStale(o.updatedAt)) stale++;
+      if (o.lastCheckError) failed++;
+      if (o.lastCheckedAt && !o.lastCheckError) tracked++;
+    }
+  return (
+    <div className="mb-4 grid grid-cols-3 gap-2 text-center text-xs">
+      <div className="card p-3"><p className="text-lg font-black text-brand-600">{tracked}</p>متابَع تلقائيًا</div>
+      <div className="card p-3"><p className={`text-lg font-black ${failed ? "text-red-600" : ""}`}>{failed}</p>فشلت متابعته</div>
+      <div className="card p-3"><p className={`text-lg font-black ${stale ? "text-amber-600" : ""}`}>{stale}</p>أقدم من 3 أيام</div>
+    </div>
+  );
+}
 
 /* ───────────────────────── Products & quick price updates ───────────────────────── */
 
@@ -105,6 +156,7 @@ function ProductsTab({ notify }: Notify) {
 
   return (
     <>
+      <PriceHealth />
       <div className="mb-4 flex flex-col gap-2 sm:flex-row">
         <div className="relative flex-1">
           <Search className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-slate-400" />
@@ -178,9 +230,11 @@ function QuickPrices({ product, storeById, onSaved }: { product: Product; storeB
               {s && <StoreLogo store={s} size="sm" />}
               <div className="min-w-24 flex-1">
                 <p className="text-sm font-bold">{s?.name ?? r.storeId}</p>
-                <p className="text-[11px] text-slate-500">
+                <p className={`text-[11px] ${isStale(r.updatedAt) ? "text-amber-600" : "text-slate-500"}`}>
                   {cta.label} · آخر تحديث <TimeAgo iso={r.updatedAt} />
+                  {r.autoTrack === false && " · يدوي"}
                 </p>
+                {r.lastCheckError && <p className="text-[11px] font-bold text-red-600">المتابعة الآلية: {r.lastCheckError}</p>}
               </div>
               <input
                 type="number"

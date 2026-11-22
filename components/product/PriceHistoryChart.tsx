@@ -5,10 +5,10 @@ import { CheckCircle2, Info, TrendingDown, TrendingUp } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CartesianGrid, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { formatEGP, formatNumber } from "@/lib/format";
-import { historyStats } from "@/lib/pricing";
+import { historyStats, MIN_HISTORY_POINTS } from "@/lib/pricing";
 import type { Product } from "@/lib/types";
 
-const dayFmt = new Intl.DateTimeFormat("ar-EG", { day: "numeric", month: "short" });
+const dayFmt = new Intl.DateTimeFormat("ar-EG-u-nu-latn", { day: "numeric", month: "short" });
 
 const VERDICTS = {
   great: { icon: CheckCircle2, cls: "bg-deal-50 text-deal-700 dark:bg-deal-500/10 dark:text-deal-500", title: "أقل سعر في آخر 30 يوم — صفقة حقيقية" },
@@ -23,7 +23,22 @@ export function PriceHistoryChart({ product }: { product: Product }) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
-  if (!stats) return null;
+  if (!stats) {
+    // Not enough real history yet — say so instead of inventing a trend.
+    const first = product.priceHistory[0];
+    return (
+      <section className="card p-4 sm:p-6">
+        <h2 className="mb-2 text-lg font-black">تاريخ السعر</h2>
+        <div className="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600 dark:bg-slate-800/60 dark:text-slate-300">
+          <Info className="mt-0.5 size-5 shrink-0 text-brand-600" />
+          <p>
+            بدأنا نتابع سعر المنتج ده{first ? <> من <b>{dayFmt.format(new Date(first.date))}</b></> : null}. الرسم البياني وحكم
+            &quot;عرض حقيقي ولا وهمي&quot; هيظهروا بعد {MIN_HISTORY_POINTS} أيام متابعة على الأقل.
+          </p>
+        </div>
+      </section>
+    );
+  }
   const v = VERDICTS[stats.verdict];
   const data = product.priceHistory.map((p) => ({ ...p, label: dayFmt.format(new Date(p.date)) }));
   const pad = Math.max(50, (stats.max - stats.min) * 0.25);

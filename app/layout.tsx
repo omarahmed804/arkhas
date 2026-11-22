@@ -4,10 +4,14 @@ import "./globals.css";
 import { CatalogProvider } from "@/components/CatalogProvider";
 import { Header, Logo } from "@/components/Header";
 import { themeInitScript } from "@/components/ThemeToggle";
+import { PwaInstall } from "@/components/PwaInstall";
 
 export const metadata: Metadata = {
   title: { default: "أرخص — قارن أسعار الجيمينج والإلكترونيات في مصر", template: "%s | أرخص" },
   description: "قارن الأسعار بين أشهر ستورز الجيمينج في مصر واشتري بالأرخص: أمازون، نون، سيجما، البدر وغيرهم.",
+  applicationName: "أرخص",
+  appleWebApp: { capable: true, title: "أرخص", statusBarStyle: "default" },
+  formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {
@@ -43,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </nav>
             </div>
           </footer>
+          <PwaInstall />
         </CatalogProvider>
       </body>
     </html>

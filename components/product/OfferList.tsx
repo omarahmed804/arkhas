@@ -4,12 +4,12 @@
  * Store comparison list. One responsive grid row per store:
  * stacked card on mobile (no horizontal scrolling), table-like row on desktop.
  */
-import { BadgeCheck, Clock, ExternalLink, MessageCircle, PackageX, Truck, Users } from "lucide-react";
+import { AlertTriangle, BadgeCheck, Clock, ExternalLink, RefreshCw, MessageCircle, PackageX, Truck, Users } from "lucide-react";
 import { useCatalog } from "../CatalogProvider";
 import { StoreLogo, TimeAgo, TrustBadge } from "../ui";
 import { formatEGP } from "@/lib/format";
 import { offerCta } from "@/lib/offer-link";
-import { sortOffers } from "@/lib/pricing";
+import { isStale, sortOffers } from "@/lib/pricing";
 import type { Offer, Product } from "@/lib/types";
 
 export function OfferCtaButton({ offer, product, className = "" }: { offer: Offer; product: Product; className?: string }) {
@@ -37,6 +37,28 @@ export function OfferCtaButton({ offer, product, className = "" }: { offer: Offe
     >
       {cta.label} <Icon className="size-4" />
     </a>
+  );
+}
+
+/** Price credibility: when it was last confirmed + whether the tracker watches it. */
+function Freshness({ offer }: { offer: Offer }) {
+  const stale = isStale(offer.updatedAt);
+  const tracked = offer.lastCheckedAt && !offer.lastCheckError && !isStale(offer.lastCheckedAt);
+  return (
+    <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+      <span className={`flex items-center gap-1 ${stale ? "text-amber-600 dark:text-amber-400" : "text-slate-500"}`}>
+        {stale ? <AlertTriangle className="size-3.5" /> : <Clock className="size-3.5" />}
+        <span>
+          تم التحديث <TimeAgo iso={offer.updatedAt} />
+        </span>
+      </span>
+      {tracked && (
+        <span className="flex items-center gap-1 font-bold text-brand-600" title="السعر بيتراجع تلقائيًا من صفحة المتجر">
+          <RefreshCw className="size-3" /> متابَع تلقائيًا
+        </span>
+      )}
+      {stale && <span className="font-bold text-amber-600 dark:text-amber-400">أكّد السعر في صفحة المتجر</span>}
+    </span>
   );
 }
 
@@ -106,15 +128,15 @@ export function OfferList({ product }: { product: Product }) {
                   {o.freeShipping ? <span className="font-bold text-brand-600">شحن مجاني</span> : "شحن مدفوع"} · {o.deliveryEta}
                 </p>
                 {/* Last updated (mobile inline) */}
-                <p className="flex items-center gap-1 text-slate-400 md:hidden">
-                  <Clock className="size-3.5" /> تم التحديث <TimeAgo iso={o.updatedAt} />
-                </p>
+                <div className="md:hidden">
+                  <Freshness offer={o} />
+                </div>
               </div>
 
               {/* Last updated (desktop column) */}
-              <p className="hidden items-center gap-1 text-xs text-slate-500 md:flex">
-                <Clock className="size-3.5" /> <TimeAgo iso={o.updatedAt} />
-              </p>
+              <div className="hidden text-xs md:block">
+                <Freshness offer={o} />
+              </div>
 
               {/* CTA */}
               <OfferCtaButton offer={o} product={product} className="col-span-2 w-full md:col-span-1 md:w-36" />

@@ -38,6 +38,26 @@ Open http://localhost:3000 — admin is at http://localhost:3000/admin
 - **To publish admin changes:** Admin → البيانات → **تصدير JSON** → replace `data/catalog.json` → `git push`.
 - `/admin` is password-protected. Password = `ADMIN_PASSWORD` env variable, default **`arkhas2026`** (local testing only — **set your own on Vercel**).
 
+## Automatic price tracking
+
+`scripts/update-prices.mjs` + `.github/workflows/update-prices.yml` (every 6 h, free on GitHub Actions):
+reads each store product URL, extracts the price from the page's schema.org JSON-LD / product meta tags,
+updates `data/catalog.json` (price, stock, `updatedAt`, `lastCheckedAt`, today's history point) and commits → Vercel redeploys.
+Respects robots.txt, identifies itself, 3 s between requests per store, never bypasses blocking. Rejects prices outside
+0.4×–2.5× of the previous one (likely wrong product). Offers with `autoTrack: false` (category pages, manual stores) are skipped.
+Run locally: `node scripts/update-prices.mjs --dry-run`. Amazon/Noon usually block bots → manual or affiliate APIs.
+
+## Data
+
+`data/catalog.json` — 18 gaming products, 16 Egyptian stores, 64 offers. Prices were collected from the stores' own
+product pages (as indexed by web search) on **22 Nov 2026**; spot-check before launch. Price history starts on that
+date — the "real deal / fake discount" verdict appears after 7 days of tracking (no invented history).
+
+## PWA
+
+`app/manifest.ts`, `public/sw.js` (network-first pages, offline fallback `/offline`), `components/PwaInstall.tsx`
+(Android install prompt, iOS instructions), icons in `public/` and `app/apple-icon.png`.
+
 ## Project structure
 
 ```
@@ -47,7 +67,8 @@ lib/types.ts             data model (Industry → Category → Product → Offer
 lib/pricing.ts           best price, market discount, 30-day history verdict
 lib/offer-link.ts        website / WhatsApp / social CTA buttons + WhatsApp message template
 lib/repository.ts        data access layer (LocalStorage now → Supabase later)
-data/catalog.json        seed data
+data/catalog.json        product, store and price data (updated by the tracker)
+scripts/update-prices.mjs automatic price tracker
 supabase/schema.sql      ready-to-run Postgres schema
 ```
 
