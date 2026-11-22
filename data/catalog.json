@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T20:30:00.000Z",
+  "updatedAt": "2026-11-22T20:45:00.000Z",
   "industries": [
     {
       "id": "ind-gaming",
@@ -236,6 +236,26 @@
       "color": "#111827",
       "trusted": false,
       "featured": false
+    },
+    {
+      "id": "carrefour",
+      "name": "كارفور مصر",
+      "nameEn": "Carrefour Egypt",
+      "url": "https://www.carrefouregypt.com",
+      "logoText": "C",
+      "color": "#1E40AF",
+      "trusted": true,
+      "featured": true
+    },
+    {
+      "id": "xprs",
+      "name": "XPRS",
+      "nameEn": "XPRS",
+      "url": "https://myxprs.com",
+      "logoText": "XP",
+      "color": "#7C2D12",
+      "trusted": true,
+      "featured": false
     }
   ],
   "products": [
@@ -295,7 +315,7 @@
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 44199
+          "price": 50490
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -366,7 +386,7 @@
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 38400
+          "price": 46990
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -437,7 +457,7 @@
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 69000
+          "price": 99990
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -517,18 +537,6 @@
           "needsCheck": true
         },
         {
-          "storeId": "vodafone",
-          "price": 33999,
-          "oldPrice": 34999,
-          "linkType": "website",
-          "url": "https://eshop.vodafone.com.eg/en/prod/nintendo-switch-2-black",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "needsCheck": true
-        },
-        {
           "storeId": "shamy",
           "price": 33990,
           "linkType": "website",
@@ -537,12 +545,23 @@
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
           "updatedAt": "2026-11-22T20:30:00.000Z"
+        },
+        {
+          "storeId": "vodafone",
+          "price": 33999,
+          "oldPrice": 35999,
+          "linkType": "website",
+          "url": "https://eshop.vodafone.com.eg/en/prod/nintendo-switch-2-black",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 30899
+          "price": 33990
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -614,7 +633,7 @@
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 13990
+          "price": 23990
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -757,7 +776,7 @@
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 13289
+          "price": 18990
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -1090,7 +1109,9 @@
       "nameAr": "شاشة سامسونج أوديسي G5 – 27 بوصة",
       "brand": "Samsung",
       "categoryId": "cat-monitors",
-      "images": [],
+      "images": [
+        "https://kimostore.net/cdn/shop/files/SamsungOdysseyG5LS27CG552EMXEG27InchVAQHDCurvedGamingMonitor165Hz_7_6048fc10-6481-437e-918a-843bad9ce06c.jpg?v=1780306941"
+      ],
       "specs": [
         {
           "label": "المقاس",
@@ -1118,17 +1139,6 @@
           "linkType": "website",
           "url": "https://www.compumarts.com/products/samsung-odyssey-g5-s27cg552em-27-inch-va-qhd-curved-gaming-monitor-165hz",
           "inStock": false,
-          "freeShipping": false,
-          "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "needsCheck": true
-        },
-        {
-          "storeId": "kimo",
-          "price": 8499,
-          "linkType": "website",
-          "url": "https://kimostore.net/products/samsung-odyssey-g5-ls27cg552emxeg-27-inch-va-qhd-curved-gaming-monitor-165hz",
-          "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
@@ -1168,12 +1178,22 @@
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true
+        },
+        {
+          "storeId": "kimo",
+          "price": 8500,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/samsung-odyssey-g5-ls27cg552emxeg-27-inch-va-qhd-curved-gaming-monitor-165hz",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 8499
+          "price": 8799
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -1470,7 +1490,7 @@
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 1677
+          "price": 1999
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -1482,7 +1502,9 @@
       "nameAr": "لعبة جوست أوف يوتاي",
       "brand": "Sony",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://eg.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/95/3750431/1.jpg?4818"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -1548,12 +1570,22 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true
+        },
+        {
+          "storeId": "jumia",
+          "price": 3479,
+          "linkType": "website",
+          "url": "https://www.jumia.com.eg/sony-interactive-entertainment-ghost-of-yotei-ps5-134057359.html",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 3226
+          "price": 3479
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -2142,7 +2174,9 @@
       "name": "Call of Duty: Modern Warfare 4 – PS5",
       "brand": "Activision",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/call-of-duty-modern-warfare-4.jpg?v=1783856087"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2181,7 +2215,9 @@
       "name": "Invincible VS – PS5",
       "brand": "Skybound Games",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Invincible_VS.webp?v=1782219379"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2261,7 +2297,9 @@
       "name": "Saros – PS5",
       "brand": "Sony",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Saros.webp?v=1782223501"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2300,7 +2338,9 @@
       "name": "Pragmata – PS5",
       "brand": "Capcom",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Pragmata.webp?v=1782223379"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2339,7 +2379,9 @@
       "name": "Nioh 3 – PS5",
       "brand": "Koei Tecmo",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Nioh.webp?v=1782223335"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2378,7 +2420,9 @@
       "name": "Crimson Desert – PS5",
       "brand": "Pearl Abyss",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Crimson_Desert_Day_One_Edition.webp?v=1781527388"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2417,7 +2461,9 @@
       "name": "WWE 2K26 – PS5",
       "brand": "2K",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/WWE_2K26.webp?v=1782224821"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -3600,6 +3646,854 @@
         }
       ],
       "createdAt": "2026-11-22T20:30:00.000Z"
+    },
+    {
+      "id": "p-070",
+      "slug": "ea-sports-fc-27-ps5",
+      "name": "EA SPORTS FC 27 – Standard Edition (PS5)",
+      "nameAr": "لعبة FC 27 لبلايستيشن 5",
+      "brand": "EA Sports",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.mafrservices.com/pim-content/EGY/media/product/1836147000111/1791279860/1836147000111_main.jpeg"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "النوع",
+          "value": "رياضة / كرة قدم"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard"
+        }
+      ],
+      "popularity": 101,
+      "offers": [
+        {
+          "storeId": "carrefour",
+          "price": 4450,
+          "linkType": "website",
+          "url": "https://www.carrefouregypt.com/mafegy/ar/sony-playstation-games/ea-sports-fc-27-standard-edition-playstation-5-playstation-5-ps5/p/1836147000111",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "توصيل مجاني",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        },
+        {
+          "storeId": "xprs",
+          "price": 3999,
+          "linkType": "website",
+          "url": "https://myxprs.com/ar/products/ea-sports-fc-27-arabic-and-english-ps5-ar",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T20:45:00.000Z",
+          "needsCheck": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 4450
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-071",
+      "slug": "ps5-slim-disc-1y-shamy",
+      "name": "PlayStation 5 Slim – Disc Edition (1 Year Warranty)",
+      "nameAr": "بلايستيشن 5 سليم ديسك – ضمان سنة",
+      "brand": "Sony",
+      "categoryId": "cat-consoles",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/playstation-5-slim-disc-edition-1m-warranty-500.jpg?v=1751284570"
+      ],
+      "specs": [],
+      "popularity": 88,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 42990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/playstation-5-slim-disc-edition-1y-warranty",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 42990
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-072",
+      "slug": "ps5-digital-bundle-10-games-physical",
+      "name": "PS5 Digital Bundle – Console + 10 Digital Games",
+      "nameAr": "باندل PS5 ديجيتال + 10 ألعاب",
+      "brand": "Sony",
+      "categoryId": "cat-consoles",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/WebsitePs5DigitalOffer1.png?v=1792506477"
+      ],
+      "specs": [],
+      "popularity": 78,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 52490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps5-digital-bundle-physical-console-10-digital-games",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 52490
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-073",
+      "slug": "ps5-slim-digital-wolverine-edition",
+      "name": "PS5 Slim Digital – Marvel's Wolverine Limited Edition",
+      "nameAr": "PS5 سليم ديجيتال – إصدار ولفرين",
+      "brand": "Sony",
+      "categoryId": "cat-consoles",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/ps5-digital-wolverine.webp?v=1791026948"
+      ],
+      "specs": [],
+      "popularity": 76,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 55490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps5-slim-digital-wolverine-edition",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 55490
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-074",
+      "slug": "ps5-slim-disc-ghost-of-yotei-edition",
+      "name": "PS5 Slim Disc – Ghost of Yōtei Limited Edition",
+      "nameAr": "PS5 سليم ديسك – إصدار جوست أوف يوتاي",
+      "brand": "Sony",
+      "categoryId": "cat-consoles",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/ps5-ghost.webp?v=1785681547"
+      ],
+      "specs": [],
+      "popularity": 75,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 55490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps5-slim-disc-ghost-of-yotei-limited-edition",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 55490
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-075",
+      "slug": "ps5-digital-fortnite-bundle",
+      "name": "PS5 Digital Edition – Fortnite Flowering Chaos Bundle",
+      "nameAr": "PS5 ديجيتال – باندل فورتنايت",
+      "brand": "Sony",
+      "categoryId": "cat-consoles",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Fortnite_Slim_Bundle.2_1220x_crop_center_fbe9c27e-1f98-4def-a40d-1f80e683eeda.webp?v=1778512627"
+      ],
+      "specs": [],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 47490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps5-digital-fortnite-edition",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 47490
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-076",
+      "slug": "nintendo-switch-2-mario-kart-world-bundle",
+      "name": "Nintendo Switch 2 + Mario Kart World Bundle",
+      "nameAr": "سويتش 2 + ماريو كارت وورلد",
+      "brand": "Nintendo",
+      "categoryId": "cat-consoles",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/nintendo-switch-mario-kart-8-deluxe-edition-823.jpg?v=1750344009"
+      ],
+      "specs": [],
+      "popularity": 80,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 37990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-switch-mario-kart-edition",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 37990
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-077",
+      "slug": "nintendo-switch-oled-pokemon-edition",
+      "name": "Nintendo Switch OLED – Pokémon Edition",
+      "nameAr": "سويتش OLED – إصدار بوكيمون",
+      "brand": "Nintendo",
+      "categoryId": "cat-consoles",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/pokemonnintendo1.jpg?v=1775381984"
+      ],
+      "specs": [],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 24490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-switch-oled-pokemon-edition",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 24490
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-078",
+      "slug": "nintendo-switch-oled-mario-red-edition",
+      "name": "Nintendo Switch OLED – Mario Red Edition",
+      "nameAr": "سويتش OLED – إصدار ماريو الأحمر",
+      "brand": "Nintendo",
+      "categoryId": "cat-consoles",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/mariooled1.jpg?v=1775380723"
+      ],
+      "specs": [],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 24490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-switch-oled-mario-red-edition",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 24490
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-079",
+      "slug": "sony-pulse-elite-headset",
+      "name": "Sony PULSE Elite Wireless Headset – Midnight Black",
+      "nameAr": "سماعة سوني بلس إيليت",
+      "brand": "Sony",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/pulse-black.jpg?v=1793886252"
+      ],
+      "specs": [
+        {
+          "label": "الاتصال",
+          "value": "PlayStation Link / Bluetooth"
+        },
+        {
+          "label": "التوافق",
+          "value": "PS5 / PC / Mobile"
+        }
+      ],
+      "popularity": 80,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 10990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/sony-pulse-elite-wireless-headset-midnight-black-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 10990
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-080",
+      "slug": "switch-2-pro-controller-resident-evil",
+      "name": "Nintendo Switch 2 Pro Controller – Resident Evil Requiem Edition",
+      "nameAr": "دراع سويتش 2 برو – إصدار ريزدنت إيفل",
+      "brand": "Nintendo",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/switch-2-pro-controller-resident-evil.jpg?v=1795010563"
+      ],
+      "specs": [],
+      "popularity": 62,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 6790,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-switch-2-pro-controller-resident-evil-requiem-edition",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 6790
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-081",
+      "slug": "valkyrie-naruto-vk-s1-headset",
+      "name": "VALKYRIE × Naruto VK S1 Wireless Gaming Headset",
+      "nameAr": "سماعة فالكيري ناروتو لاسلكية",
+      "brand": "Valkyrie",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/orig.webp?v=1794491839"
+      ],
+      "specs": [
+        {
+          "label": "الاتصال",
+          "value": "لاسلكي"
+        }
+      ],
+      "popularity": 58,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3690,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/valkyrie-x-naruto-vk-s1-wireless-gaming-headset",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3690
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-082",
+      "slug": "attack-shark-l80-pro-headset-white",
+      "name": "ATTACK SHARK L80 PRO RGB Wired Gaming Headset – White",
+      "nameAr": "سماعة أتاك شارك L80 برو",
+      "brand": "Attack Shark",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/1_16d50635-0035-4469-ba6f-66e16b93f550.webp?v=1794487622"
+      ],
+      "specs": [
+        {
+          "label": "الاتصال",
+          "value": "سلكي"
+        },
+        {
+          "label": "الإضاءة",
+          "value": "RGB"
+        }
+      ],
+      "popularity": 50,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1890,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/attack-shark-l80-pro-rgb-gaming-headset-white",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1890
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-083",
+      "slug": "attack-shark-l90-headset-white",
+      "name": "ATTACK SHARK L90 RGB Wired Gaming Headset – White",
+      "nameAr": "سماعة أتاك شارك L90",
+      "brand": "Attack Shark",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/L90_1.webp?v=1794486875"
+      ],
+      "specs": [
+        {
+          "label": "الاتصال",
+          "value": "سلكي"
+        },
+        {
+          "label": "الإضاءة",
+          "value": "RGB"
+        }
+      ],
+      "popularity": 48,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/attack-shark-l90-rgb-gaming-headset-white",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1990
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-084",
+      "slug": "play-x-h01-wireless-headset",
+      "name": "Play X H01 Wireless Gaming Headset",
+      "nameAr": "سماعة بلاي إكس H01 لاسلكية",
+      "brand": "Play X",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Wirelessheadset_SupportsBluetooth2_4gconnectivity_7_1channels_Goodquality_goodprice_jpg.jpg?v=1787761549"
+      ],
+      "specs": [
+        {
+          "label": "الاتصال",
+          "value": "2.4GHz / Bluetooth"
+        },
+        {
+          "label": "الصوت",
+          "value": "7.1"
+        }
+      ],
+      "popularity": 45,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2890,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/play-x-wireless-h01-gaming-headset",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2890
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-085",
+      "slug": "dobe-tp-3532d-cooling-charging-dock",
+      "name": "DOBE TP-3532D Cooling & Charging Dock (All Systems)",
+      "nameAr": "ستاند تبريد وشحن DOBE",
+      "brand": "DOBE",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/cooling-charging-dock-all-system-dobe-tp-3532d-101.jpg?v=1760287808"
+      ],
+      "specs": [],
+      "popularity": 55,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1690,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/dobe-tp-3532d-cooling-charging-dock",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1690
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-086",
+      "slug": "dobe-tp5-0593s-ps5-cooling-stand",
+      "name": "DOBE TP5-0593S Multifunctional Cooling Stand for PS5",
+      "nameAr": "ستاند تبريد PS5 من DOBE",
+      "brand": "DOBE",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/1786895818041-prod-ep648d9-1786895818015-tbk1nk.png?v=1793708285"
+      ],
+      "specs": [
+        {
+          "label": "التوافق",
+          "value": "PS5"
+        }
+      ],
+      "popularity": 57,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 790,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/dobe-tp5-0593s-ps5-multifunctional-cooling-stand",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 790
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-087",
+      "slug": "deadskull-ds-8056t-disc-rack",
+      "name": "DEADSKULL DS-8056T Game Disc Storage Rack",
+      "nameAr": "ستاند تخزين أسطوانات الألعاب",
+      "brand": "DEADSKULL",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/WhatsAppImage2026-11-03at2.37.39PM.jpg?v=1793710213"
+      ],
+      "specs": [],
+      "popularity": 40,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 790,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/deadskull-ds-8056t-game-disc-storage-rack",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 790
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-088",
+      "slug": "dobe-tns-5196-switch-2-grip-case",
+      "name": "DOBE TNS-5196 Detachable Grip Protective Case for Switch 2",
+      "nameAr": "جراب حماية بمسكة لسويتش 2",
+      "brand": "DOBE",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/dobe-ns2-grib.webp?v=1793709180"
+      ],
+      "specs": [
+        {
+          "label": "التوافق",
+          "value": "Nintendo Switch 2"
+        }
+      ],
+      "popularity": 52,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 450,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/dobe-tns-5196-switch-2-detachable-grip-protective-case",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 450
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-089",
+      "slug": "msi-versa-300-wireless-mouse",
+      "name": "MSI VERSA 300 Wireless Gaming Mouse",
+      "nameAr": "ماوس MSI فيرسا 300 لاسلكي",
+      "brand": "MSI",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/versa-300.webp?v=1793545742"
+      ],
+      "specs": [
+        {
+          "label": "الاتصال",
+          "value": "لاسلكي"
+        }
+      ],
+      "popularity": 46,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2290,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/msi-versa-300-wireless-gaming-mouse",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2290
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-090",
+      "slug": "msi-forge-gm300-mouse",
+      "name": "MSI FORGE GM300 Gaming Mouse",
+      "nameAr": "ماوس MSI فورج GM300",
+      "brand": "MSI",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/gm-mouse-forge.webp?v=1793545385"
+      ],
+      "specs": [],
+      "popularity": 44,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/msi-forge-gm300-gaming-mouse",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 990
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-091",
+      "slug": "msi-maestro-300-headset",
+      "name": "MSI MAESTRO 300 Gaming Headset",
+      "nameAr": "سماعة MSI مايسترو 300",
+      "brand": "MSI",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/maestro-headset-300.webp?v=1793544091"
+      ],
+      "specs": [],
+      "popularity": 43,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/msi-maestro-300-gaming-headset",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2490
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-092",
+      "slug": "msi-vigor-gk30-keyboard",
+      "name": "MSI VIGOR GK30 Gaming Keyboard",
+      "nameAr": "كيبورد MSI فيجور GK30",
+      "brand": "MSI",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/gk30-keyboard-msi_45aad528-1655-4934-830a-4d3f6ec5ac34.webp?v=1793547340"
+      ],
+      "specs": [],
+      "popularity": 42,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/msi-vigor-gk30-gaming-keyboard",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1990
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-093",
+      "slug": "msi-vigor-gk20-keyboard",
+      "name": "MSI VIGOR GK20 Gaming Keyboard",
+      "nameAr": "كيبورد MSI فيجور GK20",
+      "brand": "MSI",
+      "categoryId": "cat-accessories",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/gk20-keyboard.webp?v=1793543289"
+      ],
+      "specs": [],
+      "popularity": 41,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1790,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/msi-vigor-gk20-gaming-keyboard",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T20:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1790
+        }
+      ],
+      "createdAt": "2026-11-22T20:45:00.000Z"
     }
   ]
 }
