@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-22T23:20:00.000Z",
+  "updatedAt": "2026-11-23T00:10:00.000Z",
   "industries": [
     {
       "id": "ind-gaming",
@@ -92,6 +92,33 @@
       "slug": "digital-accounts",
       "icon": "Gamepad2",
       "sortOrder": 9
+    },
+    {
+      "id": "cat-game-cards",
+      "industryId": "ind-gaming",
+      "name": "كروت Xbox و Nintendo و Steam",
+      "nameEn": "Gaming Gift Cards",
+      "slug": "gaming-cards",
+      "icon": "CreditCard",
+      "sortOrder": 10
+    },
+    {
+      "id": "cat-app-cards",
+      "industryId": "ind-gaming",
+      "name": "كروت iTunes و Google Play و Spotify",
+      "nameEn": "App Store Cards",
+      "slug": "app-cards",
+      "icon": "CreditCard",
+      "sortOrder": 11
+    },
+    {
+      "id": "cat-used",
+      "industryId": "ind-gaming",
+      "name": "أجهزة مستعملة بضمان",
+      "nameEn": "Used Consoles (Warranty)",
+      "slug": "used-consoles",
+      "icon": "Gamepad2",
+      "sortOrder": 12
     }
   ],
   "stores": [
@@ -105,7 +132,8 @@
       "trusted": true,
       "featured": true,
       "platform": "amazon",
-      "affiliateParams": "tag=arkhas0c-21"
+      "affiliateParams": "tag=arkhas0c-21",
+      "partnerStatus": "none"
     },
     {
       "id": "noon",
@@ -115,7 +143,8 @@
       "logoText": "n",
       "color": "#E6C200",
       "trusted": true,
-      "featured": true
+      "featured": true,
+      "partnerStatus": "none"
     },
     {
       "id": "dream2000",
@@ -126,7 +155,8 @@
       "color": "#E30613",
       "trusted": true,
       "featured": true,
-      "platform": "shopify"
+      "platform": "shopify",
+      "partnerStatus": "none"
     },
     {
       "id": "gamesspot",
@@ -137,7 +167,8 @@
       "color": "#111827",
       "trusted": true,
       "featured": true,
-      "phone": "17797"
+      "phone": "17797",
+      "partnerStatus": "none"
     },
     {
       "id": "sigma",
@@ -147,7 +178,8 @@
       "logoText": "Σ",
       "color": "#D61F26",
       "trusted": true,
-      "featured": true
+      "featured": true,
+      "partnerStatus": "none"
     },
     {
       "id": "elbadr",
@@ -157,7 +189,9 @@
       "logoText": "EB",
       "color": "#0F4C81",
       "trusted": true,
-      "featured": true
+      "featured": true,
+      "active": false,
+      "partnerStatus": "none"
     },
     {
       "id": "games2egypt",
@@ -167,7 +201,8 @@
       "logoText": "G2",
       "color": "#7C3AED",
       "trusted": true,
-      "featured": true
+      "featured": true,
+      "partnerStatus": "none"
     },
     {
       "id": "shamy",
@@ -178,7 +213,8 @@
       "color": "#111827",
       "trusted": true,
       "featured": true,
-      "platform": "shopify"
+      "platform": "shopify",
+      "partnerStatus": "none"
     },
     {
       "id": "compumarts",
@@ -188,7 +224,8 @@
       "logoText": "CM",
       "color": "#0EA5E9",
       "trusted": false,
-      "featured": false
+      "featured": false,
+      "partnerStatus": "none"
     },
     {
       "id": "jumia",
@@ -198,7 +235,8 @@
       "logoText": "J",
       "color": "#F68B1E",
       "trusted": true,
-      "featured": true
+      "featured": true,
+      "partnerStatus": "none"
     },
     {
       "id": "gamesworld",
@@ -208,7 +246,8 @@
       "logoText": "GW",
       "color": "#0F766E",
       "trusted": true,
-      "featured": true
+      "featured": true,
+      "partnerStatus": "none"
     },
     {
       "id": "kimo",
@@ -218,7 +257,8 @@
       "logoText": "KS",
       "color": "#B91C1C",
       "trusted": true,
-      "featured": false
+      "featured": false,
+      "partnerStatus": "none"
     },
     {
       "id": "vodafone",
@@ -228,7 +268,8 @@
       "logoText": "V",
       "color": "#E60000",
       "trusted": true,
-      "featured": false
+      "featured": false,
+      "partnerStatus": "none"
     },
     {
       "id": "raya",
@@ -238,7 +279,8 @@
       "logoText": "R",
       "color": "#1E3A8A",
       "trusted": true,
-      "featured": false
+      "featured": false,
+      "partnerStatus": "none"
     },
     {
       "id": "virgin",
@@ -248,7 +290,8 @@
       "logoText": "VM",
       "color": "#C8102E",
       "trusted": true,
-      "featured": false
+      "featured": false,
+      "partnerStatus": "none"
     },
     {
       "id": "elghazawy",
@@ -258,7 +301,8 @@
       "logoText": "GZ",
       "color": "#334155",
       "trusted": true,
-      "featured": false
+      "featured": false,
+      "partnerStatus": "none"
     },
     {
       "id": "egyptlaptop",
@@ -268,7 +312,8 @@
       "logoText": "EL",
       "color": "#0369A1",
       "trusted": true,
-      "featured": false
+      "featured": false,
+      "partnerStatus": "none"
     },
     {
       "id": "ahw",
@@ -278,7 +323,9 @@
       "logoText": "AH",
       "color": "#111827",
       "trusted": false,
-      "featured": false
+      "featured": false,
+      "active": false,
+      "partnerStatus": "none"
     },
     {
       "id": "carrefour",
@@ -288,7 +335,8 @@
       "logoText": "C",
       "color": "#1E40AF",
       "trusted": true,
-      "featured": true
+      "featured": true,
+      "partnerStatus": "none"
     },
     {
       "id": "xprs",
@@ -298,7 +346,9 @@
       "logoText": "XP",
       "color": "#7C2D12",
       "trusted": true,
-      "featured": false
+      "featured": false,
+      "platform": "shopify",
+      "partnerStatus": "none"
     }
   ],
   "products": [
@@ -3854,7 +3904,7 @@
           "value": "Standard"
         }
       ],
-      "popularity": 101,
+      "popularity": 99,
       "offers": [
         {
           "storeId": "carrefour",
@@ -3887,12 +3937,45 @@
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-22T22:50:00.000Z",
           "oldPrice": 4800
+        },
+        {
+          "storeId": "shamy",
+          "price": 3690,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/fc-27-standard-edition-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z",
+          "oldPrice": 3940
+        },
+        {
+          "storeId": "games2egypt",
+          "price": 3699,
+          "linkType": "website",
+          "url": "https://www.games2egypt.com/Product/46858/ea-sports-fc-27-arabic-and-english-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–4 أيام",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        },
+        {
+          "storeId": "gamesworld",
+          "price": 2995,
+          "linkType": "website",
+          "url": "https://www.gamesworldegypt.com/ea-sports-fc-27-ps5-(arabic-english)",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z",
+          "oldPrice": 3070,
+          "needsCheck": true
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 4150
+          "price": 3690
         }
       ],
       "createdAt": "2026-11-22T20:45:00.000Z"
@@ -4222,469 +4305,6 @@
         {
           "date": "2026-11-22",
           "price": 6790
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-081",
-      "slug": "valkyrie-naruto-vk-s1-headset",
-      "name": "VALKYRIE × Naruto VK S1 Wireless Gaming Headset",
-      "nameAr": "سماعة فالكيري ناروتو لاسلكية",
-      "brand": "Valkyrie",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/orig.webp?v=1794491839"
-      ],
-      "specs": [
-        {
-          "label": "الاتصال",
-          "value": "لاسلكي"
-        }
-      ],
-      "popularity": 58,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 3690,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/valkyrie-x-naruto-vk-s1-wireless-gaming-headset",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 3690
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-082",
-      "slug": "attack-shark-l80-pro-headset-white",
-      "name": "ATTACK SHARK L80 PRO RGB Wired Gaming Headset – White",
-      "nameAr": "سماعة أتاك شارك L80 برو",
-      "brand": "Attack Shark",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/1_16d50635-0035-4469-ba6f-66e16b93f550.webp?v=1794487622"
-      ],
-      "specs": [
-        {
-          "label": "الاتصال",
-          "value": "سلكي"
-        },
-        {
-          "label": "الإضاءة",
-          "value": "RGB"
-        }
-      ],
-      "popularity": 50,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 1890,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/attack-shark-l80-pro-rgb-gaming-headset-white",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 1890
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-083",
-      "slug": "attack-shark-l90-headset-white",
-      "name": "ATTACK SHARK L90 RGB Wired Gaming Headset – White",
-      "nameAr": "سماعة أتاك شارك L90",
-      "brand": "Attack Shark",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/L90_1.webp?v=1794486875"
-      ],
-      "specs": [
-        {
-          "label": "الاتصال",
-          "value": "سلكي"
-        },
-        {
-          "label": "الإضاءة",
-          "value": "RGB"
-        }
-      ],
-      "popularity": 48,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 1990,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/attack-shark-l90-rgb-gaming-headset-white",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 1990
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-084",
-      "slug": "play-x-h01-wireless-headset",
-      "name": "Play X H01 Wireless Gaming Headset",
-      "nameAr": "سماعة بلاي إكس H01 لاسلكية",
-      "brand": "Play X",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/Wirelessheadset_SupportsBluetooth2_4gconnectivity_7_1channels_Goodquality_goodprice_jpg.jpg?v=1787761549"
-      ],
-      "specs": [
-        {
-          "label": "الاتصال",
-          "value": "2.4GHz / Bluetooth"
-        },
-        {
-          "label": "الصوت",
-          "value": "7.1"
-        }
-      ],
-      "popularity": 45,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 2890,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/play-x-wireless-h01-gaming-headset",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 2890
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-085",
-      "slug": "dobe-tp-3532d-cooling-charging-dock",
-      "name": "DOBE TP-3532D Cooling & Charging Dock (All Systems)",
-      "nameAr": "ستاند تبريد وشحن DOBE",
-      "brand": "DOBE",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/cooling-charging-dock-all-system-dobe-tp-3532d-101.jpg?v=1760287808"
-      ],
-      "specs": [],
-      "popularity": 55,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 1690,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/dobe-tp-3532d-cooling-charging-dock",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 1690
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-086",
-      "slug": "dobe-tp5-0593s-ps5-cooling-stand",
-      "name": "DOBE TP5-0593S Multifunctional Cooling Stand for PS5",
-      "nameAr": "ستاند تبريد PS5 من DOBE",
-      "brand": "DOBE",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/1786895818041-prod-ep648d9-1786895818015-tbk1nk.png?v=1793708285"
-      ],
-      "specs": [
-        {
-          "label": "التوافق",
-          "value": "PS5"
-        }
-      ],
-      "popularity": 57,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 790,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/dobe-tp5-0593s-ps5-multifunctional-cooling-stand",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 790
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-087",
-      "slug": "deadskull-ds-8056t-disc-rack",
-      "name": "DEADSKULL DS-8056T Game Disc Storage Rack",
-      "nameAr": "ستاند تخزين أسطوانات الألعاب",
-      "brand": "DEADSKULL",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/WhatsAppImage2026-11-03at2.37.39PM.jpg?v=1793710213"
-      ],
-      "specs": [],
-      "popularity": 40,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 790,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/deadskull-ds-8056t-game-disc-storage-rack",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 790
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-088",
-      "slug": "dobe-tns-5196-switch-2-grip-case",
-      "name": "DOBE TNS-5196 Detachable Grip Protective Case for Switch 2",
-      "nameAr": "جراب حماية بمسكة لسويتش 2",
-      "brand": "DOBE",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/dobe-ns2-grib.webp?v=1793709180"
-      ],
-      "specs": [
-        {
-          "label": "التوافق",
-          "value": "Nintendo Switch 2"
-        }
-      ],
-      "popularity": 52,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 450,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/dobe-tns-5196-switch-2-detachable-grip-protective-case",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 450
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-089",
-      "slug": "msi-versa-300-wireless-mouse",
-      "name": "MSI VERSA 300 Wireless Gaming Mouse",
-      "nameAr": "ماوس MSI فيرسا 300 لاسلكي",
-      "brand": "MSI",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/versa-300.webp?v=1793545742"
-      ],
-      "specs": [
-        {
-          "label": "الاتصال",
-          "value": "لاسلكي"
-        }
-      ],
-      "popularity": 46,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 2290,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/msi-versa-300-wireless-gaming-mouse",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 2290
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-090",
-      "slug": "msi-forge-gm300-mouse",
-      "name": "MSI FORGE GM300 Gaming Mouse",
-      "nameAr": "ماوس MSI فورج GM300",
-      "brand": "MSI",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/gm-mouse-forge.webp?v=1793545385"
-      ],
-      "specs": [],
-      "popularity": 44,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 990,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/msi-forge-gm300-gaming-mouse",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 990
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-091",
-      "slug": "msi-maestro-300-headset",
-      "name": "MSI MAESTRO 300 Gaming Headset",
-      "nameAr": "سماعة MSI مايسترو 300",
-      "brand": "MSI",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/maestro-headset-300.webp?v=1793544091"
-      ],
-      "specs": [],
-      "popularity": 43,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 2490,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/msi-maestro-300-gaming-headset",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 2490
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-092",
-      "slug": "msi-vigor-gk30-keyboard",
-      "name": "MSI VIGOR GK30 Gaming Keyboard",
-      "nameAr": "كيبورد MSI فيجور GK30",
-      "brand": "MSI",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/gk30-keyboard-msi_45aad528-1655-4934-830a-4d3f6ec5ac34.webp?v=1793547340"
-      ],
-      "specs": [],
-      "popularity": 42,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 1990,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/msi-vigor-gk30-gaming-keyboard",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 1990
-        }
-      ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
-    },
-    {
-      "id": "p-093",
-      "slug": "msi-vigor-gk20-keyboard",
-      "name": "MSI VIGOR GK20 Gaming Keyboard",
-      "nameAr": "كيبورد MSI فيجور GK20",
-      "brand": "MSI",
-      "categoryId": "cat-accessories",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0858/8878/files/gk20-keyboard.webp?v=1793543289"
-      ],
-      "specs": [],
-      "popularity": 41,
-      "offers": [
-        {
-          "storeId": "shamy",
-          "price": 1790,
-          "linkType": "website",
-          "url": "https://shamystores.com/products/msi-vigor-gk20-gaming-keyboard",
-          "inStock": true,
-          "freeShipping": false,
-          "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:45:00.000Z"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-22",
-          "price": 1790
         }
       ],
       "createdAt": "2026-11-22T20:45:00.000Z"
@@ -5714,6 +5334,2379 @@
         }
       ],
       "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-115",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3699
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 95,
+      "slug": "ea-sports-fc-27-ps4",
+      "name": "EA Sports FC 27 – PS4",
+      "nameAr": "لعبة FC 27 لبلايستيشن 4",
+      "brand": "EA Sports",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.mafrservices.com/pim-content/EGY/media/product/1836147000111/1791279860/1836147000111_main.jpeg"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "رياضة / كرة قدم"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "games2egypt",
+          "price": 3699,
+          "linkType": "website",
+          "url": "https://www.games2egypt.com/Product/46857/ea-sports-fc-27-arabic-and-english-ps4",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–4 أيام",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-116",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1690
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 80,
+      "slug": "minecraft-ps4",
+      "name": "Minecraft – PS4",
+      "nameAr": "لعبة ماينكرافت لبلايستيشن 4",
+      "brand": "Mojang",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/minecraft-493.jpg?v=1665068613"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "مغامرة / بناء"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1690,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/minecraft-4014057",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-117",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2290
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 62,
+      "slug": "little-nightmares-3-ps4-new",
+      "name": "Little Nightmares III – PS4",
+      "nameAr": "لعبة ليتل نايتميرز 3 لبلايستيشن 4",
+      "brand": "Bandai Namco",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/little-nightmares-3-ps4-new-497.jpg?v=1760526489"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "رعب / ألغاز"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2290,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/little-nightmares-3-ps4-new",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-118",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1699
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 72,
+      "slug": "horizon-forbidden-west-ps4-new",
+      "name": "Horizon Forbidden West – PS4",
+      "nameAr": "لعبة هورايزن فوربيدن ويست لبلايستيشن 4",
+      "brand": "PlayStation",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/horizon-forbidden-west-new-ps4-663.jpg?v=1760015771"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "أكشن / عالم مفتوح"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1699,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/horizon-forbidden-west-ps4-new",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-119",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1590
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 74,
+      "slug": "resident-evil-4-remake-ps4",
+      "name": "Resident Evil 4 Remake – PS4",
+      "nameAr": "لعبة ريزدنت إيفل 4 ريميك لبلايستيشن 4",
+      "brand": "Capcom",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/resident-evil-4-remake-315.jpg?v=1677073459"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "رعب / أكشن"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1590,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/resident-evil-4-remake-ps4",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-120",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 990
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 78,
+      "slug": "god-of-war-ps4",
+      "name": "God of War – PS4",
+      "nameAr": "لعبة جود أوف وور لبلايستيشن 4",
+      "brand": "PlayStation",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/god-of-war-868.jpg?v=1665072939"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "أكشن / مغامرة"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/god-of-war-4014440",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-121",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1190
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 88,
+      "slug": "gta-v-premium-edition-ps4",
+      "name": "Grand Theft Auto V: Premium Edition – PS4",
+      "nameAr": "لعبة جي تي إيه 5 بريميوم لبلايستيشن 4",
+      "brand": "Rockstar Games",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/gta-v-premium-edition-439.jpg?v=1665069689"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "أكشن / عالم مفتوح"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1190,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/gta-v-premium-edition-40014001056599",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-122",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1190
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 66,
+      "slug": "assassins-creed-valhalla-ps4",
+      "name": "Assassin's Creed Valhalla (Arabic) – PS4",
+      "nameAr": "لعبة أساسنز كريد فالهالا — عربي لبلايستيشن 4",
+      "brand": "Ubisoft",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/assassins-creed-valhalla-298.jpg?v=1665088854"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "أكشن / مغامرة"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1190,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/assassins-creed-valhalla-40014001057486",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-123",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1090
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 60,
+      "slug": "assassins-creed-origins-ps4",
+      "name": "Assassin's Creed Origins – PS4",
+      "nameAr": "لعبة أساسنز كريد أوريجنز لبلايستيشن 4",
+      "brand": "Ubisoft",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/assassins-creed-origins-775.jpg?v=1665073118"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "أكشن / مغامرة"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1090,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/assassins-creed-origins-4014387",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-124",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1590
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 58,
+      "slug": "batman-arkham-collection-ps4",
+      "name": "Batman: Arkham Collection – PS4",
+      "nameAr": "لعبة مجموعة باتمان أركام (3 ألعاب) لبلايستيشن 4",
+      "brand": "WB Games",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/batman-arkham-collection-3-games-583.jpg?v=1743108499"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "أكشن"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1590,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/batman-arkham-collection-ps4",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-125",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1490
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 55,
+      "slug": "sonic-frontiers-ps4",
+      "name": "Sonic Frontiers – PS4",
+      "nameAr": "لعبة سونيك فرونتيرز لبلايستيشن 4",
+      "brand": "SEGA",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/sonic-frontiers-699.jpg?v=1665062448"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "مغامرة"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/sonic-frontiers-ps4",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-126",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1290
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 52,
+      "slug": "injustice-2-ps4",
+      "name": "Injustice 2 – PS4",
+      "nameAr": "لعبة إنجستس 2 لبلايستيشن 4",
+      "brand": "WB Games",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/injustice-2-370.jpg?v=1665072091"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "قتال"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1290,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/injustice-2-4014335",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-127",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1090
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 57,
+      "slug": "uncharted-the-nathan-drake-collection-ps4",
+      "name": "Uncharted: The Nathan Drake Collection – PS4",
+      "nameAr": "لعبة أنشارتد: مجموعة نيثان دريك لبلايستيشن 4",
+      "brand": "PlayStation",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/uncharted-the-nathan-drake-collection-687.jpg?v=1665069830"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "أكشن / مغامرة"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1090,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/uncharted-the-nathan-drake-collection-4014161",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-128",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1390
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 54,
+      "slug": "detroit-become-human-ps4",
+      "name": "Detroit: Become Human – PS4",
+      "nameAr": "لعبة ديترويت: بيكام هيومان لبلايستيشن 4",
+      "brand": "PlayStation",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/detroit-become-human-182.jpg"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "مغامرة / قصة"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1390,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/detroit-become-human-40014001055649",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-129",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1290
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 45,
+      "slug": "cars-3-driven-to-win-ps4",
+      "name": "Cars 3: Driven to Win – PS4",
+      "nameAr": "لعبة كارز 3 لبلايستيشن 4",
+      "brand": "WB Games",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/cars-3-driven-to-win-408.jpg?v=1665075631"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "سباق / أطفال"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1290,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/cars-3-driven-to-win-4014346",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-130",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1090
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 44,
+      "slug": "lego-the-incredibles-ps4",
+      "name": "LEGO The Incredibles – PS4",
+      "nameAr": "لعبة ليجو ذا إنكريدبلز لبلايستيشن 4",
+      "brand": "WB Games",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/lego-the-incredibles-257.jpg?v=1665075681"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "مغامرة / أطفال"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "الحالة",
+          "value": "جديد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1090,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/lego-the-incredibles-40014001055794",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-131",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 329
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 80,
+      "slug": "psn-5-usa",
+      "name": "PSN Gift Card $5 – USA",
+      "nameAr": "كارت بلايستيشن 5 دولار — حساب أمريكي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/1XFfg7uL64LvhwVSQQB5GJddIOxtKkpr2pn5F5go.jpg?v=1782344182"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "5 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 329,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-5-usa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-132",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1624
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 78,
+      "slug": "psn-25-usa",
+      "name": "PSN Gift Card $25 – USA",
+      "nameAr": "كارت بلايستيشن 25 دولار — حساب أمريكي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-25-usa-153.jpg?v=1701198617"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "25 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1624,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-25-usa-ep25usd",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-133",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3249
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 75,
+      "slug": "psn-50-usa",
+      "name": "PSN Gift Card $50 – USA",
+      "nameAr": "كارت بلايستيشن 50 دولار — حساب أمريكي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-50-usa-890.jpg?v=1701198671"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "50 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3249,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-50-usa-50050009058403",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-134",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 6299
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 70,
+      "slug": "psn-100-usa",
+      "name": "PSN Gift Card $100 – USA",
+      "nameAr": "كارت بلايستيشن 100 دولار — حساب أمريكي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-100-usa-148.jpg?v=1761143301"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "100 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 6299,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-100-usa-50050009058411",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-135",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1299
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 78,
+      "slug": "psn-20-uae",
+      "name": "PSN Gift Card $20 – UAE",
+      "nameAr": "كارت بلايستيشن 20 دولار — حساب إماراتي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-20-uae-208.jpg?v=1701198273"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "20 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "الإمارات (UAE)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1299,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-20-uae-ep20uae",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-136",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3249
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 75,
+      "slug": "psn-50-uae",
+      "name": "PSN Gift Card $50 – UAE",
+      "nameAr": "كارت بلايستيشن 50 دولار — حساب إماراتي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-50-uae-478.jpg?v=1701198663"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "50 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "الإمارات (UAE)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3249,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-50-uae-50050009058402",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-137",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 6299
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 70,
+      "slug": "psn-100-uae",
+      "name": "PSN Gift Card $100 – UAE",
+      "nameAr": "كارت بلايستيشن 100 دولار — حساب إماراتي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-100-uae-791.jpg?v=1761143294"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "100 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "الإمارات (UAE)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 6299,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-100-uae-50050009058420",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-138",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1239
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 78,
+      "slug": "psn-20-ksa",
+      "name": "PSN Gift Card $20 – KSA",
+      "nameAr": "كارت بلايستيشن 20 دولار — حساب سعودي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-20-ksa-458.jpg?v=1701198570"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "20 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "السعودية (KSA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1239,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-20-ksa-ep20ksa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-139",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 3099
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 75,
+      "slug": "psn-50-ksa",
+      "name": "PSN Gift Card $50 – KSA",
+      "nameAr": "كارت بلايستيشن 50 دولار — حساب سعودي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-50-ksa-640.jpg?v=1701198645"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "50 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "السعودية (KSA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3099,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-50-ksa-50050009058414",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-140",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 6289
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 70,
+      "slug": "psn-100-ksa",
+      "name": "PSN Gift Card $100 – KSA",
+      "nameAr": "كارت بلايستيشن 100 دولار — حساب سعودي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-100-ksa-919.jpg?v=1701198546"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "100 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "السعودية (KSA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 6289,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-100-ksa-50014009057554",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T23:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "p-141",
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 5199
+        }
+      ],
+      "createdAt": "2026-11-22T23:40:00.000Z",
+      "popularity": 75,
+      "slug": "dualsense-cosmic-blue",
+      "name": "Sony PS5 DualSense Wireless Controller – Cosmic Blue",
+      "nameAr": "دراع بلايستيشن 5 دوال سينس — أزرق",
+      "brand": "Sony",
+      "categoryId": "cat-controllers",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0741/2557/4283/files/ps5-dualsense-wireless-controller-cosmic-blue-sony-1.jpg?v=1779577663"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الاتصال",
+          "value": "لاسلكي / USB-C"
+        },
+        {
+          "label": "اللون",
+          "value": "أزرق"
+        },
+        {
+          "label": "المميزات",
+          "value": "Haptic + Adaptive Triggers"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "dream2000",
+          "price": 5199,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/sony-ps5-dual-sense-wireless-controller",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T23:40:00.000Z",
+          "oldPrice": 6300
+        }
+      ]
+    },
+    {
+      "id": "p-142",
+      "slug": "dualsense-remix-green",
+      "name": "Sony PS5 DualSense Wireless Controller – Remix Green",
+      "nameAr": "دراع بلايستيشن 5 دوال سينس — أخضر ريمكس",
+      "brand": "Sony",
+      "categoryId": "cat-controllers",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0741/2557/4283/files/1_feb8d753-ef0b-4355-859f-788b7509517e.jpg?v=1782372582"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 5"
+        },
+        {
+          "label": "الاتصال",
+          "value": "لاسلكي / USB-C"
+        },
+        {
+          "label": "اللون",
+          "value": "أخضر ريمكس"
+        },
+        {
+          "label": "المميزات",
+          "value": "Haptic + Adaptive Triggers"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "dream2000",
+          "price": 5699,
+          "oldPrice": 6800,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/dualsense-wireless-controller-for-playstation-5-official-version",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T23:45:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 5699
+        }
+      ],
+      "createdAt": "2026-11-22T23:45:00.000Z"
+    },
+    {
+      "id": "p-143",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "xbox-10-usa",
+      "name": "Xbox Gift Card $10 – USA",
+      "nameAr": "كارت Xbox 10 دولار — حساب أمريكي",
+      "brand": "Microsoft",
+      "categoryId": "cat-game-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/xbox-10-usa-934.jpg?v=1701435073"
+      ],
+      "popularity": 68,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "10 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "Xbox و PC"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 649,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/xbox-gift-card-10-epxbox10",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 649
+        }
+      ]
+    },
+    {
+      "id": "p-144",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "xbox-20-usa",
+      "name": "Xbox Gift Card $20 – USA",
+      "nameAr": "كارت Xbox 20 دولار — حساب أمريكي",
+      "brand": "Microsoft",
+      "categoryId": "cat-game-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/xbox-20-usa-402.jpg?v=1701435154"
+      ],
+      "popularity": 66,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "20 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "Xbox و PC"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1299,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/xbox-gift-card-20-epxbox20",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 1299
+        }
+      ]
+    },
+    {
+      "id": "p-145",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "xbox-25-usa",
+      "name": "Xbox Gift Card $25 – USA",
+      "nameAr": "كارت Xbox 25 دولار — حساب أمريكي",
+      "brand": "Microsoft",
+      "categoryId": "cat-game-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/xbox-25-usa-623.jpg?v=1701435165"
+      ],
+      "popularity": 65,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "25 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "Xbox و PC"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1624,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/xbox-gift-card-25-epxbox25",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 1624
+        }
+      ]
+    },
+    {
+      "id": "p-146",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "xbox-50-usa",
+      "name": "Xbox Gift Card $50 – USA",
+      "nameAr": "كارت Xbox 50 دولار — حساب أمريكي",
+      "brand": "Microsoft",
+      "categoryId": "cat-game-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/xbox-50-usa-896.jpg?v=1701435205"
+      ],
+      "popularity": 60,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "50 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "Xbox و PC"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3249,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/xbox-gift-card-50-50050009058430",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 3249
+        }
+      ]
+    },
+    {
+      "id": "p-147",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "nintendo-eshop-10-usa",
+      "name": "Nintendo eShop Gift Card $10 – USA",
+      "nameAr": "كارت Nintendo eShop 10 دولار — حساب أمريكي",
+      "brand": "Nintendo",
+      "categoryId": "cat-game-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/nintendo-10-usa-823.jpg?v=1701434985"
+      ],
+      "popularity": 68,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "10 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "Switch و Switch 2"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 649,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-10-usa-epnintendo10",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 649
+        }
+      ]
+    },
+    {
+      "id": "p-148",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "nintendo-eshop-20-usa",
+      "name": "Nintendo eShop Gift Card $20 – USA",
+      "nameAr": "كارت Nintendo eShop 20 دولار — حساب أمريكي",
+      "brand": "Nintendo",
+      "categoryId": "cat-game-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/nintendo-20-usa-654.jpg?v=1701435003"
+      ],
+      "popularity": 66,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "20 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "Switch و Switch 2"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1299,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-20-usa-ep",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 1299
+        }
+      ]
+    },
+    {
+      "id": "p-149",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "nintendo-eshop-35-usa",
+      "name": "Nintendo eShop Gift Card $35 – USA",
+      "nameAr": "كارت Nintendo eShop 35 دولار — حساب أمريكي",
+      "brand": "Nintendo",
+      "categoryId": "cat-game-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/nintendo-35-usa-467.jpg?v=1701435018"
+      ],
+      "popularity": 63,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "35 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "Switch و Switch 2"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 2274,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-35-usa-uz-nintendo35",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 2274
+        }
+      ]
+    },
+    {
+      "id": "p-150",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "nintendo-eshop-50-usa",
+      "name": "Nintendo eShop Gift Card $50 – USA",
+      "nameAr": "كارت Nintendo eShop 50 دولار — حساب أمريكي",
+      "brand": "Nintendo",
+      "categoryId": "cat-game-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/nintendo-50-usa-763.jpg?v=1701435047"
+      ],
+      "popularity": 60,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "50 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "Switch و Switch 2"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3249,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nintendo-50-usa-ep-nintendo50",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 3249
+        }
+      ]
+    },
+    {
+      "id": "p-151",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "steam-10-usa",
+      "name": "Steam Gift Card $10 – USA",
+      "nameAr": "كارت Steam 10 دولار — حساب أمريكي",
+      "brand": "Valve",
+      "categoryId": "cat-game-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/steam-gift-card-10-usa-102.jpg?v=1715867517"
+      ],
+      "popularity": 68,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "10 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PC (Steam)"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 599,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/steam-gift-card-10-usa",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": []
+    },
+    {
+      "id": "p-152",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "apple-itunes-5-usa",
+      "name": "Apple iTunes Gift Card $5 – USA",
+      "nameAr": "كارت Apple iTunes 5 دولار — حساب أمريكي",
+      "brand": "Apple",
+      "categoryId": "cat-app-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/apple-itunes-5-usa-274.jpg?v=1750420860"
+      ],
+      "popularity": 69,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "5 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "آيفون و آيباد و ماك"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 334,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/apple-itunes-5-usa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 334
+        }
+      ]
+    },
+    {
+      "id": "p-153",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "apple-itunes-10-usa",
+      "name": "Apple iTunes Gift Card $10 – USA",
+      "nameAr": "كارت Apple iTunes 10 دولار — حساب أمريكي",
+      "brand": "Apple",
+      "categoryId": "cat-app-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/apple-itunes-10-usa-841.jpg?v=1750422798"
+      ],
+      "popularity": 68,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "10 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "آيفون و آيباد و ماك"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 669,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/apple-itunes-10-usa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 669
+        }
+      ]
+    },
+    {
+      "id": "p-154",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "apple-itunes-15-usa",
+      "name": "Apple iTunes Gift Card $15 – USA",
+      "nameAr": "كارت Apple iTunes 15 دولار — حساب أمريكي",
+      "brand": "Apple",
+      "categoryId": "cat-app-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/apple-itunes-15-usa-454.jpg?v=1750422548"
+      ],
+      "popularity": 67,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "15 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "آيفون و آيباد و ماك"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 999,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/apple-itunes-15-usa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 999
+        }
+      ]
+    },
+    {
+      "id": "p-155",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "apple-itunes-20-usa",
+      "name": "Apple iTunes Gift Card $20 – USA",
+      "nameAr": "كارت Apple iTunes 20 دولار — حساب أمريكي",
+      "brand": "Apple",
+      "categoryId": "cat-app-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/apple-itunes-20-usa-593.jpg?v=1750425431"
+      ],
+      "popularity": 66,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "20 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "آيفون و آيباد و ماك"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1339,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/apple-itunes-20-usa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 1339
+        }
+      ]
+    },
+    {
+      "id": "p-156",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "apple-itunes-25-usa",
+      "name": "Apple iTunes Gift Card $25 – USA",
+      "nameAr": "كارت Apple iTunes 25 دولار — حساب أمريكي",
+      "brand": "Apple",
+      "categoryId": "cat-app-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/apple-itunes-25-usa-643.jpg?v=1750424741"
+      ],
+      "popularity": 65,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "25 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "آيفون و آيباد و ماك"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1674,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/apple-itunes-25-usa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 1674
+        }
+      ]
+    },
+    {
+      "id": "p-157",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "apple-itunes-50-usa",
+      "name": "Apple iTunes Gift Card $50 – USA",
+      "nameAr": "كارت Apple iTunes 50 دولار — حساب أمريكي",
+      "brand": "Apple",
+      "categoryId": "cat-app-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/apple-itunes-50-usa-772.jpg?v=1750420834"
+      ],
+      "popularity": 60,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "50 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "آيفون و آيباد و ماك"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 3349,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/apple-itunes-50-usa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 3349
+        }
+      ]
+    },
+    {
+      "id": "p-158",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "apple-itunes-100-usa",
+      "name": "Apple iTunes Gift Card $100 – USA",
+      "nameAr": "كارت Apple iTunes 100 دولار — حساب أمريكي",
+      "brand": "Apple",
+      "categoryId": "cat-app-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/apple-itunes-100-usa-160.jpg?v=1750420868"
+      ],
+      "popularity": 50,
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "100 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "آيفون و آيباد و ماك"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 6699,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/apple-itunes-100-usa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-23",
+          "price": 6699
+        }
+      ]
+    },
+    {
+      "id": "p-159",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "xbox-series-x",
+      "name": "Microsoft Xbox Series X – 1TB",
+      "nameAr": "إكس بوكس سيريس X",
+      "brand": "Microsoft",
+      "categoryId": "cat-consoles",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/xboxseriesconsolex.png?v=1778597926"
+      ],
+      "popularity": 70,
+      "specs": [
+        {
+          "label": "التخزين",
+          "value": "1TB SSD"
+        },
+        {
+          "label": "الدقة",
+          "value": "حتى 4K 120Hz"
+        },
+        {
+          "label": "الأقراص",
+          "value": "فيه قارئ أقراص"
+        },
+        {
+          "label": "في العلبة",
+          "value": "دراع لاسلكي واحد"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 43490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/xbox-series-x",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": []
+    },
+    {
+      "id": "p-160",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "ps5-disc-used",
+      "name": "PlayStation 5 Disc Edition – Used (1 Month Warranty)",
+      "nameAr": "بلايستيشن 5 ديسك مستعمل — ضمان شهر",
+      "brand": "Sony",
+      "categoryId": "cat-used",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/playstation-5-disc-edition-used-ps5-583.jpg?v=1765731725"
+      ],
+      "popularity": 65,
+      "specs": [
+        {
+          "label": "الحالة",
+          "value": "مستعمل"
+        },
+        {
+          "label": "الضمان",
+          "value": "شهر من الشامي"
+        },
+        {
+          "label": "المتجر",
+          "value": "الشامي"
+        },
+        {
+          "label": "ملحوظة",
+          "value": "اتأكد من الحالة والضمان قبل الشراء"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 37490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/playstation-5-disc-edition-used-ps5",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": []
+    },
+    {
+      "id": "p-161",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "ps5-digital-used-bag",
+      "name": "PlayStation 5 Digital Edition – Used + Bag (1 Month Warranty)",
+      "nameAr": "بلايستيشن 5 ديجيتال مستعمل + شنطة — ضمان شهر",
+      "brand": "Sony",
+      "categoryId": "cat-used",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/playstation-5-digital-edition-used-ps5-794.jpg?v=1765731866"
+      ],
+      "popularity": 65,
+      "specs": [
+        {
+          "label": "الحالة",
+          "value": "مستعمل"
+        },
+        {
+          "label": "الضمان",
+          "value": "شهر من الشامي"
+        },
+        {
+          "label": "المتجر",
+          "value": "الشامي"
+        },
+        {
+          "label": "ملحوظة",
+          "value": "اتأكد من الحالة والضمان قبل الشراء"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 33490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/playstation-5-digital-edition-used-ps5-ps5-bag",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": []
+    },
+    {
+      "id": "p-162",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "ps5-digital-used-12-games",
+      "name": "Used PS5 Digital + 12 Digital Games (FC 26 & GTA V) – 1 Month Warranty",
+      "nameAr": "بلايستيشن 5 ديجيتال مستعمل + 12 لعبة — ضمان شهر",
+      "brand": "Sony",
+      "categoryId": "cat-used",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Ps5-Offer_s_12_Bundle.png?v=1775994916"
+      ],
+      "popularity": 65,
+      "specs": [
+        {
+          "label": "الحالة",
+          "value": "مستعمل"
+        },
+        {
+          "label": "الضمان",
+          "value": "شهر من الشامي"
+        },
+        {
+          "label": "المتجر",
+          "value": "الشامي"
+        },
+        {
+          "label": "ملحوظة",
+          "value": "اتأكد من الحالة والضمان قبل الشراء"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 33790,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/new-ps5-digital-edition-console-6-games-fc-26-gta-v-included-1-month-warranty",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": []
+    },
+    {
+      "id": "p-163",
+      "createdAt": "2026-11-23T00:10:00.000Z",
+      "slug": "ps4-used-10-games",
+      "name": "Used PS4 + 10 Digital Games (FC 26 & GTA) – 6 Months Warranty",
+      "nameAr": "بلايستيشن 4 مستعمل + 10 ألعاب — ضمان 6 شهور",
+      "brand": "Sony",
+      "categoryId": "cat-used",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/used-ps4-console-10-digital-games-fc-26-gta-included-6-months-warranty-496.jpg?v=1768401251"
+      ],
+      "popularity": 65,
+      "specs": [
+        {
+          "label": "الحالة",
+          "value": "مستعمل"
+        },
+        {
+          "label": "الضمان",
+          "value": "6 شهور من الشامي"
+        },
+        {
+          "label": "المتجر",
+          "value": "الشامي"
+        },
+        {
+          "label": "ملحوظة",
+          "value": "اتأكد من الحالة والضمان قبل الشراء"
+        }
+      ],
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 14450,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps4-digital-bundle-used-10-games",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-23T00:10:00.000Z"
+        }
+      ],
+      "priceHistory": []
     }
   ],
   "promo": {

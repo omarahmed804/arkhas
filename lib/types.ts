@@ -55,6 +55,10 @@ export interface Store {
   phone?: string; // hotline shown on the store, e.g. "17797"
   promoCode?: string; // your discount code at this store — shown next to every offer with a copy button
   promoNote?: string; // e.g. "خصم 5% على الحسابات"
+  active?: boolean; // false = hidden from the site (its prices too) without deleting anything
+  /** Your outreach status for a promo-code / partnership deal (admin only). */
+  partnerStatus?: "none" | "contacted" | "partner" | "no-reply";
+  partnerNotes?: string;
 }
 
 /**

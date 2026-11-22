@@ -346,6 +346,15 @@ function StoresTab({ notify }: Notify) {
             </select>
           </Field>
           <Field label="رقم الخط الساخن (اختياري)"><input className="input ltr text-start" placeholder="17797" value={form.phone ?? ""} onChange={(e) => setForm({ ...form, phone: e.target.value || undefined })} /></Field>
+          <Field label="حالة الاتفاق على برومو كود">
+            <select className="input" value={form.partnerStatus ?? "none"} onChange={(e) => setForm({ ...form, partnerStatus: e.target.value as Store["partnerStatus"] })}>
+              <option value="none">لسه مكلمتهمش</option>
+              <option value="contacted">كلمتهم ومستني الرد</option>
+              <option value="partner">اتفقنا ✓</option>
+              <option value="no-reply">مردوش / رفضوا</option>
+            </select>
+          </Field>
+          <Field label="ملاحظات (مين كلمت، إمتى…)"><input className="input" value={form.partnerNotes ?? ""} onChange={(e) => setForm({ ...form, partnerNotes: e.target.value || undefined })} /></Field>
           <Field label="البرومو كود بتاعك في المتجر ده (بيظهر جنب كل سعر)"><input className="input ltr text-start" placeholder="ARKHAS" value={form.promoCode ?? ""} onChange={(e) => setForm({ ...form, promoCode: e.target.value || undefined })} /></Field>
           <Field label="وصف الكود (اختياري)"><input className="input" placeholder="خصم 5% بكود" value={form.promoNote ?? ""} onChange={(e) => setForm({ ...form, promoNote: e.target.value || undefined })} /></Field>
           <Field label="اختصار اللوجو (1–3 حروف)"><input className="input" maxLength={3} value={form.logoText} onChange={(e) => setForm({ ...form, logoText: e.target.value })} /></Field>
@@ -357,6 +366,7 @@ function StoresTab({ notify }: Notify) {
           </Field>
           <div className="flex flex-wrap gap-4 sm:col-span-2">
             <label className="flex items-center gap-2 text-sm font-bold"><input type="checkbox" className="size-4 accent-brand-600" checked={form.trusted} onChange={(e) => setForm({ ...form, trusted: e.target.checked })} /> متجر موثوق</label>
+            <label className="flex items-center gap-2 text-sm font-bold"><input type="checkbox" className="size-4 accent-brand-600" checked={form.active !== false} onChange={(e) => setForm({ ...form, active: e.target.checked ? undefined : false })} /> ظاهر في الموقع</label>
             <label className="flex items-center gap-2 text-sm font-bold"><input type="checkbox" className="size-4 accent-brand-600" checked={form.featured} onChange={(e) => setForm({ ...form, featured: e.target.checked })} /> يظهر في الرئيسية</label>
           </div>
           <div className="flex gap-2 sm:col-span-2">
@@ -374,6 +384,14 @@ function StoresTab({ notify }: Notify) {
               <p className="truncate font-bold">{s.name}</p>
               <p className="ltr truncate text-start text-xs text-slate-500">{s.url || "بدون موقع"}</p>
               {(s.affiliateParams || s.affiliateTemplate) && <p className="text-[11px] font-bold text-deal-600">أفلييت مفعّل ✓</p>}
+              <p className="text-[11px] text-slate-500">
+                {catalog.products.filter((p) => p.offers.some((o) => o.storeId === s.id && !o.needsCheck)).length} سعر ظاهر
+                {s.active === false && " · مخفي من الموقع"}
+                {s.partnerStatus === "partner" && " · اتفقنا ✓"}
+                {s.partnerStatus === "contacted" && " · مستني الرد"}
+                {s.partnerStatus === "no-reply" && " · مردوش"}
+                {s.promoCode && ` · كود: ${s.promoCode}`}
+              </p>
             </div>
             <button type="button" aria-label="تعديل" className="rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-slate-800" onClick={() => setForm({ ...s })}><Pencil className="size-4" /></button>
             <button type="button" aria-label="حذف" className="rounded-lg p-2 text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10" onClick={() => remove(s)}><Trash2 className="size-4" /></button>

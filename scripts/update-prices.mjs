@@ -278,7 +278,7 @@ async function loadShopifyCatalog(storeUrl) {
 /* ───────────── Matching store titles to catalog products ───────────── */
 
 const STOP = new Set(
-  "the of a an and for with new edition standard game games video cd disc disk version region playstation sony official original cross gen launch day one physical copy arabic english ar en eng arb لعبة لعبه سي دي اسطوانة اسطوانه أسطوانة العاب ألعاب لجهاز جهاز نسخة نسخه عربي انجليزي إنجليزي بالعربي على قرص للبلاي ستيشن بلاي بلايستيشن gift card cards network wallet top up بطاقة كارت".split(" "),
+  "the of a an and for with new edition standard game games video cd disc disk version region playstation sony official original cross gen launch day one physical copy arabic english ar en eng arb لعبة لعبه سي دي اسطوانة اسطوانه أسطوانة العاب ألعاب لجهاز جهاز نسخة نسخه عربي انجليزي إنجليزي بالعربي على قرص للبلاي ستيشن بلاي بلايستيشن gift card cards network wallet top up eshop بطاقة كارت".split(" "),
 );
 /** Words that mean "not the same thing as a new physical copy". */
 const BAD = ["used", "pre owned", "preowned", "مستعمل", "digital", "ديجيتال", "code", "كود", "primary", "secondary", "account", "حساب", "rental", "cover", "skin", "sticker", "faceplate", "case", "جراب", "ستاند", "stand", "dlc", "season pass", "steelbook", "collector", "lenticular"];
@@ -332,7 +332,7 @@ export function matchScore(productName, platform, candidateTitle) {
 
 const MIN_SCORE = 0.6;
 /** Categories where automatic discovery is safe (clear names). */
-const DISCOVER_CATEGORIES = { "cat-ps5-games": "ps5", "cat-ps4-games": "ps4", "cat-psn-cards": null };
+const DISCOVER_CATEGORIES = { "cat-ps5-games": "ps5", "cat-ps4-games": "ps4", "cat-psn-cards": null, "cat-game-cards": null, "cat-app-cards": null };
 
 export function bestMatch(product, platform, listings) {
   let best = null;

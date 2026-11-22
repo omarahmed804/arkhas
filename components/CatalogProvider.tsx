@@ -37,12 +37,13 @@ const HIDE_MANUAL_AFTER_DAYS = 30;
  * hidden until the tracker confirms one. The admin always sees everything.
  */
 export function publicView(c: Catalog, now = Date.now()): Catalog {
+  const hidden = new Set(c.stores.filter((s) => s.active === false).map((s) => s.id));
   const products = c.products
     .map((p) => ({ ...p, offers: p.offers.filter(
-      (o) => !o.needsCheck && now - new Date(o.updatedAt).getTime() < (o.autoTrack === false ? HIDE_MANUAL_AFTER_DAYS : HIDE_AFTER_DAYS) * 86400e3,
+      (o) => !hidden.has(o.storeId) && !o.needsCheck && now - new Date(o.updatedAt).getTime() < (o.autoTrack === false ? HIDE_MANUAL_AFTER_DAYS : HIDE_AFTER_DAYS) * 86400e3,
     ) }))
     .filter((p) => p.offers.length > 0);
-  return { ...c, products };
+  return { ...c, products, stores: c.stores.filter((s) => !hidden.has(s.id)) };
 }
 
 export function CatalogProvider({ children }: { children: React.ReactNode }) {
