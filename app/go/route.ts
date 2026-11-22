@@ -27,7 +27,10 @@ export function GET(req: NextRequest) {
   if (!target && store && /^https?:\/\//.test(fallback) && sameSite(fallback, store.url || fallback)) target = fallback;
   if (!target) return NextResponse.redirect(new URL(slug ? `/product/${slug}` : "/", req.url));
 
-  const finalUrl = withAffiliate(target, store);
+  // Amazon Associates tag can also come from Vercel env (AMAZON_PARTNER_TAG) if not set in Admin → المتاجر.
+  const envTag = process.env.AMAZON_PARTNER_TAG?.trim();
+  const storeWithTag = store?.platform === "amazon" && !store.affiliateParams?.trim() && envTag ? { ...store, affiliateParams: `tag=${envTag}` } : store;
+  const finalUrl = withAffiliate(target, storeWithTag);
   console.log(
     JSON.stringify({ event: "arkhas-click", product: slug, store: storeId, price: offer?.price, at: new Date().toISOString(), ref: req.headers.get("referer") ?? "" }),
   );

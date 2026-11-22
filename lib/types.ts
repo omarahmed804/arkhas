@@ -45,6 +45,16 @@ export interface Store {
    */
   affiliateParams?: string;
   affiliateTemplate?: string;
+  /**
+   * How the automatic tracker reads this store:
+   *  - "shopify" → exact price from the store's public product data + auto-discovery of new offers
+   *  - "amazon"  → Amazon Product Advertising API (needs your Associates keys in GitHub Secrets)
+   *  - empty     → reads the price published on the product page (JSON-LD / meta tags)
+   */
+  platform?: "shopify" | "amazon";
+  phone?: string; // hotline shown on the store, e.g. "17797"
+  promoCode?: string; // your discount code at this store — shown next to every offer with a copy button
+  promoNote?: string; // e.g. "خصم 5% على الحسابات"
 }
 
 /**
@@ -71,7 +81,9 @@ export interface Offer {
   lastCheckedAt?: string;
   lastCheckError?: string; // why the last automatic check failed (blocked, not found…)
   autoTrack?: boolean; // false = never auto-update this offer (manual prices only)
-  needsCheck?: boolean; // price not confirmed from the store page yet (tracker clears it)
+  needsCheck?: boolean; // price not confirmed yet → hidden from visitors until the tracker confirms it
+  autoDiscovered?: boolean; // added automatically by the tracker's discovery step
+  variantId?: string; // Shopify variant to read (when a product page has several)
 }
 
 /** One point per day: the lowest in-stock price across all stores. */
@@ -111,10 +123,20 @@ export interface PriceAlert {
   createdAt: string;
 }
 
+/** Announcement bar at the top of every page, e.g. a promo code. Edited from Admin → البانر. */
+export interface Promo {
+  enabled: boolean;
+  text: string; // e.g. "استخدم كود"
+  code?: string; // e.g. "ARKHAS10" — shown as a copy button
+  linkLabel?: string; // e.g. "اعرف أكتر"
+  url?: string;
+}
+
 /** The whole dataset. In the MVP this is one JSON blob in LocalStorage. */
 export interface Catalog {
   version: number;
   updatedAt?: string; // when data/catalog.json was last written (admin export or tracker)
+  promo?: Promo;
   industries: Industry[];
   categories: Category[];
   stores: Store[];

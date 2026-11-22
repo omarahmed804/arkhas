@@ -7,6 +7,7 @@
  * fast), then swaps in any admin edits from the repository after hydration.
  */
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { getRepository, SEED_CATALOG } from "@/lib/repository";
 import type { Catalog, Category, Industry, Product, Store } from "@/lib/types";
 
@@ -24,6 +25,25 @@ interface CatalogContextValue {
 }
 
 const CatalogContext = createContext<CatalogContextValue | null>(null);
+
+/** Prices older than this are probably wrong — hidden from visitors until the tracker confirms them again. */
+const HIDE_AFTER_DAYS = 14;
+/** Manual prices (autoTrack off) get longer — re-save them from Admin to keep them visible. */
+const HIDE_MANUAL_AFTER_DAYS = 30;
+
+/**
+ * What visitors see: only prices we actually confirmed. Unconfirmed offers (needsCheck) and very
+ * old prices are hidden instead of showing a warning, and products with no confirmed price are
+ * hidden until the tracker confirms one. The admin always sees everything.
+ */
+export function publicView(c: Catalog, now = Date.now()): Catalog {
+  const products = c.products
+    .map((p) => ({ ...p, offers: p.offers.filter(
+      (o) => !o.needsCheck && now - new Date(o.updatedAt).getTime() < (o.autoTrack === false ? HIDE_MANUAL_AFTER_DAYS : HIDE_AFTER_DAYS) * 86400e3,
+    ) }))
+    .filter((p) => p.offers.length > 0);
+  return { ...c, products };
+}
 
 export function CatalogProvider({ children }: { children: React.ReactNode }) {
   const [catalog, setCatalog] = useState<Catalog>(SEED_CATALOG);
@@ -55,7 +75,11 @@ export function CatalogProvider({ children }: { children: React.ReactNode }) {
     setCatalog(await getRepository().reset());
   }, []);
 
+  const isAdmin = usePathname()?.startsWith("/admin") ?? false;
+  const shown = useMemo(() => (isAdmin ? catalog : publicView(catalog)), [catalog, isAdmin]);
+
   const value = useMemo<CatalogContextValue>(() => {
+    const catalog = shown;
     const stores = new Map(catalog.stores.map((s) => [s.id, s]));
     const cats = new Map(catalog.categories.map((c) => [c.id, c]));
     const inds = new Map(catalog.industries.map((i) => [i.id, i]));
@@ -70,7 +94,7 @@ export function CatalogProvider({ children }: { children: React.ReactNode }) {
       industryById: (id) => inds.get(id),
       productBySlug: (slug) => catalog.products.find((p) => p.slug === slug),
     };
-  }, [catalog, hydrated, update, reset]);
+  }, [shown, hydrated, update, reset]);
 
   return <CatalogContext.Provider value={value}>{children}</CatalogContext.Provider>;
 }

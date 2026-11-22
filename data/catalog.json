@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updatedAt": "2026-11-22T20:45:00.000Z",
+  "version": 2,
+  "updatedAt": "2026-11-22T23:20:00.000Z",
   "industries": [
     {
       "id": "ind-gaming",
@@ -74,6 +74,24 @@
       "slug": "ps4-games",
       "icon": "Disc",
       "sortOrder": 7
+    },
+    {
+      "id": "cat-psn-cards",
+      "industryId": "ind-gaming",
+      "name": "كروت PSN",
+      "nameEn": "PSN Cards",
+      "slug": "psn-cards",
+      "icon": "CreditCard",
+      "sortOrder": 8
+    },
+    {
+      "id": "cat-digital",
+      "industryId": "ind-gaming",
+      "name": "حسابات ديجيتال (Primary / Secondary)",
+      "nameEn": "Digital Game Accounts",
+      "slug": "digital-accounts",
+      "icon": "Gamepad2",
+      "sortOrder": 9
     }
   ],
   "stores": [
@@ -85,7 +103,9 @@
       "logoText": "a",
       "color": "#FF9900",
       "trusted": true,
-      "featured": true
+      "featured": true,
+      "platform": "amazon",
+      "affiliateParams": "tag=arkhas0c-21"
     },
     {
       "id": "noon",
@@ -96,6 +116,28 @@
       "color": "#E6C200",
       "trusted": true,
       "featured": true
+    },
+    {
+      "id": "dream2000",
+      "name": "دريم 2000",
+      "nameEn": "Dream 2000",
+      "url": "https://dream2000.com",
+      "logoText": "D2",
+      "color": "#E30613",
+      "trusted": true,
+      "featured": true,
+      "platform": "shopify"
+    },
+    {
+      "id": "gamesspot",
+      "name": "جيمز سبوت",
+      "nameEn": "Games Spot",
+      "url": "https://gamesspoteg.com/playstation-5/",
+      "logoText": "GS",
+      "color": "#111827",
+      "trusted": true,
+      "featured": true,
+      "phone": "17797"
     },
     {
       "id": "sigma",
@@ -135,7 +177,8 @@
       "logoText": "SH",
       "color": "#111827",
       "trusted": true,
-      "featured": true
+      "featured": true,
+      "platform": "shopify"
     },
     {
       "id": "compumarts",
@@ -291,15 +334,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 44199,
-          "oldPrice": 47104,
+          "price": 46959,
           "linkType": "website",
           "url": "https://www.amazon.eg/-/en/Sony-PlayStation-SLIM-Disc-Model/dp/B0CKYM15RJ",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "needsCheck": true
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         },
         {
           "storeId": "shamy",
@@ -310,12 +351,35 @@
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
           "updatedAt": "2026-11-22T20:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 44500,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/sony-playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z",
+          "oldPrice": 49000,
+          "autoTrack": false
+        },
+        {
+          "storeId": "dream2000",
+          "price": 56999,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/sony-playstation-5-slim-edition-console-1tb-hard-disk-cd-version",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z",
+          "oldPrice": 62000
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 50490
+          "price": 44500
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -352,14 +416,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 38400,
+          "price": 43299,
           "linkType": "website",
-          "url": "https://www.amazon.eg/-/en/PlayStation-5-Digital-Edition-Console/dp/B08H97NYGP",
+          "url": "https://www.amazon.eg/-/en/PlayStation-5-Digital-Console-Slim/dp/B0CM9VKQ5N",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "needsCheck": true
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         },
         {
           "storeId": "noon",
@@ -369,8 +432,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "needsCheck": true
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         },
         {
           "storeId": "shamy",
@@ -386,7 +448,7 @@
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 46990
+          "price": 42500
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -645,7 +707,9 @@
       "nameAr": "إكس بوكس سيريس إس 512 جيجا",
       "brand": "Microsoft",
       "categoryId": "cat-consoles",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/xbox-series-s-350.jpg?v=1709819492"
+      ],
       "specs": [
         {
           "label": "التخزين",
@@ -686,14 +750,13 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "needsCheck": true
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 19999
+          "price": 31990
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -771,6 +834,17 @@
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
           "updatedAt": "2026-11-22T20:30:00.000Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 18999,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/sony-playstation-portal-remote-player-for-ps5-midnight-black",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z",
+          "oldPrice": 22600
         }
       ],
       "priceHistory": [
@@ -831,12 +905,23 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true
+        },
+        {
+          "storeId": "amazon-eg",
+          "price": 4099,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/-/en/PlayStation-DualSense-Wireless-Gaming-Controller/dp/B0CQKLS4RP",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z",
+          "oldPrice": 4643
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 3931
+          "price": 4099
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -848,7 +933,9 @@
       "nameAr": "دراع دوال سينس إيدج الاحترافي",
       "brand": "Sony",
       "categoryId": "cat-controllers",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/sony-dualsense-edge-wireless-controller-683.jpg?v=1723545320"
+      ],
       "specs": [
         {
           "label": "المميزات",
@@ -900,8 +987,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "needsCheck": true
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         },
         {
           "storeId": "noon",
@@ -918,7 +1004,7 @@
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 12767
+          "price": 13990
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -1265,7 +1351,9 @@
       "nameAr": "ماوس لوجيتك G502 هيرو",
       "brand": "Logitech",
       "categoryId": "cat-accessories",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0741/2557/4283/files/logitech_mouse_hero_high_performance_gaming_g502.jpg?v=1779573568"
+      ],
       "specs": [
         {
           "label": "الحساس",
@@ -1319,6 +1407,17 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true
+        },
+        {
+          "storeId": "dream2000",
+          "price": 1799,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/logitech-mouse-hero-high-performance-gaming-g502",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z",
+          "oldPrice": 2900
         }
       ],
       "priceHistory": [
@@ -1336,7 +1435,9 @@
       "nameAr": "كيبورد ريدراجون K552 ميكانيكال",
       "brand": "Redragon",
       "categoryId": "cat-accessories",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/redragon-kumara-k552-keyboard-939.jpg?v=1665093762"
+      ],
       "specs": [
         {
           "label": "المقاس",
@@ -1396,11 +1497,10 @@
           "price": 1790,
           "linkType": "website",
           "url": "https://shamystores.com/products/redragon-kumara-k552-keyboard-41010003057578",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "needsCheck": true
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -1485,12 +1585,34 @@
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-22T20:30:00.000Z"
+        },
+        {
+          "storeId": "amazon-eg",
+          "price": 1677,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/-/en/SPORTS-Standard-PS5-VideoGame-English/dp/B0FGKC8PKQ",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z",
+          "oldPrice": 3485
+        },
+        {
+          "storeId": "dream2000",
+          "price": 2699,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/fifa-26-cd-gaming-for-ps5-arabic",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z",
+          "oldPrice": 3300
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 1999
+          "price": 1677
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -1527,14 +1649,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 3226,
+          "price": 3333,
           "linkType": "website",
           "url": "https://www.amazon.eg/-/en/PlayStation-Ghost-of-Yotei-PS5/dp/B0F6YY3SXM",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-22T19:00:00.000Z",
-          "needsCheck": true
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         },
         {
           "storeId": "noon",
@@ -1580,12 +1701,32 @@
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-22T20:45:00.000Z"
+        },
+        {
+          "storeId": "gamesworld",
+          "price": 3530,
+          "linkType": "website",
+          "url": "https://www.gamesworldegypt.com/ghost-of-yotei-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        },
+        {
+          "storeId": "carrefour",
+          "price": 3650,
+          "linkType": "website",
+          "url": "https://www.carrefouregypt.com/mafegy/ar/sony-playstation-games/sony-playstation-5-ghost-of-yotei-uae-version-playstation-5-ps5/p/1836147000720",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 3479
+          "price": 3333
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z"
@@ -2502,7 +2643,9 @@
       "name": "007 First Light – PS5",
       "brand": "IO Interactive",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/007firstlightps5gameshamystoresegypt.jpg?v=1778269729"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2524,7 +2667,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -2541,7 +2684,9 @@
       "name": "HITMAN: World of Assassination (25th Anniversary) – PS5",
       "brand": "IO Interactive",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/HITMAN_25th_Anniversary_World_of_Assassination.webp?v=1781701395"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2563,7 +2708,7 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [],
@@ -2575,7 +2720,9 @@
       "name": "Call of Duty: Black Ops 7 – PS5",
       "brand": "Activision",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Call_of_Duty_Black_Ops_7.webp?v=1781526518"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2600,7 +2747,27 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        },
+        {
+          "storeId": "gamesworld",
+          "price": 2687,
+          "linkType": "website",
+          "url": "https://www.gamesworldegypt.com/call-of-duty:-black-ops-7-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        },
+        {
+          "storeId": "carrefour",
+          "price": 2699,
+          "linkType": "website",
+          "url": "https://www.carrefouregypt.com/mafegy/ar/sony-playstation-games/activision-call-of-duty-black-ops-7-international-version-ps5-playstation-5-ps5/p/1836147000027",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -2617,7 +2784,9 @@
       "name": "Battlefield 6 – PS5",
       "brand": "EA",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Battlefield_6.webp?v=1781526091"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2643,7 +2812,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -2660,7 +2829,9 @@
       "name": "The Last of Us Part I – PS5",
       "brand": "Sony",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/The_Last_of_Us_Part_I_Remake.webp?v=1782224512"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2682,7 +2853,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -2699,7 +2870,9 @@
       "name": "Ninja Gaiden 4 – PS5",
       "brand": "Xbox Game Studios",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Ninja_Gaiden_4.webp?v=1782222823"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2721,7 +2894,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -2738,7 +2911,9 @@
       "name": "Little Nightmares III – PS5",
       "brand": "Bandai Namco",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Little_Nightmares_3.webp?v=1782219457"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2760,7 +2935,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -2777,7 +2952,9 @@
       "name": "Borderlands 4 – PS5",
       "brand": "2K",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Borderlands_4.webp?v=1781526435"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2799,7 +2976,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -2816,7 +2993,9 @@
       "name": "Silent Hill f – PS5",
       "brand": "Konami",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Silent_Hill_F.webp?v=1782223559"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2838,7 +3017,7 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [],
@@ -2850,7 +3029,9 @@
       "name": "NBA 2K26 – PS5",
       "brand": "2K",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/NBA_2K26.webp?v=1782222598"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2872,7 +3053,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -2889,7 +3070,9 @@
       "name": "Cronos: The New Dawn – PS5",
       "brand": "Bloober Team",
       "categoryId": "cat-ps5-games",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/Cronos_The_New_Dawn.webp?v=1781527592"
+      ],
       "specs": [
         {
           "label": "المنصة",
@@ -2911,7 +3094,7 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-22T20:30:00.000Z"
+          "updatedAt": "2026-11-22T22:50:00.000Z"
         }
       ],
       "priceHistory": [
@@ -3693,12 +3876,23 @@
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-22T20:45:00.000Z",
           "needsCheck": true
+        },
+        {
+          "storeId": "dream2000",
+          "price": 4150,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/ps5-cd-gaming-fifa-27-english",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-22T22:50:00.000Z",
+          "oldPrice": 4800
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-22",
-          "price": 4450
+          "price": 4150
         }
       ],
       "createdAt": "2026-11-22T20:45:00.000Z"
@@ -4494,6 +4688,1039 @@
         }
       ],
       "createdAt": "2026-11-22T20:45:00.000Z"
+    },
+    {
+      "id": "p-094",
+      "slug": "ea-sports-fc-26-ps4",
+      "name": "EA Sports FC 26 – PS4",
+      "nameAr": "لعبة FC 26 لبلايستيشن 4",
+      "brand": "EA Sports",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/ea-sports-fc-26-ar-en-new-ps4-591.jpg?v=1758820567"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "رياضة / كرة قدم"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "اللغة",
+          "value": "عربي / إنجليزي"
+        }
+      ],
+      "popularity": 90,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ea-sports-fc-26-ps4",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        }
+      ],
+      "priceHistory": [],
+      "createdAt": "2026-11-22T22:50:00.000Z"
+    },
+    {
+      "id": "p-095",
+      "slug": "nba-2k26-ps4",
+      "name": "NBA 2K26 – PS4",
+      "nameAr": "لعبة NBA 2K26 لبلايستيشن 4",
+      "brand": "2K Games",
+      "categoryId": "cat-ps4-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/nba-2k26-ps4-385.jpg?v=1758302409"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PlayStation 4"
+        },
+        {
+          "label": "النوع",
+          "value": "رياضة / كرة سلة"
+        },
+        {
+          "label": "النسخة",
+          "value": "Standard (أسطوانة)"
+        },
+        {
+          "label": "اللغة",
+          "value": "عربي / إنجليزي"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/nba-2k26-ps4",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        }
+      ],
+      "priceHistory": [],
+      "createdAt": "2026-11-22T22:50:00.000Z"
+    },
+    {
+      "id": "p-096",
+      "slug": "psn-10-usa",
+      "name": "PSN Gift Card $10 – USA",
+      "nameAr": "كارت بلايستيشن 10 دولار — حساب أمريكي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-10-usa-824.jpg?v=1701199449"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "10 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "أمريكا (USA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "popularity": 92,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 649,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-10-usa-ep10usd",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        },
+        {
+          "storeId": "games2egypt",
+          "price": 649,
+          "linkType": "website",
+          "url": "https://www.games2egypt.com/Product/459/psn-playstation-store-gift-card-10-usa",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 649
+        }
+      ],
+      "createdAt": "2026-11-22T22:50:00.000Z"
+    },
+    {
+      "id": "p-097",
+      "slug": "psn-10-uae",
+      "name": "PSN Gift Card $10 – UAE",
+      "nameAr": "كارت بلايستيشن 10 دولار — حساب إماراتي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-10-uae-540.jpg?v=1701200227"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "10 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "الإمارات (UAE)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "popularity": 88,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 649,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-10-uae-ep10uae",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        },
+        {
+          "storeId": "games2egypt",
+          "price": 649,
+          "linkType": "website",
+          "url": "https://www.games2egypt.com/Product/15780/psn-10-gift-card-uae",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 649
+        }
+      ],
+      "createdAt": "2026-11-22T22:50:00.000Z"
+    },
+    {
+      "id": "p-098",
+      "slug": "psn-10-ksa",
+      "name": "PSN Gift Card $10 – KSA",
+      "nameAr": "كارت بلايستيشن 10 دولار — حساب سعودي",
+      "brand": "PlayStation",
+      "categoryId": "cat-psn-cards",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/psn-10-ksa-760.jpg?v=1701198519"
+      ],
+      "specs": [
+        {
+          "label": "القيمة",
+          "value": "10 دولار"
+        },
+        {
+          "label": "المتجر",
+          "value": "السعودية (KSA)"
+        },
+        {
+          "label": "التسليم",
+          "value": "كود فوري بعد الدفع"
+        },
+        {
+          "label": "يشتغل على",
+          "value": "PS5 و PS4"
+        }
+      ],
+      "popularity": 86,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 619,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/psn-10-ksa-ep10ksa",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "فوري (كود)",
+          "updatedAt": "2026-11-22T22:50:00.000Z"
+        }
+      ],
+      "priceHistory": [],
+      "createdAt": "2026-11-22T22:50:00.000Z"
+    },
+    {
+      "id": "p-099",
+      "slug": "fc-26-digital-primary",
+      "name": "EA SPORTS FC 26 Standard Edition – Digital Primary Account",
+      "nameAr": "EA SPORTS FC 26 Standard Edition — حساب Primary ديجيتال",
+      "brand": "EA Sports",
+      "categoryId": "cat-digital",
+      "images": [
+        "https://f.nooncdn.com/p/pzsku/Z44BEA24A439B91A554ECZ/45/_/1776073370/100a275c-503c-4374-af0e-a37216c52047.jpg?width=1200"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Primary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "أساسي — تلعب من حسابك الشخصي وأونلاين، على جهاز واحد"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 94,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 2500,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2500
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-100",
+      "slug": "fc-26-digital-secondary",
+      "name": "EA SPORTS FC 26 Standard Edition – Digital Secondary Account",
+      "nameAr": "EA SPORTS FC 26 Standard Edition — حساب Secondary ديجيتال",
+      "brand": "EA Sports",
+      "categoryId": "cat-digital",
+      "images": [
+        "https://f.nooncdn.com/p/pzsku/Z44BEA24A439B91A554ECZ/45/_/1776073370/100a275c-503c-4374-af0e-a37216c52047.jpg?width=1200"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Secondary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "ثانوي — تلعب من حساب المتجر، لازم تكون متصل بالإنترنت"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 92,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 1200,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1200
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-101",
+      "slug": "spider-man-2-digital-primary",
+      "name": "Marvel's Spider-Man 2 – Digital Primary Account",
+      "nameAr": "Marvel's Spider-Man 2 — حساب Primary ديجيتال",
+      "brand": "PlayStation",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Primary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "أساسي — تلعب من حسابك الشخصي وأونلاين، على جهاز واحد"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 85,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 2000,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2000
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-102",
+      "slug": "spider-man-2-digital-secondary",
+      "name": "Marvel's Spider-Man 2 – Digital Secondary Account",
+      "nameAr": "Marvel's Spider-Man 2 — حساب Secondary ديجيتال",
+      "brand": "PlayStation",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Secondary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "ثانوي — تلعب من حساب المتجر، لازم تكون متصل بالإنترنت"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 83,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 1500,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1500
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-103",
+      "slug": "rematch-digital-primary",
+      "name": "REMATCH – Digital Primary Account",
+      "nameAr": "REMATCH — حساب Primary ديجيتال",
+      "brand": "Sloclap",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Primary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "أساسي — تلعب من حسابك الشخصي وأونلاين، على جهاز واحد"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 2500,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2500
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-104",
+      "slug": "rematch-digital-secondary",
+      "name": "REMATCH – Digital Secondary Account",
+      "nameAr": "REMATCH — حساب Secondary ديجيتال",
+      "brand": "Sloclap",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Secondary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "ثانوي — تلعب من حساب المتجر، لازم تكون متصل بالإنترنت"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 58,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 2000,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 2000
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-105",
+      "slug": "hogwarts-legacy-digital-primary",
+      "name": "Hogwarts Legacy – Digital Primary Account",
+      "nameAr": "Hogwarts Legacy — حساب Primary ديجيتال",
+      "brand": "WB Games",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Primary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "أساسي — تلعب من حسابك الشخصي وأونلاين، على جهاز واحد"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 78,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 1300,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1300
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-106",
+      "slug": "hogwarts-legacy-digital-secondary",
+      "name": "Hogwarts Legacy – Digital Secondary Account",
+      "nameAr": "Hogwarts Legacy — حساب Secondary ديجيتال",
+      "brand": "WB Games",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Secondary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "ثانوي — تلعب من حساب المتجر، لازم تكون متصل بالإنترنت"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 76,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 1000,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1000
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-107",
+      "slug": "resident-evil-4-remake-digital-primary",
+      "name": "Resident Evil 4 Remake – Digital Primary Account",
+      "nameAr": "Resident Evil 4 Remake — حساب Primary ديجيتال",
+      "brand": "Capcom",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Primary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "أساسي — تلعب من حسابك الشخصي وأونلاين، على جهاز واحد"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 76,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 1200,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1200
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-108",
+      "slug": "resident-evil-4-remake-digital-secondary",
+      "name": "Resident Evil 4 Remake – Digital Secondary Account",
+      "nameAr": "Resident Evil 4 Remake — حساب Secondary ديجيتال",
+      "brand": "Capcom",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Secondary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "ثانوي — تلعب من حساب المتجر، لازم تكون متصل بالإنترنت"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 74,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 800,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 800
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-109",
+      "slug": "far-cry-6-digital-primary",
+      "name": "Far Cry 6 – Digital Primary Account",
+      "nameAr": "Far Cry 6 — حساب Primary ديجيتال",
+      "brand": "Ubisoft",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Primary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "أساسي — تلعب من حسابك الشخصي وأونلاين، على جهاز واحد"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 62,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 1200,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1200
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-110",
+      "slug": "far-cry-6-digital-secondary",
+      "name": "Far Cry 6 – Digital Secondary Account",
+      "nameAr": "Far Cry 6 — حساب Secondary ديجيتال",
+      "brand": "Ubisoft",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Secondary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "ثانوي — تلعب من حساب المتجر، لازم تكون متصل بالإنترنت"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 800,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 800
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-111",
+      "slug": "the-crew-motorfest-digital-primary",
+      "name": "The Crew Motorfest – Digital Primary Account",
+      "nameAr": "The Crew Motorfest — حساب Primary ديجيتال",
+      "brand": "Ubisoft",
+      "categoryId": "cat-digital",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/the-crew-motorfest-used-ps4-880.jpg?v=1757427371"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Primary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "أساسي — تلعب من حسابك الشخصي وأونلاين، على جهاز واحد"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 65,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 1000,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 1000
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-112",
+      "slug": "the-crew-motorfest-digital-secondary",
+      "name": "The Crew Motorfest – Digital Secondary Account",
+      "nameAr": "The Crew Motorfest — حساب Secondary ديجيتال",
+      "brand": "Ubisoft",
+      "categoryId": "cat-digital",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/files/the-crew-motorfest-used-ps4-880.jpg?v=1757427371"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Secondary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "ثانوي — تلعب من حساب المتجر، لازم تكون متصل بالإنترنت"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 63,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 600,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 600
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-113",
+      "slug": "gta-v-digital-primary",
+      "name": "Grand Theft Auto V – Digital Primary Account",
+      "nameAr": "Grand Theft Auto V — حساب Primary ديجيتال",
+      "brand": "Rockstar Games",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Primary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "أساسي — تلعب من حسابك الشخصي وأونلاين، على جهاز واحد"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 88,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 500,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 500
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
+    },
+    {
+      "id": "p-114",
+      "slug": "gta-v-digital-secondary",
+      "name": "Grand Theft Auto V – Digital Secondary Account",
+      "nameAr": "Grand Theft Auto V — حساب Secondary ديجيتال",
+      "brand": "Rockstar Games",
+      "categoryId": "cat-digital",
+      "images": [],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "حساب Secondary"
+        },
+        {
+          "label": "المنصة",
+          "value": "PS4 و PS5"
+        },
+        {
+          "label": "طريقة اللعب",
+          "value": "ثانوي — تلعب من حساب المتجر، لازم تكون متصل بالإنترنت"
+        },
+        {
+          "label": "التسليم",
+          "value": "بيانات الحساب بعد الدفع"
+        }
+      ],
+      "popularity": 86,
+      "offers": [
+        {
+          "storeId": "gamesspot",
+          "price": 400,
+          "linkType": "website",
+          "url": "https://gamesspoteg.com/playstation-5/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "فوري (حساب ديجيتال)",
+          "updatedAt": "2026-11-22T23:20:00.000Z",
+          "autoTrack": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-22",
+          "price": 400
+        }
+      ],
+      "createdAt": "2026-11-22T23:20:00.000Z"
     }
-  ]
+  ],
+  "promo": {
+    "enabled": false,
+    "text": "استخدم كود",
+    "code": "",
+    "linkLabel": "اعرف أكتر",
+    "url": ""
+  }
 }

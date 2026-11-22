@@ -5,7 +5,7 @@
  * MVP persistence: LocalStorage via lib/repository.ts (per-browser!).
  */
 import {
-  AlertTriangle, Bell, Boxes, CloudDownload, RefreshCw, Check, Database, Download, ExternalLink, Layers, LogOut, Package, Pencil, Plus,
+  AlertTriangle, Bell, Megaphone, Boxes, CloudDownload, RefreshCw, Check, Database, Download, ExternalLink, Layers, LogOut, Package, Pencil, Plus,
   RotateCcw, Save, Search, Store as StoreIcon, Trash2, Upload,
 } from "lucide-react";
 import Link from "next/link";
@@ -20,13 +20,14 @@ import { formatEGP, slugify, uid } from "@/lib/format";
 import { offerCta } from "@/lib/offer-link";
 import { bestOffer, isStale, withTodayHistory } from "@/lib/pricing";
 import { getRepository, SEED_CATALOG } from "@/lib/repository";
-import type { Catalog, Category, Industry, PriceAlert, Product, Store } from "@/lib/types";
+import type { Catalog, Category, Industry, PriceAlert, Product, Promo, Store } from "@/lib/types";
 
-type Tab = "products" | "stores" | "categories" | "alerts" | "data";
+type Tab = "products" | "stores" | "categories" | "promo" | "alerts" | "data";
 const TABS: { key: Tab; label: string; icon: typeof Package }[] = [
   { key: "products", label: "المنتجات والأسعار", icon: Package },
   { key: "stores", label: "المتاجر", icon: StoreIcon },
   { key: "categories", label: "الأقسام والمجالات", icon: Layers },
+  { key: "promo", label: "البانر والبرومو كود", icon: Megaphone },
   { key: "alerts", label: "تنبيهات الأسعار", icon: Bell },
   { key: "data", label: "البيانات", icon: Database },
 ];
@@ -72,6 +73,7 @@ export function AdminApp() {
       {tab === "products" && <ProductsTab notify={notify} />}
       {tab === "stores" && <StoresTab notify={notify} />}
       {tab === "categories" && <CategoriesTab notify={notify} />}
+      {tab === "promo" && <PromoTab notify={notify} />}
       {tab === "alerts" && <AlertsTab />}
       {tab === "data" && <DataTab notify={notify} />}
 
@@ -336,6 +338,16 @@ function StoresTab({ notify }: Notify) {
           <Field label="رابط صورة اللوجو (اختياري)"><input className="input ltr text-start" value={form.logoUrl ?? ""} onChange={(e) => setForm({ ...form, logoUrl: e.target.value || undefined })} /></Field>
           <Field label="كود الأفلييت (يتضاف لكل رابط) — مثال أمازون: tag=arkhas-21"><input className="input ltr text-start" placeholder="tag=yourid-21" value={form.affiliateParams ?? ""} onChange={(e) => setForm({ ...form, affiliateParams: e.target.value || undefined })} /></Field>
           <Field label="أو رابط شبكة أفلييت (حط {url} مكان رابط المنتج)"><input className="input ltr text-start" placeholder="https://network.com/click?id=123&url={url}" value={form.affiliateTemplate ?? ""} onChange={(e) => setForm({ ...form, affiliateTemplate: e.target.value || undefined })} /></Field>
+          <Field label="طريقة متابعة الأسعار الآلية">
+            <select className="input" value={form.platform ?? ""} onChange={(e) => setForm({ ...form, platform: (e.target.value || undefined) as Store["platform"] })}>
+              <option value="">عادي — من صفحة المنتج</option>
+              <option value="shopify">متجر Shopify (زي الشامي ودريم 2000) — دقيق + بيضيف عروض جديدة لوحده</option>
+              <option value="amazon">أمازون — عن طريق Amazon API</option>
+            </select>
+          </Field>
+          <Field label="رقم الخط الساخن (اختياري)"><input className="input ltr text-start" placeholder="17797" value={form.phone ?? ""} onChange={(e) => setForm({ ...form, phone: e.target.value || undefined })} /></Field>
+          <Field label="البرومو كود بتاعك في المتجر ده (بيظهر جنب كل سعر)"><input className="input ltr text-start" placeholder="ARKHAS" value={form.promoCode ?? ""} onChange={(e) => setForm({ ...form, promoCode: e.target.value || undefined })} /></Field>
+          <Field label="وصف الكود (اختياري)"><input className="input" placeholder="خصم 5% بكود" value={form.promoNote ?? ""} onChange={(e) => setForm({ ...form, promoNote: e.target.value || undefined })} /></Field>
           <Field label="اختصار اللوجو (1–3 حروف)"><input className="input" maxLength={3} value={form.logoText} onChange={(e) => setForm({ ...form, logoText: e.target.value })} /></Field>
           <Field label="لون البراند">
             <div className="flex gap-2">
@@ -369,6 +381,33 @@ function StoresTab({ notify }: Notify) {
         ))}
       </div>
     </>
+  );
+}
+
+/* ───────────────────────── Promo bar ───────────────────────── */
+
+function PromoTab({ notify }: Notify) {
+  const { catalog, update } = useCatalog();
+  const [form, setForm] = useState<Promo>(() => catalog.promo ?? { enabled: false, text: "" });
+
+  async function save() {
+    await update((c) => ({ ...c, promo: { ...form, text: form.text.trim(), code: form.code?.trim() || undefined, url: form.url?.trim() || undefined } }));
+    notify("تم حفظ البانر — صدّر الـ JSON من تبويب البيانات عشان يظهر للكل");
+  }
+
+  return (
+    <div className="card grid gap-3 p-4 sm:grid-cols-2">
+      <h3 className="font-black sm:col-span-2">شريط الإعلان اللي فوق الموقع</h3>
+      <p className="text-sm text-slate-500 sm:col-span-2">مثال: النص “استخدم كود” + الكود “ARKHAS10” + “وخد خصم 10% على نون”. الكود بيظهر كزرار الزائر يدوس عليه فيتنسخ.</p>
+      <Field label="النص"><input className="input" placeholder="استخدم كود وخد خصم 10% على نون" value={form.text} onChange={(e) => setForm({ ...form, text: e.target.value })} /></Field>
+      <Field label="البرومو كود (اختياري)"><input className="input ltr text-start" placeholder="ARKHAS10" value={form.code ?? ""} onChange={(e) => setForm({ ...form, code: e.target.value })} /></Field>
+      <Field label="رابط (اختياري)"><input className="input ltr text-start" placeholder="https://" value={form.url ?? ""} onChange={(e) => setForm({ ...form, url: e.target.value })} /></Field>
+      <Field label="كلمة الرابط"><input className="input" placeholder="اعرف أكتر" value={form.linkLabel ?? ""} onChange={(e) => setForm({ ...form, linkLabel: e.target.value })} /></Field>
+      <label className="flex items-center gap-2 text-sm font-bold sm:col-span-2">
+        <input type="checkbox" className="size-4 accent-brand-600" checked={form.enabled} onChange={(e) => setForm({ ...form, enabled: e.target.checked })} /> اظهر البانر في الموقع
+      </label>
+      <button type="button" className="btn-primary sm:col-span-2" onClick={save}><Save className="size-4" /> حفظ</button>
+    </div>
   );
 }
 

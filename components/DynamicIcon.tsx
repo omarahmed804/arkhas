@@ -4,7 +4,7 @@
  * Add more Lucide icons to ICONS to make them selectable in the admin.
  */
 import {
-  Boxes, Camera, Cpu, Disc, Footprints, Gamepad2, HardDrive, Headphones, Joystick, Keyboard, Laptop,
+  Boxes, Camera, CreditCard, Cpu, Disc, Footprints, Gamepad2, HardDrive, Headphones, Joystick, Keyboard, Laptop,
   Microwave, Monitor, Mouse, Package, Printer, Refrigerator, Router, Shirt, ShoppingBag, Smartphone,
   Speaker, Tablet, Tv, WashingMachine, Watch, type LucideIcon, type LucideProps,
 } from "lucide-react";
@@ -12,7 +12,7 @@ import {
 export const ICONS: Record<string, LucideIcon> = {
   Gamepad2, Joystick, Disc, Cpu, Monitor, Headphones, Keyboard, Mouse, Laptop, HardDrive, Router, Printer,
   Smartphone, Tablet, Watch, Camera, Speaker, Tv, Refrigerator, WashingMachine, Microwave,
-  Shirt, Footprints, ShoppingBag, Boxes, Package,
+  Shirt, Footprints, ShoppingBag, Boxes, Package, CreditCard,
 };
 
 export const ICON_NAMES = Object.keys(ICONS);

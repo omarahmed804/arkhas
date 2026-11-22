@@ -13,8 +13,9 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const p = SEED_CATALOG.products.find((x) => x.slug === slug);
-  if (!p) return { title: "منتج" };
+  const found = SEED_CATALOG.products.find((x) => x.slug === slug);
+  if (!found) return { title: "منتج" };
+  const p = { ...found, offers: found.offers.filter((o) => !o.needsCheck) };
   const best = bestOffer(p);
   return {
     title: `سعر ${p.name} في مصر`,

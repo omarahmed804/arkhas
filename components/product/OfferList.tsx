@@ -4,13 +4,14 @@
  * Store comparison list. One responsive grid row per store:
  * stacked card on mobile (no horizontal scrolling), table-like row on desktop.
  */
-import { AlertTriangle, BadgeCheck, Clock, ExternalLink, RefreshCw, MessageCircle, PackageX, Truck, Users } from "lucide-react";
+import { useState } from "react";
+import { Check, Copy, BadgeCheck, Clock, ExternalLink, RefreshCw, MessageCircle, PackageX, Truck, Users } from "lucide-react";
 import { useCatalog } from "../CatalogProvider";
 import { StoreLogo, TimeAgo, TrustBadge } from "../ui";
 import { formatEGP } from "@/lib/format";
 import { offerCta } from "@/lib/offer-link";
 import { goHref } from "@/lib/affiliate";
-import { bestOffer, isStale, sortOffers } from "@/lib/pricing";
+import { bestOffer, sortOffers } from "@/lib/pricing";
 import type { Offer, Product } from "@/lib/types";
 
 export function OfferCtaButton({ offer, product, className = "" }: { offer: Offer; product: Product; className?: string }) {
@@ -43,32 +44,45 @@ export function OfferCtaButton({ offer, product, className = "" }: { offer: Offe
   );
 }
 
-/** Price credibility: when it was last confirmed + whether the tracker watches it. */
+/** When the price was last confirmed + whether the tracker watches it. No warnings: unconfirmed prices are never shown. */
 function Freshness({ offer }: { offer: Offer }) {
-  if (offer.needsCheck) {
-    return (
-      <span className="flex items-center gap-1 font-bold text-amber-600 dark:text-amber-400" title="السعر ده لسه متأكدناش منه من صفحة المتجر — المتابعة الآلية هتأكده">
-        <AlertTriangle className="size-3.5" /> السعر بيتأكد — راجعه في صفحة المتجر
-      </span>
-    );
-  }
-  const stale = isStale(offer.updatedAt);
-  const tracked = offer.lastCheckedAt && !offer.lastCheckError && !isStale(offer.lastCheckedAt);
+  const tracked = offer.lastCheckedAt && !offer.lastCheckError;
   return (
     <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
-      <span className={`flex items-center gap-1 ${stale ? "text-amber-600 dark:text-amber-400" : "text-slate-500"}`}>
-        {stale ? <AlertTriangle className="size-3.5" /> : <Clock className="size-3.5" />}
+      <span className="flex items-center gap-1 text-slate-500">
+        <Clock className="size-3.5" />
         <span>
           تم التحديث <TimeAgo iso={offer.updatedAt} />
         </span>
       </span>
       {tracked && (
-        <span className="flex items-center gap-1 font-bold text-brand-600" title="السعر بيتراجع تلقائيًا من صفحة المتجر">
+        <span className="flex items-center gap-1 font-bold text-brand-600" title="السعر بيتراجع تلقائيًا كل 6 ساعات">
           <RefreshCw className="size-3" /> متابَع تلقائيًا
         </span>
       )}
-      {stale && <span className="font-bold text-amber-600 dark:text-amber-400">أكّد السعر في صفحة المتجر</span>}
     </span>
+  );
+}
+
+/** "كود خصم: ARKHAS" chip — tap to copy. Set per store in Admin → المتاجر. */
+function StorePromo({ code, note }: { code: string; note?: string }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <button
+      type="button"
+      className="mt-1 inline-flex items-center gap-1 rounded-lg border border-dashed border-brand-500 bg-brand-50 px-2 py-0.5 text-[11px] font-bold text-brand-700 dark:bg-brand-500/10 dark:text-brand-300"
+      title="انسخ الكود واستخدمه وانت بتطلب"
+      onClick={async () => {
+        try {
+          await navigator.clipboard.writeText(code);
+          setCopied(true);
+          setTimeout(() => setCopied(false), 1800);
+        } catch {}
+      }}
+    >
+      {note || "كود خصم"}: <span dir="ltr" className="font-black tracking-wider">{code}</span>
+      {copied ? <Check className="size-3" /> : <Copy className="size-3" />}
+    </button>
   );
 }
 
@@ -113,6 +127,7 @@ export function OfferList({ product }: { product: Product }) {
                       </span>
                     )}
                   </div>
+                  {store.promoCode && <StorePromo code={store.promoCode} note={store.promoNote} />}
                 </div>
               </div>
 
