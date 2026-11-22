@@ -1,0 +1,2558 @@
+{
+  "version": 1,
+  "industries": [
+    {
+      "id": "ind-gaming",
+      "name": "الجيمينج والإلكترونيات",
+      "nameEn": "Gaming & Electronics",
+      "slug": "gaming",
+      "icon": "Gamepad2",
+      "sortOrder": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-consoles",
+      "industryId": "ind-gaming",
+      "name": "أجهزة الألعاب",
+      "nameEn": "Consoles",
+      "slug": "consoles",
+      "icon": "Gamepad2",
+      "sortOrder": 1
+    },
+    {
+      "id": "cat-controllers",
+      "industryId": "ind-gaming",
+      "name": "الدراعات",
+      "nameEn": "Controllers",
+      "slug": "controllers",
+      "icon": "Joystick",
+      "sortOrder": 2
+    },
+    {
+      "id": "cat-gpus",
+      "industryId": "ind-gaming",
+      "name": "كروت الشاشة",
+      "nameEn": "Graphics Cards",
+      "slug": "gpus",
+      "icon": "Cpu",
+      "sortOrder": 3
+    },
+    {
+      "id": "cat-monitors",
+      "industryId": "ind-gaming",
+      "name": "الشاشات",
+      "nameEn": "Monitors",
+      "slug": "monitors",
+      "icon": "Monitor",
+      "sortOrder": 4
+    },
+    {
+      "id": "cat-accessories",
+      "industryId": "ind-gaming",
+      "name": "الإكسسوارات",
+      "nameEn": "Accessories",
+      "slug": "accessories",
+      "icon": "Headphones",
+      "sortOrder": 5
+    }
+  ],
+  "stores": [
+    {
+      "id": "amazon-eg",
+      "name": "أمازون مصر",
+      "nameEn": "Amazon Egypt",
+      "url": "https://www.amazon.eg",
+      "logoText": "a",
+      "color": "#FF9900",
+      "trusted": true,
+      "featured": true
+    },
+    {
+      "id": "noon",
+      "name": "نون",
+      "nameEn": "Noon",
+      "url": "https://www.noon.com/egypt-ar/",
+      "logoText": "n",
+      "color": "#E6C200",
+      "trusted": true,
+      "featured": true
+    },
+    {
+      "id": "sigma",
+      "name": "سيجما كمبيوتر",
+      "nameEn": "Sigma Computer",
+      "url": "https://www.sigma-computer.com",
+      "logoText": "Σ",
+      "color": "#D61F26",
+      "trusted": true,
+      "featured": true
+    },
+    {
+      "id": "elbadr",
+      "name": "البدر جروب",
+      "nameEn": "El-Badr Group",
+      "url": "https://elbadrgroupeg.store",
+      "logoText": "EB",
+      "color": "#0F4C81",
+      "trusted": true,
+      "featured": true
+    },
+    {
+      "id": "games2egypt",
+      "name": "جيمز تو إيجيبت",
+      "nameEn": "Games2Egypt",
+      "url": "https://www.games2egypt.com",
+      "logoText": "G2",
+      "color": "#7C3AED",
+      "trusted": true,
+      "featured": true
+    },
+    {
+      "id": "shamy",
+      "name": "الشامي ستورز",
+      "nameEn": "Shamy Stores",
+      "url": "https://shamystores.com",
+      "logoText": "SH",
+      "color": "#111827",
+      "trusted": true,
+      "featured": true
+    },
+    {
+      "id": "compumarts",
+      "name": "كمبيومارتس",
+      "nameEn": "CompuMarts",
+      "url": "https://www.compumarts.com",
+      "logoText": "CM",
+      "color": "#0EA5E9",
+      "trusted": false,
+      "featured": false
+    }
+  ],
+  "products": [
+    {
+      "id": "p-001",
+      "slug": "ps5-dualsense-controller-white",
+      "name": "Sony PS5 DualSense Wireless Controller – White",
+      "nameAr": "دراع بلايستيشن 5 دوال سينس – أبيض",
+      "brand": "Sony",
+      "categoryId": "cat-controllers",
+      "images": [],
+      "specs": [
+        {
+          "label": "الاتصال",
+          "value": "Bluetooth 5.1 / USB-C"
+        },
+        {
+          "label": "البطارية",
+          "value": "1560 mAh"
+        },
+        {
+          "label": "المميزات",
+          "value": "Haptic Feedback, Adaptive Triggers"
+        },
+        {
+          "label": "التوافق",
+          "value": "PS5 / PC"
+        },
+        {
+          "label": "الضمان",
+          "value": "سنة"
+        }
+      ],
+      "popularity": 96,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 3899,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=Sony+PS5+DualSense+Wireless+Controller",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T16:00:00.000Z",
+          "oldPrice": 4499
+        },
+        {
+          "storeId": "noon",
+          "price": 3949,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=Sony+PS5+DualSense+Wireless+Controller",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T13:00:00.000Z",
+          "oldPrice": 4299
+        },
+        {
+          "storeId": "games2egypt",
+          "price": 4100,
+          "linkType": "website",
+          "url": "https://www.games2egypt.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T17:00:00.000Z"
+        },
+        {
+          "storeId": "shamy",
+          "price": 4050,
+          "linkType": "website",
+          "url": "https://shamystores.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T15:00:00.000Z"
+        },
+        {
+          "storeId": "elbadr",
+          "price": 4250,
+          "linkType": "website",
+          "url": "https://elbadrgroupeg.store",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "2–4 أيام",
+          "updatedAt": "2026-11-21T16:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 4349
+        },
+        {
+          "date": "2026-10-25",
+          "price": 4329
+        },
+        {
+          "date": "2026-10-26",
+          "price": 4369
+        },
+        {
+          "date": "2026-10-27",
+          "price": 4329
+        },
+        {
+          "date": "2026-10-28",
+          "price": 4339
+        },
+        {
+          "date": "2026-10-29",
+          "price": 4299
+        },
+        {
+          "date": "2026-10-30",
+          "price": 4329
+        },
+        {
+          "date": "2026-10-31",
+          "price": 4289
+        },
+        {
+          "date": "2026-11-01",
+          "price": 4339
+        },
+        {
+          "date": "2026-11-02",
+          "price": 4329
+        },
+        {
+          "date": "2026-11-03",
+          "price": 4309
+        },
+        {
+          "date": "2026-11-04",
+          "price": 4269
+        },
+        {
+          "date": "2026-11-05",
+          "price": 4259
+        },
+        {
+          "date": "2026-11-06",
+          "price": 4269
+        },
+        {
+          "date": "2026-11-07",
+          "price": 4229
+        },
+        {
+          "date": "2026-11-08",
+          "price": 4169
+        },
+        {
+          "date": "2026-11-09",
+          "price": 4159
+        },
+        {
+          "date": "2026-11-10",
+          "price": 4199
+        },
+        {
+          "date": "2026-11-11",
+          "price": 4179
+        },
+        {
+          "date": "2026-11-12",
+          "price": 4159
+        },
+        {
+          "date": "2026-11-13",
+          "price": 4109
+        },
+        {
+          "date": "2026-11-14",
+          "price": 4059
+        },
+        {
+          "date": "2026-11-15",
+          "price": 4069
+        },
+        {
+          "date": "2026-11-16",
+          "price": 4029
+        },
+        {
+          "date": "2026-11-17",
+          "price": 4059
+        },
+        {
+          "date": "2026-11-18",
+          "price": 4019
+        },
+        {
+          "date": "2026-11-19",
+          "price": 3949
+        },
+        {
+          "date": "2026-11-20",
+          "price": 3979
+        },
+        {
+          "date": "2026-11-21",
+          "price": 3919
+        },
+        {
+          "date": "2026-11-22",
+          "price": 3899
+        }
+      ],
+      "createdAt": "2026-09-23T18:00:00.000Z"
+    },
+    {
+      "id": "p-002",
+      "slug": "ps5-slim-disc",
+      "name": "Sony PlayStation 5 Slim – Disc Edition (1TB)",
+      "nameAr": "بلايستيشن 5 سليم – نسخة القرص",
+      "brand": "Sony",
+      "categoryId": "cat-consoles",
+      "images": [],
+      "specs": [
+        {
+          "label": "التخزين",
+          "value": "1TB SSD"
+        },
+        {
+          "label": "الدقة",
+          "value": "حتى 4K 120Hz"
+        },
+        {
+          "label": "المعالج",
+          "value": "AMD Zen 2, 8 Cores"
+        },
+        {
+          "label": "في العلبة",
+          "value": "دراع DualSense واحد"
+        },
+        {
+          "label": "الضمان",
+          "value": "سنة"
+        }
+      ],
+      "popularity": 99,
+      "offers": [
+        {
+          "storeId": "noon",
+          "price": 31499,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=Sony+PlayStation+5+Slim",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T14:00:00.000Z",
+          "oldPrice": 33999
+        },
+        {
+          "storeId": "amazon-eg",
+          "price": 31999,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=Sony+PlayStation+5+Slim",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T16:00:00.000Z"
+        },
+        {
+          "storeId": "shamy",
+          "price": 32500,
+          "linkType": "website",
+          "url": "https://shamystores.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T12:00:00.000Z"
+        },
+        {
+          "storeId": "games2egypt",
+          "price": 32999,
+          "linkType": "website",
+          "url": "https://www.games2egypt.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T15:00:00.000Z",
+          "oldPrice": 34999
+        },
+        {
+          "storeId": "sigma",
+          "price": 33250,
+          "linkType": "website",
+          "url": "https://www.sigma-computer.com",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "3–5 أيام",
+          "updatedAt": "2026-11-21T12:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 34999
+        },
+        {
+          "date": "2026-10-25",
+          "price": 34959
+        },
+        {
+          "date": "2026-10-26",
+          "price": 35249
+        },
+        {
+          "date": "2026-10-27",
+          "price": 35389
+        },
+        {
+          "date": "2026-10-28",
+          "price": 35339
+        },
+        {
+          "date": "2026-10-29",
+          "price": 35169
+        },
+        {
+          "date": "2026-10-30",
+          "price": 34899
+        },
+        {
+          "date": "2026-10-31",
+          "price": 34939
+        },
+        {
+          "date": "2026-11-01",
+          "price": 34919
+        },
+        {
+          "date": "2026-11-02",
+          "price": 34829
+        },
+        {
+          "date": "2026-11-03",
+          "price": 34729
+        },
+        {
+          "date": "2026-11-04",
+          "price": 34789
+        },
+        {
+          "date": "2026-11-05",
+          "price": 34329
+        },
+        {
+          "date": "2026-11-06",
+          "price": 33979
+        },
+        {
+          "date": "2026-11-07",
+          "price": 33909
+        },
+        {
+          "date": "2026-11-08",
+          "price": 33929
+        },
+        {
+          "date": "2026-11-09",
+          "price": 33579
+        },
+        {
+          "date": "2026-11-10",
+          "price": 33839
+        },
+        {
+          "date": "2026-11-11",
+          "price": 33579
+        },
+        {
+          "date": "2026-11-12",
+          "price": 33549
+        },
+        {
+          "date": "2026-11-13",
+          "price": 33119
+        },
+        {
+          "date": "2026-11-14",
+          "price": 32839
+        },
+        {
+          "date": "2026-11-15",
+          "price": 32709
+        },
+        {
+          "date": "2026-11-16",
+          "price": 32369
+        },
+        {
+          "date": "2026-11-17",
+          "price": 32349
+        },
+        {
+          "date": "2026-11-18",
+          "price": 32189
+        },
+        {
+          "date": "2026-11-19",
+          "price": 32349
+        },
+        {
+          "date": "2026-11-20",
+          "price": 32189
+        },
+        {
+          "date": "2026-11-21",
+          "price": 31509
+        },
+        {
+          "date": "2026-11-22",
+          "price": 31499
+        }
+      ],
+      "createdAt": "2026-09-24T18:00:00.000Z"
+    },
+    {
+      "id": "p-003",
+      "slug": "xbox-wireless-controller-carbon-black",
+      "name": "Xbox Wireless Controller – Carbon Black",
+      "nameAr": "دراع إكس بوكس لاسلكي – أسود",
+      "brand": "Microsoft",
+      "categoryId": "cat-controllers",
+      "images": [],
+      "specs": [
+        {
+          "label": "الاتصال",
+          "value": "Xbox Wireless / Bluetooth"
+        },
+        {
+          "label": "البطارية",
+          "value": "2× AA (حتى 40 ساعة)"
+        },
+        {
+          "label": "التوافق",
+          "value": "Xbox Series X|S / PC / Mobile"
+        },
+        {
+          "label": "المنفذ",
+          "value": "USB-C"
+        }
+      ],
+      "popularity": 81,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 3150,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=Xbox+Wireless+Controller",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T15:00:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 3199,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=Xbox+Wireless+Controller",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T11:00:00.000Z",
+          "oldPrice": 3600
+        },
+        {
+          "storeId": "games2egypt",
+          "price": 3350,
+          "linkType": "website",
+          "url": "https://www.games2egypt.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T16:00:00.000Z"
+        },
+        {
+          "storeId": "shamy",
+          "price": 3299,
+          "linkType": "website",
+          "url": "https://shamystores.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T09:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 3239
+        },
+        {
+          "date": "2026-10-25",
+          "price": 3219
+        },
+        {
+          "date": "2026-10-26",
+          "price": 3199
+        },
+        {
+          "date": "2026-10-27",
+          "price": 3189
+        },
+        {
+          "date": "2026-10-28",
+          "price": 3179
+        },
+        {
+          "date": "2026-10-29",
+          "price": 3229
+        },
+        {
+          "date": "2026-10-30",
+          "price": 3169
+        },
+        {
+          "date": "2026-10-31",
+          "price": 3219
+        },
+        {
+          "date": "2026-11-01",
+          "price": 3209
+        },
+        {
+          "date": "2026-11-02",
+          "price": 3189
+        },
+        {
+          "date": "2026-11-03",
+          "price": 3199
+        },
+        {
+          "date": "2026-11-04",
+          "price": 3179
+        },
+        {
+          "date": "2026-11-05",
+          "price": 3159
+        },
+        {
+          "date": "2026-11-06",
+          "price": 3189
+        },
+        {
+          "date": "2026-11-07",
+          "price": 3159
+        },
+        {
+          "date": "2026-11-08",
+          "price": 3159
+        },
+        {
+          "date": "2026-11-09",
+          "price": 3179
+        },
+        {
+          "date": "2026-11-10",
+          "price": 3189
+        },
+        {
+          "date": "2026-11-11",
+          "price": 3169
+        },
+        {
+          "date": "2026-11-12",
+          "price": 3149
+        },
+        {
+          "date": "2026-11-13",
+          "price": 3149
+        },
+        {
+          "date": "2026-11-14",
+          "price": 3179
+        },
+        {
+          "date": "2026-11-15",
+          "price": 3189
+        },
+        {
+          "date": "2026-11-16",
+          "price": 3179
+        },
+        {
+          "date": "2026-11-17",
+          "price": 3169
+        },
+        {
+          "date": "2026-11-18",
+          "price": 3179
+        },
+        {
+          "date": "2026-11-19",
+          "price": 3149
+        },
+        {
+          "date": "2026-11-20",
+          "price": 3129
+        },
+        {
+          "date": "2026-11-21",
+          "price": 3129
+        },
+        {
+          "date": "2026-11-22",
+          "price": 3150
+        }
+      ],
+      "createdAt": "2026-09-25T18:00:00.000Z"
+    },
+    {
+      "id": "p-004",
+      "slug": "nintendo-switch-oled-white",
+      "name": "Nintendo Switch OLED Model – White",
+      "nameAr": "نينتندو سويتش OLED – أبيض",
+      "brand": "Nintendo",
+      "categoryId": "cat-consoles",
+      "images": [],
+      "specs": [
+        {
+          "label": "الشاشة",
+          "value": "7\" OLED"
+        },
+        {
+          "label": "التخزين",
+          "value": "64GB"
+        },
+        {
+          "label": "البطارية",
+          "value": "4.5 – 9 ساعات"
+        },
+        {
+          "label": "الأوضاع",
+          "value": "TV / Tabletop / Handheld"
+        }
+      ],
+      "popularity": 74,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 16999,
+          "linkType": "website",
+          "url": "https://shamystores.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T13:00:00.000Z"
+        },
+        {
+          "storeId": "games2egypt",
+          "price": 17250,
+          "linkType": "website",
+          "url": "https://www.games2egypt.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T14:00:00.000Z"
+        },
+        {
+          "storeId": "amazon-eg",
+          "price": 17499,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=Nintendo+Switch+OLED+Model",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T16:00:00.000Z",
+          "oldPrice": 18999
+        },
+        {
+          "storeId": "noon",
+          "price": 17899,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=Nintendo+Switch+OLED+Model",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T06:00:00.000Z"
+        },
+        {
+          "storeId": "elbadr",
+          "price": 17999,
+          "linkType": "website",
+          "url": "https://elbadrgroupeg.store",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–4 أيام",
+          "updatedAt": "2026-11-21T22:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 16759
+        },
+        {
+          "date": "2026-10-25",
+          "price": 16799
+        },
+        {
+          "date": "2026-10-26",
+          "price": 16929
+        },
+        {
+          "date": "2026-10-27",
+          "price": 16749
+        },
+        {
+          "date": "2026-10-28",
+          "price": 16859
+        },
+        {
+          "date": "2026-10-29",
+          "price": 16759
+        },
+        {
+          "date": "2026-10-30",
+          "price": 16639
+        },
+        {
+          "date": "2026-10-31",
+          "price": 16659
+        },
+        {
+          "date": "2026-11-01",
+          "price": 16929
+        },
+        {
+          "date": "2026-11-02",
+          "price": 16989
+        },
+        {
+          "date": "2026-11-03",
+          "price": 16929
+        },
+        {
+          "date": "2026-11-04",
+          "price": 16729
+        },
+        {
+          "date": "2026-11-05",
+          "price": 16809
+        },
+        {
+          "date": "2026-11-06",
+          "price": 16779
+        },
+        {
+          "date": "2026-11-07",
+          "price": 16859
+        },
+        {
+          "date": "2026-11-08",
+          "price": 16989
+        },
+        {
+          "date": "2026-11-09",
+          "price": 17029
+        },
+        {
+          "date": "2026-11-10",
+          "price": 16789
+        },
+        {
+          "date": "2026-11-11",
+          "price": 16839
+        },
+        {
+          "date": "2026-11-12",
+          "price": 16919
+        },
+        {
+          "date": "2026-11-13",
+          "price": 16839
+        },
+        {
+          "date": "2026-11-14",
+          "price": 16899
+        },
+        {
+          "date": "2026-11-15",
+          "price": 16769
+        },
+        {
+          "date": "2026-11-16",
+          "price": 16999
+        },
+        {
+          "date": "2026-11-17",
+          "price": 16909
+        },
+        {
+          "date": "2026-11-18",
+          "price": 16959
+        },
+        {
+          "date": "2026-11-19",
+          "price": 16889
+        },
+        {
+          "date": "2026-11-20",
+          "price": 17009
+        },
+        {
+          "date": "2026-11-21",
+          "price": 17059
+        },
+        {
+          "date": "2026-11-22",
+          "price": 16999
+        }
+      ],
+      "createdAt": "2026-09-26T18:00:00.000Z"
+    },
+    {
+      "id": "p-005",
+      "slug": "asus-dual-rtx-4060-oc-8gb",
+      "name": "ASUS Dual GeForce RTX 4060 OC 8GB GDDR6",
+      "nameAr": "كارت شاشة أسوس RTX 4060",
+      "brand": "ASUS",
+      "categoryId": "cat-gpus",
+      "images": [],
+      "specs": [
+        {
+          "label": "الذاكرة",
+          "value": "8GB GDDR6, 128-bit"
+        },
+        {
+          "label": "Boost Clock",
+          "value": "2535 MHz (OC)"
+        },
+        {
+          "label": "المخارج",
+          "value": "HDMI 2.1, 3× DP 1.4a"
+        },
+        {
+          "label": "الباور المقترح",
+          "value": "550W"
+        },
+        {
+          "label": "الضمان",
+          "value": "3 سنوات"
+        }
+      ],
+      "popularity": 93,
+      "offers": [
+        {
+          "storeId": "sigma",
+          "price": 17650,
+          "linkType": "website",
+          "url": "https://www.sigma-computer.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T17:00:00.000Z",
+          "oldPrice": 18900
+        },
+        {
+          "storeId": "elbadr",
+          "price": 17800,
+          "linkType": "website",
+          "url": "https://elbadrgroupeg.store",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T15:00:00.000Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 17950,
+          "linkType": "website",
+          "url": "https://www.compumarts.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T10:00:00.000Z"
+        },
+        {
+          "storeId": "amazon-eg",
+          "price": 18799,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=ASUS+Dual+GeForce+RTX+4060+OC+8GB+GDDR6",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "2–4 أيام",
+          "updatedAt": "2026-11-22T13:00:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 19250,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=ASUS+Dual+GeForce+RTX+4060+OC+8GB+GDDR6",
+          "inStock": false,
+          "freeShipping": true,
+          "deliveryEta": "3–5 أيام",
+          "updatedAt": "2026-11-21T02:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 19789
+        },
+        {
+          "date": "2026-10-25",
+          "price": 19789
+        },
+        {
+          "date": "2026-10-26",
+          "price": 19639
+        },
+        {
+          "date": "2026-10-27",
+          "price": 19669
+        },
+        {
+          "date": "2026-10-28",
+          "price": 19649
+        },
+        {
+          "date": "2026-10-29",
+          "price": 19789
+        },
+        {
+          "date": "2026-10-30",
+          "price": 19499
+        },
+        {
+          "date": "2026-10-31",
+          "price": 19699
+        },
+        {
+          "date": "2026-11-01",
+          "price": 19659
+        },
+        {
+          "date": "2026-11-02",
+          "price": 19469
+        },
+        {
+          "date": "2026-11-03",
+          "price": 19529
+        },
+        {
+          "date": "2026-11-04",
+          "price": 19149
+        },
+        {
+          "date": "2026-11-05",
+          "price": 19169
+        },
+        {
+          "date": "2026-11-06",
+          "price": 19199
+        },
+        {
+          "date": "2026-11-07",
+          "price": 19109
+        },
+        {
+          "date": "2026-11-08",
+          "price": 19189
+        },
+        {
+          "date": "2026-11-09",
+          "price": 19119
+        },
+        {
+          "date": "2026-11-10",
+          "price": 18939
+        },
+        {
+          "date": "2026-11-11",
+          "price": 18889
+        },
+        {
+          "date": "2026-11-12",
+          "price": 18619
+        },
+        {
+          "date": "2026-11-13",
+          "price": 18619
+        },
+        {
+          "date": "2026-11-14",
+          "price": 18569
+        },
+        {
+          "date": "2026-11-15",
+          "price": 18249
+        },
+        {
+          "date": "2026-11-16",
+          "price": 18249
+        },
+        {
+          "date": "2026-11-17",
+          "price": 18189
+        },
+        {
+          "date": "2026-11-18",
+          "price": 18189
+        },
+        {
+          "date": "2026-11-19",
+          "price": 18159
+        },
+        {
+          "date": "2026-11-20",
+          "price": 17719
+        },
+        {
+          "date": "2026-11-21",
+          "price": 17789
+        },
+        {
+          "date": "2026-11-22",
+          "price": 17650
+        }
+      ],
+      "createdAt": "2026-09-27T18:00:00.000Z"
+    },
+    {
+      "id": "p-006",
+      "slug": "msi-rtx-4070-super-ventus-2x-12gb",
+      "name": "MSI GeForce RTX 4070 SUPER Ventus 2X OC 12GB",
+      "nameAr": "كارت شاشة MSI RTX 4070 سوبر",
+      "brand": "MSI",
+      "categoryId": "cat-gpus",
+      "images": [],
+      "specs": [
+        {
+          "label": "الذاكرة",
+          "value": "12GB GDDR6X, 192-bit"
+        },
+        {
+          "label": "Boost Clock",
+          "value": "2505 MHz"
+        },
+        {
+          "label": "المخارج",
+          "value": "HDMI 2.1a, 3× DP 1.4a"
+        },
+        {
+          "label": "الباور المقترح",
+          "value": "650W"
+        }
+      ],
+      "popularity": 79,
+      "offers": [
+        {
+          "storeId": "elbadr",
+          "price": 39900,
+          "linkType": "website",
+          "url": "https://elbadrgroupeg.store",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T16:00:00.000Z"
+        },
+        {
+          "storeId": "sigma",
+          "price": 40250,
+          "linkType": "website",
+          "url": "https://www.sigma-computer.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T14:00:00.000Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 40999,
+          "linkType": "website",
+          "url": "https://www.compumarts.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T12:00:00.000Z",
+          "oldPrice": 42500
+        },
+        {
+          "storeId": "amazon-eg",
+          "price": 42750,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=MSI+GeForce+RTX+4070+SUPER+Ventus+2X+OC+12GB",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "3–5 أيام",
+          "updatedAt": "2026-11-22T08:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 37749
+        },
+        {
+          "date": "2026-10-25",
+          "price": 38089
+        },
+        {
+          "date": "2026-10-26",
+          "price": 38179
+        },
+        {
+          "date": "2026-10-27",
+          "price": 38089
+        },
+        {
+          "date": "2026-10-28",
+          "price": 37979
+        },
+        {
+          "date": "2026-10-29",
+          "price": 38429
+        },
+        {
+          "date": "2026-10-30",
+          "price": 38319
+        },
+        {
+          "date": "2026-10-31",
+          "price": 38009
+        },
+        {
+          "date": "2026-11-01",
+          "price": 38729
+        },
+        {
+          "date": "2026-11-02",
+          "price": 38709
+        },
+        {
+          "date": "2026-11-03",
+          "price": 38919
+        },
+        {
+          "date": "2026-11-04",
+          "price": 38849
+        },
+        {
+          "date": "2026-11-05",
+          "price": 38759
+        },
+        {
+          "date": "2026-11-06",
+          "price": 39199
+        },
+        {
+          "date": "2026-11-07",
+          "price": 39249
+        },
+        {
+          "date": "2026-11-08",
+          "price": 39029
+        },
+        {
+          "date": "2026-11-09",
+          "price": 39229
+        },
+        {
+          "date": "2026-11-10",
+          "price": 38719
+        },
+        {
+          "date": "2026-11-11",
+          "price": 39179
+        },
+        {
+          "date": "2026-11-12",
+          "price": 39299
+        },
+        {
+          "date": "2026-11-13",
+          "price": 39079
+        },
+        {
+          "date": "2026-11-14",
+          "price": 39549
+        },
+        {
+          "date": "2026-11-15",
+          "price": 39039
+        },
+        {
+          "date": "2026-11-16",
+          "price": 39839
+        },
+        {
+          "date": "2026-11-17",
+          "price": 39509
+        },
+        {
+          "date": "2026-11-18",
+          "price": 39509
+        },
+        {
+          "date": "2026-11-19",
+          "price": 39749
+        },
+        {
+          "date": "2026-11-20",
+          "price": 39819
+        },
+        {
+          "date": "2026-11-21",
+          "price": 39459
+        },
+        {
+          "date": "2026-11-22",
+          "price": 39900
+        }
+      ],
+      "createdAt": "2026-09-28T18:00:00.000Z"
+    },
+    {
+      "id": "p-007",
+      "slug": "samsung-odyssey-g5-27-qhd-165hz",
+      "name": "Samsung Odyssey G5 27\" QHD 165Hz Curved (LC27G55T)",
+      "nameAr": "شاشة سامسونج أوديسي G5 – 27 بوصة",
+      "brand": "Samsung",
+      "categoryId": "cat-monitors",
+      "images": [],
+      "specs": [
+        {
+          "label": "المقاس",
+          "value": "27\" Curved 1000R"
+        },
+        {
+          "label": "الدقة",
+          "value": "2560×1440 QHD"
+        },
+        {
+          "label": "معدل التحديث",
+          "value": "165Hz / 1ms"
+        },
+        {
+          "label": "اللوحة",
+          "value": "VA, HDR10"
+        }
+      ],
+      "popularity": 77,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 11999,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=Samsung+Odyssey+G5+27%22+QHD+165Hz+Curved+(LC27G55T)",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T15:00:00.000Z",
+          "oldPrice": 14499
+        },
+        {
+          "storeId": "noon",
+          "price": 12299,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=Samsung+Odyssey+G5+27%22+QHD+165Hz+Curved+(LC27G55T)",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T12:00:00.000Z",
+          "oldPrice": 13999
+        },
+        {
+          "storeId": "sigma",
+          "price": 12650,
+          "linkType": "website",
+          "url": "https://www.sigma-computer.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T16:00:00.000Z"
+        },
+        {
+          "storeId": "elbadr",
+          "price": 12800,
+          "linkType": "website",
+          "url": "https://elbadrgroupeg.store",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–4 أيام",
+          "updatedAt": "2026-11-22T04:00:00.000Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 12999,
+          "linkType": "website",
+          "url": "https://www.compumarts.com",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "3–5 أيام",
+          "updatedAt": "2026-11-20T16:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 13419
+        },
+        {
+          "date": "2026-10-25",
+          "price": 13449
+        },
+        {
+          "date": "2026-10-26",
+          "price": 13319
+        },
+        {
+          "date": "2026-10-27",
+          "price": 13309
+        },
+        {
+          "date": "2026-10-28",
+          "price": 13279
+        },
+        {
+          "date": "2026-10-29",
+          "price": 13289
+        },
+        {
+          "date": "2026-10-30",
+          "price": 13269
+        },
+        {
+          "date": "2026-10-31",
+          "price": 13309
+        },
+        {
+          "date": "2026-11-01",
+          "price": 13239
+        },
+        {
+          "date": "2026-11-02",
+          "price": 13329
+        },
+        {
+          "date": "2026-11-03",
+          "price": 13219
+        },
+        {
+          "date": "2026-11-04",
+          "price": 13159
+        },
+        {
+          "date": "2026-11-05",
+          "price": 13049
+        },
+        {
+          "date": "2026-11-06",
+          "price": 13089
+        },
+        {
+          "date": "2026-11-07",
+          "price": 12939
+        },
+        {
+          "date": "2026-11-08",
+          "price": 13039
+        },
+        {
+          "date": "2026-11-09",
+          "price": 12969
+        },
+        {
+          "date": "2026-11-10",
+          "price": 12839
+        },
+        {
+          "date": "2026-11-11",
+          "price": 12799
+        },
+        {
+          "date": "2026-11-12",
+          "price": 12769
+        },
+        {
+          "date": "2026-11-13",
+          "price": 12669
+        },
+        {
+          "date": "2026-11-14",
+          "price": 12529
+        },
+        {
+          "date": "2026-11-15",
+          "price": 12429
+        },
+        {
+          "date": "2026-11-16",
+          "price": 12379
+        },
+        {
+          "date": "2026-11-17",
+          "price": 12279
+        },
+        {
+          "date": "2026-11-18",
+          "price": 12269
+        },
+        {
+          "date": "2026-11-19",
+          "price": 12219
+        },
+        {
+          "date": "2026-11-20",
+          "price": 12219
+        },
+        {
+          "date": "2026-11-21",
+          "price": 12109
+        },
+        {
+          "date": "2026-11-22",
+          "price": 11999
+        }
+      ],
+      "createdAt": "2026-09-29T18:00:00.000Z"
+    },
+    {
+      "id": "p-008",
+      "slug": "lg-ultragear-24gn60r-144hz",
+      "name": "LG UltraGear 24GN60R 24\" FHD IPS 144Hz",
+      "nameAr": "شاشة إل جي ألترا جير 24 بوصة",
+      "brand": "LG",
+      "categoryId": "cat-monitors",
+      "images": [],
+      "specs": [
+        {
+          "label": "المقاس",
+          "value": "23.8\""
+        },
+        {
+          "label": "الدقة",
+          "value": "1920×1080 FHD"
+        },
+        {
+          "label": "معدل التحديث",
+          "value": "144Hz / 1ms GtG"
+        },
+        {
+          "label": "اللوحة",
+          "value": "IPS, HDR10, FreeSync Premium"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "sigma",
+          "price": 6999,
+          "linkType": "website",
+          "url": "https://www.sigma-computer.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T16:00:00.000Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 7150,
+          "linkType": "website",
+          "url": "https://www.compumarts.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T13:00:00.000Z"
+        },
+        {
+          "storeId": "amazon-eg",
+          "price": 7299,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=LG+UltraGear+24GN60R+24%22+FHD+IPS+144Hz",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T14:00:00.000Z",
+          "oldPrice": 7999
+        },
+        {
+          "storeId": "noon",
+          "price": 7450,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=LG+UltraGear+24GN60R+24%22+FHD+IPS+144Hz",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T09:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 7179
+        },
+        {
+          "date": "2026-10-25",
+          "price": 7099
+        },
+        {
+          "date": "2026-10-26",
+          "price": 7159
+        },
+        {
+          "date": "2026-10-27",
+          "price": 7109
+        },
+        {
+          "date": "2026-10-28",
+          "price": 7099
+        },
+        {
+          "date": "2026-10-29",
+          "price": 7149
+        },
+        {
+          "date": "2026-10-30",
+          "price": 7109
+        },
+        {
+          "date": "2026-10-31",
+          "price": 7139
+        },
+        {
+          "date": "2026-11-01",
+          "price": 7129
+        },
+        {
+          "date": "2026-11-02",
+          "price": 7059
+        },
+        {
+          "date": "2026-11-03",
+          "price": 7129
+        },
+        {
+          "date": "2026-11-04",
+          "price": 7149
+        },
+        {
+          "date": "2026-11-05",
+          "price": 7119
+        },
+        {
+          "date": "2026-11-06",
+          "price": 7129
+        },
+        {
+          "date": "2026-11-07",
+          "price": 7019
+        },
+        {
+          "date": "2026-11-08",
+          "price": 7079
+        },
+        {
+          "date": "2026-11-09",
+          "price": 7059
+        },
+        {
+          "date": "2026-11-10",
+          "price": 7079
+        },
+        {
+          "date": "2026-11-11",
+          "price": 6979
+        },
+        {
+          "date": "2026-11-12",
+          "price": 7039
+        },
+        {
+          "date": "2026-11-13",
+          "price": 6979
+        },
+        {
+          "date": "2026-11-14",
+          "price": 7079
+        },
+        {
+          "date": "2026-11-15",
+          "price": 6989
+        },
+        {
+          "date": "2026-11-16",
+          "price": 7009
+        },
+        {
+          "date": "2026-11-17",
+          "price": 7089
+        },
+        {
+          "date": "2026-11-18",
+          "price": 7039
+        },
+        {
+          "date": "2026-11-19",
+          "price": 7029
+        },
+        {
+          "date": "2026-11-20",
+          "price": 6959
+        },
+        {
+          "date": "2026-11-21",
+          "price": 6999
+        },
+        {
+          "date": "2026-11-22",
+          "price": 6999
+        }
+      ],
+      "createdAt": "2026-09-30T18:00:00.000Z"
+    },
+    {
+      "id": "p-009",
+      "slug": "hyperx-cloud-ii-red",
+      "name": "HyperX Cloud II Gaming Headset – Red",
+      "nameAr": "سماعة هايبر إكس كلاود 2",
+      "brand": "HyperX",
+      "categoryId": "cat-accessories",
+      "images": [],
+      "specs": [
+        {
+          "label": "الصوت",
+          "value": "Virtual 7.1 Surround"
+        },
+        {
+          "label": "السماعة",
+          "value": "53mm Drivers"
+        },
+        {
+          "label": "الاتصال",
+          "value": "USB / 3.5mm"
+        },
+        {
+          "label": "الميكروفون",
+          "value": "قابل للفصل مع Noise Cancelling"
+        }
+      ],
+      "popularity": 90,
+      "offers": [
+        {
+          "storeId": "noon",
+          "price": 3299,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=HyperX+Cloud+II+Gaming+Headset",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T16:00:00.000Z",
+          "oldPrice": 3999
+        },
+        {
+          "storeId": "amazon-eg",
+          "price": 3349,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=HyperX+Cloud+II+Gaming+Headset",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T17:00:00.000Z",
+          "oldPrice": 4200
+        },
+        {
+          "storeId": "sigma",
+          "price": 3500,
+          "linkType": "website",
+          "url": "https://www.sigma-computer.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T12:00:00.000Z"
+        },
+        {
+          "storeId": "elbadr",
+          "price": 3550,
+          "linkType": "website",
+          "url": "https://elbadrgroupeg.store",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–4 أيام",
+          "updatedAt": "2026-11-22T06:00:00.000Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 3600,
+          "linkType": "website",
+          "url": "https://www.compumarts.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T00:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 3699
+        },
+        {
+          "date": "2026-10-25",
+          "price": 3719
+        },
+        {
+          "date": "2026-10-26",
+          "price": 3669
+        },
+        {
+          "date": "2026-10-27",
+          "price": 3659
+        },
+        {
+          "date": "2026-10-28",
+          "price": 3699
+        },
+        {
+          "date": "2026-10-29",
+          "price": 3699
+        },
+        {
+          "date": "2026-10-30",
+          "price": 3679
+        },
+        {
+          "date": "2026-10-31",
+          "price": 3629
+        },
+        {
+          "date": "2026-11-01",
+          "price": 3629
+        },
+        {
+          "date": "2026-11-02",
+          "price": 3649
+        },
+        {
+          "date": "2026-11-03",
+          "price": 3649
+        },
+        {
+          "date": "2026-11-04",
+          "price": 3639
+        },
+        {
+          "date": "2026-11-05",
+          "price": 3619
+        },
+        {
+          "date": "2026-11-06",
+          "price": 3559
+        },
+        {
+          "date": "2026-11-07",
+          "price": 3579
+        },
+        {
+          "date": "2026-11-08",
+          "price": 3589
+        },
+        {
+          "date": "2026-11-09",
+          "price": 3549
+        },
+        {
+          "date": "2026-11-10",
+          "price": 3529
+        },
+        {
+          "date": "2026-11-11",
+          "price": 3539
+        },
+        {
+          "date": "2026-11-12",
+          "price": 3509
+        },
+        {
+          "date": "2026-11-13",
+          "price": 3489
+        },
+        {
+          "date": "2026-11-14",
+          "price": 3459
+        },
+        {
+          "date": "2026-11-15",
+          "price": 3459
+        },
+        {
+          "date": "2026-11-16",
+          "price": 3399
+        },
+        {
+          "date": "2026-11-17",
+          "price": 3399
+        },
+        {
+          "date": "2026-11-18",
+          "price": 3389
+        },
+        {
+          "date": "2026-11-19",
+          "price": 3349
+        },
+        {
+          "date": "2026-11-20",
+          "price": 3319
+        },
+        {
+          "date": "2026-11-21",
+          "price": 3319
+        },
+        {
+          "date": "2026-11-22",
+          "price": 3299
+        }
+      ],
+      "createdAt": "2026-10-01T18:00:00.000Z"
+    },
+    {
+      "id": "p-010",
+      "slug": "logitech-g502-hero",
+      "name": "Logitech G502 HERO High-Performance Gaming Mouse",
+      "nameAr": "ماوس لوجيتك G502 هيرو",
+      "brand": "Logitech",
+      "categoryId": "cat-accessories",
+      "images": [],
+      "specs": [
+        {
+          "label": "الحساس",
+          "value": "HERO 25K"
+        },
+        {
+          "label": "الدقة",
+          "value": "100 – 25,600 DPI"
+        },
+        {
+          "label": "الأزرار",
+          "value": "11 زر قابل للبرمجة"
+        },
+        {
+          "label": "الوزن",
+          "value": "121g + أوزان إضافية"
+        }
+      ],
+      "popularity": 86,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 1899,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=Logitech+G502+HERO+High-Performance+Gaming+Mouse",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T16:00:00.000Z",
+          "oldPrice": 2499
+        },
+        {
+          "storeId": "noon",
+          "price": 1950,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=Logitech+G502+HERO+High-Performance+Gaming+Mouse",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T14:00:00.000Z"
+        },
+        {
+          "storeId": "sigma",
+          "price": 2050,
+          "linkType": "website",
+          "url": "https://www.sigma-computer.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T15:00:00.000Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 1999,
+          "linkType": "website",
+          "url": "https://www.compumarts.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T11:00:00.000Z"
+        },
+        {
+          "storeId": "elbadr",
+          "price": 2100,
+          "linkType": "website",
+          "url": "https://elbadrgroupeg.store",
+          "inStock": false,
+          "freeShipping": false,
+          "deliveryEta": "2–4 أيام",
+          "updatedAt": "2026-11-21T09:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 2109
+        },
+        {
+          "date": "2026-10-25",
+          "price": 2139
+        },
+        {
+          "date": "2026-10-26",
+          "price": 2129
+        },
+        {
+          "date": "2026-10-27",
+          "price": 2109
+        },
+        {
+          "date": "2026-10-28",
+          "price": 2109
+        },
+        {
+          "date": "2026-10-29",
+          "price": 2099
+        },
+        {
+          "date": "2026-10-30",
+          "price": 2119
+        },
+        {
+          "date": "2026-10-31",
+          "price": 2119
+        },
+        {
+          "date": "2026-11-01",
+          "price": 2089
+        },
+        {
+          "date": "2026-11-02",
+          "price": 2089
+        },
+        {
+          "date": "2026-11-03",
+          "price": 2069
+        },
+        {
+          "date": "2026-11-04",
+          "price": 2059
+        },
+        {
+          "date": "2026-11-05",
+          "price": 2079
+        },
+        {
+          "date": "2026-11-06",
+          "price": 2049
+        },
+        {
+          "date": "2026-11-07",
+          "price": 2049
+        },
+        {
+          "date": "2026-11-08",
+          "price": 2049
+        },
+        {
+          "date": "2026-11-09",
+          "price": 2029
+        },
+        {
+          "date": "2026-11-10",
+          "price": 2039
+        },
+        {
+          "date": "2026-11-11",
+          "price": 2009
+        },
+        {
+          "date": "2026-11-12",
+          "price": 1999
+        },
+        {
+          "date": "2026-11-13",
+          "price": 2019
+        },
+        {
+          "date": "2026-11-14",
+          "price": 1999
+        },
+        {
+          "date": "2026-11-15",
+          "price": 1959
+        },
+        {
+          "date": "2026-11-16",
+          "price": 1979
+        },
+        {
+          "date": "2026-11-17",
+          "price": 1949
+        },
+        {
+          "date": "2026-11-18",
+          "price": 1939
+        },
+        {
+          "date": "2026-11-19",
+          "price": 1929
+        },
+        {
+          "date": "2026-11-20",
+          "price": 1939
+        },
+        {
+          "date": "2026-11-21",
+          "price": 1919
+        },
+        {
+          "date": "2026-11-22",
+          "price": 1899
+        }
+      ],
+      "createdAt": "2026-10-02T18:00:00.000Z"
+    },
+    {
+      "id": "p-011",
+      "slug": "xbox-series-s-512gb",
+      "name": "Microsoft Xbox Series S – 512GB",
+      "nameAr": "إكس بوكس سيريس إس 512 جيجا",
+      "brand": "Microsoft",
+      "categoryId": "cat-consoles",
+      "images": [],
+      "specs": [
+        {
+          "label": "التخزين",
+          "value": "512GB SSD"
+        },
+        {
+          "label": "الدقة",
+          "value": "حتى 1440p 120fps"
+        },
+        {
+          "label": "التشغيل",
+          "value": "Digital Only"
+        },
+        {
+          "label": "في العلبة",
+          "value": "دراع لاسلكي"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 16499,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=Microsoft+Xbox+Series+S",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T15:00:00.000Z"
+        },
+        {
+          "storeId": "games2egypt",
+          "price": 16750,
+          "linkType": "website",
+          "url": "https://www.games2egypt.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T13:00:00.000Z"
+        },
+        {
+          "storeId": "shamy",
+          "price": 16600,
+          "linkType": "website",
+          "url": "https://shamystores.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 48 ساعة",
+          "updatedAt": "2026-11-22T16:00:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 16999,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=Microsoft+Xbox+Series+S",
+          "inStock": false,
+          "freeShipping": true,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-21T14:00:00.000Z",
+          "oldPrice": 17999
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 15659
+        },
+        {
+          "date": "2026-10-25",
+          "price": 15549
+        },
+        {
+          "date": "2026-10-26",
+          "price": 15819
+        },
+        {
+          "date": "2026-10-27",
+          "price": 15739
+        },
+        {
+          "date": "2026-10-28",
+          "price": 15919
+        },
+        {
+          "date": "2026-10-29",
+          "price": 15659
+        },
+        {
+          "date": "2026-10-30",
+          "price": 15909
+        },
+        {
+          "date": "2026-10-31",
+          "price": 15739
+        },
+        {
+          "date": "2026-11-01",
+          "price": 15979
+        },
+        {
+          "date": "2026-11-02",
+          "price": 15859
+        },
+        {
+          "date": "2026-11-03",
+          "price": 15879
+        },
+        {
+          "date": "2026-11-04",
+          "price": 16109
+        },
+        {
+          "date": "2026-11-05",
+          "price": 16079
+        },
+        {
+          "date": "2026-11-06",
+          "price": 15899
+        },
+        {
+          "date": "2026-11-07",
+          "price": 16179
+        },
+        {
+          "date": "2026-11-08",
+          "price": 15999
+        },
+        {
+          "date": "2026-11-09",
+          "price": 16039
+        },
+        {
+          "date": "2026-11-10",
+          "price": 16239
+        },
+        {
+          "date": "2026-11-11",
+          "price": 16079
+        },
+        {
+          "date": "2026-11-12",
+          "price": 16179
+        },
+        {
+          "date": "2026-11-13",
+          "price": 16399
+        },
+        {
+          "date": "2026-11-14",
+          "price": 16359
+        },
+        {
+          "date": "2026-11-15",
+          "price": 16279
+        },
+        {
+          "date": "2026-11-16",
+          "price": 16329
+        },
+        {
+          "date": "2026-11-17",
+          "price": 16429
+        },
+        {
+          "date": "2026-11-18",
+          "price": 16279
+        },
+        {
+          "date": "2026-11-19",
+          "price": 16269
+        },
+        {
+          "date": "2026-11-20",
+          "price": 16449
+        },
+        {
+          "date": "2026-11-21",
+          "price": 16519
+        },
+        {
+          "date": "2026-11-22",
+          "price": 16499
+        }
+      ],
+      "createdAt": "2026-10-03T18:00:00.000Z"
+    },
+    {
+      "id": "p-012",
+      "slug": "redragon-k552-kumara-rgb",
+      "name": "Redragon K552 Kumara RGB Mechanical Keyboard",
+      "nameAr": "كيبورد ريدراجون K552 ميكانيكال",
+      "brand": "Redragon",
+      "categoryId": "cat-accessories",
+      "images": [],
+      "specs": [
+        {
+          "label": "السويتشات",
+          "value": "Outemu Red"
+        },
+        {
+          "label": "المقاس",
+          "value": "TKL 87 Keys"
+        },
+        {
+          "label": "الإضاءة",
+          "value": "RGB"
+        },
+        {
+          "label": "الهيكل",
+          "value": "معدن وبلاستيك ABS"
+        }
+      ],
+      "popularity": 68,
+      "offers": [
+        {
+          "storeId": "compumarts",
+          "price": 1299,
+          "linkType": "website",
+          "url": "https://www.compumarts.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T14:00:00.000Z"
+        },
+        {
+          "storeId": "sigma",
+          "price": 1350,
+          "linkType": "website",
+          "url": "https://www.sigma-computer.com",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T15:00:00.000Z"
+        },
+        {
+          "storeId": "amazon-eg",
+          "price": 1399,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/s?k=Redragon+K552+Kumara+RGB+Mechanical+Keyboard",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "خلال 24 ساعة",
+          "updatedAt": "2026-11-22T12:00:00.000Z",
+          "oldPrice": 1650
+        },
+        {
+          "storeId": "noon",
+          "price": 1425,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-ar/search/?q=Redragon+K552+Kumara+RGB+Mechanical+Keyboard",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "2–3 أيام",
+          "updatedAt": "2026-11-22T08:00:00.000Z"
+        },
+        {
+          "storeId": "elbadr",
+          "price": 1450,
+          "linkType": "website",
+          "url": "https://elbadrgroupeg.store",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "2–4 أيام",
+          "updatedAt": "2026-11-22T03:00:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-10-24",
+          "price": 1339
+        },
+        {
+          "date": "2026-10-25",
+          "price": 1319
+        },
+        {
+          "date": "2026-10-26",
+          "price": 1319
+        },
+        {
+          "date": "2026-10-27",
+          "price": 1329
+        },
+        {
+          "date": "2026-10-28",
+          "price": 1319
+        },
+        {
+          "date": "2026-10-29",
+          "price": 1309
+        },
+        {
+          "date": "2026-10-30",
+          "price": 1329
+        },
+        {
+          "date": "2026-10-31",
+          "price": 1329
+        },
+        {
+          "date": "2026-11-01",
+          "price": 1319
+        },
+        {
+          "date": "2026-11-02",
+          "price": 1319
+        },
+        {
+          "date": "2026-11-03",
+          "price": 1329
+        },
+        {
+          "date": "2026-11-04",
+          "price": 1309
+        },
+        {
+          "date": "2026-11-05",
+          "price": 1309
+        },
+        {
+          "date": "2026-11-06",
+          "price": 1319
+        },
+        {
+          "date": "2026-11-07",
+          "price": 1309
+        },
+        {
+          "date": "2026-11-08",
+          "price": 1299
+        },
+        {
+          "date": "2026-11-09",
+          "price": 1299
+        },
+        {
+          "date": "2026-11-10",
+          "price": 1319
+        },
+        {
+          "date": "2026-11-11",
+          "price": 1319
+        },
+        {
+          "date": "2026-11-12",
+          "price": 1309
+        },
+        {
+          "date": "2026-11-13",
+          "price": 1309
+        },
+        {
+          "date": "2026-11-14",
+          "price": 1299
+        },
+        {
+          "date": "2026-11-15",
+          "price": 1309
+        },
+        {
+          "date": "2026-11-16",
+          "price": 1289
+        },
+        {
+          "date": "2026-11-17",
+          "price": 1289
+        },
+        {
+          "date": "2026-11-18",
+          "price": 1299
+        },
+        {
+          "date": "2026-11-19",
+          "price": 1299
+        },
+        {
+          "date": "2026-11-20",
+          "price": 1289
+        },
+        {
+          "date": "2026-11-21",
+          "price": 1289
+        },
+        {
+          "date": "2026-11-22",
+          "price": 1299
+        }
+      ],
+      "createdAt": "2026-10-04T18:00:00.000Z"
+    }
+  ]
+}
