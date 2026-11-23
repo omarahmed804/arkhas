@@ -7,6 +7,7 @@ import { useCatalog } from "./CatalogProvider";
 import { DynamicIcon } from "./DynamicIcon";
 import { timeAgo } from "@/lib/format";
 import type { Product, Store } from "@/lib/types";
+import { tr } from "@/lib/i18n";
 
 const PALETTES = [
   "from-blue-100 to-indigo-200 text-indigo-600 dark:from-blue-950 dark:to-indigo-900 dark:text-indigo-300",
@@ -97,7 +98,7 @@ export function StoreLogo({ store, size = "md" }: { store: Store; size?: "sm" | 
 export function TrustBadge() {
   return (
     <span className="chip bg-brand-50 text-brand-700 dark:bg-brand-600/15 dark:text-brand-100">
-      <BadgeCheck className="size-3.5" /> موثوق
+      <BadgeCheck className="size-3.5" /> {tr("موثوق")}
     </span>
   );
 }

@@ -7,6 +7,7 @@
 import { Check, Copy, Megaphone, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useCatalog } from "./CatalogProvider";
+import { tr } from "@/lib/i18n";
 
 const DISMISS_KEY = "arkhas:promo-dismissed";
 
@@ -43,7 +44,7 @@ export function PromoBar() {
             type="button"
             onClick={copy}
             className="inline-flex items-center gap-1 rounded-lg border border-dashed border-white/70 bg-white/15 px-2 py-0.5 font-black tracking-wider hover:bg-white/25"
-            title="انسخ الكود"
+            title={tr("انسخ الكود")}
           >
             <span dir="ltr">{promo.code}</span>
             {copied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}
@@ -51,12 +52,12 @@ export function PromoBar() {
         )}
         {promo.url && (
           <a href={promo.url} target="_blank" rel="noopener noreferrer sponsored" className="underline underline-offset-2 hover:opacity-90">
-            {promo.linkLabel || "اعرف أكتر"}
+            {promo.linkLabel || tr("اعرف أكتر")}
           </a>
         )}
         <button
           type="button"
-          aria-label="إخفاء"
+          aria-label={tr("إخفاء")}
           className="absolute end-2 top-1/2 -translate-y-1/2 rounded-md p-1 opacity-80 hover:bg-white/15 hover:opacity-100"
           onClick={() => {
             setHidden(true);

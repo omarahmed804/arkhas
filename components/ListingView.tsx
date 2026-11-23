@@ -17,12 +17,13 @@ import { StoreLogo } from "./ui";
 import { formatNumber } from "@/lib/format";
 import { isPriceDrop, lowestPrice, marketDiscount, type OfferFilter } from "@/lib/pricing";
 import type { Category } from "@/lib/types";
+import { tr, pick } from "@/lib/i18n";
 
 type SortKey = "price" | "discount" | "popular";
 const SORTS: { key: SortKey; label: string }[] = [
-  { key: "price", label: "الأقل سعرًا" },
-  { key: "discount", label: "الأعلى خصمًا" },
-  { key: "popular", label: "الأكثر شعبية" },
+  { key: "price", label: tr("الأقل سعرًا") },
+  { key: "discount", label: tr("الأعلى خصمًا") },
+  { key: "popular", label: tr("الأكثر شعبية") },
 ];
 
 const list = (v: string | null) => (v ? v.split(",").filter(Boolean) : []);
@@ -91,13 +92,13 @@ export function ListingView({ category }: { category?: Category }) {
 
   const activeCount = brands.length + storeIds.length + (inStockOnly ? 1 : 0) + (min || max ? 1 : 0) + (category ? 0 : cats.length) + (dropsOnly ? 1 : 0);
 
-  const title = category ? category.name : q ? `نتائج البحث عن “${q}”` : dropsOnly ? "منتجات نزلت أسعارها" : "كل المنتجات";
+  const title = category ? pick(category.name, category.nameEn) : q ? tr("نتائج البحث عن “{q}”", { q }) : dropsOnly ? tr("منتجات نزلت أسعارها") : tr("كل المنتجات");
 
   const filters = (
     <div className="space-y-6">
       {/* Price range */}
       <fieldset>
-        <legend className="mb-2 text-sm font-black">السعر (ج.م)</legend>
+        <legend className="mb-2 text-sm font-black">{tr("السعر (ج.م)")}</legend>
         <div className="flex items-center gap-2">
           <input
             key={`min-${min}`}
@@ -105,8 +106,8 @@ export function ListingView({ category }: { category?: Category }) {
             inputMode="numeric"
             min={0}
             defaultValue={min || ""}
-            placeholder="من"
-            aria-label="أقل سعر"
+            placeholder={tr("من")}
+            aria-label={tr("أقل سعر")}
             className="input"
             onBlur={(e) => setParams({ min: e.target.value || null })}
             onKeyDown={(e) => e.key === "Enter" && setParams({ min: (e.target as HTMLInputElement).value || null })}
@@ -118,8 +119,8 @@ export function ListingView({ category }: { category?: Category }) {
             inputMode="numeric"
             min={0}
             defaultValue={max || ""}
-            placeholder="إلى"
-            aria-label="أعلى سعر"
+            placeholder={tr("إلى")}
+            aria-label={tr("أعلى سعر")}
             className="input"
             onBlur={(e) => setParams({ max: e.target.value || null })}
             onKeyDown={(e) => e.key === "Enter" && setParams({ max: (e.target as HTMLInputElement).value || null })}
@@ -138,7 +139,7 @@ export function ListingView({ category }: { category?: Category }) {
               onClick={() => setParams({ min: a ? String(a) : null, max: b ? String(b) : null })}
               className={`chip border ${min === a && max === b ? "border-brand-600 bg-brand-50 text-brand-700 dark:bg-brand-600/20 dark:text-brand-100" : "border-slate-200 text-slate-600 dark:border-slate-700 dark:text-slate-300"}`}
             >
-              {b ? (a ? `${formatNumber(a)} – ${formatNumber(b)}` : `أقل من ${formatNumber(b)}`) : `أكثر من ${formatNumber(a)}`}
+              {b ? (a ? `${formatNumber(a)} – ${formatNumber(b)}` : tr("أقل من {n}", { n: formatNumber(b) })) : tr("أكثر من {n}", { n: formatNumber(a) })}
             </button>
           ))}
         </div>
@@ -146,18 +147,18 @@ export function ListingView({ category }: { category?: Category }) {
 
       {/* Availability */}
       <label className="flex cursor-pointer items-center justify-between gap-3 rounded-xl bg-slate-50 p-3 dark:bg-slate-800/60">
-        <span className="text-sm font-bold">المتوفر فقط</span>
+        <span className="text-sm font-bold">{tr("المتوفر فقط")}</span>
         <input type="checkbox" checked={inStockOnly} onChange={(e) => setParams({ stock: e.target.checked ? "1" : null })} className="size-5 accent-brand-600" />
       </label>
 
       {/* Category (only on search page) */}
       {!category && (
         <fieldset>
-          <legend className="mb-2 text-sm font-black">القسم</legend>
+          <legend className="mb-2 text-sm font-black">{tr("القسم")}</legend>
           <div className="space-y-1">
             {catalog.categories.map((c) => (
               <CheckRow key={c.id} checked={cats.includes(c.id)} onChange={() => toggle("cats", cats, c.id)}>
-                <DynamicIcon name={c.icon} className="size-4 text-slate-400" /> {c.name}
+                <DynamicIcon name={c.icon} className="size-4 text-slate-400" /> {pick(c.name, c.nameEn)}
               </CheckRow>
             ))}
           </div>
@@ -166,7 +167,7 @@ export function ListingView({ category }: { category?: Category }) {
 
       {brandFacets.length > 0 && (
         <fieldset>
-          <legend className="mb-2 text-sm font-black">الماركة</legend>
+          <legend className="mb-2 text-sm font-black">{tr("الماركة")}</legend>
           <div className="space-y-1">
             {brandFacets.map((b) => (
               <CheckRow key={b} checked={brands.includes(b)} onChange={() => toggle("brands", brands, b)}>
@@ -179,11 +180,11 @@ export function ListingView({ category }: { category?: Category }) {
 
       {storeFacets.length > 0 && (
         <fieldset>
-          <legend className="mb-2 text-sm font-black">المتجر</legend>
+          <legend className="mb-2 text-sm font-black">{tr("المتجر")}</legend>
           <div className="space-y-1">
             {storeFacets.map((s) => (
               <CheckRow key={s.id} checked={storeIds.includes(s.id)} onChange={() => toggle("stores", storeIds, s.id)}>
-                <StoreLogo store={s} size="sm" /> {s.name}
+                <StoreLogo store={s} size="sm" /> {pick(s.name, s.nameEn)}
               </CheckRow>
             ))}
           </div>
@@ -197,13 +198,13 @@ export function ListingView({ category }: { category?: Category }) {
   return (
     <div className="mx-auto max-w-7xl px-4 py-6">
       {/* Breadcrumbs */}
-      <nav className="mb-3 text-xs text-slate-500" aria-label="مسار التنقل">
-        <Link href="/" className="hover:text-brand-600">الرئيسية</Link>
+      <nav className="mb-3 text-xs text-slate-500" aria-label={tr("مسار التنقل")}>
+        <Link href="/" className="hover:text-brand-600">{tr("الرئيسية")}</Link>
         <span className="mx-1.5">/</span>
         {category ? (
           <span>{categoryById(category.id)?.name}</span>
         ) : (
-          <span>البحث</span>
+          <span>{tr("البحث")}</span>
         )}
       </nav>
 
@@ -213,18 +214,18 @@ export function ListingView({ category }: { category?: Category }) {
             {category && <DynamicIcon name={category.icon} className="size-7 text-brand-600" />}
             {title}
           </h1>
-          <p className="mt-1 text-sm text-slate-500">{results.length} منتج</p>
+          <p className="mt-1 text-sm text-slate-500">{tr("{n} منتج", { n: results.length })}</p>
         </div>
         <div className="flex w-full items-center gap-2 sm:w-auto">
           <button type="button" onClick={() => setSheet(true)} className="btn-ghost flex-1 lg:hidden">
-            <SlidersHorizontal className="size-4" /> الفلاتر
+            <SlidersHorizontal className="size-4" /> {tr("الفلاتر")}
             {activeCount > 0 && <span className="grid size-5 place-items-center rounded-full bg-brand-600 text-[11px] text-white">{activeCount}</span>}
           </button>
-          <label className="sr-only" htmlFor="sort">ترتيب حسب</label>
+          <label className="sr-only" htmlFor="sort">{tr("ترتيب حسب")}</label>
           <select id="sort" value={sort} onChange={(e) => setParams({ sort: e.target.value })} className="input h-[42px] flex-1 font-bold sm:w-48">
             {SORTS.map((s) => (
               <option key={s.key} value={s.key}>
-                ترتيب: {s.label}
+                {tr("ترتيب:")} {tr(s.label)}
               </option>
             ))}
           </select>
@@ -237,10 +238,10 @@ export function ListingView({ category }: { category?: Category }) {
           <div className="card sticky top-20 max-h-[calc(100dvh-6rem)] overflow-y-auto p-4">
             <div className="mb-4 flex items-center justify-between">
               <h2 className="flex items-center gap-2 font-black">
-                <SlidersHorizontal className="size-4" /> الفلاتر
+                <SlidersHorizontal className="size-4" /> {tr("الفلاتر")}
               </h2>
               {activeCount > 0 && (
-                <button type="button" onClick={clearAll} className="text-xs font-bold text-brand-600">مسح الكل</button>
+                <button type="button" onClick={clearAll} className="text-xs font-bold text-brand-600">{tr("مسح الكل")}</button>
               )}
             </div>
             {filters}
@@ -251,10 +252,10 @@ export function ListingView({ category }: { category?: Category }) {
         <div className="min-w-0 flex-1">
           {results.length === 0 ? (
             <div className="card grid place-items-center gap-3 px-6 py-16 text-center">
-              <p className="text-lg font-black">مفيش منتجات مطابقة</p>
-              <p className="text-sm text-slate-500">جرب تشيل بعض الفلاتر أو تبحث بكلمة تانية.</p>
+              <p className="text-lg font-black">{tr("مفيش منتجات مطابقة")}</p>
+              <p className="text-sm text-slate-500">{tr("جرب تشيل بعض الفلاتر أو تبحث بكلمة تانية.")}</p>
               {activeCount > 0 && (
-                <button type="button" onClick={clearAll} className="btn-primary">مسح الفلاتر</button>
+                <button type="button" onClick={clearAll} className="btn-primary">{tr("مسح الفلاتر")}</button>
               )}
             </div>
           ) : (
@@ -269,20 +270,20 @@ export function ListingView({ category }: { category?: Category }) {
 
       {/* Mobile bottom sheet */}
       {sheet && (
-        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="الفلاتر">
+        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label={tr("الفلاتر")}>
           <div className="absolute inset-0 bg-slate-950/50" onClick={() => setSheet(false)} />
           <div className="absolute inset-x-0 bottom-0 flex max-h-[85dvh] flex-col rounded-t-3xl bg-white shadow-2xl dark:bg-slate-900">
             <div className="flex items-center justify-between border-b border-slate-200 p-4 dark:border-slate-800">
-              <h2 className="font-black">الفلاتر</h2>
-              <button type="button" onClick={() => setSheet(false)} aria-label="إغلاق" className="p-1">
+              <h2 className="font-black">{tr("الفلاتر")}</h2>
+              <button type="button" onClick={() => setSheet(false)} aria-label={tr("إغلاق")} className="p-1">
                 <X className="size-5" />
               </button>
             </div>
             <div className="overflow-y-auto p-4">{filters}</div>
             <div className="flex gap-2 border-t border-slate-200 p-4 dark:border-slate-800">
-              <button type="button" onClick={clearAll} className="btn-ghost">مسح</button>
+              <button type="button" onClick={clearAll} className="btn-ghost">{tr("مسح")}</button>
               <button type="button" onClick={() => setSheet(false)} className="btn-primary flex-1">
-                عرض {results.length} منتج
+                {tr("عرض {n} منتج", { n: results.length })}
               </button>
             </div>
           </div>

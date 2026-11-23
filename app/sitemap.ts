@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const confirmed = SEED_CATALOG.products.filter((p) => p.offers.some((o) => !o.needsCheck));
   return [
     { url: `${SITE_URL}/`, lastModified: updated, changeFrequency: "daily", priority: 1 },
+    ...["about", "contact", "privacy"].map((p) => ({ url: `${SITE_URL}/${p}`, lastModified: updated, changeFrequency: "monthly" as const, priority: 0.3 })),
     ...SEED_CATALOG.categories.map((c) => ({
       url: `${SITE_URL}/category/${c.slug}`,
       lastModified: updated,

@@ -8,6 +8,7 @@
  */
 import { Download, Share, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { tr } from "@/lib/i18n";
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -69,26 +70,26 @@ export function PwaInstall() {
   if (!visible) return null;
 
   return (
-    <div role="dialog" aria-label="تثبيت التطبيق" className="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-md sm:inset-x-auto sm:end-4">
+    <div role="dialog" aria-label={tr("تثبيت التطبيق")} className="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-md sm:inset-x-auto sm:end-4">
       <div className="card flex items-center gap-3 p-3 shadow-2xl">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/icon-192.png" alt="" className="size-11 rounded-xl" />
         <div className="min-w-0 flex-1 text-sm">
-          <p className="font-black">ثبّت “أرخص” على موبايلك</p>
+          <p className="font-black">{tr("ثبّت “أرخص” على موبايلك")}</p>
           {ios ? (
             <p className="text-xs text-slate-500">
-              اضغط <Share className="inline size-3.5 align-text-bottom" /> مشاركة ← &quot;إضافة إلى الشاشة الرئيسية&quot;
+              {tr("اضغط")} <Share className="inline size-3.5 align-text-bottom" /> {tr("مشاركة ← \"إضافة إلى الشاشة الرئيسية\"")}
             </p>
           ) : (
-            <p className="text-xs text-slate-500">افتح الأسعار بضغطة زي أي تطبيق.</p>
+            <p className="text-xs text-slate-500">{tr("افتح الأسعار بضغطة زي أي تطبيق.")}</p>
           )}
         </div>
         {!ios && prompt && (
           <button type="button" onClick={install} className="btn-primary px-3 py-2">
-            <Download className="size-4" /> تثبيت
+            <Download className="size-4" /> {tr("تثبيت")}
           </button>
         )}
-        <button type="button" onClick={dismiss} aria-label="إغلاق" className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+        <button type="button" onClick={dismiss} aria-label={tr("إغلاق")} className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
           <X className="size-4" />
         </button>
       </div>

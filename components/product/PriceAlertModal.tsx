@@ -11,6 +11,7 @@ import { formatEGP, uid } from "@/lib/format";
 import { isValidWhatsapp } from "@/lib/offer-link";
 import { getRepository } from "@/lib/repository";
 import type { Product } from "@/lib/types";
+import { tr } from "@/lib/i18n";
 
 export function PriceAlertModal({ product, currentPrice, onClose }: { product: Product; currentPrice?: number; onClose: () => void }) {
   const [channel, setChannel] = useState<"email" | "whatsapp">("whatsapp");
@@ -34,10 +35,10 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     const price = Number(target);
-    if (channel === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact.trim())) return setError("اكتب إيميل صحيح.");
-    if (channel === "whatsapp" && !isValidWhatsapp(contact)) return setError("اكتب رقم واتساب صحيح، مثلاً 01012345678.");
-    if (!price || price <= 0) return setError("اكتب السعر المستهدف.");
-    if (currentPrice && price >= currentPrice) return setError(`السعر المستهدف لازم يكون أقل من السعر الحالي (${formatEGP(currentPrice)}).`);
+    if (channel === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact.trim())) return setError(tr("اكتب إيميل صحيح."));
+    if (channel === "whatsapp" && !isValidWhatsapp(contact)) return setError(tr("اكتب رقم واتساب صحيح، مثلاً 01012345678."));
+    if (!price || price <= 0) return setError(tr("اكتب السعر المستهدف."));
+    if (currentPrice && price >= currentPrice) return setError(tr("السعر المستهدف لازم يكون أقل من السعر الحالي ({p}).", { p: formatEGP(currentPrice) }));
     setError("");
     await getRepository().addAlert({
       id: uid("alert"),
@@ -54,18 +55,18 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
     <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center sm:p-4" role="dialog" aria-modal="true" aria-labelledby="alert-title">
       <div className="absolute inset-0 bg-slate-950/50 backdrop-blur-sm" onClick={onClose} />
       <div className="relative w-full max-w-md rounded-t-3xl bg-white p-5 shadow-2xl sm:rounded-3xl sm:p-6 dark:bg-slate-900">
-        <button type="button" onClick={onClose} aria-label="إغلاق" className="absolute end-4 top-4 rounded-lg p-1 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+        <button type="button" onClick={onClose} aria-label={tr("إغلاق")} className="absolute end-4 top-4 rounded-lg p-1 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
           <X className="size-5" />
         </button>
 
         {done ? (
           <div className="py-6 text-center">
             <CheckCircle2 className="mx-auto mb-3 size-14 text-deal-500" />
-            <h2 className="text-xl font-black">تمام! هنبلغك أول ما السعر ينزل</h2>
+            <h2 className="text-xl font-black">{tr("تمام! هنبلغك أول ما السعر ينزل")}</h2>
             <p className="mt-2 text-sm text-slate-500">
-              هنبعتلك على {channel === "email" ? "الإيميل" : "واتساب"} لما يوصل السعر لـ {formatEGP(Number(target))} أو أقل.
+              {tr("هنبعتلك على {c} لما يوصل السعر لـ {p} أو أقل.", { c: channel === "email" ? tr("الإيميل") : tr("واتساب"), p: formatEGP(Number(target)) })}
             </p>
-            <button type="button" onClick={onClose} className="btn-primary mt-6 w-full">تمام</button>
+            <button type="button" onClick={onClose} className="btn-primary mt-6 w-full">{tr("تمام")}</button>
           </div>
         ) : (
           <form onSubmit={submit} noValidate>
@@ -74,7 +75,7 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
                 <Bell className="size-5" />
               </span>
               <div className="min-w-0">
-                <h2 id="alert-title" className="text-lg font-black">نبهني لما السعر ينزل</h2>
+                <h2 id="alert-title" className="text-lg font-black">{tr("نبهني لما السعر ينزل")}</h2>
                 <p className="ltr truncate text-start text-xs text-slate-500">{product.name}</p>
               </div>
             </div>
@@ -82,8 +83,8 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
             <div className="mb-4 grid grid-cols-2 gap-2 rounded-xl bg-slate-100 p-1 dark:bg-slate-800">
               {(
                 [
-                  ["whatsapp", "واتساب", MessageCircle],
-                  ["email", "إيميل", Mail],
+                  ["whatsapp", tr("واتساب"), MessageCircle],
+                  ["email", tr("إيميل"), Mail],
                 ] as const
               ).map(([key, label, Icon]) => (
                 <button
@@ -101,7 +102,7 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
               ))}
             </div>
 
-            <label className="label" htmlFor="alert-contact">{channel === "email" ? "الإيميل" : "رقم الواتساب"}</label>
+            <label className="label" htmlFor="alert-contact">{channel === "email" ? tr("الإيميل") : tr("رقم الواتساب")}</label>
             <input
               id="alert-contact"
               ref={firstField}
@@ -115,14 +116,14 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
               autoComplete={channel === "email" ? "email" : "tel"}
             />
 
-            <label className="label" htmlFor="alert-target">السعر المستهدف (ج.م)</label>
+            <label className="label" htmlFor="alert-target">{tr("السعر المستهدف (ج.م)")}</label>
             <input id="alert-target" type="number" inputMode="numeric" value={target} onChange={(e) => setTarget(e.target.value)} className="input" />
-            {currentPrice && <p className="mt-1 text-xs text-slate-500">السعر الحالي: {formatEGP(currentPrice)}</p>}
+            {currentPrice && <p className="mt-1 text-xs text-slate-500">{tr("السعر الحالي:")} {formatEGP(currentPrice)}</p>}
 
             {error && <p className="mt-3 rounded-lg bg-red-50 p-2 text-sm font-bold text-red-600 dark:bg-red-500/10">{error}</p>}
 
             <button type="submit" className="btn-primary mt-5 w-full py-3">
-              <Bell className="size-4" /> فعّل التنبيه
+              <Bell className="size-4" /> {tr("فعّل التنبيه")}
             </button>
           </form>
         )}

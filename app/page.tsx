@@ -9,6 +9,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { SearchBox } from "@/components/SearchBox";
 import { StoreLogo } from "@/components/ui";
 import { marketDiscount } from "@/lib/pricing";
+import { tr, pick } from "@/lib/i18n";
 
 export default function HomePage() {
   const { catalog } = useCatalog();
@@ -33,7 +34,7 @@ export default function HomePage() {
 
   const categories = useMemo(() => [...catalog.categories].sort((a, b) => a.sortOrder - b.sortOrder), [catalog.categories]);
   const featuredStores = catalog.stores.filter((s) => s.featured);
-  const quickSearches = ["GTA VI", "FC 26", "PS5", "Switch 2", "DualSense"];
+  const quickSearches = ["iPhone 17", "PS5", "Galaxy A56", "AirPods", tr("لابتوب جيمنج")];
 
   return (
     <>
@@ -42,14 +43,14 @@ export default function HomePage() {
         <div className="pointer-events-none absolute inset-x-0 -top-24 mx-auto size-[36rem] rounded-full bg-brand-500/10 blur-3xl" />
         <div className="relative mx-auto max-w-3xl px-4 py-12 text-center sm:py-20">
           <span className="chip mb-4 bg-deal-50 text-deal-700 dark:bg-deal-500/10 dark:text-deal-500">
-            <Sparkles className="size-3.5" /> أسعار {catalog.stores.length} متاجر في مكان واحد
+            <Sparkles className="size-3.5" /> {tr("أسعار {n} متاجر في مكان واحد", { n: catalog.stores.length })}
           </span>
           <h1 className="text-3xl font-black leading-tight sm:text-5xl sm:leading-tight">
-            قارن الأسعار بين أشهر ستورز الجيمينج في مصر{" "}
-            <span className="bg-gradient-to-l from-brand-600 to-deal-500 bg-clip-text text-transparent">واشتري بالأرخص</span>
+            {tr("قارن الأسعار من كل المتاجر في مصر")}{" "}
+            <span className="bg-gradient-to-l from-brand-600 to-deal-500 bg-clip-text text-transparent">{tr("واشتري بالأرخص")}</span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-slate-600 dark:text-slate-400">
-            صفحة واحدة لكل منتج فيها أسعار كل المتاجر، وتاريخ السعر عشان تعرف العرض الحقيقي من الوهمي.
+            {tr("صفحة واحدة لكل منتج فيها أسعار كل المتاجر، وتاريخ السعر عشان تعرف العرض الحقيقي من الوهمي.")}
           </p>
           <div className="mx-auto mt-8 max-w-2xl text-start">
             <SearchBox size="lg" />
@@ -74,12 +75,12 @@ export default function HomePage() {
           <div className="mb-5 flex items-end justify-between gap-4">
             <div>
               <h2 className="flex items-center gap-2 text-2xl font-black">
-                <TrendingDown className="size-6 text-deal-500" /> أقوى عروض اليوم
+                <TrendingDown className="size-6 text-deal-500" /> {tr("أقوى عروض اليوم")}
               </h2>
-              <p className="mt-1 text-sm text-slate-500">أعلى نسبة توفير مقارنة بمتوسط سعر السوق</p>
+              <p className="mt-1 text-sm text-slate-500">{tr("أعلى نسبة توفير مقارنة بمتوسط سعر السوق")}</p>
             </div>
             <Link href="/search?sort=discount" className="flex shrink-0 items-center gap-1 text-sm font-bold text-brand-600">
-              الكل <ArrowLeft className="size-4" />
+              {tr("الكل")} <ArrowLeft className="size-4 rtl:rotate-0 ltr:rotate-180" />
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
@@ -93,9 +94,9 @@ export default function HomePage() {
         {games.length > 0 && (
           <section>
             <div className="mb-5 flex items-end justify-between gap-4">
-              <h2 className="text-2xl font-black">أحدث ألعاب PS5</h2>
+              <h2 className="text-2xl font-black">{tr("أحدث ألعاب PS5")}</h2>
               <Link href="/category/ps5-games" className="flex shrink-0 items-center gap-1 text-sm font-bold text-brand-600">
-                كل الألعاب <ArrowLeft className="size-4" />
+                {tr("كل الألعاب")} <ArrowLeft className="size-4 ltr:rotate-180" />
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
@@ -108,7 +109,7 @@ export default function HomePage() {
 
         {/* Categories */}
         <section>
-          <h2 className="mb-5 text-2xl font-black">الأقسام الأكثر بحثًا</h2>
+          <h2 className="mb-5 text-2xl font-black">{tr("الأقسام الأكثر بحثًا")}</h2>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {categories.map((c) => {
               const count = catalog.products.filter((p) => p.categoryId === c.id).length;
@@ -122,8 +123,8 @@ export default function HomePage() {
                     <DynamicIcon name={c.icon} className="size-6" />
                   </span>
                   <span className="min-w-0">
-                    <span className="block truncate font-bold">{c.name}</span>
-                    <span className="text-xs text-slate-500">{count} منتج</span>
+                    <span className="block truncate font-bold">{pick(c.name, c.nameEn)}</span>
+                    <span className="text-xs text-slate-500">{tr("{n} منتج", { n: count })}</span>
                   </span>
                 </Link>
               );
@@ -133,16 +134,16 @@ export default function HomePage() {
 
         {/* Featured stores */}
         <section>
-          <h2 className="mb-5 text-2xl font-black">بنقارن أسعار</h2>
+          <h2 className="mb-5 text-2xl font-black">{tr("بنقارن أسعار")}</h2>
           <div className="no-scrollbar -mx-4 flex gap-3 overflow-x-auto px-4 pb-1">
             {featuredStores.map((s) => (
               <div key={s.id} className="card flex shrink-0 items-center gap-3 px-4 py-3">
                 <StoreLogo store={s} />
                 <div>
-                  <p className="text-sm font-bold">{s.name}</p>
+                  <p className="text-sm font-bold">{pick(s.name, s.nameEn)}</p>
                   {s.trusted && (
                     <p className="flex items-center gap-1 text-xs text-brand-600">
-                      <BadgeCheck className="size-3.5" /> موثوق
+                      <BadgeCheck className="size-3.5" /> {tr("موثوق")}
                     </p>
                   )}
                 </div>
@@ -154,9 +155,9 @@ export default function HomePage() {
         {/* How it works */}
         <section className="grid gap-3 sm:grid-cols-3">
           {[
-            { icon: TrendingDown, t: "قارن في ثانية", d: "كل أسعار المتاجر مرتبة من الأرخص للأغلى في صفحة واحدة." },
-            { icon: LineChart, t: "اكشف العروض الوهمية", d: "تاريخ السعر لآخر 30 يوم يوضحلك لو الخصم حقيقي." },
-            { icon: Bell, t: "نبهني لما السعر ينزل", d: "حدد السعر اللي يناسبك وهنبعتلك أول ما يوصله." },
+            { icon: TrendingDown, t: tr("قارن في ثانية"), d: tr("كل أسعار المتاجر مرتبة من الأرخص للأغلى في صفحة واحدة.") },
+            { icon: LineChart, t: tr("اكشف العروض الوهمية"), d: tr("تاريخ السعر لآخر 30 يوم يوضحلك لو الخصم حقيقي.") },
+            { icon: Bell, t: tr("نبهني لما السعر ينزل"), d: tr("حدد السعر اللي يناسبك وهنبعتلك أول ما يوصله.") },
           ].map(({ icon: Icon, t, d }) => (
             <div key={t} className="card p-5">
               <Icon className="mb-3 size-7 text-brand-600" />

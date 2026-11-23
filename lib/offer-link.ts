@@ -1,4 +1,5 @@
 /** Builds the CTA (label + href) for an offer based on its link type. */
+import { tr } from "./i18n";
 import { formatEGP } from "./format";
 import type { Offer, OfferLinkType, Product } from "./types";
 
@@ -48,5 +49,5 @@ export function offerCta(offer: Offer, product: Product): OfferCta {
     const text = encodeURIComponent(whatsappMessage(product.name, offer.price));
     return { type, label: LINK_TYPE_LABELS.whatsapp, href: num ? `https://wa.me/${num}?text=${text}` : null };
   }
-  return { type, label: LINK_TYPE_LABELS[type], href: offer.url || null };
+  return { type, label: tr(LINK_TYPE_LABELS[type]), href: offer.url || null };
 }

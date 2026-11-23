@@ -10,6 +10,7 @@ import { ProductImage } from "./ui";
 import { formatEGP } from "@/lib/format";
 import { lowestPrice } from "@/lib/pricing";
 import type { Catalog, Product } from "@/lib/types";
+import { tr } from "@/lib/i18n";
 
 /** Normalizes Arabic letter variants so "اكس بوكس" matches "إكس بوكس". */
 export function normalize(s: string) {
@@ -89,8 +90,8 @@ export function SearchBox({ size = "md", autoFocus = false }: { size?: "md" | "l
           onFocus={() => setOpen(true)}
           onBlur={() => setTimeout(() => setOpen(false), 150)}
           onKeyDown={onKeyDown}
-          placeholder="ابحث عن منتج… مثلاً RTX 5060 أو دراع PS5"
-          aria-label="بحث عن منتج"
+          placeholder={tr("ابحث عن منتج… مثلاً RTX 5060 أو دراع PS5")}
+          aria-label={tr("بحث عن منتج")}
           role="combobox"
           aria-expanded={showList}
           aria-controls={listId}
@@ -98,13 +99,13 @@ export function SearchBox({ size = "md", autoFocus = false }: { size?: "md" | "l
           className={`input [&::-webkit-search-cancel-button]:hidden ${big ? "h-14 rounded-2xl ps-11 pe-28 text-base shadow-lg shadow-brand-600/5" : "h-10 ps-9 pe-9"}`}
         />
         {q && !big && (
-          <button type="button" onClick={() => setQ("")} aria-label="مسح" className="absolute end-2 top-1/2 -translate-y-1/2 p-1 text-slate-400">
+          <button type="button" onClick={() => setQ("")} aria-label={tr("مسح")} className="absolute end-2 top-1/2 -translate-y-1/2 p-1 text-slate-400">
             <X className="size-4" />
           </button>
         )}
         {big && (
           <button type="submit" className="btn-primary absolute end-2 top-1/2 h-10 -translate-y-1/2">
-            قارن الأسعار
+            {tr("قارن الأسعار")}
           </button>
         )}
       </div>
@@ -112,7 +113,7 @@ export function SearchBox({ size = "md", autoFocus = false }: { size?: "md" | "l
       {showList && (
         <div id={listId} role="listbox" className="card absolute inset-x-0 top-full z-50 mt-2 overflow-hidden p-1.5 shadow-xl">
           {results.length === 0 ? (
-            <p className="px-3 py-4 text-center text-sm text-slate-500">لا توجد نتائج لـ “{q}”</p>
+            <p className="px-3 py-4 text-center text-sm text-slate-500">{tr("لا توجد نتائج لـ “{q}”", { q })}</p>
           ) : (
             <>
               {results.map((p, i) => {
@@ -132,7 +133,7 @@ export function SearchBox({ size = "md", autoFocus = false }: { size?: "md" | "l
                       <p className="ltr truncate text-start text-sm font-bold">{p.name}</p>
                       {lp && (
                         <p className="text-xs text-slate-500">
-                          يبدأ من <span className="font-bold text-deal-600">{formatEGP(lp.price)}</span>
+                          {tr("يبدأ من")} <span className="font-bold text-deal-600">{formatEGP(lp.price)}</span>
                         </p>
                       )}
                     </div>
@@ -144,7 +145,7 @@ export function SearchBox({ size = "md", autoFocus = false }: { size?: "md" | "l
                 onMouseDown={(e) => e.preventDefault()}
                 className="mt-1 w-full rounded-xl px-3 py-2 text-start text-sm font-bold text-brand-600 hover:bg-brand-50 dark:hover:bg-slate-800"
               >
-                عرض كل النتائج لـ “{q}”
+                {tr("عرض كل النتائج لـ “{q}”", { q })}
               </button>
             </>
           )}

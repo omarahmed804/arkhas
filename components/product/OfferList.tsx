@@ -13,6 +13,7 @@ import { offerCta } from "@/lib/offer-link";
 import { goHref } from "@/lib/affiliate";
 import { bestOffer, sortOffers } from "@/lib/pricing";
 import type { Offer, Product } from "@/lib/types";
+import { tr, pick, trData } from "@/lib/i18n";
 
 export function OfferCtaButton({ offer, product, className = "" }: { offer: Offer; product: Product; className?: string }) {
   const cta = offerCta(offer, product);
@@ -25,7 +26,7 @@ export function OfferCtaButton({ offer, product, className = "" }: { offer: Offe
   const Icon = cta.type === "whatsapp" ? MessageCircle : cta.type === "social" ? Users : ExternalLink;
   if (!cta.href) {
     return (
-      <span className={`btn cursor-not-allowed bg-slate-100 text-slate-400 dark:bg-slate-800 ${className}`} title="الرابط غير مضبوط">
+      <span className={`btn cursor-not-allowed bg-slate-100 text-slate-400 dark:bg-slate-800 ${className}`} title={tr("الرابط غير مضبوط")}>
         {cta.label}
       </span>
     );
@@ -52,12 +53,12 @@ function Freshness({ offer }: { offer: Offer }) {
       <span className="flex items-center gap-1 text-slate-500">
         <Clock className="size-3.5" />
         <span>
-          تم التحديث <TimeAgo iso={offer.updatedAt} />
+          {tr("تم التحديث")} <TimeAgo iso={offer.updatedAt} />
         </span>
       </span>
       {tracked && (
-        <span className="flex items-center gap-1 font-bold text-brand-600" title="السعر بيتراجع تلقائيًا كل 6 ساعات">
-          <RefreshCw className="size-3" /> متابَع تلقائيًا
+        <span className="flex items-center gap-1 font-bold text-brand-600" title={tr("السعر بيتراجع تلقائيًا كل 6 ساعات")}>
+          <RefreshCw className="size-3" /> {tr("متابَع تلقائيًا")}
         </span>
       )}
     </span>
@@ -71,7 +72,7 @@ function StorePromo({ code, note }: { code: string; note?: string }) {
     <button
       type="button"
       className="mt-1 inline-flex items-center gap-1 rounded-lg border border-dashed border-brand-500 bg-brand-50 px-2 py-0.5 text-[11px] font-bold text-brand-700 dark:bg-brand-500/10 dark:text-brand-300"
-      title="انسخ الكود واستخدمه وانت بتطلب"
+      title={tr("انسخ الكود واستخدمه وانت بتطلب")}
       onClick={async () => {
         try {
           await navigator.clipboard.writeText(code);
@@ -80,7 +81,7 @@ function StorePromo({ code, note }: { code: string; note?: string }) {
         } catch {}
       }}
     >
-      {note || "كود خصم"}: <span dir="ltr" className="font-black tracking-wider">{code}</span>
+      {note || tr("كود خصم")}: <span dir="ltr" className="font-black tracking-wider">{code}</span>
       {copied ? <Check className="size-3" /> : <Copy className="size-3" />}
     </button>
   );
@@ -95,10 +96,10 @@ export function OfferList({ product }: { product: Product }) {
     <div className="card overflow-hidden">
       {/* Desktop header */}
       <div className="hidden grid-cols-[1.6fr_1fr_1.3fr_1fr_auto] gap-4 border-b border-slate-200 bg-slate-50 px-5 py-3 text-xs font-bold text-slate-500 md:grid dark:border-slate-800 dark:bg-slate-800/50">
-        <span>المتجر</span>
-        <span>السعر</span>
-        <span>التوفر والشحن</span>
-        <span>آخر تحديث</span>
+        <span>{tr("المتجر")}</span>
+        <span>{tr("السعر")}</span>
+        <span>{tr("التوفر والشحن")}</span>
+        <span>{tr("آخر تحديث")}</span>
         <span className="w-36" />
       </div>
 
@@ -118,12 +119,12 @@ export function OfferList({ product }: { product: Product }) {
               <div className="flex min-w-0 items-center gap-3">
                 <StoreLogo store={store} />
                 <div className="min-w-0">
-                  <p className="truncate font-bold">{store.name}</p>
+                  <p className="truncate font-bold">{pick(store.name, store.nameEn)}</p>
                   <div className="mt-0.5 flex flex-wrap items-center gap-1">
                     {store.trusted && <TrustBadge />}
                     {isBest && (
                       <span className="chip bg-deal-500 text-white">
-                        <BadgeCheck className="size-3.5" /> أرخص سعر
+                        <BadgeCheck className="size-3.5" /> {tr("أرخص سعر")}
                       </span>
                     )}
                   </div>
@@ -141,18 +142,18 @@ export function OfferList({ product }: { product: Product }) {
               <div className="col-span-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs md:col-span-1 md:block md:space-y-1">
                 {o.inStock ? (
                   <p className="flex items-center gap-1 font-bold text-deal-600 dark:text-deal-500">
-                    <span className="size-2 rounded-full bg-deal-500" /> متوفر
+                    <span className="size-2 rounded-full bg-deal-500" /> {tr("متوفر")}
                   </p>
                 ) : (
                   <p className="flex items-center gap-1 font-bold text-red-600">
-                    <PackageX className="size-3.5" /> نفذت الكمية
+                    <PackageX className="size-3.5" /> {tr("نفذت الكمية")}
                   </p>
                 )}
                 <p className="flex items-center gap-1 text-slate-500">
                   <Truck className="size-3.5" />
-                  {o.freeShipping ? <span className="font-bold text-brand-600">شحن مجاني</span> : "شحن مدفوع"} · {o.deliveryEta}
+                  {o.freeShipping ? <span className="font-bold text-brand-600">{tr("شحن مجاني")}</span> : tr("شحن مدفوع")} · {trData(o.deliveryEta)}
                 </p>
-                {o.installment && <p className="font-bold text-brand-600">💳 تقسيط متاح</p>}
+                {o.installment && <p className="font-bold text-brand-600">{tr("💳 تقسيط متاح")}</p>}
                 {/* Last updated (mobile inline) */}
                 <div className="md:hidden">
                   <Freshness offer={o} />
