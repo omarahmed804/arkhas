@@ -152,6 +152,7 @@ export function OfferList({ product }: { product: Product }) {
                   <Truck className="size-3.5" />
                   {o.freeShipping ? <span className="font-bold text-brand-600">شحن مجاني</span> : "شحن مدفوع"} · {o.deliveryEta}
                 </p>
+                {o.installment && <p className="font-bold text-brand-600">💳 تقسيط متاح</p>}
                 {/* Last updated (mobile inline) */}
                 <div className="md:hidden">
                   <Freshness offer={o} />

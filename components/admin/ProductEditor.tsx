@@ -267,6 +267,9 @@ export function ProductEditor({ product, onClose }: { product?: Product; onClose
                     <label className="flex items-center gap-2 text-sm font-bold">
                       <input type="checkbox" className="size-4 accent-brand-600" checked={o.freeShipping} onChange={(e) => setOffer(i, { freeShipping: e.target.checked })} /> شحن مجاني
                     </label>
+                    <label className="flex items-center gap-2 text-sm font-bold">
+                      <input type="checkbox" className="size-4 accent-brand-600" checked={!!o.installment} onChange={(e) => setOffer(i, { installment: e.target.checked || undefined })} /> تقسيط متاح
+                    </label>
                     <button type="button" className="ms-auto flex items-center gap-1 text-sm font-bold text-red-500" onClick={() => set("offers", draft.offers.filter((_, j) => j !== i))}>
                       <Trash2 className="size-4" /> حذف
                     </button>

@@ -337,6 +337,7 @@ function StoresTab({ notify }: Notify) {
           <Field label="رابط المتجر / الصفحة (اختياري للمتاجر اللي على واتساب بس)"><input className="input ltr text-start" placeholder="https://" value={form.url} onChange={(e) => setForm({ ...form, url: e.target.value })} /></Field>
           <Field label="رابط صورة اللوجو (اختياري)"><input className="input ltr text-start" value={form.logoUrl ?? ""} onChange={(e) => setForm({ ...form, logoUrl: e.target.value || undefined })} /></Field>
           <Field label="كود الأفلييت (يتضاف لكل رابط) — مثال أمازون: tag=arkhas-21"><input className="input ltr text-start" placeholder="tag=yourid-21" value={form.affiliateParams ?? ""} onChange={(e) => setForm({ ...form, affiliateParams: e.target.value || undefined })} /></Field>
+          <Field label="Admitad Base Deeplink (لنون / جوميا / 2B) — مثال: https://ad.admitad.com/g/abc123/"><input className="input ltr text-start" placeholder="https://ad.admitad.com/g/..." value={form.admitadDeeplink ?? ""} onChange={(e) => setForm({ ...form, admitadDeeplink: e.target.value || undefined })} /></Field>
           <Field label="أو رابط شبكة أفلييت (حط {url} مكان رابط المنتج)"><input className="input ltr text-start" placeholder="https://network.com/click?id=123&url={url}" value={form.affiliateTemplate ?? ""} onChange={(e) => setForm({ ...form, affiliateTemplate: e.target.value || undefined })} /></Field>
           <Field label="طريقة متابعة الأسعار الآلية">
             <select className="input" value={form.platform ?? ""} onChange={(e) => setForm({ ...form, platform: (e.target.value || undefined) as Store["platform"] })}>
@@ -383,7 +384,7 @@ function StoresTab({ notify }: Notify) {
             <div className="min-w-0 flex-1">
               <p className="truncate font-bold">{s.name}</p>
               <p className="ltr truncate text-start text-xs text-slate-500">{s.url || "بدون موقع"}</p>
-              {(s.affiliateParams || s.affiliateTemplate) && <p className="text-[11px] font-bold text-deal-600">أفلييت مفعّل ✓</p>}
+              {(s.affiliateParams || s.affiliateTemplate || s.admitadDeeplink) && <p className="text-[11px] font-bold text-deal-600">أفلييت مفعّل ✓</p>}
               <p className="text-[11px] text-slate-500">
                 {catalog.products.filter((p) => p.offers.some((o) => o.storeId === s.id && !o.needsCheck)).length} سعر ظاهر
                 {s.active === false && " · مخفي من الموقع"}

@@ -46,6 +46,11 @@ export interface Store {
   affiliateParams?: string;
   affiliateTemplate?: string;
   /**
+   * Admitad "Base Deeplink" for this store (Noon, Jumia, 2B…), e.g. "https://ad.admitad.com/g/abc123/".
+   * Every product link becomes  <deeplink>?ulp=<encoded product url>  so the sale is credited to you.
+   */
+  admitadDeeplink?: string;
+  /**
    * How the automatic tracker reads this store:
    *  - "shopify" → exact price from the store's public product data + auto-discovery of new offers
    *  - "amazon"  → Amazon Product Advertising API (needs your Associates keys in GitHub Secrets)
@@ -88,6 +93,7 @@ export interface Offer {
   needsCheck?: boolean; // price not confirmed yet → hidden from visitors until the tracker confirms it
   autoDiscovered?: boolean; // added automatically by the tracker's discovery step
   variantId?: string; // Shopify variant to read (when a product page has several)
+  installment?: boolean; // store offers installments (تقسيط) on this item
 }
 
 /** One point per day: the lowest in-stock price across all stores. */

@@ -13,8 +13,29 @@ export function withAffiliate(url: string, store?: Store): string {
       /* keep original */
     }
   }
+  if (store.admitadDeeplink?.trim()) return admitadLink(store.admitadDeeplink, out);
   if (store.affiliateTemplate?.includes("{url}")) out = store.affiliateTemplate.replace("{url}", encodeURIComponent(out));
   return out;
+}
+
+/**
+ * Admitad deeplink: base "https://ad.admitad.com/g/abc123/" + product url → ".../g/abc123/?ulp=<encoded url>".
+ * Accepts a base that already has a query string, or one already containing "ulp=" (replaced).
+ */
+export function admitadLink(base: string, productUrl: string): string {
+  const b = base.trim();
+  try {
+    const u = new URL(b);
+    u.searchParams.set("ulp", productUrl);
+    return u.toString();
+  } catch {
+    return `${b}${b.includes("?") ? "&" : "?"}ulp=${encodeURIComponent(productUrl)}`;
+  }
+}
+
+/** True when clicks to this store earn you a commission. */
+export function hasAffiliate(store?: { affiliateParams?: string; affiliateTemplate?: string; admitadDeeplink?: string }): boolean {
+  return !!(store?.affiliateParams?.trim() || store?.affiliateTemplate?.includes("{url}") || store?.admitadDeeplink?.trim());
 }
 
 /** Same registrable host (www.amazon.eg ≈ amazon.eg) — used to refuse open redirects. */

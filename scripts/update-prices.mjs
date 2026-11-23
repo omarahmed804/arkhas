@@ -332,7 +332,7 @@ export function matchScore(productName, platform, candidateTitle) {
 
 const MIN_SCORE = 0.6;
 /** Categories where automatic discovery is safe (clear names). */
-const DISCOVER_CATEGORIES = { "cat-ps5-games": "ps5", "cat-ps4-games": "ps4", "cat-psn-cards": null, "cat-game-cards": null, "cat-app-cards": null };
+const DISCOVER_CATEGORIES = { "cat-ps5-games": "ps5", "cat-ps4-games": "ps4", "cat-psn-cards": null, "cat-game-cards": null, "cat-app-cards": null, "cat-subscriptions": null };
 
 export function bestMatch(product, platform, listings) {
   let best = null;
