@@ -26,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ar" dir="rtl" suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="pz84g0iz3ryDQU1fEaD663Sh7NWCdT7XEzreHBZ7pyY" />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         {/* Cairo — modern Arabic font that also renders Latin product names cleanly */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
