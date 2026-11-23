@@ -1,0 +1,53 @@
+# Automatic price tracker — runs every 6 hours for free on GitHub Actions.
+# It updates data/catalog.json and commits it; Vercel then redeploys the site automatically.
+name: Update prices
+
+on:
+  schedule:
+    - cron: "17 */6 * * *" # every 6 hours (UTC)
+  workflow_dispatch: {} # "Run workflow" button / admin "حدّث الأسعار الآن"
+  push: # runs once right after you upload the project, so prices are confirmed immediately
+    paths:
+      - ".github/workflows/update-prices.yml"
+      - "scripts/update-prices.mjs"
+      - "data/catalog.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-prices
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check store prices
+        run: node scripts/update-prices.mjs
+        env:
+          # Optional: your Amazon Associates Product Advertising API keys (Settings → Secrets → Actions).
+          # Without them Amazon prices stay as last confirmed; every other store still updates.
+          AMAZON_PAAPI_ACCESS_KEY: ${{ secrets.AMAZON_PAAPI_ACCESS_KEY }}
+          AMAZON_PAAPI_SECRET_KEY: ${{ secrets.AMAZON_PAAPI_SECRET_KEY }}
+          AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
+
+      - name: Commit updated prices
+        run: |
+          if git diff --quiet data/catalog.json; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "arkhas-price-bot"
+          git config user.email "arkhas-price-bot@users.noreply.github.com"
+          git add data/catalog.json
+          git commit -m "chore: update prices ($(date -u +'%Y-%m-%d %H:%M') UTC)"
+          git pull --rebase --autostash || true
+          git push
