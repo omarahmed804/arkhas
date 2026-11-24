@@ -1,0 +1,32 @@
+# Sends "price dropped" emails right after every price update.
+# Needs 3 secrets (Settings → Secrets and variables → Actions):
+#   SUPABASE_URL, SUPABASE_SERVICE_KEY, BREVO_API_KEY
+name: Price alerts
+
+on:
+  workflow_run:
+    workflows: ["Update prices"]
+    types: [completed]
+  workflow_dispatch: {}
+
+jobs:
+  send:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Send emails
+        run: node scripts/send-alerts.mjs
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          SENDER_EMAIL: arkhas.eg@gmail.com
