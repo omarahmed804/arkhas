@@ -339,4 +339,7 @@ export const EN: Record<string, string> = {
   "من نحن": "About us",
   "تواصل معنا": "Contact us",
   "سياسة الخصوصية": "Privacy policy",
+  "حصلت مشكلة ومقدرناش نحفظ التنبيه. جرب تاني بعد شوية.": "Something went wrong and we couldn't save your alert. Please try again later.",
+  "هنبعتلك إيميل واحد بس لما السعر يوصل للي إنت عايزه، وتقدر تلغي في أي وقت.": "We'll send you just one email when the price hits your target. You can cancel anytime.",
+  "هنبعتلك إيميل لما يوصل السعر لـ {p} أو أقل.": "We'll email you when the price reaches {p} or less.",
 };

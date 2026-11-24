@@ -1,21 +1,20 @@
 "use client";
 
 /**
- * "نبهني لما السعر ينزل" modal. In the MVP, alerts are saved to the repository
- * (LocalStorage) and listed in /admin. In production, a cron job compares
- * target prices with new prices and sends email / WhatsApp messages.
+ * "نبهني لما السعر ينزل" modal.
+ * Saves the alert on the server (/api/alerts → Supabase). Every 6 hours the GitHub
+ * price tracker compares new prices with the targets and emails the visitor
+ * (scripts/send-alerts.mjs). WhatsApp has no free sending API, so alerts are email-only.
  */
-import { Bell, CheckCircle2, Mail, MessageCircle, X } from "lucide-react";
+import { Bell, CheckCircle2, Loader2, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { formatEGP, uid } from "@/lib/format";
-import { isValidWhatsapp } from "@/lib/offer-link";
-import { getRepository } from "@/lib/repository";
+import { formatEGP } from "@/lib/format";
 import type { Product } from "@/lib/types";
-import { tr } from "@/lib/i18n";
+import { getLang, tr } from "@/lib/i18n";
 
 export function PriceAlertModal({ product, currentPrice, onClose }: { product: Product; currentPrice?: number; onClose: () => void }) {
-  const [channel, setChannel] = useState<"email" | "whatsapp">("whatsapp");
   const [contact, setContact] = useState("");
+  const [busy, setBusy] = useState(false);
   const [target, setTarget] = useState(currentPrice ? String(Math.round((currentPrice * 0.95) / 10) * 10) : "");
   const [error, setError] = useState("");
   const [done, setDone] = useState(false);
@@ -34,21 +33,26 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
+    if (busy) return;
     const price = Number(target);
-    if (channel === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact.trim())) return setError(tr("اكتب إيميل صحيح."));
-    if (channel === "whatsapp" && !isValidWhatsapp(contact)) return setError(tr("اكتب رقم واتساب صحيح، مثلاً 01012345678."));
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(contact.trim())) return setError(tr("اكتب إيميل صحيح."));
     if (!price || price <= 0) return setError(tr("اكتب السعر المستهدف."));
     if (currentPrice && price >= currentPrice) return setError(tr("السعر المستهدف لازم يكون أقل من السعر الحالي ({p}).", { p: formatEGP(currentPrice) }));
     setError("");
-    await getRepository().addAlert({
-      id: uid("alert"),
-      productId: product.id,
-      channel,
-      contact: contact.trim(),
-      targetPrice: price,
-      createdAt: new Date().toISOString(),
-    });
-    setDone(true);
+    setBusy(true);
+    try {
+      const res = await fetch("/api/alerts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ productId: product.id, email: contact.trim(), targetPrice: price, lang: getLang() }),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      setDone(true);
+    } catch {
+      setError(tr("حصلت مشكلة ومقدرناش نحفظ التنبيه. جرب تاني بعد شوية."));
+    } finally {
+      setBusy(false);
+    }
   }
 
   return (
@@ -64,7 +68,7 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
             <CheckCircle2 className="mx-auto mb-3 size-14 text-deal-500" />
             <h2 className="text-xl font-black">{tr("تمام! هنبلغك أول ما السعر ينزل")}</h2>
             <p className="mt-2 text-sm text-slate-500">
-              {tr("هنبعتلك على {c} لما يوصل السعر لـ {p} أو أقل.", { c: channel === "email" ? tr("الإيميل") : tr("واتساب"), p: formatEGP(Number(target)) })}
+              {tr("هنبعتلك إيميل لما يوصل السعر لـ {p} أو أقل.", { p: formatEGP(Number(target)) })}
             </p>
             <button type="button" onClick={onClose} className="btn-primary mt-6 w-full">{tr("تمام")}</button>
           </div>
@@ -80,40 +84,18 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
               </div>
             </div>
 
-            <div className="mb-4 grid grid-cols-2 gap-2 rounded-xl bg-slate-100 p-1 dark:bg-slate-800">
-              {(
-                [
-                  ["whatsapp", tr("واتساب"), MessageCircle],
-                  ["email", tr("إيميل"), Mail],
-                ] as const
-              ).map(([key, label, Icon]) => (
-                <button
-                  key={key}
-                  type="button"
-                  onClick={() => {
-                    setChannel(key);
-                    setContact("");
-                    setError("");
-                  }}
-                  className={`flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-bold transition ${channel === key ? "bg-white shadow dark:bg-slate-900" : "text-slate-500"}`}
-                >
-                  <Icon className="size-4" /> {label}
-                </button>
-              ))}
-            </div>
-
-            <label className="label" htmlFor="alert-contact">{channel === "email" ? tr("الإيميل") : tr("رقم الواتساب")}</label>
+            <label className="label" htmlFor="alert-contact">{tr("الإيميل")}</label>
             <input
               id="alert-contact"
               ref={firstField}
-              type={channel === "email" ? "email" : "tel"}
-              inputMode={channel === "email" ? "email" : "tel"}
+              type="email"
+              inputMode="email"
               dir="ltr"
               value={contact}
               onChange={(e) => setContact(e.target.value)}
-              placeholder={channel === "email" ? "name@example.com" : "01012345678"}
+              placeholder="name@example.com"
               className="input mb-4 text-start"
-              autoComplete={channel === "email" ? "email" : "tel"}
+              autoComplete="email"
             />
 
             <label className="label" htmlFor="alert-target">{tr("السعر المستهدف (ج.م)")}</label>
@@ -122,9 +104,10 @@ export function PriceAlertModal({ product, currentPrice, onClose }: { product: P
 
             {error && <p className="mt-3 rounded-lg bg-red-50 p-2 text-sm font-bold text-red-600 dark:bg-red-500/10">{error}</p>}
 
-            <button type="submit" className="btn-primary mt-5 w-full py-3">
-              <Bell className="size-4" /> {tr("فعّل التنبيه")}
+            <button type="submit" disabled={busy} className="btn-primary mt-5 w-full py-3 disabled:opacity-60">
+              {busy ? <Loader2 className="size-4 animate-spin" /> : <Bell className="size-4" />} {tr("فعّل التنبيه")}
             </button>
+            <p className="mt-3 text-center text-xs text-slate-500">{tr("هنبعتلك إيميل واحد بس لما السعر يوصل للي إنت عايزه، وتقدر تلغي في أي وقت.")}</p>
           </form>
         )}
       </div>

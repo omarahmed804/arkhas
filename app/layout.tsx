@@ -33,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* ⚠️ أكواد التأكيد — متمسحهاش */}
         <meta name="google-site-verification" content="I8Mv7jV5RHdv5-q5S7TSuQpVC0SQ69LGJAfzdpeEoAE" />
+        <meta name="mitgo-verification" content="0af99c9d-bf37-4fb2-bbc4-aee9654a7a7b" />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript + langInitScript }} />
         {/* Cairo — modern Arabic font that also renders Latin product names cleanly */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

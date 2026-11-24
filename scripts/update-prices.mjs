@@ -31,7 +31,14 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = path.join(ROOT, "data", "catalog.json");
 const USER_AGENT = "ArkhasPriceBot/1.0 (price comparison; respects robots.txt)";
 const DELAY_PER_HOST_MS = 3000;
-const TIMEOUT_MS = 20000;
+const TIMEOUT_MS = 15000;
+/** Stores that block bots: checking them only burns time (they're refreshed manually / via PA-API / Admitad feeds). */
+const BOT_BLOCKED_HOSTS = ["www.noon.com", "noon.com", "www.jumia.com.eg", "jumia.com.eg", "www.carrefouregypt.com"];
+/** After this many failures in a row, stop checking that store for this run. */
+const MAX_FAILS_PER_HOST = 4;
+/** Stop starting new checks after this long, so the job always finishes and saves (GitHub limit is 30 min). */
+const TIME_BUDGET_MS = 18 * 60 * 1000;
+const STARTED_AT = Date.now();
 /** Reject a new price outside this ratio of the old one — usually means the page changed product. */
 const MIN_RATIO = 0.4;
 const MAX_RATIO = 2.5;
@@ -534,17 +541,28 @@ async function main() {
         continue;
       }
       const host = new URL(offer.url).host;
+      if (BOT_BLOCKED_HOSTS.includes(host)) continue;
       if (!jobs.has(host)) jobs.set(host, []);
       jobs.get(host).push({ product, offer });
     }
   }
 
   await Promise.all(
-    [...jobs.values()].map(async (list) => {
+    [...jobs.entries()].map(async ([host, list]) => {
+      let failsInRow = 0;
       for (const { product, offer } of list) {
+        if (Date.now() - STARTED_AT > TIME_BUDGET_MS) {
+          console.log(`⏱️  ${host}: وقت التشغيل خلص — الباقي هيتشيك المرة الجاية`);
+          break;
+        }
+        if (failsInRow >= MAX_FAILS_PER_HOST) {
+          console.log(`🚫 ${host}: ${failsInRow} محاولات فشلت ورا بعض — هنوقف المتجر ده في التشغيلة دي`);
+          break;
+        }
         const platform = storeById.get(offer.storeId)?.platform;
         let result = platform === "shopify" ? await checkShopifyOffer(offer) : null;
         if (!result) result = await checkHtmlOffer(offer);
+        failsInRow = result?.error ? failsInRow + 1 : 0;
         summary.checked++;
         applyResult(product, offer, sane(offer, result), now, summary);
         await sleep(DELAY_PER_HOST_MS);
@@ -577,6 +595,10 @@ async function main() {
     const targets = catalog.products.filter((p) => p.categoryId in DISCOVER_CATEGORIES);
     for (const store of catalog.stores) {
       if (store.platform !== "shopify" || (onlyStore && store.id !== onlyStore)) continue;
+      if (Date.now() - STARTED_AT > TIME_BUDGET_MS) {
+        console.log("⏱️  وقت التشغيل خلص — البحث عن عروض جديدة هيكمل المرة الجاية");
+        break;
+      }
       const listings = await loadShopifyCatalog(store.url);
       console.log(`🔎 ${store.nameEn}: ${listings.length} منتج في المتجر`);
       for (const product of targets) {
