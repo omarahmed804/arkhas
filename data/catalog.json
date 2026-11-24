@@ -223,7 +223,9 @@
       "color": "#E6C200",
       "trusted": true,
       "featured": true,
-      "partnerStatus": "none"
+      "partnerStatus": "partner",
+      "affiliateParams": "utm_campaign=CMP2ce0b63a6a1anoon&utm_medium=AFFc2c03b5a3e1b&adjust_deeplink_js=1&utm_source=C1000264L",
+      "partnerNotes": "noon Affiliate (affiliates.noon.partners) — Everyday Campaign, up to 10%"
     },
     {
       "id": "dream2000",
