@@ -102,7 +102,8 @@ export function ProductView({ slug }: { slug: string }) {
                     {tr("في")} <StoreLogo store={bestStore} size="sm" /> <span className="font-bold">{pick(bestStore.name, bestStore.nameEn)}</span>
                   </p>
                 </div>
-                {savings > 0 && (
+                {/* Only show it when the gap is worth it (≥ 50 EGP and ≥ 3%) — "save EGP 1" looks silly. */}
+                {best && savings >= 50 && savings >= best.price * 0.03 && (
                   <span className="chip bg-deal-500 py-1.5 text-sm text-white">{tr("وفّر لحد {p}", { p: formatEGP(savings) })}</span>
                 )}
               </div>
