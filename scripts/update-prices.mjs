@@ -265,17 +265,22 @@ async function loadShopifyCatalog(storeUrl) {
     const { data, error } = await fetchJson(`${origin}/products.json?limit=250&page=${page}`);
     if (error || !Array.isArray(data?.products) || !data.products.length) break;
     for (const p of data.products) {
-      const variants = (p.variants ?? []).map((v) => ({ price: Number(v.price), compare: Number(v.compare_at_price), available: v.available !== false }));
-      const v = variants.find((x) => x.available) ?? variants[0];
-      if (!v || !(v.price > 0)) continue;
-      all.push({
-        title: p.title,
-        url: `${origin}/products/${p.handle}`,
-        price: Math.round(v.price),
-        oldPrice: v.compare > v.price ? Math.round(v.compare) : undefined,
-        inStock: !!v.available,
-        image: p.images?.[0]?.src ?? null,
-      });
+      const image = p.images?.[0]?.src ?? null;
+      for (const v of p.variants ?? []) {
+        const price = Number(v.price);
+        if (!(price > 0)) continue;
+        const compare = Number(v.compare_at_price);
+        const vt = v.title && v.title !== "Default Title" ? ` ${v.title}` : "";
+        all.push({
+          title: p.title + vt,
+          url: `${origin}/products/${p.handle}`,
+          variantId: (p.variants?.length ?? 0) > 1 ? String(v.id) : undefined,
+          price: Math.round(price),
+          oldPrice: compare > price ? Math.round(compare) : undefined,
+          inStock: v.available !== false,
+          image,
+        });
+      }
     }
     await sleep(1500);
   }
@@ -349,6 +354,179 @@ export function bestMatch(product, platform, listings) {
     if (!best || score > best.score || (score === best.score && l.inStock && (!best.inStock || l.price < best.price))) best = { ...l, score };
   }
   return best;
+}
+
+/* ───────────── Any product (phones, laptops, TVs, appliances…): match by model words ───────────── */
+
+/** Arabic store titles: "256 جيجابايت" → "256gb", drop dots/accents so "HFP80.000BK" = "hfp80000bk". */
+export function normGeneric(s) {
+  return String(s ?? "")
+    .replace(/جيجابايت|جيجا ?بايت|جيجا/g, "GB")
+    .replace(/تيرابايت|تيرا ?بايت|تيرا/g, "TB")
+    .replace(/رام/g, " ram ")
+    .replace(/آيفون|ايفون|أيفون/g, " iphone ")
+    .replace(/سامسونج|سامسونغ/g, " samsung ")
+    .replace(/جالاكسي|جلاكسي/g, " galaxy ")
+    .replace(/شاومي/g, " xiaomi ")
+    .replace(/ريدمي/g, " redmi ")
+    .replace(/برو/g, " pro ")
+    .replace(/ماكس/g, " max ")
+    .replace(/ألترا|الترا/g, " ultra ")
+    .normalize("NFKD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .replace(/(\d)\s*(gb|tb)\b/g, "$1$2")
+    .replace(/'s\b/g, " ")
+    .replace(/\./g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+/** cpu/gpu/ram/ssd key for laptops: "i5-12450hx/rtx2050/16/512". */
+export function laptopSpec(t) {
+  const s = ` ${normGeneric(t)} `;
+  let m, cpu = "", gpu = "", ram = "", ssd = "";
+  if ((m = s.match(/\b(i[3579]) ?(\d{4,5}[a-z]{0,2})\b/))) cpu = `${m[1]}-${m[2]}`;
+  else if ((m = s.match(/\bultra ?([579]) ?(\d{3}[a-z]{0,2})\b/))) cpu = `u${m[1]}-${m[2]}`;
+  else if ((m = s.match(/\bryzen ?([3579]) ?(?:pro )?(\d{4}[a-z]{0,2})\b/))) cpu = `r${m[1]}-${m[2]}`;
+  else if ((m = s.match(/\bcore ?([3579]) ?(\d{3}[a-z]?)\b/))) cpu = `c${m[1]}-${m[2]}`;
+  else if ((m = s.match(/\b(m[1-5])\b/))) cpu = m[1];
+  if ((m = s.match(/\brtx ?(\d{4})\b/))) gpu = `rtx${m[1]}`;
+  if ((m = s.match(/\bram (8|16|24|32)gb\b|\b(8|16|24|32)gb(?! ?(?:ssd|nvme|storage|gddr|vram|unified))\b/))) ram = m[1] || m[2];
+  if ((m = s.match(/\b(256|512)gb\b ?(?:\w+ ){0,2}(?:ssd|storage|nvme|pcie)/) || s.match(/\bssd (?:\w+ ){0,2}(256|512)gb\b/))) ssd = m[1];
+  else if ((m = s.match(/\b(1|2)tb\b/))) ssd = `${m[1]}t`;
+  else {
+    const all = [...s.matchAll(/\b(256|512)gb\b/g)];
+    if (all.length) ssd = all[all.length - 1][1];
+  }
+  return [cpu, gpu, ram, ssd].join("/");
+}
+
+const ACCESSORY = /\b(case|cover|strap|band|protector|screen guard|charger|charging|cable|stand|holder|mount|bracket|replacement|filter|bag|pouch|sleeve|skin|film|tempered|renewed|refurbished|used|outlet|open box|basket|liner|accessor\w*|keycaps|grips)\b/;
+
+/**
+ * product.match = { req: ["iphone","17","256gb"], laptop?: true }
+ * Every required word must be in the store's title, no accessory words, and laptops must have the same cpu/gpu/ram/ssd.
+ */
+export function genericMatch(product, title) {
+  const m = product.match;
+  if (!m?.req?.length) return false;
+  const t = normGeneric(title);
+  const W = new Set(t.split(" "));
+  const has = (w) => W.has(w) || (w === "playstation" && W.has("ps5")) || (w === "5" && W.has("ps5"));
+  const req = m.laptop ? m.req : m.req;
+  if (!req.every(has)) return false;
+  const name = normGeneric(product.name);
+  const acc = t.match(ACCESSORY);
+  if (acc && !name.includes(acc[1])) return false;
+  // A different model of the same family ("iPhone 17 Pro" is not "iPhone 17").
+  const N = new Set(name.split(" "));
+  for (const w of VARIANT_WORDS) if (W.has(w) && !N.has(w)) return false;
+  if (m.laptop && laptopSpec(product.name) !== laptopSpec(title)) return false;
+  return true;
+}
+
+const VARIANT_WORDS = ["pro", "max", "plus", "ultra", "mini", "lite", "fe", "se", "edge", "neo", "prime"];
+
+/** Cheapest in-stock listing of one store that is the same product (and priced like it). */
+export function bestGenericMatch(product, listings) {
+  const ref = Math.min(...product.offers.filter((o) => o.inStock && o.price > 0).map((o) => o.price), Infinity);
+  let best = null;
+  for (const l of listings) {
+    if (!l.inStock) continue;
+    if (Number.isFinite(ref) && (l.price < ref * 0.6 || l.price > ref * 1.6)) continue;
+    if (!genericMatch(product, l.title)) continue;
+    if (!best || l.price < best.price) best = l;
+  }
+  return best;
+}
+
+/* ───────────── New releases: games that appear in 2+ stores but aren't on the site yet ───────────── */
+
+const NEW_PLATFORMS = { ps5: "cat-ps5-games", ps4: "cat-ps4-games" };
+/** Not a game: accessories, consoles, cards, accounts… */
+const NOT_A_GAME = ["controller", "dualsense", "headset", "console", "bundle", "charger", "charging", "cable", "stand", "case", "cover", "skin", "sticker", "card", "gift", "wallet", "subscription", "plus", "account", "primary", "secondary", "مستعمل", "used", "digital", "code", "dlc", "season", "pass", "steelbook", "collector", "deluxe", "ultimate", "gold", "premium", "دراع", "يد", "سماعة", "جهاز", "كارت", "اشتراك", "حساب"];
+const MAX_NEW_PER_RUN = 12;
+
+function gameKey(title, platform) {
+  const t = normalizeTitle(title);
+  if (!t.includes(platform)) return null;
+  const other = platform === "ps5" ? "ps4" : "ps5";
+  if (t.includes(other)) return null;
+  for (const w of NOT_A_GAME) if (new RegExp(`(^| )${w}( |$)`).test(t)) return null;
+  const tk = tokens(title).filter((x) => /^[a-z0-9]+$/.test(x)); // English words only, so the same game matches across stores
+  if (tk.length < 1 || tk.length > 7) return null;
+  return [...new Set(tk)].sort().join(" ");
+}
+
+function niceName(title, platform) {
+  const clean = String(title)
+    .replace(/[\u0600-\u06FF]+/g, " ")
+    .replace(/\b(ps ?[45]|playstation ?[45])\b/gi, " ")
+    .replace(/\b(standard edition|arabic|english|ar|en)\b/gi, " ")
+    .replace(/[()[\]|\-–—:,]+\s*$/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/[-–—|:,]+$/, "")
+    .trim();
+  return `${clean} – ${platform.toUpperCase()}`;
+}
+
+/**
+ * Adds brand-new games automatically, but only when at least TWO stores sell the same
+ * title (so no single store owns a product, and random/odd listings are ignored).
+ */
+export function discoverNewReleases(catalog, listingsByStore, now) {
+  const groups = new Map(); // platform|key → Map(storeId → listing)
+  for (const [storeId, listings] of listingsByStore) {
+    for (const l of listings) {
+      if (!l.inStock || l.price < 600 || l.price > 7000) continue;
+      for (const platform of Object.keys(NEW_PLATFORMS)) {
+        const key = gameKey(l.title, platform);
+        if (!key) continue;
+        const k = `${platform}|${key}`;
+        if (!groups.has(k)) groups.set(k, new Map());
+        const g = groups.get(k);
+        if (!g.has(storeId) || l.price < g.get(storeId).price) g.set(storeId, l);
+      }
+    }
+  }
+  const added = [];
+  for (const [k, byStore] of groups) {
+    if (added.length >= MAX_NEW_PER_RUN) break;
+    if (byStore.size < 2) continue;
+    const [platform] = k.split("|");
+    const categoryId = NEW_PLATFORMS[platform];
+    const sample = [...byStore.values()].sort((a, b) => a.title.length - b.title.length)[0];
+    // Already on the site? (same matcher the tracker uses for existing products)
+    const exists = catalog.products.some(
+      (p) => p.categoryId === categoryId && [...byStore.values()].some((l) => matchScore(p.name, platform, l.title) >= MIN_SCORE),
+    );
+    if (exists) continue;
+    const name = niceName(sample.title, platform);
+    const slug = (normalizeTitle(name).replace(/[^a-z0-9 ]/g, "").trim().replace(/ +/g, "-") || "game") + "-new";
+    if (catalog.products.some((p) => p.slug === slug)) continue;
+    const ids = catalog.products.map((p) => Number(String(p.id).split("-")[1]) || 0);
+    const offers = [...byStore.entries()].map(([storeId, l]) => newOffer(storeId, l, now));
+    const product = {
+      id: `p-${String(Math.max(0, ...ids) + 1).padStart(3, "0")}`,
+      slug,
+      name,
+      brand: "",
+      categoryId,
+      images: sample.image ? [sample.image] : [],
+      specs: [{ label: "المنصة", value: platform.toUpperCase() }],
+      popularity: 60,
+      offers,
+      priceHistory: [{ date: now.slice(0, 10), price: Math.min(...offers.map((o) => o.price)) }],
+      createdAt: now,
+      autoDiscovered: true,
+    };
+    catalog.products.push(product);
+    added.push(product);
+    console.log(`🆕 لعبة جديدة: ${name} (${offers.map((o) => `${o.storeId} ${o.price}`).join(", ")})`);
+  }
+  return added;
 }
 
 /* ───────────── Amazon (Product Advertising API 5.0) ───────────── */
@@ -508,6 +686,7 @@ function newOffer(storeId, l, now) {
     ...(l.oldPrice ? { oldPrice: l.oldPrice } : {}),
     linkType: "website",
     url: l.url,
+    ...(l.variantId ? { variantId: l.variantId } : {}),
     inStock: l.inStock,
     freeShipping: false,
     deliveryEta: "حسب المتجر",
@@ -593,6 +772,7 @@ async function main() {
   // 2) Auto-discovery: find the same game/card in other stores and add it as a new offer.
   if (discover) {
     const targets = catalog.products.filter((p) => p.categoryId in DISCOVER_CATEGORIES);
+    const listingsByStore = new Map();
     for (const store of catalog.stores) {
       if (store.platform !== "shopify" || (onlyStore && store.id !== onlyStore)) continue;
       if (Date.now() - STARTED_AT > TIME_BUDGET_MS) {
@@ -600,7 +780,17 @@ async function main() {
         break;
       }
       const listings = await loadShopifyCatalog(store.url);
+      listingsByStore.set(store.id, listings);
       console.log(`🔎 ${store.nameEn}: ${listings.length} منتج في المتجر`);
+      // Any category: phones, laptops, TVs, appliances… (products that carry a "match" rule)
+      for (const product of catalog.products) {
+        if (!product.match || product.offers.some((o) => o.storeId === store.id)) continue;
+        const g = bestGenericMatch(product, listings);
+        if (!g) continue;
+        product.offers.push(newOffer(store.id, g, now));
+        summary.discovered++;
+        console.log(`＋ ${store.id} · ${product.slug}: ${g.price} (${g.title})`);
+      }
       for (const product of targets) {
         if (product.offers.some((o) => o.storeId === store.id)) continue;
         const m = bestMatch(product, DISCOVER_CATEGORIES[product.categoryId], listings);
@@ -611,6 +801,8 @@ async function main() {
         console.log(`＋ ${store.id} · ${product.slug}: ${m.price} (${m.title})`);
       }
     }
+    summary.newProducts = discoverNewReleases(catalog, listingsByStore, now).length;
+
     const amazon = catalog.stores.find((s) => s.platform === "amazon");
     if (amazon && amazonEnabled() && (!onlyStore || onlyStore === amazon.id)) {
       for (const product of targets) {
@@ -640,7 +832,7 @@ async function main() {
   }
   catalog.updatedAt = now;
 
-  console.log(`\nChecked ${summary.checked}, changed ${summary.changed}, failed ${summary.failed}, new offers ${summary.discovered}.`);
+  console.log(`\nChecked ${summary.checked}, changed ${summary.changed}, failed ${summary.failed}, new offers ${summary.discovered}, new games ${summary.newProducts ?? 0}.`);
   if (dryRun) return console.log("(dry run — nothing written)");
   await writeFile(CATALOG_PATH, JSON.stringify(catalog, null, 2) + "\n");
   console.log("Wrote data/catalog.json");

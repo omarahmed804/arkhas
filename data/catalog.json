@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-25T08:45:34.307Z",
+  "updatedAt": "2026-11-25T22:30:00.000Z",
   "industries": [
     {
       "id": "ind-gaming",
@@ -25,6 +25,14 @@
       "slug": "mobiles",
       "icon": "Smartphone",
       "sortOrder": 3
+    },
+    {
+      "id": "ind-home",
+      "name": "أجهزة البيت",
+      "nameEn": "Home Appliances",
+      "slug": "home",
+      "icon": "Tv",
+      "sortOrder": 4
     }
   ],
   "categories": [
@@ -198,6 +206,51 @@
       "slug": "audio",
       "icon": "Headphones",
       "sortOrder": 2
+    },
+    {
+      "id": "cat-tvs",
+      "industryId": "ind-home",
+      "name": "شاشات وتلفزيونات",
+      "nameEn": "TVs",
+      "slug": "tvs",
+      "icon": "Tv",
+      "sortOrder": 1
+    },
+    {
+      "id": "cat-kitchen",
+      "industryId": "ind-home",
+      "name": "أجهزة المطبخ",
+      "nameEn": "Kitchen Appliances",
+      "slug": "kitchen",
+      "icon": "Microwave",
+      "sortOrder": 2
+    },
+    {
+      "id": "cat-personal-care",
+      "industryId": "ind-home",
+      "name": "العناية الشخصية",
+      "nameEn": "Personal Care",
+      "slug": "personal-care",
+      "icon": "Sparkles",
+      "sortOrder": 3
+    },
+    {
+      "id": "cat-home-care",
+      "industryId": "ind-home",
+      "name": "مكاوي ومكانس",
+      "nameEn": "Irons & Vacuums",
+      "slug": "home-care",
+      "icon": "WashingMachine",
+      "sortOrder": 4
+    },
+    {
+      "id": "cat-networking",
+      "industryId": "ind-mobiles",
+      "name": "راوترات وشبكات",
+      "nameEn": "Routers & Networking",
+      "slug": "networking",
+      "icon": "Router",
+      "sortOrder": 4
     }
   ],
   "stores": [
@@ -271,7 +324,8 @@
       "color": "#E4002B",
       "trusted": true,
       "featured": true,
-      "partnerStatus": "none"
+      "partnerStatus": "none",
+      "promoCode": "FF34"
     },
     {
       "id": "sigma",
@@ -328,7 +382,8 @@
       "color": "#0EA5E9",
       "trusted": false,
       "featured": false,
-      "partnerStatus": "none"
+      "partnerStatus": "none",
+      "platform": "shopify"
     },
     {
       "id": "jumia",
@@ -361,7 +416,8 @@
       "color": "#B91C1C",
       "trusted": true,
       "featured": false,
-      "partnerStatus": "none"
+      "partnerStatus": "none",
+      "platform": "shopify"
     },
     {
       "id": "vodafone",
@@ -452,6 +508,18 @@
       "featured": false,
       "platform": "shopify",
       "partnerStatus": "none"
+    },
+    {
+      "id": "tradeline",
+      "name": "تريدلاين",
+      "nameEn": "Tradeline",
+      "url": "https://tradelinestores.com",
+      "logoText": "TL",
+      "color": "#0F766E",
+      "trusted": true,
+      "featured": false,
+      "partnerStatus": "none",
+      "platform": "shopify"
     }
   ],
   "products": [
@@ -552,7 +620,16 @@
           "price": 44500
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "playstation",
+          "5",
+          "slim",
+          "disc",
+          "1tb"
+        ]
+      }
     },
     {
       "id": "p-002",
@@ -603,8 +680,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
           "oldPrice": 51990
         },
         {
@@ -638,7 +715,15 @@
           "price": 43999
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "playstation",
+          "5",
+          "slim",
+          "digital"
+        ]
+      }
     },
     {
       "id": "p-003",
@@ -723,7 +808,15 @@
           "price": 89999
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "playstation",
+          "5",
+          "pro",
+          "2tb"
+        ]
+      }
     },
     {
       "id": "p-004",
@@ -798,8 +891,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
           "oldPrice": 35990
         },
         {
@@ -846,7 +939,14 @@
           "price": 30499
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "nintendo",
+          "switch",
+          "2"
+        ]
+      }
     },
     {
       "id": "p-005",
@@ -943,7 +1043,13 @@
           "price": 19999
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "oled",
+          "white"
+        ]
+      }
     },
     {
       "id": "p-006",
@@ -997,8 +1103,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -1019,7 +1125,14 @@
           "price": 31990
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "xbox",
+          "series",
+          "s"
+        ]
+      }
     },
     {
       "id": "p-007",
@@ -1072,8 +1185,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
           "oldPrice": 19990
         },
         {
@@ -1093,10 +1206,10 @@
           "price": 17219,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0CJT5DJ16",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -1131,7 +1244,13 @@
           "price": 14499
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "playstation",
+          "portal"
+        ]
+      }
     },
     {
       "id": "p-008",
@@ -1176,14 +1295,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 4370,
+          "price": 3999,
           "linkType": "website",
-          "url": "https://www.amazon.eg/dp/B08HKCM222",
+          "url": "https://www.amazon.eg/dp/B0CSKR81S2",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
-          "oldPrice": 4700,
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -1229,7 +1347,13 @@
           "price": 3503
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "dualsense",
+          "white"
+        ]
+      }
     },
     {
       "id": "p-009",
@@ -1287,13 +1411,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 11017,
+          "price": 12888,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0BKQLX36P",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 13810,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
@@ -1309,6 +1433,17 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "oldPrice": 13312,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 12998,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/sony-dualsense-edge-wireless-controller-for-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "47605478195456"
         }
       ],
       "priceHistory": [
@@ -1326,10 +1461,16 @@
         },
         {
           "date": "2026-11-25",
-          "price": 11017
+          "price": 12399
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "dualsense",
+          "edge"
+        ]
+      }
     },
     {
       "id": "p-010",
@@ -1388,13 +1529,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 4299,
+          "price": 3599,
           "linkType": "website",
-          "url": "https://www.amazon.eg/dp/B07SDFLVKD",
+          "url": "https://www.amazon.eg/dp/B0F2Q8S4HN",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -1409,6 +1550,17 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "oldPrice": 4223,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "shamy",
+          "price": 4090,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/xbox-series-x-controller-41017003057549",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 4340
         }
       ],
       "priceHistory": [
@@ -1426,10 +1578,17 @@
         },
         {
           "date": "2026-11-25",
-          "price": 3900
+          "price": 3599
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "xbox",
+          "carbon",
+          "black"
+        ]
+      }
     },
     {
       "id": "p-011",
@@ -1570,8 +1729,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         },
         {
           "storeId": "vodafone",
@@ -1638,7 +1797,13 @@
           "price": 8138
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "odyssey",
+          "g55c"
+        ]
+      }
     },
     {
       "id": "p-014",
@@ -1700,7 +1865,15 @@
           "price": 4600
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "hyperx",
+          "cloud",
+          "ii",
+          "red"
+        ]
+      }
     },
     {
       "id": "p-015",
@@ -1746,13 +1919,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 2222,
+          "price": 1761,
           "linkType": "website",
-          "url": "https://www.amazon.eg/-/en/Logitech-G502-Hero-Gaming-Mouse/dp/B076HSH2D9",
+          "url": "https://www.amazon.eg/dp/B07GS6ZB7T",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -1780,6 +1953,17 @@
           "updatedAt": "2026-11-25T08:45:34.307Z",
           "oldPrice": 2900,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 1799,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/logitech-g502-hero-wired-gaming-mouse-25600dpi",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 2399
         }
       ],
       "priceHistory": [
@@ -1797,10 +1981,16 @@
         },
         {
           "date": "2026-11-25",
-          "price": 1799
+          "price": 1761
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "g502",
+          "hero"
+        ]
+      }
     },
     {
       "id": "p-016",
@@ -1834,14 +2024,14 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 1199,
+          "price": 999,
           "oldPrice": 1629,
           "linkType": "website",
           "url": "https://www.amazon.eg/-/en/Redragon-K552-KUMARA-Mechanical-Keyboard/dp/B0CJX8RF48",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -1877,6 +2067,26 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-25T08:45:34.307Z",
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 1349,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/keyboard-redragon-k552-kumara-wired-gaming-english",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 1350,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/redragon-k552-mechanical-gaming-keyboard-backlit",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -1894,10 +2104,15 @@
         },
         {
           "date": "2026-11-25",
-          "price": 1199
+          "price": 999
         }
       ],
-      "createdAt": "2026-11-22T19:00:00.000Z"
+      "createdAt": "2026-11-22T19:00:00.000Z",
+      "match": {
+        "req": [
+          "k552"
+        ]
+      }
     },
     {
       "id": "p-017",
@@ -1990,13 +2205,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 1677,
+          "price": 1852,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0FGKC8PKQ",
-          "inStock": false,
+          "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 3485,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
@@ -2130,13 +2345,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 3382,
+          "price": 3226,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0F6YY3SXM",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -3946,13 +4161,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 3620,
+          "price": 3515,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0FVF54935",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 4264,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
@@ -4034,13 +4249,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 1888,
+          "price": 1904,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0CBVX15N5",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 2034,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
@@ -4068,7 +4283,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 1888
+          "price": 1904
         }
       ],
       "createdAt": "2026-11-22T20:30:00.000Z"
@@ -4148,7 +4363,7 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -4319,13 +4534,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 2151,
+          "price": 2119,
           "linkType": "website",
-          "url": "https://www.amazon.eg/dp/B0BDVPFMFM",
+          "url": "https://www.amazon.eg/dp/B0BDXS4RY4",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -5193,13 +5408,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 1999,
+          "price": 1689,
           "linkType": "website",
-          "url": "https://www.amazon.eg/dp/B09VLH43ND",
+          "url": "https://www.amazon.eg/dp/B09TXTY1HH",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -5435,10 +5650,10 @@
           "price": 1799,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B09984Z4YC",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -5683,13 +5898,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 1740,
+          "price": 1686,
           "linkType": "website",
-          "url": "https://www.amazon.eg/dp/B08NCHVH3S",
+          "url": "https://www.amazon.eg/dp/B099MD8ZQ3",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
@@ -6075,13 +6290,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 1900,
+          "price": 1999,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B084S9GV11",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
@@ -6239,13 +6454,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 1729,
+          "price": 1357,
           "linkType": "website",
-          "url": "https://www.amazon.eg/dp/B09JB3XQ6D",
+          "url": "https://www.amazon.eg/dp/B09SGMTVDQ",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -6276,7 +6491,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 1390
+          "price": 1357
         }
       ],
       "createdAt": "2026-11-22T20:30:00.000Z"
@@ -6326,13 +6541,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 1999,
+          "price": 1525,
           "linkType": "website",
-          "url": "https://www.amazon.eg/dp/B01M65RD19",
+          "url": "https://www.amazon.eg/dp/B0996GCN1H",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -6481,7 +6696,7 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -6893,8 +7108,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6927,7 +7142,15 @@
           "price": 10399
         }
       ],
-      "createdAt": "2026-11-22T20:45:00.000Z"
+      "createdAt": "2026-11-22T20:45:00.000Z",
+      "match": {
+        "req": [
+          "pulse",
+          "elite",
+          "midnight",
+          "black"
+        ]
+      }
     },
     {
       "id": "p-080",
@@ -8370,10 +8593,10 @@
           "price": 4199,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0HL3QSZRX",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -8819,13 +9042,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 1165,
+          "price": 1025,
           "linkType": "website",
-          "url": "https://www.amazon.eg/dp/B09973BM5C",
+          "url": "https://www.amazon.eg/dp/B0B1XF1HXQ",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -8995,7 +9218,7 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -9177,7 +9400,7 @@
           "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -9358,7 +9581,7 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -9640,13 +9863,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 1173,
+          "price": 1172,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B077NSDPC5",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 1275,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
@@ -10394,7 +10617,14 @@
           "oldPrice": 6300,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
         }
-      ]
+      ],
+      "match": {
+        "req": [
+          "dualsense",
+          "cosmic",
+          "blue"
+        ]
+      }
     },
     {
       "id": "p-142",
@@ -10440,15 +10670,25 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 6199,
+          "price": 5400,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0GFQ2Z3BM",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "shamy",
+          "price": 5690,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps5-dualsense-controller-remix-green",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -10466,10 +10706,17 @@
         },
         {
           "date": "2026-11-25",
-          "price": 5999
+          "price": 5400
         }
       ],
-      "createdAt": "2026-11-22T23:45:00.000Z"
+      "createdAt": "2026-11-22T23:45:00.000Z",
+      "match": {
+        "req": [
+          "dualsense",
+          "remix",
+          "green"
+        ]
+      }
     },
     {
       "id": "p-143",
@@ -11426,7 +11673,14 @@
           "oldPrice": 44990
         }
       ],
-      "priceHistory": []
+      "priceHistory": [],
+      "match": {
+        "req": [
+          "xbox",
+          "series",
+          "x"
+        ]
+      }
     },
     {
       "id": "p-160",
@@ -11885,13 +12139,13 @@
         },
         {
           "storeId": "amazon-eg",
-          "price": 4258,
+          "price": 4232,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0FN4F3S5L",
-          "inStock": false,
+          "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
@@ -12444,7 +12698,13 @@
           "price": 5500
         }
       ],
-      "createdAt": "2026-11-23T11:55:00.000Z"
+      "createdAt": "2026-11-23T11:55:00.000Z",
+      "match": {
+        "req": [
+          "pulse",
+          "3d"
+        ]
+      }
     },
     {
       "id": "p-175",
@@ -12514,7 +12774,13 @@
           "price": 11000
         }
       ],
-      "createdAt": "2026-11-23T11:55:00.000Z"
+      "createdAt": "2026-11-23T11:55:00.000Z",
+      "match": {
+        "req": [
+          "pulse",
+          "explore"
+        ]
+      }
     },
     {
       "id": "p-176",
@@ -12586,7 +12852,13 @@
           "price": 6200
         }
       ],
-      "createdAt": "2026-11-23T11:55:00.000Z"
+      "createdAt": "2026-11-23T11:55:00.000Z",
+      "match": {
+        "req": [
+          "inzone",
+          "h5"
+        ]
+      }
     },
     {
       "id": "p-177",
@@ -13036,6 +13308,16 @@
           "oldPrice": 11599,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 9999,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/samsung-odyssey-g5-g50d-27-qhd-180hz-ips-gaming-monitor-egypt",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -13052,7 +13334,13 @@
           "price": 10500
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "odyssey",
+          "g50d"
+        ]
+      }
     },
     {
       "id": "p-185",
@@ -13095,6 +13383,16 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 6699,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/benq-zowie-xl2411k-tn-144hz-dyac-24-inch-gaming-monitor-for-esports",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -13111,7 +13409,12 @@
           "price": 6999
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "xl2411k"
+        ]
+      }
     },
     {
       "id": "p-186",
@@ -13170,7 +13473,12 @@
           "price": 8960
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "ex271"
+        ]
+      }
     },
     {
       "id": "p-187",
@@ -13213,6 +13521,17 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 8499,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/xiaomi-gaming-monitor-g27i-2026-27-full-hd-fast-ips-gaming-monitor",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 10600
         }
       ],
       "priceHistory": [
@@ -13229,7 +13548,13 @@
           "price": 7555
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "xiaomi",
+          "g27i"
+        ]
+      }
     },
     {
       "id": "p-188",
@@ -13263,13 +13588,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 6861,
+          "price": 5763,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0FKC3CWS3",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–4 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 7499,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
@@ -13286,10 +13611,16 @@
         },
         {
           "date": "2026-11-25",
-          "price": 6861
+          "price": 5763
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "xiaomi",
+          "g24i"
+        ]
+      }
     },
     {
       "id": "p-189",
@@ -13333,6 +13664,27 @@
           "oldPrice": 14099,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 14099,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/lenovo-legion-r32qc-30-curved-qhd-180hz-gaming-monitor",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 14999,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/lenovo-legion-r32qc-30-monitor-gaming-31-5-qhd-180hz-67c8gac1eu-black",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 18300
         }
       ],
       "priceHistory": [
@@ -13349,7 +13701,12 @@
           "price": 13555
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "r32qc"
+        ]
+      }
     },
     {
       "id": "p-190",
@@ -13386,10 +13743,10 @@
           "price": 26749,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0DF7K6VDM",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–4 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
@@ -13408,7 +13765,12 @@
           "price": 26749
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "27m2c5501"
+        ]
+      }
     },
     {
       "id": "p-191",
@@ -13451,6 +13813,16 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "oldPrice": 7999,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 7500,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/logitech-g-pro-x-superlight-2-lightspeed-wireless-gaming-mouse-white-910-006638-44000-dpi-8000hz-egypt",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -13467,7 +13839,15 @@
           "price": 7599
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "logitech",
+          "pro",
+          "superlight",
+          "2"
+        ]
+      }
     },
     {
       "id": "p-192",
@@ -13523,6 +13903,42 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "oldPrice": 2199,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 1799,
+          "oldPrice": 2600,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/logitech-mouse-lightspeed-wireless-gaming-g305-black",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 1799,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/logitech-g305-lightspeed-wireless-gaming-mouse-12000dpi-black",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "45200197320960",
+          "oldPrice": 2250
+        },
+        {
+          "storeId": "compumarts",
+          "price": 1900,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/logitech-g305-lightspeed-wireless-programmable-12000-dpi",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "43620158505109",
+          "oldPrice": 2799
         }
       ],
       "priceHistory": [
@@ -13536,10 +13952,15 @@
         },
         {
           "date": "2026-11-25",
-          "price": 1849
+          "price": 1799
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "g305"
+        ]
+      }
     },
     {
       "id": "p-193",
@@ -13582,6 +14003,16 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "oldPrice": 1999,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 2000,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/razer-deathadder-essential-white-wired-gaming-mouse",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -13598,7 +14029,13 @@
           "price": 1299
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "razer",
+          "deathadder"
+        ]
+      }
     },
     {
       "id": "p-194",
@@ -13656,7 +14093,14 @@
           "price": 2700
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "razer",
+          "blackshark",
+          "v2"
+        ]
+      }
     },
     {
       "id": "p-195",
@@ -13727,7 +14171,15 @@
           "price": 1999
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "hyperx",
+          "cloud",
+          "stinger",
+          "2"
+        ]
+      }
     },
     {
       "id": "p-196",
@@ -13786,7 +14238,15 @@
           "price": 3226
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "steelseries",
+          "arctis",
+          "nova",
+          "1"
+        ]
+      }
     },
     {
       "id": "p-197",
@@ -13820,16 +14280,27 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 1299,
+          "price": 1199,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0F549C7WZ",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–4 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 1789,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 1600,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "43709054386325"
         }
       ],
       "priceHistory": [
@@ -13843,10 +14314,15 @@
         },
         {
           "date": "2026-11-25",
-          "price": 1299
+          "price": 1199
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "k617"
+        ]
+      }
     },
     {
       "id": "p-198",
@@ -13883,10 +14359,10 @@
           "price": 2564,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B07QGHK6Q8",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–4 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 2699,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
@@ -13902,6 +14378,26 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "oldPrice": 3999,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 2699,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/logitech-g213-prodigy-wired-gaming-keyboard-english",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 2514,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/logitech-g213-rgb-gaming-keyboard",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -13915,10 +14411,15 @@
         },
         {
           "date": "2026-11-25",
-          "price": 2564
+          "price": 2699
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "g213"
+        ]
+      }
     },
     {
       "id": "p-199",
@@ -13977,7 +14478,13 @@
           "price": 6799
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "g502",
+          "plus"
+        ]
+      }
     },
     {
       "id": "p-200",
@@ -14035,7 +14542,15 @@
           "price": 39999
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "990",
+          "pro",
+          "2tb",
+          "heatsink"
+        ]
+      }
     },
     {
       "id": "p-201",
@@ -14090,6 +14605,16 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "oldPrice": 8999,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "shamy",
+          "price": 8490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/disc-drive-for-ps5-digital-edition-consoles",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -14106,7 +14631,13 @@
           "price": 6999
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "disc",
+          "drive"
+        ]
+      }
     },
     {
       "id": "p-202",
@@ -14149,6 +14680,17 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "shamy",
+          "price": 4090,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/xbox-series-controller-robot-white",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 4340
         }
       ],
       "priceHistory": [
@@ -14165,7 +14707,14 @@
           "price": 3680
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "xbox",
+          "robot",
+          "white"
+        ]
+      }
     },
     {
       "id": "p-203",
@@ -14235,7 +14784,14 @@
           "price": 3800
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "dualsense",
+          "midnight",
+          "black"
+        ]
+      }
     },
     {
       "id": "p-204",
@@ -14290,6 +14846,17 @@
           "deliveryEta": "1–4 أيام",
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "shamy",
+          "price": 4690,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps5-dualsense-wireless-controller-cosmic-red",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 4940
         }
       ],
       "priceHistory": [
@@ -14306,7 +14873,14 @@
           "price": 4079
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "dualsense",
+          "cosmic",
+          "red"
+        ]
+      }
     },
     {
       "id": "p-205",
@@ -14346,7 +14920,7 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–4 أيام",
-          "updatedAt": "2026-11-23T15:40:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 4689,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
@@ -14362,6 +14936,17 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "oldPrice": 6600,
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "shamy",
+          "price": 4790,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps5-dualsense-wireless-controller-volcanic-red",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 5040
         }
       ],
       "priceHistory": [
@@ -14378,7 +14963,14 @@
           "price": 4299
         }
       ],
-      "createdAt": "2026-11-23T12:00:00.000Z"
+      "createdAt": "2026-11-23T12:00:00.000Z",
+      "match": {
+        "req": [
+          "dualsense",
+          "volcanic",
+          "red"
+        ]
+      }
     },
     {
       "id": "p-206",
@@ -14419,10 +15011,10 @@
           "price": 51999,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0DRZK97JL",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": true,
           "deliveryEta": "2–5 أيام",
-          "updatedAt": "2026-11-23T15:55:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "installment": true,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -14452,7 +15044,13 @@
           "price": 51452
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "loq"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-207",
@@ -14527,7 +15125,13 @@
           "price": 53997
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "loq"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-208",
@@ -14571,7 +15175,7 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "2–5 أيام",
-          "updatedAt": "2026-11-23T15:55:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "installment": true,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -14598,6 +15202,37 @@
           "oldPrice": 84049,
           "installment": true,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 56999,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/lenovo-loq-15irx9-laptop-intel-core-i5-13450hx-16gb-ram-m-2-nvme-512gb-nvidia-rtx-3050-6gb-15-6-inch-fhd-ips-144hz-la1-ai-chip-loq-m100-rgb-mouse-luna-grey",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 60150,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/lenovo-loq-15iax9-83dv012aed-i5-13450hx-rtx-3050-16gb-512gb-144hz-egypt",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 64444,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/lenovo-laptop-i5-13450hx-16gb-512ssd-rtx3050-15-6-fhd-83dv012aed-loq-15iax9-luna-grey",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 72000
         }
       ],
       "priceHistory": [
@@ -14614,7 +15249,13 @@
           "price": 59933
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "loq"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-209",
@@ -14677,7 +15318,13 @@
           "price": 59292
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "loq"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-210",
@@ -14740,7 +15387,13 @@
           "price": 74444
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "loq"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-211",
@@ -14799,6 +15452,16 @@
           "updatedAt": "2026-11-23T15:55:00.000Z",
           "installment": true,
           "oldPrice": 51999
+        },
+        {
+          "storeId": "kimo",
+          "price": 45666,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/hp-victus-15-fa2038ne-gaming-laptop-intel-core-i5-13420h-8gb-ram-m-2-nvme-512gb-nvidia-rtx-2050-4gb-15-6-inch-fhd-ips-144hz-mica-silver",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -14815,7 +15478,13 @@
           "price": 47999
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "victus"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-212",
@@ -14874,6 +15543,26 @@
           "updatedAt": "2026-11-23T15:55:00.000Z",
           "installment": true,
           "oldPrice": 55980
+        },
+        {
+          "storeId": "kimo",
+          "price": 46999,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/hp-victus-15-fa2013dx-gaming-laptop-intel-core-i5-13420h-8gb-ram-m-2-nvme-512gb-nvidia-rtx-3050-6gb-15-6-inch-fhd-ips-144hz-win11-mica-silver",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 45500,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/hp-victus-15-fa2013dx-gaming-laptop-intel-core-i5-13420h-8gb-ram-512gb-ssd-nvidia-geforce-rtx-3050-6gb-15-6-fhd-144hz-windows-11",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -14890,7 +15579,13 @@
           "price": 49485
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "victus"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-213",
@@ -14928,16 +15623,26 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 62350,
+          "price": 59999,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0DN5RWNNC",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "2–5 أيام",
-          "updatedAt": "2026-11-23T15:55:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "installment": true,
           "oldPrice": 64000,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 68112,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/hp-victus-15-rtx-4050-i5-gaming-laptop",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -14951,10 +15656,16 @@
         },
         {
           "date": "2026-11-25",
-          "price": 62350
+          "price": 59999
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "victus"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-214",
@@ -15028,7 +15739,13 @@
           "price": 85999
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "strix"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-215",
@@ -15066,13 +15783,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 84444,
+          "price": 79999,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0GQ2G7X8Q",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "2–5 أيام",
-          "updatedAt": "2026-11-23T15:55:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "installment": true,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
@@ -15088,10 +15805,16 @@
         },
         {
           "date": "2026-11-25",
-          "price": 84444
+          "price": 79999
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "tuf"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-216",
@@ -15137,6 +15860,16 @@
           "deliveryEta": "2–5 أيام",
           "updatedAt": "2026-11-23T15:55:00.000Z",
           "installment": true
+        },
+        {
+          "storeId": "compumarts",
+          "price": 80888,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/asus-tuf-gaming-f16-fx608jmi-rtx-5060-egypt",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -15153,7 +15886,13 @@
           "price": 80299
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "tuf"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-217",
@@ -15216,7 +15955,13 @@
           "price": 73953
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "tuf"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-218",
@@ -15279,7 +16024,13 @@
           "price": 101723
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "legion"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-219",
@@ -15317,13 +16068,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 120000,
+          "price": 119000,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0HR92MCFD",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "2–5 أيام",
-          "updatedAt": "2026-11-23T15:55:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "installment": true,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
@@ -15339,10 +16090,16 @@
         },
         {
           "date": "2026-11-25",
-          "price": 120000
+          "price": 119000
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "legion"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-220",
@@ -15389,6 +16146,16 @@
           "updatedAt": "2026-11-23T15:55:00.000Z",
           "installment": true,
           "oldPrice": 68540
+        },
+        {
+          "storeId": "kimo",
+          "price": 58800,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/msi-cyborg-15-a13ve-laptop-intel-core-i7-13620h-16gb-ram-m-2-nvme-512gb-nvidia-rtx-4050-gddr6-15-6-inch-fhd-ips-144hz-translucent-black",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -15405,7 +16172,13 @@
           "price": 61754
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "cyborg"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-221",
@@ -15467,7 +16240,14 @@
           "price": 58999
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "msi",
+          "thin"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-222",
@@ -15513,6 +16293,16 @@
           "deliveryEta": "2–5 أيام",
           "updatedAt": "2026-11-23T15:55:00.000Z",
           "installment": true
+        },
+        {
+          "storeId": "kimo",
+          "price": 62999,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/dell-g15-5530-gaming-laptop-intel-core-i5-13450hx-16gb-ram-m-2-nvme-512gb-nvidia-rtx-3050-6gb-15-6-inch-fhd-120hz-ubuntu-gray",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -15529,7 +16319,13 @@
           "price": 70499
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "g15"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-223",
@@ -15602,6 +16398,16 @@
           "oldPrice": 35349,
           "installment": true,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 25375,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/lenovo-ideapad-slim-3-15iru8-82x700bvps-egypt",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -15618,7 +16424,13 @@
           "price": 24999
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "ideapad"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-224",
@@ -15681,7 +16493,13 @@
           "price": 34444
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "ideapad"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-225",
@@ -15739,6 +16557,17 @@
           "deliveryEta": "2–5 أيام",
           "updatedAt": "2026-11-23T15:55:00.000Z",
           "installment": true
+        },
+        {
+          "storeId": "dream2000",
+          "price": 44444,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/lenovo-ideapad-slim-3-laptop-intel-core-i7-13620h-8gb-ram-512gb-ssd-uhd-graphics-15-3-inch-wuxga-display-83k100f1ed-luna-grey",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 53400
         }
       ],
       "priceHistory": [
@@ -15755,7 +16584,13 @@
           "price": 37999
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "ideapad"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-226",
@@ -15814,6 +16649,17 @@
           "updatedAt": "2026-11-23T15:55:00.000Z",
           "installment": true,
           "oldPrice": 47000
+        },
+        {
+          "storeId": "dream2000",
+          "price": 47777,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/lenovo-ideapad-slim-3-15iph11-intel-core-ultra-5-322-16gb-ram-512gb-ssd-intel-graphics-dos-luna-grey-83ur00bked",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 57400
         }
       ],
       "priceHistory": [
@@ -15830,7 +16676,13 @@
           "price": 40999
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "ideapad"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-227",
@@ -15874,7 +16726,7 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "2–5 أيام",
-          "updatedAt": "2026-11-23T15:55:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "installment": true,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
@@ -15893,7 +16745,13 @@
           "price": 46999
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "inspiron"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-228",
@@ -15968,7 +16826,14 @@
           "price": 66960
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "macbook",
+          "air"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-229",
@@ -16042,7 +16907,14 @@
           "price": 81700
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "macbook",
+          "air"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-230",
@@ -16117,7 +16989,14 @@
           "price": 77807
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "macbook",
+          "air"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-231",
@@ -16192,7 +17071,14 @@
           "price": 94590
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "macbook",
+          "pro"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-232",
@@ -16266,7 +17152,14 @@
           "price": 129000
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "macbook",
+          "pro"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-233",
@@ -16340,7 +17233,14 @@
           "price": 128650
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "macbook",
+          "pro"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-234",
@@ -16428,7 +17328,14 @@
           "price": 117865
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "macbook",
+          "pro"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-235",
@@ -16490,7 +17397,14 @@
           "price": 54199
         }
       ],
-      "createdAt": "2026-11-23T15:55:00.000Z"
+      "createdAt": "2026-11-23T15:55:00.000Z",
+      "match": {
+        "req": [
+          "mac",
+          "mini"
+        ],
+        "laptop": true
+      }
     },
     {
       "id": "p-236",
@@ -16524,14 +17438,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 59849,
+          "price": 67805,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0DSLS4MN7",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T16:10:00.000Z",
-          "oldPrice": 65500,
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "installment": true,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -16570,10 +17483,17 @@
         },
         {
           "date": "2026-11-25",
-          "price": 59849
+          "price": 65000
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "s25",
+          "ultra",
+          "256gb"
+        ]
+      }
     },
     {
       "id": "p-237",
@@ -16616,6 +17536,18 @@
           "updatedAt": "2026-11-23T16:10:00.000Z",
           "installment": true,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 42990,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/galaxy-s25-fe",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "47061144699019",
+          "oldPrice": 51600
         }
       ],
       "priceHistory": [
@@ -16632,7 +17564,14 @@
           "price": 39999
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "s25",
+          "fe",
+          "256gb"
+        ]
+      }
     },
     {
       "id": "p-238",
@@ -16716,7 +17655,13 @@
           "price": 24399
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "a56",
+          "256gb"
+        ]
+      }
     },
     {
       "id": "p-239",
@@ -16799,7 +17744,13 @@
           "price": 21199
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "a36",
+          "256gb"
+        ]
+      }
     },
     {
       "id": "p-240",
@@ -16869,7 +17820,13 @@
           "price": 16423
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "a26",
+          "128gb"
+        ]
+      }
     },
     {
       "id": "p-241",
@@ -16906,10 +17863,10 @@
           "price": 11850,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0DM1S54MZ",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T16:10:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "installment": true,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -16924,6 +17881,30 @@
           "updatedAt": "2026-11-23T16:10:00.000Z",
           "oldPrice": 13199,
           "installment": true
+        },
+        {
+          "storeId": "kimo",
+          "price": 11099,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/samsung-galaxy-a16-dual-sim-128gb-4gb-ram-6-7-inch-4g-lte-black",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "46912177733888",
+          "oldPrice": 12500
+        },
+        {
+          "storeId": "dream2000",
+          "price": 12999,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/galaxy-a16-2-html",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "47060644397195",
+          "oldPrice": 15600
         }
       ],
       "priceHistory": [
@@ -16940,7 +17921,13 @@
           "price": 10990
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "a16",
+          "128gb"
+        ]
+      }
     },
     {
       "id": "p-242",
@@ -17020,6 +18007,28 @@
           "oldPrice": 136899,
           "installment": true,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "tradeline",
+          "price": 89900,
+          "linkType": "website",
+          "url": "https://tradelinestores.com/products/iphone-17-pro-mfyn4af-a",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 103990,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/iphone-17-pro-max-2-years-warranty",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "51327782584459",
+          "oldPrice": 124800
         }
       ],
       "priceHistory": [
@@ -17036,7 +18045,16 @@
           "price": 90900
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "iphone",
+          "17",
+          "pro",
+          "max",
+          "256gb"
+        ]
+      }
     },
     {
       "id": "p-243",
@@ -17118,6 +18136,28 @@
           "installment": true,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z",
           "lastCheckError": "مش لاقي السعر في الصفحة (ممكن تكون صفحة قسم مش منتج)"
+        },
+        {
+          "storeId": "tradeline",
+          "price": 85500,
+          "linkType": "website",
+          "url": "https://tradelinestores.com/products/iphone-17-pro-mg8h4af-a",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 95990,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/iphone-17-pro-2-years-warranty",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "47061101379723",
+          "oldPrice": 115200
         }
       ],
       "priceHistory": [
@@ -17134,7 +18174,15 @@
           "price": 86999
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "iphone",
+          "17",
+          "pro",
+          "256gb"
+        ]
+      }
     },
     {
       "id": "p-244",
@@ -17201,6 +18249,40 @@
           "updatedAt": "2026-11-23T16:10:00.000Z",
           "oldPrice": 77500,
           "installment": true
+        },
+        {
+          "storeId": "kimo",
+          "price": 71999,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/apple-iphone-17-256gb-8gb-ram-6-3-inch-5g",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "49778437947648",
+          "oldPrice": 81400
+        },
+        {
+          "storeId": "tradeline",
+          "price": 79990,
+          "linkType": "website",
+          "url": "https://tradelinestores.com/products/iphone-17-mg6n4af-a",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 85990,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/iphone-17-2-years-warranty",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "47061102952587",
+          "oldPrice": 103200
         }
       ],
       "priceHistory": [
@@ -17217,7 +18299,14 @@
           "price": 69900
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "iphone",
+          "17",
+          "256gb"
+        ]
+      }
     },
     {
       "id": "p-245",
@@ -17254,10 +18343,10 @@
           "price": 64999,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0DGHN7913",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T16:10:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "installment": true,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
@@ -17296,6 +18385,28 @@
           "oldPrice": 101449,
           "installment": true,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "tradeline",
+          "price": 73300,
+          "linkType": "website",
+          "url": "https://tradelinestores.com/products/iphone-16-myed3zd-a",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 70990,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/iphone-16",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "47060780220555",
+          "oldPrice": 85200
         }
       ],
       "priceHistory": [
@@ -17312,7 +18423,14 @@
           "price": 61150
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "iphone",
+          "16",
+          "128gb"
+        ]
+      }
     },
     {
       "id": "p-246",
@@ -17379,6 +18497,28 @@
           "oldPrice": 87599,
           "installment": true,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "tradeline",
+          "price": 63300,
+          "linkType": "website",
+          "url": "https://tradelinestores.com/products/iphone-15-mtp03aa-a",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 62490,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/iphone-15",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "47060414595211",
+          "oldPrice": 75000
         }
       ],
       "priceHistory": [
@@ -17395,7 +18535,14 @@
           "price": 49969
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "iphone",
+          "15",
+          "128gb"
+        ]
+      }
     },
     {
       "id": "p-247",
@@ -17453,7 +18600,16 @@
           "price": 22300
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "redmi",
+          "note",
+          "14",
+          "pro",
+          "256gb"
+        ]
+      }
     },
     {
       "id": "p-248",
@@ -17512,7 +18668,14 @@
           "price": 14999
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "realme",
+          "c75",
+          "256gb"
+        ]
+      }
     },
     {
       "id": "p-249",
@@ -17551,6 +18714,16 @@
           "updatedAt": "2026-11-25T08:45:34.307Z",
           "oldPrice": 17299,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "tradeline",
+          "price": 18999,
+          "linkType": "website",
+          "url": "https://tradelinestores.com/products/airpods-pro-3-mfhp4ze-a",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -17567,7 +18740,14 @@
           "price": 14499
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "airpods",
+          "pro",
+          "3"
+        ]
+      }
     },
     {
       "id": "p-250",
@@ -17606,6 +18786,16 @@
           "updatedAt": "2026-11-25T08:45:34.307Z",
           "oldPrice": 14199,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "tradeline",
+          "price": 9900,
+          "linkType": "website",
+          "url": "https://tradelinestores.com/products/airpods-4-mxp63ze-a",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -17622,7 +18812,13 @@
           "price": 11299
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "airpods",
+          "4"
+        ]
+      }
     },
     {
       "id": "p-251",
@@ -17652,13 +18848,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 8621,
+          "price": 8771,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0DLLHDXZN",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T16:10:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
       ],
@@ -17673,10 +18869,15 @@
         },
         {
           "date": "2026-11-25",
-          "price": 8621
+          "price": 8771
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "buds3"
+        ]
+      }
     },
     {
       "id": "p-252",
@@ -17743,7 +18944,12 @@
           "price": 11999
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "1000xm5"
+        ]
+      }
     },
     {
       "id": "p-253",
@@ -17808,7 +19014,12 @@
           "price": 15999
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "1000xm6"
+        ]
+      }
     },
     {
       "id": "p-254",
@@ -17838,13 +19049,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 1599,
+          "price": 1899,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0DCJH8PG9",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T16:10:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 2243,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
@@ -17860,10 +19071,15 @@
         },
         {
           "date": "2026-11-25",
-          "price": 1599
+          "price": 1899
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "c510"
+        ]
+      }
     },
     {
       "id": "p-255",
@@ -17914,6 +19130,16 @@
           "updatedAt": "2026-11-25T08:45:34.307Z",
           "oldPrice": 2549,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "tradeline",
+          "price": 2335,
+          "linkType": "website",
+          "url": "https://tradelinestores.com/products/sony-wh-ch520-wireless-headphones-blue",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -17930,7 +19156,12 @@
           "price": 1949
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "ch520"
+        ]
+      }
     },
     {
       "id": "p-256",
@@ -17997,7 +19228,12 @@
           "price": 2038
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "520bt"
+        ]
+      }
     },
     {
       "id": "p-257",
@@ -18062,7 +19298,12 @@
           "price": 4044
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "770nc"
+        ]
+      }
     },
     {
       "id": "p-258",
@@ -18126,7 +19367,14 @@
           "price": 4777
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "jbl",
+          "flip",
+          "6"
+        ]
+      }
     },
     {
       "id": "p-259",
@@ -18187,6 +19435,16 @@
           "updatedAt": "2026-11-25T08:45:34.307Z",
           "oldPrice": 10199,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "tradeline",
+          "price": 6990,
+          "linkType": "website",
+          "url": "https://tradelinestores.com/products/jbl-flip-7-portable-bluetooth-speaker-squad",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -18203,7 +19461,14 @@
           "price": 5299
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "jbl",
+          "flip",
+          "7"
+        ]
+      }
     },
     {
       "id": "p-260",
@@ -18242,6 +19507,18 @@
           "updatedAt": "2026-11-23T16:10:00.000Z",
           "oldPrice": 2516,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "kimo",
+          "price": 2090,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/jbl-go-4-waterproof-portable-bluetooth-speaker",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "variantId": "45783775314176",
+          "oldPrice": 3000
         }
       ],
       "priceHistory": [
@@ -18258,7 +19535,14 @@
           "price": 1799
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "jbl",
+          "go",
+          "4"
+        ]
+      }
     },
     {
       "id": "p-261",
@@ -18323,7 +19607,14 @@
           "price": 7100
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "jbl",
+          "charge",
+          "5"
+        ]
+      }
     },
     {
       "id": "p-262",
@@ -18388,7 +19679,12 @@
           "price": 2650
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "q20i"
+        ]
+      }
     },
     {
       "id": "p-263",
@@ -18449,6 +19745,28 @@
           "updatedAt": "2026-11-25T08:45:34.307Z",
           "oldPrice": 1299,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 1049,
+          "oldPrice": 1199,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/soundcore-by-anker-r50i-vi-earbuds-a3969d21-white",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 949,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/anker-soundcore-r50i-vi-a3969d21-earbuds-white",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -18465,7 +19783,12 @@
           "price": 810
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "r50i"
+        ]
+      }
     },
     {
       "id": "p-264",
@@ -18495,13 +19818,13 @@
       "offers": [
         {
           "storeId": "amazon-eg",
-          "price": 990,
+          "price": 994,
           "linkType": "website",
           "url": "https://www.amazon.eg/dp/B0C8TGCVL1",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-23T16:10:00.000Z",
+          "updatedAt": "2026-11-25T21:30:00.000Z",
           "oldPrice": 1099,
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         }
@@ -18517,10 +19840,17 @@
         },
         {
           "date": "2026-11-25",
-          "price": 990
+          "price": 994
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "oraimo",
+          "freepods",
+          "4"
+        ]
+      }
     },
     {
       "id": "p-265",
@@ -18571,6 +19901,16 @@
           "updatedAt": "2026-11-25T08:45:34.307Z",
           "oldPrice": 2799,
           "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 2149,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/huawei-freebuds-se-3-t0016-earbuds-black",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
         }
       ],
       "priceHistory": [
@@ -18587,7 +19927,2520 @@
           "price": 1999
         }
       ],
-      "createdAt": "2026-11-23T16:10:00.000Z"
+      "createdAt": "2026-11-23T16:10:00.000Z",
+      "match": {
+        "req": [
+          "huawei",
+          "freebuds",
+          "se",
+          "3"
+        ]
+      }
+    },
+    {
+      "id": "p-266",
+      "slug": "samsung-50-u8000h-crystal-uhd",
+      "name": "Samsung 50\" Crystal UHD 4K Smart TV U8000H",
+      "nameAr": "شاشة سامسونج 50 بوصة 4K كريستال U8000H",
+      "brand": "Samsung",
+      "categoryId": "cat-tvs",
+      "images": [
+        "https://m.media-amazon.com/images/I/7145vo2GZRL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "المقاس",
+          "value": "50 بوصة"
+        },
+        {
+          "label": "الدقة",
+          "value": "4K UHD"
+        },
+        {
+          "label": "الموديل",
+          "value": "UA50U8000HUXEG"
+        }
+      ],
+      "popularity": 88,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 18060,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0GRBJTM54",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 21999,
+          "installment": true
+        },
+        {
+          "storeId": "noon",
+          "price": 18095,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70369505V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 19999,
+          "installment": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 18060
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "u8000h",
+          "50"
+        ]
+      }
+    },
+    {
+      "id": "p-267",
+      "slug": "samsung-55-u8000h-crystal-uhd",
+      "name": "Samsung 55\" Crystal UHD 4K Smart TV U8000H",
+      "nameAr": "شاشة سامسونج 55 بوصة 4K كريستال U8000H",
+      "brand": "Samsung",
+      "categoryId": "cat-tvs",
+      "images": [
+        "https://m.media-amazon.com/images/I/7145vo2GZRL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "المقاس",
+          "value": "55 بوصة"
+        },
+        {
+          "label": "الدقة",
+          "value": "4K UHD"
+        },
+        {
+          "label": "الموديل",
+          "value": "UA55U8000HUXEG"
+        }
+      ],
+      "popularity": 90,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 20498,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0GRBFHK2C",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 24999,
+          "installment": true
+        },
+        {
+          "storeId": "noon",
+          "price": 20599,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70370908V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 23000,
+          "installment": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 20498
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "u8000h",
+          "55"
+        ]
+      }
+    },
+    {
+      "id": "p-268",
+      "slug": "lg-43-nano-nu85",
+      "name": "LG 43\" NANO 4K AI Smart TV NU85 (43NU850B6LA)",
+      "nameAr": "شاشة إل جي 43 بوصة نانو 4K",
+      "brand": "LG",
+      "categoryId": "cat-tvs",
+      "images": [
+        "https://m.media-amazon.com/images/I/81p25lYjQfL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "المقاس",
+          "value": "43 بوصة"
+        },
+        {
+          "label": "الدقة",
+          "value": "4K UHD"
+        },
+        {
+          "label": "الموديل",
+          "value": "43NU850B6LA"
+        }
+      ],
+      "popularity": 80,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 16275,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0H185KP31",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 17670,
+          "installment": true
+        },
+        {
+          "storeId": "noon",
+          "price": 15899,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70373648V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 19999,
+          "installment": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 15899
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "43nu850b6la"
+        ]
+      }
+    },
+    {
+      "id": "p-269",
+      "slug": "lg-50-nano-nu85",
+      "name": "LG 50\" NANO 4K AI Smart TV NU85 (50NU850B6LA)",
+      "nameAr": "شاشة إل جي 50 بوصة نانو 4K",
+      "brand": "LG",
+      "categoryId": "cat-tvs",
+      "images": [
+        "https://m.media-amazon.com/images/I/81XhrGYCX1L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "المقاس",
+          "value": "50 بوصة"
+        },
+        {
+          "label": "الدقة",
+          "value": "4K UHD"
+        },
+        {
+          "label": "الموديل",
+          "value": "50NU850B6LA"
+        }
+      ],
+      "popularity": 80,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 20999,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0H17YRTNT",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "installment": true
+        },
+        {
+          "storeId": "noon",
+          "price": 20599,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70370965V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 50000,
+          "installment": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 20599
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "50nu850b6la"
+        ]
+      }
+    },
+    {
+      "id": "p-270",
+      "slug": "tcl-55-c6k-qd-mini-led",
+      "name": "TCL 55\" C6K QD-Mini LED 4K Google TV",
+      "nameAr": "شاشة TCL ‏55 بوصة C6K ميني ليد",
+      "brand": "TCL",
+      "categoryId": "cat-tvs",
+      "images": [
+        "https://m.media-amazon.com/images/I/51NMfdACQ1L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "المقاس",
+          "value": "55 بوصة"
+        },
+        {
+          "label": "الدقة",
+          "value": "4K QD-Mini LED"
+        },
+        {
+          "label": "الموديل",
+          "value": "55C6K"
+        }
+      ],
+      "popularity": 78,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 34806,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0FPFQJHXP",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "installment": true
+        },
+        {
+          "storeId": "noon",
+          "price": 38099,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70206858V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "installment": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 34806
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "c6k",
+          "55"
+        ]
+      }
+    },
+    {
+      "id": "p-271",
+      "slug": "toshiba-50-c350rp-4k",
+      "name": "Toshiba 50\" 4K UHD Smart VIDAA TV (50C350RP)",
+      "nameAr": "شاشة توشيبا 50 بوصة 4K سمارت",
+      "brand": "Toshiba",
+      "categoryId": "cat-tvs",
+      "images": [
+        "https://m.media-amazon.com/images/I/81JRJ49n5iL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "المقاس",
+          "value": "50 بوصة"
+        },
+        {
+          "label": "الدقة",
+          "value": "4K UHD"
+        },
+        {
+          "label": "الموديل",
+          "value": "50C350RP"
+        }
+      ],
+      "popularity": 76,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 16799,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0FSYLPTXG",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 18199,
+          "installment": true
+        },
+        {
+          "storeId": "noon",
+          "price": 16799,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70267280V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 18199,
+          "installment": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 16799
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "50c350rp"
+        ]
+      }
+    },
+    {
+      "id": "p-272",
+      "slug": "philips-airfryer-2000-na230",
+      "name": "Philips Airfryer 2000 Series 6.2L (NA230)",
+      "nameAr": "قلاية هوائية فيليبس 2000 ‏6.2 لتر",
+      "brand": "Philips",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/61PjsQauOuL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "السعة",
+          "value": "6.2 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "NA230"
+        }
+      ],
+      "popularity": 86,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 6289,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0CWP7WXB6",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 6289,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70131429V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 7999
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 6289
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "na230"
+        ]
+      }
+    },
+    {
+      "id": "p-273",
+      "slug": "philips-airfryer-essential-hd9200",
+      "name": "Philips Essential Airfryer HD9200 (4.1L)",
+      "nameAr": "قلاية هوائية فيليبس HD9200",
+      "brand": "Philips",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/31jC6UcUXiL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "السعة",
+          "value": "4.1 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "HD9200"
+        }
+      ],
+      "popularity": 84,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 4459,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B09YY9D5WR",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 5250
+        },
+        {
+          "storeId": "noon",
+          "price": 4671,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70028074V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 5000
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 4459
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "hd9200"
+        ]
+      }
+    },
+    {
+      "id": "p-274",
+      "slug": "philips-airfryer-essential-xl-hd9270",
+      "name": "Philips Essential XL Airfryer HD9270 (6.2L)",
+      "nameAr": "قلاية هوائية فيليبس XL ‏HD9270",
+      "brand": "Philips",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/51iTYStwAPL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "السعة",
+          "value": "6.2 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "HD9270"
+        }
+      ],
+      "popularity": 82,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 7269,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B08WJBVM5G",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 7269,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N52490753A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 8299
+        },
+        {
+          "storeId": "kimo",
+          "price": 6999,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/philips-air-fryer-essential-xl-hd9270-90-6-2l-2000w",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 7700
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 7269
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "hd9270"
+        ]
+      }
+    },
+    {
+      "id": "p-275",
+      "slug": "tefal-easy-fry-grill-xxl-ey8018",
+      "name": "Tefal Easy Fry & Grill XXL 6.5L (EY8018)",
+      "nameAr": "قلاية هوائية تيفال إيزي فراي XXL",
+      "brand": "Tefal",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/61ckygnqacL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "السعة",
+          "value": "6.5 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "EY8018EG"
+        }
+      ],
+      "popularity": 80,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 7699,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0C5XVBDMK",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 8388
+        },
+        {
+          "storeId": "noon",
+          "price": 7599,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N53398892A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 8380
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 7599
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "ey8018"
+        ]
+      }
+    },
+    {
+      "id": "p-276",
+      "slug": "tefal-ultra-fry-ey111b",
+      "name": "Tefal Ultra Fry Air Fryer 4.2L (EY111B)",
+      "nameAr": "قلاية هوائية تيفال ألترا فراي",
+      "brand": "Tefal",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/416EUzfTcOL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "السعة",
+          "value": "4.2 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "EY111BEG"
+        }
+      ],
+      "popularity": 74,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 4988,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0DJ8PQNRZ",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 7200,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70014063V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 4988
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "ey111b"
+        ]
+      }
+    },
+    {
+      "id": "p-277",
+      "slug": "ninja-foodi-dual-zone-af300",
+      "name": "Ninja Foodi Dual Zone Air Fryer 7.6L (AF300ME)",
+      "nameAr": "قلاية هوائية نينجا درجين 7.6 لتر",
+      "brand": "Ninja",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/517lu2zLNXL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية بدرجين"
+        },
+        {
+          "label": "السعة",
+          "value": "7.6 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "AF300ME"
+        }
+      ],
+      "popularity": 78,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 21000,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0D9PNRJ1R",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 14999,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N52615813A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 16200
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 14999
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "af300me"
+        ]
+      }
+    },
+    {
+      "id": "p-278",
+      "slug": "ninja-air-fryer-max-xl-af160",
+      "name": "Ninja Air Fryer Max XL 5.2L (AF160ME)",
+      "nameAr": "قلاية هوائية نينجا ماكس XL",
+      "brand": "Ninja",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/51N7Fxer1gL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "السعة",
+          "value": "5.2 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "AF160ME"
+        }
+      ],
+      "popularity": 74,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 11450,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B085BF3YXG",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 8860,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N53412194A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 11990
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 8860
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "af160me"
+        ]
+      }
+    },
+    {
+      "id": "p-279",
+      "slug": "kenwood-air-fryer-7l-hfp80",
+      "name": "Kenwood Digital Air Fryer 7L (HFP80.000BK)",
+      "nameAr": "قلاية هوائية كينوود 7 لتر",
+      "brand": "Kenwood",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/71kJ9GFMxsL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "السعة",
+          "value": "7 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "HFP80.000BK"
+        }
+      ],
+      "popularity": 76,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 6799,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0BTZ49XF7",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 6449,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N53382994A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 10999
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 6449
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "hfp80000bk"
+        ]
+      }
+    },
+    {
+      "id": "p-280",
+      "slug": "kenwood-air-fryer-3-8l-hfp30",
+      "name": "Kenwood Air Fryer 3.8L (HFP30.000WH)",
+      "nameAr": "قلاية هوائية كينوود 3.8 لتر",
+      "brand": "Kenwood",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/51vLi3VOWoL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "السعة",
+          "value": "3.8 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "HFP30.000WH"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 3999,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B095HR3T63",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 4039,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70008804V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 4400
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 3999
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "hfp30000wh"
+        ]
+      }
+    },
+    {
+      "id": "p-281",
+      "slug": "black-decker-air-fryer-8l-saf80",
+      "name": "Black+Decker Digital Air Fryer 8L (SAF80-B5)",
+      "nameAr": "قلاية هوائية بلاك آند ديكر 8 لتر",
+      "brand": "Black+Decker",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/51GeYK-xA0L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "السعة",
+          "value": "8 لتر"
+        },
+        {
+          "label": "الموديل",
+          "value": "SAF80-B5"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 5495,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0DC68KYSS",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 6599
+        },
+        {
+          "storeId": "noon",
+          "price": 5912,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70127499V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 5495
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "saf80"
+        ]
+      }
+    },
+    {
+      "id": "p-282",
+      "slug": "black-decker-air-fryer-af575",
+      "name": "Black+Decker Air Fryer (AF575-B5)",
+      "nameAr": "قلاية هوائية بلاك آند ديكر AF575",
+      "brand": "Black+Decker",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/61rqyKRQv5L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "قلاية هوائية"
+        },
+        {
+          "label": "الموديل",
+          "value": "AF575-B5"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 5798,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0BB2Q9DQR",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 8100
+        },
+        {
+          "storeId": "noon",
+          "price": 4993,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N53362609A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 7465
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 4993
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "af575"
+        ]
+      }
+    },
+    {
+      "id": "p-283",
+      "slug": "philips-steam-iron-5000-dst5040",
+      "name": "Philips Steam Iron 5000 Series (DST5040)",
+      "nameAr": "مكواة بخار فيليبس سيريس 5000",
+      "brand": "Philips",
+      "categoryId": "cat-home-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/61-KqhKq8UL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "مكواة بخار"
+        },
+        {
+          "label": "الموديل",
+          "value": "DST5040"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 3799,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B08ZT3235D",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 4289
+        },
+        {
+          "storeId": "noon",
+          "price": 3699,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N52091199A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 4200
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 3699
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "dst5040"
+        ]
+      }
+    },
+    {
+      "id": "p-284",
+      "slug": "philips-steam-iron-1000-dst1020",
+      "name": "Philips Steam Iron 1000 Series (DST1020)",
+      "nameAr": "مكواة بخار فيليبس سيريس 1000",
+      "brand": "Philips",
+      "categoryId": "cat-home-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/71ZVdp3+VjL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "مكواة بخار"
+        },
+        {
+          "label": "الموديل",
+          "value": "DST1020"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 2000,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0DDCD84B4",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 2200,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70001882V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 2000
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "dst1020"
+        ]
+      }
+    },
+    {
+      "id": "p-285",
+      "slug": "philips-steam-iron-2000-dst2010",
+      "name": "Philips Steam Iron 2000 Series (DST2010)",
+      "nameAr": "مكواة بخار فيليبس سيريس 2000",
+      "brand": "Philips",
+      "categoryId": "cat-home-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/71Yd6DaXJBL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "مكواة بخار"
+        },
+        {
+          "label": "الموديل",
+          "value": "DST2010"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 2331,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0DQ59BW76",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 1999,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70177339V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 2999
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1999
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "dst2010"
+        ]
+      }
+    },
+    {
+      "id": "p-286",
+      "slug": "philips-shaver-1000-s1151",
+      "name": "Philips Shaver 1000 Series Wet & Dry (S1151/00)",
+      "nameAr": "ماكينة حلاقة فيليبس 1000 S1151",
+      "brand": "Philips",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/518fhZlCsFL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة حلاقة"
+        },
+        {
+          "label": "الموديل",
+          "value": "S1151/00"
+        }
+      ],
+      "popularity": 78,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 1579,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0CQCL4SK5",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 2297
+        },
+        {
+          "storeId": "noon",
+          "price": 1766,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70043375V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 1599,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/philips-wet-dry-shaver-series-1000-s1151",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1579
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "s1151"
+        ]
+      }
+    },
+    {
+      "id": "p-287",
+      "slug": "philips-portable-shaver-pq888",
+      "name": "Philips Portable Travel Shaver (PQ888)",
+      "nameAr": "ماكينة حلاقة فيليبس للسفر PQ888",
+      "brand": "Philips",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/71U48bsvulL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة حلاقة"
+        },
+        {
+          "label": "الموديل",
+          "value": "PQ888"
+        }
+      ],
+      "popularity": 66,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 4546,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0DQLGHX4K",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 3224,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70193224V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 3224
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "pq888"
+        ]
+      }
+    },
+    {
+      "id": "p-288",
+      "slug": "philips-travel-shaver-pq206",
+      "name": "Philips Battery Travel Shaver (PQ206)",
+      "nameAr": "ماكينة حلاقة فيليبس بالبطارية PQ206",
+      "brand": "Philips",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/41QAOhOnQ3L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة حلاقة"
+        },
+        {
+          "label": "الموديل",
+          "value": "PQ206"
+        }
+      ],
+      "popularity": 66,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 1026,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B08SJSPV4Q",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 2462
+        },
+        {
+          "storeId": "noon",
+          "price": 1182,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N18876553A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1026
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "pq206"
+        ]
+      }
+    },
+    {
+      "id": "p-289",
+      "slug": "braun-series-5-51-b1000s",
+      "name": "Braun Series 5 Wet & Dry Shaver (51-B1000s)",
+      "nameAr": "ماكينة حلاقة براون سيريس 5",
+      "brand": "Braun",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/7120SMs99pL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة حلاقة"
+        },
+        {
+          "label": "الموديل",
+          "value": "51-B1000s"
+        }
+      ],
+      "popularity": 74,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 7999,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0B3JBYXG8",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 7999,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70080786V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 10999
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 7999
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "b1000s"
+        ]
+      }
+    },
+    {
+      "id": "p-290",
+      "slug": "philips-drycare-pro-bhd274",
+      "name": "Philips DryCare Pro Hair Dryer 2200W (BHD274)",
+      "nameAr": "سشوار فيليبس درايكير برو",
+      "brand": "Philips",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/61DtS6Dc2jS._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "سشوار"
+        },
+        {
+          "label": "القدرة",
+          "value": "2200 وات"
+        },
+        {
+          "label": "الموديل",
+          "value": "BHD274/03"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 2908,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B08BGHSL14",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 3184
+        },
+        {
+          "storeId": "noon",
+          "price": 3499,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N53263750A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 2908
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "bhd274"
+        ]
+      }
+    },
+    {
+      "id": "p-291",
+      "slug": "braun-silk-epil-3-se3000",
+      "name": "Braun Silk-épil 3 Epilator (SE3000)",
+      "nameAr": "ماكينة إزالة الشعر براون سيلك إيبل 3",
+      "brand": "Braun",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/71KgxljifZL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة إزالة شعر"
+        },
+        {
+          "label": "الموديل",
+          "value": "SE3000"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 2173,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0D2DKGQY5",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 2199,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70133447V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 2173
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "se3000"
+        ]
+      }
+    },
+    {
+      "id": "p-292",
+      "slug": "braun-silk-epil-5-se5011",
+      "name": "Braun Silk-épil 5 Epilator (SE5011)",
+      "nameAr": "ماكينة إزالة الشعر براون سيلك إيبل 5",
+      "brand": "Braun",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/51gUc6DRM+L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة إزالة شعر"
+        },
+        {
+          "label": "الموديل",
+          "value": "SE5011"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 4699,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0CQRRRND3",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 5099,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70133370V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 5499
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 4699
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "se5011"
+        ]
+      }
+    },
+    {
+      "id": "p-293",
+      "slug": "braun-silk-epil-7-se7041",
+      "name": "Braun Silk-épil 7 Epilator (SE7041)",
+      "nameAr": "ماكينة إزالة الشعر براون سيلك إيبل 7",
+      "brand": "Braun",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/71htaOw83FL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة إزالة شعر"
+        },
+        {
+          "label": "الموديل",
+          "value": "SE7041"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 6066,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0CWJF37L8",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 5750,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70133712V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 6256
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 5750
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "se7041"
+        ]
+      }
+    },
+    {
+      "id": "p-294",
+      "slug": "kenwood-glass-blender-blm45",
+      "name": "Kenwood 1000W Glass Blender 2L (BLM45.720SS)",
+      "nameAr": "خلاط كينوود زجاج 1000 وات",
+      "brand": "Kenwood",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/91WDUG8gp7L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "خلاط"
+        },
+        {
+          "label": "القدرة",
+          "value": "1000 وات"
+        },
+        {
+          "label": "الموديل",
+          "value": "BLM45.720SS"
+        }
+      ],
+      "popularity": 70,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 3399,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B08L1SB1KB",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 3350,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N72964671V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 4100
+        },
+        {
+          "storeId": "kimo",
+          "price": 3349,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/kenwood-blender-blm45-720ss-2l-1000w",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 3350
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "blm45720ss"
+        ]
+      }
+    },
+    {
+      "id": "p-295",
+      "slug": "kenwood-smoothie-blender-blp16",
+      "name": "Kenwood Blender 500W 2L (BLP16.360BK)",
+      "nameAr": "خلاط كينوود 500 وات",
+      "brand": "Kenwood",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/71c+79stllL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "خلاط"
+        },
+        {
+          "label": "القدرة",
+          "value": "500 وات"
+        },
+        {
+          "label": "الموديل",
+          "value": "BLP16.360BK"
+        }
+      ],
+      "popularity": 68,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 2088,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0CLKCQMKV",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 2099,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70087583V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 2088
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "blp16360bk"
+        ]
+      }
+    },
+    {
+      "id": "p-296",
+      "slug": "kenwood-glass-blender-blp44",
+      "name": "Kenwood 800W Glass Blender with Grinder (BLP44.270SS)",
+      "nameAr": "خلاط كينوود زجاج 800 وات مع مطحنة",
+      "brand": "Kenwood",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/61y8x8Rs9pL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "خلاط"
+        },
+        {
+          "label": "القدرة",
+          "value": "800 وات"
+        },
+        {
+          "label": "الموديل",
+          "value": "BLP44.270SS"
+        }
+      ],
+      "popularity": 68,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 3648,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B08MFKJTVG",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 4499
+        },
+        {
+          "storeId": "noon",
+          "price": 3499,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N43281308A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 3499
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "blp44270ss"
+        ]
+      }
+    },
+    {
+      "id": "p-297",
+      "slug": "moulinex-blender-lm2428",
+      "name": "Moulinex Blender with Grinder 400W (LM2428EG)",
+      "nameAr": "خلاط مولينكس 400 وات",
+      "brand": "Moulinex",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/71rSUofA4+L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "خلاط"
+        },
+        {
+          "label": "القدرة",
+          "value": "400 وات"
+        },
+        {
+          "label": "الموديل",
+          "value": "LM2428EG"
+        }
+      ],
+      "popularity": 68,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 1410,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B08WJPWRG9",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 1699
+        },
+        {
+          "storeId": "noon",
+          "price": 1350,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N36625139A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 1569
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1350
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "lm2428eg"
+        ]
+      }
+    },
+    {
+      "id": "p-298",
+      "slug": "moulinex-super-blender-lm207125",
+      "name": "Moulinex Super Blender 3-in-1 700W (LM207125)",
+      "nameAr": "خلاط مولينكس سوبر 3 في 1",
+      "brand": "Moulinex",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/51Oxs5+V2PL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "خلاط"
+        },
+        {
+          "label": "القدرة",
+          "value": "700 وات"
+        },
+        {
+          "label": "الموديل",
+          "value": "LM207125"
+        }
+      ],
+      "popularity": 66,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 3500,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0HFG62JF9",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 2680,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N43838412A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 3299,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/moulinex-blender-lm207125-france-2l-700w",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 2680
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "lm207125"
+        ]
+      }
+    },
+    {
+      "id": "p-299",
+      "slug": "delonghi-dedica-ec685",
+      "name": "De'Longhi Dedica Espresso Machine (EC685.BK)",
+      "nameAr": "ماكينة قهوة ديلونجي ديديكا",
+      "brand": "De'Longhi",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/61TF-52wmCL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة إسبريسو"
+        },
+        {
+          "label": "الموديل",
+          "value": "EC685.BK"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 8827,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B07PGLT7Z3",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 14499
+        },
+        {
+          "storeId": "noon",
+          "price": 8711,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N36746397A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 8711
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "ec685bk"
+        ]
+      }
+    },
+    {
+      "id": "p-300",
+      "slug": "delonghi-dedica-duo-ec890",
+      "name": "De'Longhi Dedica Duo Espresso Machine (EC890)",
+      "nameAr": "ماكينة قهوة ديلونجي ديديكا ديو",
+      "brand": "De'Longhi",
+      "categoryId": "cat-kitchen",
+      "images": [
+        "https://m.media-amazon.com/images/I/71NWGUI3pXL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة إسبريسو"
+        },
+        {
+          "label": "الموديل",
+          "value": "EC890"
+        }
+      ],
+      "popularity": 66,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 11940,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0FNRQQ8WY",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 11882,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70248370V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 11882
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "ec890"
+        ]
+      }
+    },
+    {
+      "id": "p-301",
+      "slug": "tp-link-tl-wr840n",
+      "name": "TP-Link TL-WR840N 300Mbps Wi-Fi Router",
+      "nameAr": "راوتر تي بي لينك TL-WR840N",
+      "brand": "TP-Link",
+      "categoryId": "cat-networking",
+      "images": [
+        "https://m.media-amazon.com/images/I/41ZTVaBGfqL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "راوتر واي فاي"
+        },
+        {
+          "label": "السرعة",
+          "value": "300Mbps"
+        },
+        {
+          "label": "الموديل",
+          "value": "TL-WR840N"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 744,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0HPY53L9B",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 889,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N44043083A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "dream2000",
+          "price": 770,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/tp-link-300-mbps-wireless-n-router-tl-wr840n-white",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "oldPrice": 900
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 744
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "wr840n"
+        ]
+      }
+    },
+    {
+      "id": "p-302",
+      "slug": "tp-link-tl-mr6400-4g",
+      "name": "TP-Link TL-MR6400 4G LTE Router",
+      "nameAr": "راوتر تي بي لينك 4G ‏TL-MR6400",
+      "brand": "TP-Link",
+      "categoryId": "cat-networking",
+      "images": [
+        "https://m.media-amazon.com/images/I/611MbaW8PZL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "راوتر 4G بشريحة"
+        },
+        {
+          "label": "الموديل",
+          "value": "TL-MR6400"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 3282,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B017IGEPWW",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 3449
+        },
+        {
+          "storeId": "noon",
+          "price": 3624,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N12709932A/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 3390,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/tp-link-tl-mr6400-4g-router-4-port-2-antenna-sim-ca",
+          "inStock": true,
+          "freeShipping": false,
+          "updatedAt": "2026-11-25T21:25:56.435Z",
+          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 3282
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "mr6400"
+        ]
+      }
+    },
+    {
+      "id": "p-303",
+      "slug": "philips-trimmer-5000-mg5930",
+      "name": "Philips 11-in-1 Multigroom Series 5000 (MG5930)",
+      "nameAr": "ماكينة تشذيب فيليبس 11 في 1",
+      "brand": "Philips",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/61elrg5h+aL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة تشذيب"
+        },
+        {
+          "label": "الموديل",
+          "value": "MG5930/15"
+        }
+      ],
+      "popularity": 74,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 3795,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0CQCTSGXR",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 3999,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70043381V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 3795
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "mg5930"
+        ]
+      }
+    },
+    {
+      "id": "p-304",
+      "slug": "philips-trimmer-7000-mg7920",
+      "name": "Philips 13-in-1 Multigroom Series 7000 (MG7920)",
+      "nameAr": "ماكينة تشذيب فيليبس 13 في 1",
+      "brand": "Philips",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/61b-dVQfU2L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة تشذيب"
+        },
+        {
+          "label": "الموديل",
+          "value": "MG7920/15"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 4999,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0CQCVFHW2",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 5999,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70043377V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 9999
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 4999
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "mg7920"
+        ]
+      }
+    },
+    {
+      "id": "p-305",
+      "slug": "philips-beard-trimmer-3000-bt3232",
+      "name": "Philips Beard Trimmer 3000 Series (BT3232)",
+      "nameAr": "ماكينة تشذيب الدقن فيليبس 3000",
+      "brand": "Philips",
+      "categoryId": "cat-personal-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/711gTS4NBFL._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "ماكينة تشذيب الدقن"
+        },
+        {
+          "label": "الموديل",
+          "value": "BT3232/15"
+        }
+      ],
+      "popularity": 72,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 2028,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0CXF691ZF",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        },
+        {
+          "storeId": "noon",
+          "price": 2599,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70046923V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 2028
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "bt3232"
+        ]
+      }
+    },
+    {
+      "id": "p-306",
+      "slug": "xiaomi-robot-vacuum-e5",
+      "name": "Xiaomi Robot Vacuum E5 (BHR8298EU)",
+      "nameAr": "مكنسة روبوت شاومي E5",
+      "brand": "Xiaomi",
+      "categoryId": "cat-home-care",
+      "images": [
+        "https://m.media-amazon.com/images/I/619L+4ky64L._AC_SL500_.jpg"
+      ],
+      "specs": [
+        {
+          "label": "النوع",
+          "value": "مكنسة روبوت"
+        },
+        {
+          "label": "الموديل",
+          "value": "BHR8298EU"
+        }
+      ],
+      "popularity": 74,
+      "offers": [
+        {
+          "storeId": "amazon-eg",
+          "price": 6741,
+          "linkType": "website",
+          "url": "https://www.amazon.eg/dp/B0D5RG1TQJ",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–3 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 6999
+        },
+        {
+          "storeId": "noon",
+          "price": 6555,
+          "linkType": "website",
+          "url": "https://www.noon.com/egypt-en/N70099751V/p/",
+          "inStock": true,
+          "freeShipping": true,
+          "deliveryEta": "1–4 أيام",
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "oldPrice": 7999
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 6555
+        }
+      ],
+      "createdAt": "2026-11-25T22:30:00.000Z",
+      "match": {
+        "req": [
+          "bhr8298eu"
+        ]
+      }
     }
   ],
   "promo": {

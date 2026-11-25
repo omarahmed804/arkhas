@@ -144,7 +144,6 @@ export function ProductView({ slug }: { slug: string }) {
         <h2 className="mb-1 text-xl font-black">{tr("مقارنة الأسعار في {n} متاجر", { n: product.offers.length })}</h2>
         <p className="mb-4 text-sm text-slate-500">{tr("مرتبة من الأرخص للأغلى (المنتجات الغير متوفرة في الآخر).")}</p>
         <OfferList product={product} />
-        <p className="mt-2 text-xs text-slate-400">{tr("ممكن نحصل على عمولة لو اشتريت من خلال الروابط، من غير ما ده يأثر على السعر.")}</p>
       </section>
 
       <div className="mt-10 grid gap-6 lg:grid-cols-[1.4fr_1fr]">

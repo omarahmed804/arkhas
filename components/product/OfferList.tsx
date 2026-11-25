@@ -13,7 +13,7 @@ import { offerCta } from "@/lib/offer-link";
 import { goHref } from "@/lib/affiliate";
 import { bestOffer, sortOffers } from "@/lib/pricing";
 import type { Offer, Product } from "@/lib/types";
-import { tr, pick, trData } from "@/lib/i18n";
+import { tr, pick, trData, isEn } from "@/lib/i18n";
 
 export function OfferCtaButton({ offer, product, className = "" }: { offer: Offer; product: Product; className?: string }) {
   const cta = offerCta(offer, product);
@@ -128,7 +128,7 @@ export function OfferList({ product }: { product: Product }) {
                       </span>
                     )}
                   </div>
-                  {store.promoCode && <StorePromo code={store.promoCode} note={store.promoNote} />}
+                  {store.promoCode && <StorePromo code={store.promoCode} note={isEn() ? store.promoNoteEn : store.promoNote} />}
                 </div>
               </div>
 

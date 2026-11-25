@@ -60,6 +60,7 @@ export interface Store {
   phone?: string; // hotline shown on the store, e.g. "17797"
   promoCode?: string; // your discount code at this store — shown next to every offer with a copy button
   promoNote?: string; // e.g. "خصم 5% على الحسابات"
+  promoNoteEn?: string; // same line in English (optional)
   active?: boolean; // false = hidden from the site (its prices too) without deleting anything
   /** Your outreach status for a promo-code / partnership deal (admin only). */
   partnerStatus?: "none" | "contacted" | "partner" | "no-reply";
@@ -112,6 +113,8 @@ export interface Product {
   slug: string; // used in /product/[slug]
   name: string; // English technical name (kept LTR)
   nameAr?: string; // optional Arabic name / description line
+  /** Tracker rule: words that must appear in a store title for it to count as this product. */
+  match?: { req: string[]; laptop?: boolean };
   brand: string;
   categoryId: string;
   images: string[]; // absolute URLs; empty → illustrated placeholder

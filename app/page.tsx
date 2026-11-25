@@ -14,25 +14,43 @@ import { tr, pick } from "@/lib/i18n";
 export default function HomePage() {
   const { catalog } = useCatalog();
 
-  // "Today's Best Deals": biggest discount vs. average market price
+  // Round-robin across categories so the homepage shows a mix (phones, TVs, games…), never one type only.
+  const mix = (list: typeof catalog.products, n: number) => {
+    const byCat = new Map<string, typeof catalog.products>();
+    for (const p of list) byCat.set(p.categoryId, [...(byCat.get(p.categoryId) ?? []), p]);
+    const queues = [...byCat.values()];
+    const out: typeof catalog.products = [];
+    for (let i = 0; out.length < n && queues.some((q) => q.length > i); i++)
+      for (const q of queues) if (q[i] && out.length < n) out.push(q[i]);
+    return out;
+  };
+
+  // "Today's Best Deals": biggest discount vs. average market price, mixed across categories
   const deals = useMemo(
     () =>
-      [...catalog.products]
-        .map((p) => ({ p, d: marketDiscount(p) }))
-        .filter((x) => x.d > 0)
-        .sort((a, b) => b.d - a.d)
-        .slice(0, 8)
-        .map((x) => x.p),
+      mix(
+        [...catalog.products]
+          .map((p) => ({ p, d: marketDiscount(p) }))
+          .filter((x) => x.d > 0)
+          .sort((a, b) => b.d - a.d)
+          .map((x) => x.p),
+        8,
+      ),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [catalog.products],
   );
 
-  // Newest / most popular PS5 games
-  const games = useMemo(
-    () => catalog.products.filter((p) => p.categoryId === "cat-ps5-games").sort((a, b) => b.popularity - a.popularity).slice(0, 8),
-    [catalog.products],
+  // Most popular products from every category
+  const popular = useMemo(
+    () => mix([...catalog.products].filter((p) => !deals.includes(p)).sort((a, b) => b.popularity - a.popularity), 8),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [catalog.products, deals],
   );
 
-  const categories = useMemo(() => [...catalog.categories].sort((a, b) => a.sortOrder - b.sortOrder), [catalog.categories]);
+  const categories = useMemo(() => {
+    const count = (id: string) => catalog.products.filter((p) => p.categoryId === id).length;
+    return [...catalog.categories].filter((c) => count(c.id) > 0).sort((a, b) => count(b.id) - count(a.id));
+  }, [catalog.categories, catalog.products]);
   const featuredStores = catalog.stores.filter((s) => s.featured);
   const quickSearches = ["iPhone 17", "PS5", "Galaxy A56", "AirPods", tr("لابتوب جيمنج")];
 
@@ -90,17 +108,17 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Latest games */}
-        {games.length > 0 && (
+        {/* Most popular, mixed */}
+        {popular.length > 0 && (
           <section>
             <div className="mb-5 flex items-end justify-between gap-4">
-              <h2 className="text-2xl font-black">{tr("أحدث ألعاب PS5")}</h2>
-              <Link href="/category/ps5-games" className="flex shrink-0 items-center gap-1 text-sm font-bold text-brand-600">
-                {tr("كل الألعاب")} <ArrowLeft className="size-4 ltr:rotate-180" />
+              <h2 className="text-2xl font-black">{tr("الأكثر طلبًا")}</h2>
+              <Link href="/search?sort=popular" className="flex shrink-0 items-center gap-1 text-sm font-bold text-brand-600">
+                {tr("كل المنتجات")} <ArrowLeft className="size-4 ltr:rotate-180" />
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
-              {games.map((p) => (
+              {popular.map((p) => (
                 <ProductCard key={p.id} product={p} />
               ))}
             </div>

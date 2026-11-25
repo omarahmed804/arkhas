@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="space-y-2">
                 <Logo />
                 <p><T>الأسعار بتتحدث باستمرار، لكن السعر النهائي هو اللي في صفحة المتجر.</T></p>
-                <p className="text-xs"><T>بعض الروابط روابط أفلييت: بصفتنا مشاركين في برنامج Amazon Associates وبرامج تانية، ممكن ناخد عمولة من المشتريات المؤهلة من غير ما السعر يزيد عليك.</T></p>
+                <p className="ltr text-[11px] text-slate-400">As an Amazon Associate, Arkhas earns from qualifying purchases.</p>
               </div>
               <nav className="flex flex-wrap gap-x-4 gap-y-2 font-bold">
                 <Link href="/search" className="hover:text-brand-600"><T>كل المنتجات</T></Link>

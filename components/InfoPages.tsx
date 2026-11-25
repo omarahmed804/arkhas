@@ -28,8 +28,6 @@ export function AboutContent() {
           <li>Track price history so you can tell a real discount from a fake one.</li>
           <li>Update prices automatically and regularly.</li>
         </ul>
-        <H>How we make money</H>
-        <p>Some links on Arkhas are affiliate links. If you buy through them, the store may pay us a small commission. You pay exactly the same price — and it never changes which store we show as cheapest.</p>
         <H>We don't sell anything</H>
         <p>Arkhas is not a store. You always buy directly from the store, and the final price, stock and delivery are the ones on the store's page.</p>
       </Page>
@@ -43,8 +41,6 @@ export function AboutContent() {
         <li>بنتابع تاريخ السعر عشان تعرف الخصم الحقيقي من الوهمي.</li>
         <li>بنحدّث الأسعار بشكل أوتوماتيك ومنتظم.</li>
       </ul>
-      <H>بنكسب منين</H>
-      <p>بعض الروابط في "أرخص" روابط أفلييت. لو اشتريت من خلالها، المتجر ممكن يدينا عمولة صغيرة. إنت بتدفع نفس السعر بالظبط، وده عمره ما بيأثر على ترتيب المتاجر أو مين الأرخص.</p>
       <H>إحنا مش متجر</H>
       <p>"أرخص" مش بيبيع حاجة. الشراء دايمًا بيكون من المتجر نفسه، والسعر النهائي والتوفر والشحن هما اللي في صفحة المتجر.</p>
     </Page>
@@ -87,11 +83,9 @@ export function PrivacyContent() {
         <p className="text-sm text-slate-500">Last updated: November 2026</p>
         <H>What we collect</H>
         <p>You can use Arkhas without an account. We don't ask for your name, phone or address to browse or compare prices.</p>
-        <p>If you set a price alert, we only keep the email or WhatsApp number you enter, and only to send you that alert.</p>
+        <p>If you set a price alert, we only keep the email you enter, and only to send you that alert.</p>
         <H>Cookies and local storage</H>
-        <p>We save small settings in your browser (language, dark mode, dismissed banners). When you click a store link, the store or affiliate network may set its own cookies to track the purchase. Those follow the store's own privacy policy.</p>
-        <H>Affiliate links</H>
-        <p>Some links are affiliate links (for example Amazon Associates and Admitad). As an Amazon Associate we earn from qualifying purchases, at no extra cost to you.</p>
+        <p>We save small settings in your browser (language, dark mode, dismissed banners). When you click a store link, the store may set its own cookies. Those follow the store's own privacy policy.</p>
         <H>Sharing</H>
         <p>We never sell your data.</p>
         <H>Contact</H>
@@ -103,11 +97,9 @@ export function PrivacyContent() {
       <p className="text-sm text-slate-500">آخر تحديث: نوفمبر 2026</p>
       <H>بنجمع إيه</H>
       <p>تقدر تستخدم "أرخص" من غير حساب. مش بنطلب اسمك أو رقمك أو عنوانك عشان تتصفح أو تقارن الأسعار.</p>
-      <p>لو فعّلت تنبيه سعر، بنحتفظ بس بالإيميل أو رقم الواتساب اللي كتبته، وبنستخدمه بس عشان نبعتلك التنبيه.</p>
+      <p>لو فعّلت تنبيه سعر، بنحتفظ بس بالإيميل اللي كتبته، وبنستخدمه بس عشان نبعتلك التنبيه.</p>
       <H>الكوكيز والتخزين في المتصفح</H>
-      <p>بنحفظ إعدادات صغيرة في المتصفح بتاعك (اللغة، الوضع الداكن، البانرات اللي قفلتها). ولما تدوس على لينك متجر، المتجر أو شبكة الأفلييت ممكن يحطوا كوكيز خاصة بيهم عشان يتابعوا الشراء، ودي بتمشي على سياسة خصوصية المتجر نفسه.</p>
-      <H>روابط الأفلييت</H>
-      <p>بعض الروابط روابط أفلييت (زي Amazon Associates وAdmitad). بصفتنا مشاركين في برنامج Amazon Associates، بنكسب عمولة من المشتريات المؤهلة من غير ما السعر يزيد عليك.</p>
+      <p>بنحفظ إعدادات صغيرة في المتصفح بتاعك (اللغة، الوضع الداكن، البانرات اللي قفلتها). ولما تدوس على لينك متجر، المتجر ممكن يحط كوكيز خاصة بيه، ودي بتمشي على سياسة خصوصية المتجر نفسه.</p>
       <H>مشاركة البيانات</H>
       <p>عمرنا ما بنبيع بياناتك.</p>
       <H>تواصل</H>
