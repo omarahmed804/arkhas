@@ -10,6 +10,7 @@ import { DynamicIcon } from "./DynamicIcon";
 import { SearchBox } from "./SearchBox";
 import { ThemeToggle } from "./ThemeToggle";
 import { LangToggle } from "./LangProvider";
+import { FavHeaderLink } from "./Favorites";
 import { isPriceDrop } from "@/lib/pricing";
 import { tr, pick, isEn } from "@/lib/i18n";
 
@@ -152,6 +153,7 @@ export function Header() {
           <span className="hidden sm:inline-flex">
             <PriceDropsBadge />
           </span>
+          <FavHeaderLink />
           <LangToggle />
           <ThemeToggle />
         </div>
@@ -179,6 +181,7 @@ export function Header() {
             <div className="mt-auto border-t border-slate-200 pt-3 text-sm dark:border-slate-800">
               <Link href="/search" className="block rounded-xl px-2 py-2 font-bold hover:bg-slate-100 dark:hover:bg-slate-800">{tr("كل المنتجات")}</Link>
               <Link href="/search?sort=discount" className="block rounded-xl px-2 py-2 font-bold hover:bg-slate-100 dark:hover:bg-slate-800">{tr("أقوى العروض")}</Link>
+              <Link href="/favorites" className="block rounded-xl px-2 py-2 font-bold hover:bg-slate-100 dark:hover:bg-slate-800">♡ {tr("المفضلة")}</Link>
             </div>
           </nav>
         </div>,

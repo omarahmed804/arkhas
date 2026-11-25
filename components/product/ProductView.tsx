@@ -9,6 +9,7 @@ import { ProductCard } from "../ProductCard";
 import { ProductImage, StoreLogo } from "../ui";
 import { OfferCtaButton, OfferList } from "./OfferList";
 import { PriceAlertModal } from "./PriceAlertModal";
+import { FavButton } from "../Favorites";
 import { PriceHistoryChart } from "./PriceHistoryChart";
 import { formatEGP, storesCountLabel } from "@/lib/format";
 import { bestOffer, inStockStoreCount, sortOffers } from "@/lib/pricing";
@@ -110,6 +111,9 @@ export function ProductView({ slug }: { slug: string }) {
                 <button type="button" onClick={() => setAlertOpen(true)} className="btn-ghost w-full py-3">
                   <Bell className="size-4" /> {tr("نبهني لما السعر ينزل")}
                 </button>
+                <div className="sm:col-span-2">
+                  <FavButton productId={product.id} price={best.price} variant="full" />
+                </div>
               </div>
             </div>
           ) : (
@@ -118,6 +122,9 @@ export function ProductView({ slug }: { slug: string }) {
               <button type="button" onClick={() => setAlertOpen(true)} className="btn-primary mt-3 w-full">
                 <Bell className="size-4" /> {tr("نبهني لما يتوفر بسعر كويس")}
               </button>
+              <div className="mt-2">
+                <FavButton productId={product.id} variant="full" />
+              </div>
             </div>
           )}
 

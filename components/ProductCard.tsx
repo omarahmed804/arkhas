@@ -3,6 +3,7 @@
 import { ArrowLeft, Store as StoreIcon } from "lucide-react";
 import Link from "next/link";
 import { ProductImage } from "./ui";
+import { FavButton } from "./Favorites";
 import { formatEGP, storesCountLabel } from "@/lib/format";
 import { inStockStoreCount, lowestPrice, marketDiscount, type OfferFilter } from "@/lib/pricing";
 import type { Product } from "@/lib/types";
@@ -23,6 +24,9 @@ export function ProductCard({ product, filter }: { product: Product; filter?: Of
         {discount >= 3 && (
           <span className="chip absolute top-2 start-2 bg-deal-500 text-white shadow">{tr("أوفر {n}%", { n: discount })}</span>
         )}
+        <span className="absolute top-2 end-2">
+          <FavButton productId={product.id} price={lp?.inStock ? lp.price : undefined} />
+        </span>
       </div>
       <div className="flex flex-1 flex-col gap-2 p-3 sm:p-4">
         <p className="text-xs font-bold text-slate-500">{product.brand}</p>
