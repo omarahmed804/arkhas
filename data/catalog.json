@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-25T22:30:00.000Z",
+  "updatedAt": "2026-11-25T21:46:41.836Z",
   "industries": [
     {
       "id": "ind-gaming",
@@ -561,8 +561,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 54490
         },
         {
@@ -585,9 +585,9 @@
           "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 62000,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -680,8 +680,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 51990
         },
         {
@@ -763,8 +763,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -867,8 +867,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "gamesworld",
@@ -880,7 +880,7 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "المتجر بيمنع المتابعة الآلية (403)"
         },
         {
@@ -891,8 +891,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 35990
         },
         {
@@ -904,8 +904,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -986,8 +986,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "shamy",
@@ -997,8 +997,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 25990
         },
         {
@@ -1023,6 +1023,20 @@
           "deliveryEta": "1–4 أيام",
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 14999,
+          "oldPrice": 15500,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/lian-li-hydroshift-ii-oled-curved-360mm-black-aio-liquid-cpu-cooler-egypt",
+          "variantId": "47886809661589",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -1040,7 +1054,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 19999
+          "price": 14999
         }
       ],
       "createdAt": "2026-11-22T19:00:00.000Z",
@@ -1091,7 +1105,7 @@
           "deliveryEta": "استلام من الفرع",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "المتجر بيمنع المتابعة الآلية (503)"
         },
         {
@@ -1103,8 +1117,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -1174,7 +1188,7 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "المتجر بيمنع المتابعة الآلية (403)"
         },
         {
@@ -1185,21 +1199,21 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 19990
         },
         {
           "storeId": "dream2000",
-          "price": 18999,
+          "price": 19999,
           "linkType": "website",
           "url": "https://dream2000.com/products/sony-playstation-portal-remote-player-for-ps5-midnight-black",
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 22600,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -1290,8 +1304,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -1327,6 +1341,32 @@
           "deliveryEta": "2–5 أيام",
           "updatedAt": "2026-11-23T11:40:00.000Z",
           "oldPrice": 5500
+        },
+        {
+          "storeId": "shamy",
+          "price": 4590,
+          "oldPrice": 4840,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps5-dualsense-wireless-controller-white",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 4299,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/sony-dualsense-wireless-controller-for-ps5",
+          "variantId": "44102110609626",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -1395,7 +1435,7 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "المتجر بيمنع المتابعة الآلية (403)"
         },
         {
@@ -1406,8 +1446,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -1441,8 +1481,8 @@
           "url": "https://kimostore.net/products/sony-dualsense-edge-wireless-controller-for-ps5",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "47605478195456"
         }
       ],
@@ -1479,7 +1519,9 @@
       "nameAr": "دراع إكس بوكس لاسلكي – أسود",
       "brand": "Microsoft",
       "categoryId": "cat-controllers",
-      "images": [],
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0858/8878/products/xbox-series-x-controller-815.jpg?v=1683815057"
+      ],
       "specs": [
         {
           "label": "الاتصال",
@@ -1510,7 +1552,7 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "المتجر بيمنع المتابعة الآلية (403)"
         },
         {
@@ -1524,7 +1566,7 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "المتجر بيمنع المتابعة الآلية (403)"
         },
         {
@@ -1558,8 +1600,8 @@
           "url": "https://shamystores.com/products/xbox-series-x-controller-41017003057549",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 4340
         }
       ],
@@ -1628,7 +1670,7 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "المتجر بيمنع المتابعة الآلية (403)"
         }
       ],
@@ -1678,7 +1720,7 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "المتجر بيمنع المتابعة الآلية (403)"
         }
       ],
@@ -1729,8 +1771,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "vodafone",
@@ -1741,8 +1783,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "raya",
@@ -1753,8 +1795,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "3–5 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "kimo",
@@ -1764,8 +1806,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -1855,8 +1897,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -1914,8 +1956,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -1939,7 +1981,7 @@
           "deliveryEta": "2–4 أيام",
           "updatedAt": "2026-11-22T19:00:00.000Z",
           "needsCheck": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "المتجر بيمنع المتابعة الآلية (403)"
         },
         {
@@ -1950,9 +1992,9 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 2900,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "kimo",
@@ -1961,8 +2003,8 @@
           "url": "https://kimostore.net/products/logitech-g502-hero-wired-gaming-mouse-25600dpi",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 2399
         }
       ],
@@ -2043,8 +2085,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -2065,8 +2107,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "kimo",
@@ -2075,8 +2117,8 @@
           "url": "https://kimostore.net/products/keyboard-redragon-k552-kumara-wired-gaming-english",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "compumarts",
@@ -2085,8 +2127,8 @@
           "url": "https://www.compumarts.com/products/redragon-k552-mechanical-gaming-keyboard-backlit",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -2152,8 +2194,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "shamy",
@@ -2164,8 +2206,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "vodafone",
@@ -2176,8 +2218,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -2187,9 +2229,9 @@
           "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 3300,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -2199,9 +2241,9 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 3750,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -2288,8 +2330,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "games2egypt",
@@ -2299,8 +2341,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "jumia",
@@ -2340,8 +2382,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -2422,7 +2464,8 @@
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
           "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckError": "الصفحة مش موجودة (404) — الرابط محتاج تحديث"
         },
         {
           "storeId": "egygamer",
@@ -2432,8 +2475,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -2486,8 +2529,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -2551,8 +2594,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -2562,8 +2605,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -2649,8 +2692,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -2715,8 +2758,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -2726,8 +2769,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -2791,8 +2834,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -2878,8 +2921,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -2943,8 +2986,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -2954,8 +2997,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -3008,8 +3051,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -3019,8 +3062,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -3097,8 +3140,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -3108,8 +3151,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -3162,8 +3205,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -3173,8 +3216,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -3262,8 +3305,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -3273,8 +3316,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -3338,8 +3381,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -3403,8 +3446,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -3478,8 +3521,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -3489,8 +3532,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -3565,8 +3608,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -3576,8 +3619,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -3641,8 +3684,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -3706,8 +3749,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -3783,8 +3826,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -3794,8 +3837,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -3881,8 +3924,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -3892,8 +3935,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -3970,8 +4013,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4058,8 +4101,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4145,8 +4188,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -4156,8 +4199,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4244,8 +4287,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4321,8 +4364,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "gamesworld",
@@ -4352,8 +4395,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4443,8 +4486,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -4454,8 +4497,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -4529,8 +4572,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4617,8 +4660,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -4628,8 +4671,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4705,8 +4748,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -4716,8 +4759,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4793,8 +4836,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -4804,8 +4847,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4882,8 +4925,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -4893,8 +4936,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -4966,8 +5009,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -4977,8 +5020,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -5064,8 +5107,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5075,8 +5118,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -5139,8 +5182,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5150,8 +5193,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -5231,8 +5274,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -5317,8 +5360,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5328,8 +5371,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -5392,8 +5435,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5403,8 +5446,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -5480,8 +5523,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5491,8 +5534,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -5567,8 +5610,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5578,8 +5621,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -5631,8 +5674,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5642,8 +5685,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -5718,8 +5761,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5729,8 +5772,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -5807,8 +5850,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5818,8 +5861,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -5882,8 +5925,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5893,8 +5936,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -5958,8 +6001,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -5969,8 +6012,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6045,8 +6088,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6122,8 +6165,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6198,8 +6241,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -6209,8 +6252,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6285,8 +6328,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6350,8 +6393,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -6361,8 +6404,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6438,8 +6481,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -6449,8 +6492,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6525,8 +6568,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -6536,8 +6579,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6627,8 +6670,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -6638,9 +6681,9 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 4800,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "shamy",
@@ -6650,9 +6693,9 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 3940,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "games2egypt",
@@ -6662,8 +6705,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "gamesworld",
@@ -6685,8 +6728,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -6763,8 +6806,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -6800,8 +6843,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 56490
         }
       ],
@@ -6846,8 +6889,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -6883,8 +6926,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -6920,8 +6963,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 52490
         }
       ],
@@ -6966,8 +7009,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 39990
         },
         {
@@ -7025,8 +7068,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -7062,8 +7105,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -7108,8 +7151,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -7173,8 +7216,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -7235,8 +7278,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -7246,8 +7289,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -7315,8 +7358,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -7326,8 +7369,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -7384,8 +7427,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "games2egypt",
@@ -7395,8 +7438,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -7469,8 +7512,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "games2egypt",
@@ -7480,8 +7523,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -7542,8 +7585,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [],
@@ -8574,8 +8617,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -8585,8 +8628,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -8620,8 +8663,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "حسب المتجر",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "autoDiscovered": true
         }
       ]
@@ -8683,8 +8726,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -8694,8 +8737,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -8780,8 +8823,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 2440
         },
         {
@@ -8792,8 +8835,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -8878,8 +8921,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -8963,8 +9006,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -9037,8 +9080,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -9123,7 +9166,8 @@
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
           "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckError": "الصفحة مش موجودة (404) — الرابط محتاج تحديث"
         },
         {
           "storeId": "egygamer",
@@ -9133,8 +9177,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -9207,8 +9251,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -9292,8 +9336,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -9303,8 +9347,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -9389,8 +9433,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -9474,8 +9518,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -9559,8 +9603,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -9570,8 +9614,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -9655,8 +9699,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -9666,8 +9710,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -9751,8 +9795,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -9762,8 +9806,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -9847,8 +9891,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "egygamer",
@@ -9858,8 +9902,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -9944,8 +9988,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -10021,8 +10065,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10083,8 +10127,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10145,8 +10189,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10207,8 +10251,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10269,8 +10313,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10331,8 +10375,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10393,8 +10437,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10447,8 +10491,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10501,8 +10545,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10555,8 +10599,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ]
     },
@@ -10613,9 +10657,9 @@
           "inStock": false,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 6300,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "match": {
@@ -10665,8 +10709,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "amazon-eg",
@@ -10687,8 +10731,21 @@
           "url": "https://shamystores.com/products/ps5-dualsense-controller-remix-green",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
+        },
+        {
+          "storeId": "xprs",
+          "price": 5499,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/sony-dualsense-wireless-controller-for-ps5-remix-green",
+          "variantId": "68896902119642",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -10757,8 +10814,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -10815,8 +10872,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -10873,8 +10930,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -10931,8 +10988,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -10989,8 +11046,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11047,8 +11104,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11105,8 +11162,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11163,8 +11220,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11221,8 +11278,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": []
@@ -11266,8 +11323,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11321,11 +11378,11 @@
           "price": 669,
           "linkType": "website",
           "url": "https://shamystores.com/products/apple-itunes-10-usa",
-          "inStock": false,
+          "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11335,6 +11392,10 @@
         },
         {
           "date": "2026-11-24",
+          "price": 669
+        },
+        {
+          "date": "2026-11-25",
           "price": 669
         }
       ]
@@ -11378,8 +11439,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11433,11 +11494,11 @@
           "price": 1339,
           "linkType": "website",
           "url": "https://shamystores.com/products/apple-itunes-20-usa",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11494,8 +11555,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11552,8 +11613,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11610,8 +11671,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -11668,8 +11729,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 44990
         }
       ],
@@ -11721,8 +11782,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": []
@@ -11766,8 +11827,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": []
@@ -11811,8 +11872,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 34390
         }
       ],
@@ -11857,8 +11918,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "خلال 48 ساعة",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 15250
         }
       ],
@@ -11902,8 +11963,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -11984,8 +12045,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -12053,8 +12114,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -12123,8 +12184,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -12204,8 +12265,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -12273,8 +12334,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -12342,8 +12403,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -12424,8 +12485,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -12505,8 +12566,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -12587,8 +12648,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "noon",
@@ -12682,6 +12743,19 @@
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "shamy",
+          "price": 8490,
+          "oldPrice": 8990,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/sony-pulse-3d-wireless-headset-gray-camouflage",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -12756,8 +12830,8 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "2–4 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -13130,8 +13204,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -13188,8 +13262,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -13246,8 +13320,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "فوري (كود)",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -13316,8 +13390,8 @@
           "url": "https://www.compumarts.com/products/samsung-odyssey-g5-g50d-27-qhd-180hz-ips-gaming-monitor-egypt",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -13331,7 +13405,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 10500
+          "price": 9999
         }
       ],
       "createdAt": "2026-11-23T12:00:00.000Z",
@@ -13391,8 +13465,8 @@
           "url": "https://www.compumarts.com/products/benq-zowie-xl2411k-tn-144hz-dyac-24-inch-gaming-monitor-for-esports",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -13406,7 +13480,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 6999
+          "price": 6699
         }
       ],
       "createdAt": "2026-11-23T12:00:00.000Z",
@@ -13529,8 +13603,8 @@
           "url": "https://dream2000.com/products/xiaomi-gaming-monitor-g27i-2026-27-full-hd-fast-ips-gaming-monitor",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 10600
         }
       ],
@@ -13672,8 +13746,8 @@
           "url": "https://www.compumarts.com/products/lenovo-legion-r32qc-30-curved-qhd-180hz-gaming-monitor",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -13682,8 +13756,8 @@
           "url": "https://dream2000.com/products/lenovo-legion-r32qc-30-monitor-gaming-31-5-qhd-180hz-67c8gac1eu-black",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 18300
         }
       ],
@@ -13749,6 +13823,18 @@
           "updatedAt": "2026-11-25T21:30:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
+        },
+        {
+          "storeId": "compumarts",
+          "price": 8888,
+          "linkType": "website",
+          "url": "https://www.compumarts.com/products/philips-evnia-27-curved-qhd-gaming-monitor-180hz-1ms-freesync-premium-hdmi-displayport-2560x1440-resolution",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -13762,7 +13848,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 26749
+          "price": 8888
         }
       ],
       "createdAt": "2026-11-23T12:00:00.000Z",
@@ -13821,8 +13907,20 @@
           "url": "https://www.compumarts.com/products/logitech-g-pro-x-superlight-2-lightspeed-wireless-gaming-mouse-white-910-006638-44000-dpi-8000hz-egypt",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
+        },
+        {
+          "storeId": "kimo",
+          "price": 7999,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/logitech-pro-x-superlight-2-dex-dual-mode-wireless-wired-gaming-mouse-44000dpi-black",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -13836,7 +13934,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 7599
+          "price": 7500
         }
       ],
       "createdAt": "2026-11-23T12:00:00.000Z",
@@ -13913,8 +14011,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "kimo",
@@ -13923,8 +14021,8 @@
           "url": "https://kimostore.net/products/logitech-g305-lightspeed-wireless-gaming-mouse-12000dpi-black",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "45200197320960",
           "oldPrice": 2250
         },
@@ -13935,8 +14033,8 @@
           "url": "https://www.compumarts.com/products/logitech-g305-lightspeed-wireless-programmable-12000-dpi",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "43620158505109",
           "oldPrice": 2799
         }
@@ -14011,8 +14109,8 @@
           "url": "https://www.compumarts.com/products/razer-deathadder-essential-white-wired-gaming-mouse",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -14298,8 +14396,8 @@
           "url": "https://www.compumarts.com/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "43709054386325"
         }
       ],
@@ -14386,8 +14484,8 @@
           "url": "https://kimostore.net/products/logitech-g213-prodigy-wired-gaming-keyboard-english",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "compumarts",
@@ -14396,8 +14494,8 @@
           "url": "https://www.compumarts.com/products/logitech-g213-rgb-gaming-keyboard",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -14411,7 +14509,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 2699
+          "price": 2514
         }
       ],
       "createdAt": "2026-11-23T12:00:00.000Z",
@@ -14613,8 +14711,8 @@
           "url": "https://shamystores.com/products/disc-drive-for-ps5-digital-edition-consoles",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -14688,8 +14786,8 @@
           "url": "https://shamystores.com/products/xbox-series-controller-robot-white",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 4340
         }
       ],
@@ -14768,6 +14866,19 @@
           "deliveryEta": "1–4 أيام",
           "updatedAt": "2026-11-23T15:40:00.000Z",
           "lastCheckedAt": "2026-11-23T15:40:00.000Z"
+        },
+        {
+          "storeId": "shamy",
+          "price": 4590,
+          "oldPrice": 4840,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/ps5-dualsense-wireless-controller-midnight-black",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -14854,8 +14965,8 @@
           "url": "https://shamystores.com/products/ps5-dualsense-wireless-controller-cosmic-red",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 4940
         }
       ],
@@ -14944,8 +15055,8 @@
           "url": "https://shamystores.com/products/ps5-dualsense-wireless-controller-volcanic-red",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 5040
         }
       ],
@@ -15192,16 +15303,16 @@
         },
         {
           "storeId": "2b",
-          "price": 59999,
+          "price": 62999,
           "linkType": "website",
           "url": "https://2b.com.eg/en/lenovo-loq-15irx9-laptop-intelr-coretm-i5-13450hx-16gb-512gb-ssd-nvidiar-geforce-rtx-3050-6gb-15-6-fhd-144hz-luna-grey.html",
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 84049,
           "installment": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "kimo",
@@ -15210,8 +15321,8 @@
           "url": "https://kimostore.net/products/lenovo-loq-15irx9-laptop-intel-core-i5-13450hx-16gb-ram-m-2-nvme-512gb-nvidia-rtx-3050-6gb-15-6-inch-fhd-ips-144hz-la1-ai-chip-loq-m100-rgb-mouse-luna-grey",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "compumarts",
@@ -15220,8 +15331,8 @@
           "url": "https://www.compumarts.com/products/lenovo-loq-15iax9-83dv012aed-i5-13450hx-rtx-3050-16gb-512gb-144hz-egypt",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -15230,8 +15341,8 @@
           "url": "https://dream2000.com/products/lenovo-laptop-i5-13450hx-16gb-512ssd-rtx3050-15-6-fhd-83dv012aed-loq-15iax9-luna-grey",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 72000
         }
       ],
@@ -15246,7 +15357,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 59933
+          "price": 56999
         }
       ],
       "createdAt": "2026-11-23T15:55:00.000Z",
@@ -15460,8 +15571,8 @@
           "url": "https://kimostore.net/products/hp-victus-15-fa2038ne-gaming-laptop-intel-core-i5-13420h-8gb-ram-m-2-nvme-512gb-nvidia-rtx-2050-4gb-15-6-inch-fhd-ips-144hz-mica-silver",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -15475,7 +15586,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 47999
+          "price": 45666
         }
       ],
       "createdAt": "2026-11-23T15:55:00.000Z",
@@ -15551,8 +15662,8 @@
           "url": "https://kimostore.net/products/hp-victus-15-fa2013dx-gaming-laptop-intel-core-i5-13420h-8gb-ram-m-2-nvme-512gb-nvidia-rtx-3050-6gb-15-6-inch-fhd-ips-144hz-win11-mica-silver",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "compumarts",
@@ -15561,8 +15672,8 @@
           "url": "https://www.compumarts.com/products/hp-victus-15-fa2013dx-gaming-laptop-intel-core-i5-13420h-8gb-ram-512gb-ssd-nvidia-geforce-rtx-3050-6gb-15-6-fhd-144hz-windows-11",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -15576,7 +15687,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 49485
+          "price": 45500
         }
       ],
       "createdAt": "2026-11-23T15:55:00.000Z",
@@ -15641,8 +15752,8 @@
           "url": "https://www.compumarts.com/products/hp-victus-15-rtx-4050-i5-gaming-laptop",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -15868,8 +15979,20 @@
           "url": "https://www.compumarts.com/products/asus-tuf-gaming-f16-fx608jmi-rtx-5060-egypt",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
+        },
+        {
+          "storeId": "xprs",
+          "price": 102999,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/asus-tuf-gaming-f16-fx608jmr-i7-rtx-5060-16gb-512gb-ssd",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -15939,6 +16062,19 @@
           "updatedAt": "2026-11-23T15:55:00.000Z",
           "installment": true,
           "oldPrice": 77999
+        },
+        {
+          "storeId": "dream2000",
+          "price": 82222,
+          "oldPrice": 98700,
+          "linkType": "website",
+          "url": "https://dream2000.com/products/asus-tuf-gaming-f16-fx607vjr-tu165w-intel-core-5-205h-16gb-ddr5-ram-512gb-ssd-nvidia-geforce-rtx-3050-6gb-16-wuxga-144hz-windows-11-mecha-gray-copy",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -16154,8 +16290,20 @@
           "url": "https://kimostore.net/products/msi-cyborg-15-a13ve-laptop-intel-core-i7-13620h-16gb-ram-m-2-nvme-512gb-nvidia-rtx-4050-gddr6-15-6-inch-fhd-ips-144hz-translucent-black",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
+        },
+        {
+          "storeId": "xprs",
+          "price": 62200,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/msi-cyborg-15-black-edition-a13ve-intel-core-i7-13620h-rtx-4050-6gb-16gb-ddr5-512gb-ssd-15-6-fhd-144hz",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -16169,7 +16317,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 61754
+          "price": 58800
         }
       ],
       "createdAt": "2026-11-23T15:55:00.000Z",
@@ -16301,8 +16449,8 @@
           "url": "https://kimostore.net/products/dell-g15-5530-gaming-laptop-intel-core-i5-13450hx-16gb-ram-m-2-nvme-512gb-nvidia-rtx-3050-6gb-15-6-inch-fhd-120hz-ubuntu-gray",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -16316,7 +16464,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 70499
+          "price": 62999
         }
       ],
       "createdAt": "2026-11-23T15:55:00.000Z",
@@ -16388,16 +16536,16 @@
         },
         {
           "storeId": "2b",
-          "price": 24999,
+          "price": 26349,
           "linkType": "website",
           "url": "https://2b.com.eg/en/lenovo-ideapad-slim-3-15iru8-laptop-intelr-coretm-i3-1315u-8gb-256gb-ssd-intelr-uhd-graphics-15-6-fhd-arctic-grey.html",
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 35349,
           "installment": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "compumarts",
@@ -16406,8 +16554,8 @@
           "url": "https://www.compumarts.com/products/lenovo-ideapad-slim-3-15iru8-82x700bvps-egypt",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -16565,8 +16713,8 @@
           "url": "https://dream2000.com/products/lenovo-ideapad-slim-3-laptop-intel-core-i7-13620h-8gb-ram-512gb-ssd-uhd-graphics-15-3-inch-wuxga-display-83k100f1ed-luna-grey",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 53400
         }
       ],
@@ -16657,8 +16805,8 @@
           "url": "https://dream2000.com/products/lenovo-ideapad-slim-3-15iph11-intel-core-ultra-5-322-16gb-ram-512gb-ssd-intel-graphics-dos-luna-grey-83ur00bked",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 57400
         }
       ],
@@ -17302,16 +17450,16 @@
         },
         {
           "storeId": "2b",
-          "price": 138999,
+          "price": 144499,
           "linkType": "website",
           "url": "https://2b.com.eg/en/apple-macbook-pro-m5-chip-with-10-core-cpu-and-10-core-gpu-16gb-1tb-ssd-14-liquid-retina-macos-space-black.html",
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 192699,
           "installment": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -17544,8 +17692,8 @@
           "url": "https://dream2000.com/products/galaxy-s25-fe",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "47061144699019",
           "oldPrice": 51600
         }
@@ -17889,8 +18037,8 @@
           "url": "https://kimostore.net/products/samsung-galaxy-a16-dual-sim-128gb-4gb-ram-6-7-inch-4g-lte-black",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "46912177733888",
           "oldPrice": 12500
         },
@@ -17901,10 +18049,23 @@
           "url": "https://dream2000.com/products/galaxy-a16-2-html",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "47060644397195",
           "oldPrice": 15600
+        },
+        {
+          "storeId": "xprs",
+          "price": 12499,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/samsung-galaxy-a16-4gb-128gb",
+          "variantId": "46432448741594",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -18003,10 +18164,10 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 136899,
           "installment": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "tradeline",
@@ -18015,8 +18176,8 @@
           "url": "https://tradelinestores.com/products/iphone-17-pro-mfyn4af-a",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -18025,8 +18186,8 @@
           "url": "https://dream2000.com/products/iphone-17-pro-max-2-years-warranty",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "51327782584459",
           "oldPrice": 124800
         }
@@ -18042,7 +18203,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 90900
+          "price": 89900
         }
       ],
       "createdAt": "2026-11-23T16:10:00.000Z",
@@ -18134,7 +18295,7 @@
           "updatedAt": "2026-11-24T10:02:10.191Z",
           "oldPrice": 125399,
           "installment": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "lastCheckError": "مش لاقي السعر في الصفحة (ممكن تكون صفحة قسم مش منتج)"
         },
         {
@@ -18144,8 +18305,8 @@
           "url": "https://tradelinestores.com/products/iphone-17-pro-mg8h4af-a",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -18154,8 +18315,8 @@
           "url": "https://dream2000.com/products/iphone-17-pro-2-years-warranty",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "47061101379723",
           "oldPrice": 115200
         }
@@ -18171,7 +18332,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 86999
+          "price": 85500
         }
       ],
       "createdAt": "2026-11-23T16:10:00.000Z",
@@ -18257,8 +18418,8 @@
           "url": "https://kimostore.net/products/apple-iphone-17-256gb-8gb-ram-6-3-inch-5g",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "49778437947648",
           "oldPrice": 81400
         },
@@ -18269,8 +18430,8 @@
           "url": "https://tradelinestores.com/products/iphone-17-mg6n4af-a",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -18279,8 +18440,8 @@
           "url": "https://dream2000.com/products/iphone-17-2-years-warranty",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "47061102952587",
           "oldPrice": 103200
         }
@@ -18375,16 +18536,16 @@
         },
         {
           "storeId": "2b",
-          "price": 73299,
+          "price": 76099,
           "linkType": "website",
           "url": "https://2b.com.eg/en/apple-iphone-16-128gb-pink.html",
-          "inStock": true,
+          "inStock": false,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 101449,
           "installment": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "tradeline",
@@ -18393,8 +18554,8 @@
           "url": "https://tradelinestores.com/products/iphone-16-myed3zd-a",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -18403,8 +18564,8 @@
           "url": "https://dream2000.com/products/iphone-16",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "47060780220555",
           "oldPrice": 85200
         }
@@ -18487,16 +18648,16 @@
         },
         {
           "storeId": "2b",
-          "price": 63299,
+          "price": 67649,
           "linkType": "website",
           "url": "https://2b.com.eg/en/apple-iphone-15-128gb-black-official-warranty.html",
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 87599,
           "installment": true,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "tradeline",
@@ -18505,8 +18666,8 @@
           "url": "https://tradelinestores.com/products/iphone-15-mtp03aa-a",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -18515,8 +18676,8 @@
           "url": "https://dream2000.com/products/iphone-15",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "47060414595211",
           "oldPrice": 75000
         }
@@ -18711,9 +18872,9 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 17299,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "tradeline",
@@ -18722,8 +18883,8 @@
           "url": "https://tradelinestores.com/products/airpods-pro-3-mfhp4ze-a",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -18783,9 +18944,9 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 14199,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "tradeline",
@@ -18794,8 +18955,8 @@
           "url": "https://tradelinestores.com/products/airpods-4-mxp63ze-a",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -18809,7 +18970,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 11299
+          "price": 9900
         }
       ],
       "createdAt": "2026-11-23T16:10:00.000Z",
@@ -18925,9 +19086,9 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 23499,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -19127,9 +19288,9 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 2549,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "tradeline",
@@ -19138,8 +19299,8 @@
           "url": "https://tradelinestores.com/products/sony-wh-ch520-wireless-headphones-blue",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -19209,9 +19370,9 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 2699,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -19351,6 +19512,19 @@
           "freeShipping": true,
           "deliveryEta": "1–4 أيام",
           "updatedAt": "2026-11-23T16:10:00.000Z"
+        },
+        {
+          "storeId": "xprs",
+          "price": 4999,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/jbl-flip-6",
+          "variantId": "44541956817114",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -19432,9 +19606,9 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 10199,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "tradeline",
@@ -19443,8 +19617,21 @@
           "url": "https://tradelinestores.com/products/jbl-flip-7-portable-bluetooth-speaker-squad",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
+        },
+        {
+          "storeId": "xprs",
+          "price": 6990,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/jbl-flip-7",
+          "variantId": "46753058848986",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -19515,10 +19702,23 @@
           "url": "https://kimostore.net/products/jbl-go-4-waterproof-portable-bluetooth-speaker",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "variantId": "45783775314176",
           "oldPrice": 3000
+        },
+        {
+          "storeId": "xprs",
+          "price": 2333,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/jbl-go-5",
+          "variantId": "46753067139290",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -19591,6 +19791,19 @@
           "deliveryEta": "1–4 أيام",
           "updatedAt": "2026-11-23T16:10:00.000Z",
           "oldPrice": 8999
+        },
+        {
+          "storeId": "xprs",
+          "price": 6990,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/jbl-charge-5",
+          "variantId": "44531682672858",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -19604,7 +19817,7 @@
         },
         {
           "date": "2026-11-25",
-          "price": 7100
+          "price": 6990
         }
       ],
       "createdAt": "2026-11-23T16:10:00.000Z",
@@ -19742,9 +19955,9 @@
           "inStock": false,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 1299,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "dream2000",
@@ -19755,8 +19968,8 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "kimo",
@@ -19765,8 +19978,8 @@
           "url": "https://kimostore.net/products/anker-soundcore-r50i-vi-a3969d21-earbuds-white",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -19898,9 +20111,9 @@
           "inStock": true,
           "freeShipping": false,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T08:45:34.307Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 2799,
-          "lastCheckedAt": "2026-11-25T08:45:34.307Z"
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         },
         {
           "storeId": "kimo",
@@ -19909,8 +20122,8 @@
           "url": "https://kimostore.net/products/huawei-freebuds-se-3-t0016-earbuds-black",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -19973,7 +20186,8 @@
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
           "oldPrice": 21999,
-          "installment": true
+          "installment": true,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -19986,6 +20200,18 @@
           "updatedAt": "2026-11-25T22:30:00.000Z",
           "oldPrice": 19999,
           "installment": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 21499,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/samsung-50-crystal-uhd-u8000h-4k-smart-tv-built-in-receiver-50u8000h",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -20038,7 +20264,8 @@
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
           "oldPrice": 24999,
-          "installment": true
+          "installment": true,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20051,6 +20278,18 @@
           "updatedAt": "2026-11-25T22:30:00.000Z",
           "oldPrice": 23000,
           "installment": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 24999,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/samsung-55-crystal-uhd-u8000h-4k-smart-tv-built-in-receiver-55u8000h",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
         }
       ],
       "priceHistory": [
@@ -20103,7 +20342,8 @@
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
           "oldPrice": 17670,
-          "installment": true
+          "installment": true,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20166,7 +20406,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "installment": true
+          "installment": true,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20229,7 +20470,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "installment": true
+          "installment": true,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20293,7 +20535,8 @@
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
           "oldPrice": 18199,
-          "installment": true
+          "installment": true,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20355,7 +20598,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20417,7 +20661,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 5250
+          "oldPrice": 5250,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20478,7 +20723,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20498,15 +20744,15 @@
           "url": "https://kimostore.net/products/philips-air-fryer-essential-xl-hd9270-90-6-2l-2000w",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 7700
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-25",
-          "price": 7269
+          "price": 6999
         }
       ],
       "createdAt": "2026-11-25T22:30:00.000Z",
@@ -20551,7 +20797,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 8388
+          "oldPrice": 8388,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20612,7 +20859,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20672,7 +20920,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20733,7 +20982,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20794,7 +21044,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20855,7 +21106,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20917,7 +21169,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 6599
+          "oldPrice": 6599,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -20974,7 +21227,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 8100
+          "oldPrice": 8100,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21032,7 +21286,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 4289
+          "oldPrice": 4289,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21089,7 +21344,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21145,7 +21401,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21203,7 +21460,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 2297
+          "oldPrice": 2297,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21222,8 +21480,8 @@
           "url": "https://kimostore.net/products/philips-wet-dry-shaver-series-1000-s1151",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -21269,7 +21527,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21326,7 +21585,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 2462
+          "oldPrice": 2462,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21382,7 +21642,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21444,7 +21705,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 3184
+          "oldPrice": 3184,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21500,7 +21762,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21556,7 +21819,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21613,7 +21877,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21674,7 +21939,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21694,14 +21960,14 @@
           "url": "https://kimostore.net/products/kenwood-blender-blm45-720ss-2l-1000w",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
         {
           "date": "2026-11-25",
-          "price": 3350
+          "price": 3349
         }
       ],
       "createdAt": "2026-11-25T22:30:00.000Z",
@@ -21745,7 +22011,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21806,7 +22073,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 4499
+          "oldPrice": 4499,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21867,7 +22135,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 1699
+          "oldPrice": 1699,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21928,7 +22197,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -21947,8 +22217,8 @@
           "url": "https://kimostore.net/products/moulinex-blender-lm207125-france-2l-700w",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -21995,7 +22265,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 14499
+          "oldPrice": 14499,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -22051,7 +22322,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -22111,7 +22383,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -22130,8 +22403,8 @@
           "url": "https://dream2000.com/products/tp-link-300-mbps-wireless-n-router-tl-wr840n-white",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
           "oldPrice": 900
         }
       ],
@@ -22179,7 +22452,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 3449
+          "oldPrice": 3449,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -22198,8 +22472,8 @@
           "url": "https://kimostore.net/products/tp-link-tl-mr6400-4g-router-4-port-2-antenna-sim-ca",
           "inStock": true,
           "freeShipping": false,
-          "updatedAt": "2026-11-25T21:25:56.435Z",
-          "lastCheckedAt": "2026-11-25T21:25:56.435Z"
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z"
         }
       ],
       "priceHistory": [
@@ -22245,7 +22519,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -22301,7 +22576,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -22358,7 +22634,8 @@
           "inStock": true,
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
-          "updatedAt": "2026-11-25T22:30:00.000Z"
+          "updatedAt": "2026-11-25T22:30:00.000Z",
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -22415,7 +22692,8 @@
           "freeShipping": true,
           "deliveryEta": "1–3 أيام",
           "updatedAt": "2026-11-25T22:30:00.000Z",
-          "oldPrice": 6999
+          "oldPrice": 6999,
+          "lastCheckError": "مفاتيح Amazon API مش متضافة في GitHub Secrets"
         },
         {
           "storeId": "noon",
@@ -22441,6 +22719,367 @@
           "bhr8298eu"
         ]
       }
+    },
+    {
+      "id": "p-307",
+      "slug": "elden-ring-nightreign-ps5-new",
+      "name": "Elden Ring Nightreign ( – PS5",
+      "brand": "",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0551/6391/2361/files/Elden_Ring_Nightreign_PS5.png?v=1768301137"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 990,
+          "oldPrice": 2340,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/elden-ring-nightreign-ps5-new",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 3166,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/elden-ring-nightreign-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 990
+        }
+      ],
+      "createdAt": "2026-11-25T21:46:41.836Z",
+      "autoDiscovered": true
+    },
+    {
+      "id": "p-308",
+      "slug": "assassins-creed-shadows-ps5-new",
+      "name": "Assassin's Creed Shadows – PS5",
+      "brand": "",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0551/6391/2361/files/Assassin_s_Creed_Shadows_-_PS5.png?v=1768247267"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1890,
+          "oldPrice": 2440,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/assassins-creed-shadows-ps5",
+          "variantId": "41738952179808",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 3986,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/assassins-creed-shadows-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1890
+        }
+      ],
+      "createdAt": "2026-11-25T21:46:41.836Z",
+      "autoDiscovered": true
+    },
+    {
+      "id": "p-309",
+      "slug": "assassins-creed-valhalla-ps5-new",
+      "name": "Assassins Creed: Valhalla ( – PS5",
+      "brand": "",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0551/6391/2361/files/AssassinsCreed.png?v=1768247836"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1290,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/assassins-creed-valhalla-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 1406,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/assassins-creed-valhalla-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1290
+        }
+      ],
+      "createdAt": "2026-11-25T21:46:41.836Z",
+      "autoDiscovered": true
+    },
+    {
+      "id": "p-310",
+      "slug": "suicide-squad-kill-the-justice-league-ps5-new",
+      "name": "Suicide Squad: Kill The Justice League ( – PS5",
+      "brand": "",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0551/6391/2361/files/sqqq.png?v=1768309444"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1590,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/suicide-squad-kill-the-justice-league-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 1993,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/suicide-squad-kill-the-justice-league-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1590
+        }
+      ],
+      "createdAt": "2026-11-25T21:46:41.836Z",
+      "autoDiscovered": true
+    },
+    {
+      "id": "p-311",
+      "slug": "assassins-creed-mirage-ps5-new",
+      "name": "Assassin's Creed: Mirage ( – PS5",
+      "brand": "",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0551/6391/2361/files/Assassin_s_Creed_Mirage_PS5.png?v=1768247485"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1490,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/assassins-creed-mirage-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 2217,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/assassins-creed-mirage-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1490
+        }
+      ],
+      "createdAt": "2026-11-25T21:46:41.836Z",
+      "autoDiscovered": true
+    },
+    {
+      "id": "p-312",
+      "slug": "elden-ring-ps5-new",
+      "name": "Elden Ring ( – PS5",
+      "brand": "",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0551/6391/2361/files/elden-ring.png?v=1768300858"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "shamy",
+          "price": 1790,
+          "linkType": "website",
+          "url": "https://shamystores.com/products/elden-ring-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 2199,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/elden-ring-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1790
+        }
+      ],
+      "createdAt": "2026-11-25T21:46:41.836Z",
+      "autoDiscovered": true
+    },
+    {
+      "id": "p-313",
+      "slug": "returnal-ps5-new",
+      "name": "Returnal ( – PS5",
+      "brand": "",
+      "categoryId": "cat-ps5-games",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0551/6391/2361/files/Returnal_PS5.png?v=1757286643"
+      ],
+      "specs": [
+        {
+          "label": "المنصة",
+          "value": "PS5"
+        }
+      ],
+      "popularity": 60,
+      "offers": [
+        {
+          "storeId": "kimo",
+          "price": 1144,
+          "oldPrice": 1900,
+          "linkType": "website",
+          "url": "https://kimostore.net/products/returnal-game-sony-ps5-english-edition",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        },
+        {
+          "storeId": "xprs",
+          "price": 1299,
+          "linkType": "website",
+          "url": "https://myxprs.com/products/returnal-ps5",
+          "inStock": true,
+          "freeShipping": false,
+          "deliveryEta": "حسب المتجر",
+          "updatedAt": "2026-11-25T21:46:41.836Z",
+          "lastCheckedAt": "2026-11-25T21:46:41.836Z",
+          "autoDiscovered": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-25",
+          "price": 1144
+        }
+      ],
+      "createdAt": "2026-11-25T21:46:41.836Z",
+      "autoDiscovered": true
     }
   ],
   "promo": {
